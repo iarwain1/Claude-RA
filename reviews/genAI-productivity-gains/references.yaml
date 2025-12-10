@@ -1,0 +1,141 @@
+# Literature Review References
+# Topic: Measuring Productivity Gains from Generative AI
+
+metadata:
+  review_name: "genAI-productivity-gains"
+  topic: "Evaluating AI Productivity for Defense Acquisition: From Benchmarks to Operational Effectiveness"
+  created: "2025-12-10"
+  last_updated: "2025-12-10"
+  primary_audience: "Military acquisition decision-makers"
+  secondary_audience: "Testing & Evaluation (T&E) experts for military systems"
+
+# References already identified in previous conversations
+references:
+  # Key studies mentioned in handoff document
+  - key: mollick2024interview
+    title: "Giving Your AI a Job Interview"
+    authors: ["Mollick, Ethan"]
+    year: 2024
+    url: "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview"
+    abstract: "Discussion of benchmark limitations; 'vibes' matter but aren't rigorous; organizations need to 'interview' AI for their specific context"
+    source: blog
+    priority: 9
+    subtopics: ["evaluation-methodology", "benchmarks"]
+    read: true
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "vibes-problem"]
+
+  - key: anthropic2025productivity
+    title: "Estimating AI productivity gains from Claude conversations"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://assets.anthropic.com/m/28fda2ad148e2bf5/original/Estimating-AI-productivity-gains-from-Claude-conversations.pdf"
+    abstract: "Uses Claude to estimate task completion times from 100K real conversations; 80% estimated time savings; validated against JIRA tickets; acknowledges limitations"
+    source: web
+    priority: 10
+    subtopics: ["productivity-studies", "evaluation-methodology"]
+    read: true
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "productivity-measurement"]
+
+  # High-priority papers to fetch (from handoff)
+  - key: metr2025longtasks
+    title: "Measuring AI Ability to Complete Long Tasks"
+    authors: ["METR"]
+    year: 2025
+    url: null  # To be found
+    abstract: "METR methodology for evaluating AI on extended tasks"
+    source: web
+    priority: 9
+    subtopics: ["evaluation-methodology", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["to-find"]
+
+  - key: metr2025developer
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    authors: ["METR"]
+    year: 2025
+    url: null  # To be found
+    abstract: "RCT with experienced developers showing mixed results; heterogeneous effects"
+    source: web
+    priority: 10
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "to-find"]
+
+  - key: openai2025gdpval
+    title: "GDPval"
+    authors: ["OpenAI"]
+    year: 2025
+    url: null  # To be found
+    abstract: "Multi-task comparative study with varying results by task category; lab conditions"
+    source: web
+    priority: 9
+    subtopics: ["productivity-studies", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "to-find"]
+
+  - key: scale2025remotelabor
+    title: "Remote Labor Index"
+    authors: ["Scale AI", "CAIS"]
+    year: 2025
+    url: null  # To be found
+    abstract: "~2.5% task automation finding on real freelance projects - key empirical anchor for benchmark-utility gap"
+    source: web
+    priority: 10
+    subtopics: ["productivity-studies", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "empirical-anchor", "to-find"]
+
+  - key: upwork2025upbench
+    title: "UpBench"
+    authors: ["Upwork"]
+    year: 2025
+    url: null  # To be found
+    abstract: "Real freelance task evaluation"
+    source: web
+    priority: 8
+    subtopics: ["productivity-studies", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["to-find"]
+
+  - key: toner2024jaggedness
+    title: "Taking Jaggedness Seriously"
+    authors: ["Toner, Helen"]
+    year: 2024
+    url: null  # To be found
+    abstract: "Analysis of jagged capability frontier and implications for AI evaluation"
+    source: web
+    priority: 9
+    subtopics: ["jagged-frontier", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "to-find"]
+
+  # Standards and frameworks
+  - key: nist2023airisk
+    title: "AI Risk Management Framework"
+    authors: ["NIST"]
+    year: 2023
+    url: "https://www.nist.gov/itl/ai-risk-management-framework"
+    abstract: "NIST framework for AI risk management"
+    source: web
+    priority: 8
+    subtopics: ["risk-management", "standards-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["framework", "standards"]

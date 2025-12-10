@@ -1,0 +1,69 @@
+# Reading Queue
+# Papers prioritized for reading, in order of importance
+
+metadata:
+  last_updated: "2025-12-10"
+
+# Priority rationale:
+# 10 = Essential - key empirical anchor or methodological paper
+# 9 = Very important - directly addresses core questions
+# 8 = Important - provides valuable context or evidence
+# 7 = Useful - good supporting material
+# 6 or below = Background reading
+
+queue:
+  # Highest priority - key empirical studies
+  - key: scale2025remotelabor
+    priority: 10
+    reason: "Key empirical anchor - 2.5% task automation finding illustrates benchmark-utility gap"
+    added: "2025-12-10"
+    status: pending
+
+  - key: metr2025developer
+    priority: 10
+    reason: "RCT with experienced developers - best methodological rigor for productivity claims"
+    added: "2025-12-10"
+    status: pending
+
+  - key: openai2025gdpval
+    priority: 9
+    reason: "Multi-task comparative study - important methodology example"
+    added: "2025-12-10"
+    status: pending
+
+  - key: toner2024jaggedness
+    priority: 9
+    reason: "Conceptual foundation for jagged frontier - key framing for evaluation challenges"
+    added: "2025-12-10"
+    status: pending
+
+  - key: metr2025longtasks
+    priority: 9
+    reason: "Methodology for evaluating AI on extended tasks - emerging evaluation paradigm"
+    added: "2025-12-10"
+    status: pending
+
+  - key: upwork2025upbench
+    priority: 8
+    reason: "Real freelance task evaluation - good ecological validity"
+    added: "2025-12-10"
+    status: pending
+
+  - key: nist2023airisk
+    priority: 8
+    reason: "Standard framework for AI risk management - relevant to acquisition audience"
+    added: "2025-12-10"
+    status: pending
+
+  # Already read (from previous conversations)
+  - key: mollick2024interview
+    priority: 9
+    reason: "Key framing for evaluation approach - 'vibes' problem"
+    added: "2025-12-10"
+    status: done
+
+  - key: anthropic2025productivity
+    priority: 10
+    reason: "Key methodology example - productivity estimation approach"
+    added: "2025-12-10"
+    status: done
