@@ -32,6 +32,7 @@ This repo turns Claude Code into a literature review agent through:
 │  ├── templates/             # Templates for new reviews     │
 │  └── reviews/               # Your literature reviews       │
 │      └── <your-review>/                                     │
+│          ├── input/             # YOUR starting materials   │
 │          ├── references.yaml                                │
 │          ├── reading-queue.yaml                             │
 │          ├── subtopics.yaml                                 │
@@ -74,6 +75,54 @@ Claude will create a new review directory with all the necessary files.
 
 Or just chat naturally:
 > "Find recent papers on LLM agents and add the most relevant ones to my collection"
+
+## Starting with Your Own Materials
+
+If you have existing materials (project descriptions, collected links, notes), here's how to use them:
+
+### 1. Create the review and add your files
+
+```
+/new-review my-topic
+```
+
+Then copy your files into the `input/` folder:
+
+```
+reviews/my-topic/input/
+├── project_description.md      # What you're researching
+├── outline.md                  # Any preliminary structure
+├── link_dumps/                 # Your collected URLs
+│   ├── bookmarks.md
+│   ├── reading_list.docx
+│   └── ...
+└── notes/                      # Your existing notes
+    ├── background.md
+    └── ...
+```
+
+### 2. Process your materials
+
+```
+# Have Claude read your project description
+"Read my project description in input/ and set up the review"
+
+# Process your collected links
+/process-sources input/link_dumps/
+
+# Scan your notes for references
+/scan-notes input/notes/
+```
+
+Claude will:
+- Extract relevant URLs from your link dumps
+- Note bolded/highlighted links as higher priority
+- Pull references and context from your notes
+- Filter for what's relevant to this review
+
+### 3. Continue with normal workflow
+
+After processing your inputs, continue with `/search`, `/read-next`, etc.
 
 ## Slash Commands
 
@@ -159,6 +208,9 @@ Claude-Literature-Review-Agent/
 │
 ├── reviews/                     # Individual literature reviews
 │   └── example/                 # Example review (see below)
+│       ├── input/               # Your starting materials
+│       │   ├── link_dumps/      # Collected URLs
+│       │   └── notes/           # Your existing notes
 │       ├── references.yaml
 │       ├── reading-queue.yaml
 │       ├── subtopics.yaml
