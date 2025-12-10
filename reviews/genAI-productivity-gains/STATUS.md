@@ -72,22 +72,30 @@ Located in `input/`:
 | **OpenAI GDPval** | Sep 2025 | **100x faster/cheaper** but human-assisted only 1.4x faster |
 | **Upwork UpBench** | Nov 2025 | **70% boost** with human+agent collaboration |
 | **Anthropic Economic Index** | 2025 | **57% augmentation vs 43% automation** |
+| **BCG/Wharton Jagged Frontier** | 2023 | **40% quality boost** but homogeneous outputs |
+| **Brynjolfsson Customer Service** | 2023 | **34% gain for novices**, quality DECLINE for experts |
+| **Noy & Zhang (Science)** | 2023 | **40% faster, 18% better quality** in writing tasks |
+| **MIT 95% Pilot Failure** | 2025 | Only **5% of AI pilots** achieve P&L impact |
 
 ### References Status
 
-See `references.yaml` for full list (24 entries with detailed metadata).
+See `references.yaml` for full list (**80 entries** with detailed metadata).
 
-**Tier 1 Critical Papers (10):**
-- METR 2025 Developer Study - arXiv:2507.09089
-- Scale/CAIS Remote Labor Index - arXiv:2510.26787
-- OpenAI GDPval - arXiv:2510.04374
-- Upwork UpBench/HAPI
-- Anthropic Economic Index
-- Toner "Taking Jaggedness Seriously"
-- Mollick "Giving Your AI a Job Interview" (read)
-- Anthropic productivity estimation (read)
-- METR time horizons research
-- Epoch AI benchmark-economic gap analysis
+**By Priority:**
+- Priority 10 (Essential): 10 references
+- Priority 9 (Very important): 14 references
+- Priority 8 (Important): 24 references
+- Priority 7 (Useful): 20 references
+- Priority 6 (Background): 12 references
+
+**By Category (Batch 3 additions):**
+- Military/Defense AI: 6 new sources (FAS, Scale/DoD, NDAA, USAF, UNIDIR, CNAS)
+- Productivity Studies: 5 new sources (Fed Reserve, PwC, OECD, McKinsey, Dallas Fed)
+- Training Interventions: 4 new sources (Science journal RCT, Stanford/MIT, MIT Sloan, Inc)
+- Agent Evaluation: 4 new sources (AgentBench, τ-bench, IBM Research, Deloitte)
+- Trust/Overreliance: 5 new sources (CHB experiment, CSET bias, ACM review, Springer, false-confidence)
+- NIST Standards: 3 new sources (ARIA, Zero Drafts, GenAI pilot)
+- Post-Deployment: 1 new source (Ada Lovelace)
 
 **Already Read:**
 - Mollick "Giving Your AI a Job Interview"

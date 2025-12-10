@@ -1001,3 +1001,546 @@ references:
     notes_file: null
     added: "2025-12-10"
     tags: ["motivation", "psychological-effects"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Military/Defense AI Evaluation (Dec 10, 2025)
+  #############################################################################
+
+  - key: fas2025benchmarking
+    title: "Codifying and Expanding Continuous AI Benchmarking"
+    authors: ["Federation of American Scientists"]
+    year: 2025
+    url: "https://fas.org/publication/codifying-expanding-continuous-ai-benchmarking/"
+    abstract: |
+      Recommends DoD embed benchmarking at pre-award acquisition stage and through entire lifecycle.
+      Emphasizes internal adversarial stress testing (red-teaming) for mission-aligned evaluations.
+      Argues for detecting risks, performance drift, and adversarial vulnerabilities before deployment.
+    source: policy
+    priority: 8
+    subtopics: ["acquisition-guidance", "evaluation-methodology", "standards-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "benchmarking", "lifecycle-evaluation"]
+
+  - key: scaleai2024dod
+    title: "Scale AI DoD Benchmarking Initiative"
+    authors: ["Scale AI", "DoD CDAO"]
+    year: 2024
+    month: 2
+    url: "https://defensescoop.com/2024/02/20/scale-ai-pentagon-testing-evaluating-large-language-models/"
+    abstract: |
+      Pentagon's CDAO tapped Scale AI to develop trustworthy T&E for LLMs supporting military
+      planning/decision-making. Measures quantitative benchmarks plus qualitative user feedback.
+      Helps DoD mature T&E policies for generative AI by identifying models ready for military
+      applications with accurate results using DoD terminology and knowledge bases.
+    source: government
+    priority: 8
+    subtopics: ["evaluation-methodology", "acquisition-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "benchmarking", "DoD"]
+
+  - key: ndaa2025ai
+    title: "FY2025 NDAA AI and Quantum Sciences Provisions"
+    authors: ["U.S. Congress"]
+    year: 2024
+    month: 12
+    url: "https://www.nextgov.com/emerging-tech/2024/12/fy2025-ndaa-angles-enhance-dods-ai-and-quantum-sciences-capabilities/401545/"
+    abstract: |
+      FY2025 NDAA authorizes $143.8B for science and tech R&D. Requires DoD to evaluate creating
+      Federated AI-Enabled Weapon Systems Center of Excellence for analyzing AI weaponry, countermeasures,
+      and training. Authorizes Defense Innovation Unit pilot program through 2028 for alternative
+      T&E pathway to accelerate testing of technologies for warfighting capabilities.
+    source: government
+    priority: 7
+    subtopics: ["standards-frameworks", "acquisition-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "policy", "legislation"]
+
+  - key: usaf2025doctrine
+    title: "Air Force Doctrine Note 25-1: Artificial Intelligence"
+    authors: ["U.S. Air Force"]
+    year: 2025
+    month: 4
+    url: "https://www.doctrine.af.mil/Portals/61/documents/AFDN_25-1/AFDN%2025-1%20Artificial%20Intelligence.pdf"
+    abstract: |
+      Official Air Force doctrine on AI. July 2025 AI Action Plan identifies AI as enabling technology
+      to transform both warfighting and back-office operations. States "United States must aggressively
+      adopt AI within its Armed Forces." Important for understanding military AI adoption context.
+    source: government
+    priority: 7
+    subtopics: ["acquisition-guidance", "standards-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "doctrine", "USAF"]
+
+  - key: unidir2025military
+    title: "AI in the Military Domain: A Briefing Note for States"
+    authors: ["UNIDIR"]
+    year: 2025
+    month: 3
+    url: "https://unidir.org/wp-content/uploads/2025/03/UNIDIR_AI_in_the_Military_Domain_A_briefing_note_for_States.pdf"
+    abstract: "UN Institute for Disarmament Research briefing on military AI for policymakers."
+    source: policy
+    priority: 6
+    subtopics: ["acquisition-guidance", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "international", "policy"]
+
+  - key: cnas2024practices
+    title: "Military Artificial Intelligence Test and Evaluation Model Practices"
+    authors: ["CNAS", "International Expert Group"]
+    year: 2024
+    month: 12
+    url: "https://www.cnas.org/publications/commentary/military-artificial-intelligence-test-and-evaluation-model-practices"
+    abstract: |
+      White paper from American, Indian, European, and Chinese experts on T&E principles for
+      military AI systems. Consensus on principles for safer, more secure, responsible AI weapons
+      and military systems. Important for international standards perspective.
+    source: policy
+    priority: 7
+    subtopics: ["evaluation-methodology", "standards-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "international", "standards"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Productivity Studies & Economic Research (Dec 10, 2025)
+  #############################################################################
+
+  - key: stlouisfed2025productivity
+    title: "The Impact of Generative AI on Work Productivity"
+    authors: ["Federal Reserve Bank of St. Louis"]
+    year: 2025
+    month: 2
+    url: "https://www.stlouisfed.org/on-the-economy/2025/feb/impact-generative-ai-work-productivity"
+    abstract: |
+      Federal Reserve survey finding 5.4% average time savings from AI (2.2 hours/week for 40-hour
+      work week). 28% of all workers used generative AI at work. Usage rates stable Aug-Nov 2024.
+      Important for baseline productivity estimates from representative sample.
+    source: government
+    priority: 8
+    subtopics: ["productivity-studies", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["survey", "representative-sample", "federal-reserve"]
+
+  - key: pwc2025barometer
+    title: "PwC Global AI Jobs Barometer 2025"
+    authors: ["PwC"]
+    year: 2025
+    url: "https://www.pwc.com/gx/en/news-room/press-releases/2025/ai-linked-to-a-fourfold-increase-in-productivity-growth.html"
+    abstract: |
+      AI-skilled workers see 56% wage premium in 2024 (double the 25% in previous year). Job
+      availability grew 38% in AI-exposed roles. Productivity growth nearly quadrupled in
+      AI-exposed industries since GenAI proliferation in 2022.
+    source: industry
+    priority: 7
+    subtopics: ["economic-impact", "productivity-studies"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["wage-premium", "labor-market", "industry-effects"]
+
+  - key: oecd2025productivity
+    title: "Unlocking Productivity with Generative AI: Evidence from Experimental Studies"
+    authors: ["OECD"]
+    year: 2025
+    month: 7
+    url: "https://www.oecd.org/en/blogs/2025/07/unlocking-productivity-with-generative-ai-evidence-from-experimental-studies.html"
+    abstract: |
+      OECD analysis of experimental evidence. KEY FINDING: Less-experienced/lower-skilled individuals
+      see largest productivity gains. AI facilitates on-the-job learning, provides support/feedback,
+      helps lower-skilled workers bridge gap with skilled peers. Important for understanding
+      heterogeneity in AI benefits.
+    source: policy
+    priority: 8
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["heterogeneity", "skill-effects", "OECD"]
+
+  - key: mckinsey2025workplace
+    title: "AI in the Workplace: A Report for 2025"
+    authors: ["McKinsey"]
+    year: 2025
+    url: "https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace-empowering-people-to-unlock-ais-full-potential-at-work"
+    abstract: |
+      Survey of 3,613 employees and 238 C-level executives (Oct-Nov 2024). 92% of companies plan
+      to increase AI investments over next 3 years but only 1% of leaders call companies "mature"
+      on deployment spectrum. Important data on adoption maturity gap.
+    source: industry
+    priority: 7
+    subtopics: ["economic-impact", "acquisition-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["survey", "enterprise-adoption", "maturity-gap"]
+
+  - key: dallasfed2025productivity
+    title: "Advances in AI Will Boost Productivity, Living Standards Over Time"
+    authors: ["Federal Reserve Bank of Dallas"]
+    year: 2025
+    month: 6
+    url: "https://www.dallasfed.org/research/economics/2025/0624"
+    abstract: "Federal Reserve analysis of long-term AI productivity impacts."
+    source: government
+    priority: 6
+    subtopics: ["economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["federal-reserve", "long-term"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Training Intervention Studies (Dec 10, 2025)
+  #############################################################################
+
+  - key: noy2023experiment
+    title: "Experimental Evidence on the Productivity Effects of Generative AI"
+    authors: ["Noy, Shakked", "Zhang, Whitney"]
+    year: 2023
+    journal: "Science"
+    url: "https://www.science.org/doi/10.1126/science.adh2586"
+    abstract: |
+      Landmark study published in Science. 453 college-educated professionals given writing tasks.
+      Half exposed to ChatGPT. Results: 40% decrease in time taken, 18% increase in output quality.
+      Inequality between workers decreased. Important RCT evidence with high-quality publication.
+    source: academic
+    priority: 9
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "RCT", "Science-journal"]
+    key_findings:
+      - "40% decrease in task completion time"
+      - "18% increase in output quality"
+      - "Reduced inequality between workers"
+
+  - key: stanfordmit2023support
+    title: "Generative AI at Work (Customer Support Study)"
+    authors: ["Brynjolfsson, Erik", "Li, Danielle", "Raymond, Lindsey"]
+    year: 2023
+    url: "https://www.gsb.stanford.edu/insights/generative-ai-can-boost-productivity-without-replacing-workers"
+    related_url: "https://www.cnbc.com/2023/04/25/stanford-and-mit-study-ai-boosted-worker-productivity-by-14percent.html"
+    abstract: |
+      Study of 5,000+ customer support agents at Fortune 500 firm over one year. AI tools boosted
+      productivity 14% on average. Novice/low-skilled workers: 35% faster, performed like agents
+      with 6 months more experience. KEY: "Those who use it will replace those who don't."
+    source: academic
+    priority: 9
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "field-study", "heterogeneity"]
+    key_findings:
+      - "14% average productivity boost"
+      - "35% improvement for novice workers"
+      - "2 months experience performed like 6 months unsupported"
+
+  - key: mitsloan2024boundary
+    title: "How Generative AI Can Boost Highly Skilled Workers' Productivity"
+    authors: ["MIT Sloan"]
+    year: 2024
+    url: "https://mitsloan.mit.edu/ideas-made-to-matter/how-generative-ai-can-boost-highly-skilled-workers-productivity"
+    abstract: |
+      AI can improve highly skilled worker performance by nearly 40% when used within capability
+      boundary. KEY CAVEAT: When AI used OUTSIDE boundary, performance DROPS 19 percentage points.
+      Validates jagged frontier concept. Experts need to validate AI and exert cognitive effort.
+    source: academic
+    priority: 8
+    subtopics: ["productivity-studies", "jagged-frontier"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["boundary-effects", "expert-performance"]
+    key_findings:
+      - "40% improvement within AI capability boundary"
+      - "19pp performance DROP outside boundary"
+      - "Experts must continue to validate AI outputs"
+
+  - key: inc2025training
+    title: "How AI Training Can Lead to Productivity Gains"
+    authors: ["Inc. Magazine"]
+    year: 2025
+    url: "https://www.inc.com/bruce-crumley/how-ai-training-can-lead-to-productivity-gains/91260858"
+    abstract: |
+      Survey data: 68% of employees received NO AI training in past 12 months. Impact: trained
+      employees save 11 hours/week vs 5 hours for untrained (2x difference). 93% of trained
+      workers regularly use AI vs 57% untrained. "Closing AI training gap is fastest way to
+      unlock measurable return."
+    source: industry
+    priority: 7
+    subtopics: ["acquisition-guidance", "productivity-studies"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["training", "adoption", "intervention"]
+    key_findings:
+      - "68% of employees received no AI training"
+      - "Trained workers save 2x more time (11 vs 5 hours/week)"
+      - "93% adoption with training vs 57% without"
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Agentic AI Evaluation (Dec 10, 2025)
+  #############################################################################
+
+  - key: agentbench2024
+    title: "AgentBench: Evaluating LLMs as Agents"
+    authors: ["THUDM"]
+    year: 2024
+    journal: "ICLR 2024"
+    url: "https://github.com/THUDM/AgentBench"
+    abstract: |
+      First benchmark designed to evaluate LLM-as-Agent across 8 distinct environments. Tests
+      autonomous agent capabilities in web navigation, code execution, database queries, etc.
+      Important baseline for agentic evaluation.
+    source: academic
+    priority: 7
+    subtopics: ["agent-evaluation", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["agent-benchmark", "ICLR"]
+
+  - key: sierra2025taubench
+    title: "τ-Bench: Benchmarking AI Agents for the Real World"
+    authors: ["Sierra AI"]
+    year: 2025
+    url: "https://sierra.ai/blog/benchmarking-ai-agents"
+    abstract: |
+      Benchmark evaluating AI agent performance/reliability in real-world settings with dynamic
+      user and tool interaction. Tests complex tasks with LLM-simulated users and tools.
+      Addresses gap in measuring agent reliability in dynamic human-in-the-loop scenarios.
+    source: ai_lab
+    priority: 8
+    subtopics: ["agent-evaluation", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["agent-benchmark", "human-in-loop"]
+
+  - key: ibm2025agents
+    title: "The Future of AI Agent Evaluation"
+    authors: ["IBM Research"]
+    year: 2025
+    url: "https://research.ibm.com/blog/AI-agent-benchmarks"
+    abstract: |
+      IBM Research analysis of AI agent evaluation challenges. Static benchmarks for LLMs don't
+      apply cleanly to agents. Agent evaluation must consider dynamic outputs/contexts, uncertainty,
+      multi-step task completion. Proposes evaluation framework considering adaptability, recovery,
+      human feedback alignment.
+    source: ai_lab
+    priority: 7
+    subtopics: ["agent-evaluation", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology", "agent-evaluation"]
+
+  - key: deloitte2025agents
+    title: "Autonomous Generative AI Agents Still Under Development"
+    authors: ["Deloitte"]
+    year: 2025
+    url: "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2025/autonomous-generative-ai-agents-still-under-development.html"
+    abstract: |
+      Deloitte technology predictions. Task-specific AI agents present in <5% of applications in
+      2025, expected in 40% by 2026. AutoGen adopted by 40%+ of Fortune 100. Devin resolves
+      ~14% of GitHub issues (2x better than chatbots, but not fully autonomous).
+    source: industry
+    priority: 6
+    subtopics: ["agent-evaluation", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["predictions", "adoption"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Trust & Overreliance Research (Dec 10, 2025)
+  #############################################################################
+
+  - key: chb2024overreliance
+    title: "Trust and Reliance on AI: An Experimental Study on the Extent and Costs of Overreliance"
+    authors: ["Computers in Human Behavior"]
+    year: 2024
+    url: "https://www.sciencedirect.com/science/article/pii/S0747563224002206"
+    abstract: |
+      Incentivized behavioral experiment finding mere knowledge of advice being AI-generated
+      causes overreliance, even when contradicting contextual information and own assessment.
+      Overreliance leads to inefficient outcomes and undesired third-party effects. Emphasizes
+      AI literacy and trust calibration for productive deployment.
+    source: academic
+    priority: 8
+    subtopics: ["human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["overreliance", "trust", "behavioral-experiment"]
+    key_findings:
+      - "Mere knowledge of AI source causes overreliance"
+      - "Users follow AI even contradicting own assessment"
+      - "AI literacy critical for productive deployment"
+
+  - key: cset2024bias
+    title: "AI Safety and Automation Bias"
+    authors: ["CSET Georgetown"]
+    year: 2024
+    month: 11
+    url: "https://cset.georgetown.edu/publication/ai-safety-and-automation-bias/"
+    pdf: "https://cset.georgetown.edu/wp-content/uploads/CSET-AI-Safety-and-Automation-Bias.pdf"
+    abstract: |
+      Policy brief on automation bias. KEY: "Human-in-the-loop" cannot prevent all accidents/errors.
+      Properly calibrating technical and human fail-safes poses best chance for mitigating AI risks.
+      Case studies show risks across domains. Important for military T&E considerations.
+    source: policy
+    priority: 8
+    subtopics: ["risk-management", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["automation-bias", "safety", "policy"]
+
+  - key: acm2024trust
+    title: "A Systematic Review on Fostering Appropriate Trust in Human-AI Interaction"
+    authors: ["ACM Journal on Responsible Computing"]
+    year: 2024
+    url: "https://dl.acm.org/doi/10.1145/3696449"
+    abstract: |
+      Systematic review of trust calibration research. Rather than higher trust, CALIBRATED trust
+      is critical. Higher transparency may negatively affect trust and induce complacency/overreliance.
+      Mixed findings on effectiveness of explanations. Gaps remain in dynamic contexts.
+    source: academic
+    priority: 7
+    subtopics: ["human-ai-teaming", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["trust-calibration", "systematic-review"]
+
+  - key: springer2025bias
+    title: "Exploring Automation Bias in Human-AI Collaboration: A Review and Implications for Explainable AI"
+    authors: ["AI & Society"]
+    year: 2025
+    url: "https://link.springer.com/article/10.1007/s00146-025-02422-7"
+    abstract: |
+      As AI embeds in high-stakes domains (healthcare, law, public administration), automation
+      bias emerges as critical challenge. Proposes shift: rather than humans supervising AI,
+      let humans make primary decisions with AI as second-opinion system alerting to potential errors.
+    source: academic
+    priority: 7
+    subtopics: ["human-ai-teaming", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["automation-bias", "design-recommendation"]
+
+  - key: arxiv2025falseconfidence
+    title: "Students' Reliance on AI in Higher Education: The False-Confidence Loop"
+    authors: ["ArXiv"]
+    year: 2025
+    url: "https://arxiv.org/html/2506.13845v1"
+    abstract: |
+      Evidence for "false-confidence loop" in human-AI interaction. Overreliant users trusted
+      system and felt satisfied while unknowingly accepting errors that undermined performance.
+      Programming self-efficacy, literacy, and need for cognition associated with calibrated trust.
+    source: academic
+    priority: 6
+    subtopics: ["human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["false-confidence", "overreliance"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - NIST Standards & Frameworks (Dec 10, 2025)
+  #############################################################################
+
+  - key: nist2024aria
+    title: "NIST ARIA Program: Assessing Risks and Impacts of AI"
+    authors: ["NIST"]
+    year: 2024
+    month: 5
+    url: "https://www.nist.gov/news-events/news/2024/05/nist-launches-aria-new-program-advance-sociotechnical-testing-and"
+    related_url: "https://ai-challenges.nist.gov/aria"
+    abstract: |
+      ARIA assesses societal risks/impacts of AI systems in realistic settings. Three evaluation
+      levels: model testing, red-teaming, field testing. Moves beyond accuracy to technical and
+      contextual robustness. Expands on AI RMF. Timeline: pilot Dec 2024-Jan 2025, analysis Feb-May
+      2025, report Summer/Fall 2025.
+    source: government
+    priority: 8
+    subtopics: ["standards-frameworks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["NIST", "standards", "sociotechnical"]
+
+  - key: nist2025zerodrafts
+    title: "NIST AI Standards Zero Drafts Pilot Project"
+    authors: ["NIST"]
+    year: 2025
+    month: 3
+    url: "https://www.nist.gov/artificial-intelligence/ai-research/nists-ai-standards-zero-drafts-pilot-project-accelerate"
+    abstract: |
+      Pilot project to accelerate AI standards creation. Initial topics: AI T&E verification/validation
+      and documentation of AI models/datasets. Goal: flexible high-level framework for companies
+      to design own AI testing procedures. Not prescribing exact methods; offering structure around
+      key terms, lifecycle stages, guiding principles aligned with international standards.
+    source: government
+    priority: 7
+    subtopics: ["standards-frameworks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["NIST", "standards", "verification-validation"]
+
+  - key: nist2024genai
+    title: "2024 NIST GenAI Pilot Study: Text-to-Text Evaluation"
+    authors: ["NIST"]
+    year: 2024
+    url: "https://www.nist.gov/publications/2024-nist-genai-pilot-study-text-text-evaluation-overview-and-results"
+    abstract: |
+      NIST pilot study evaluating text-to-text generation and discrimination tasks. Assessed using
+      AUC and Brier scores. AI-generated summaries increasingly resemble human writing but detection
+      models remain reasonably effective. Important baseline for GenAI evaluation methodology.
+    source: government
+    priority: 6
+    subtopics: ["evaluation-methodology", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["NIST", "evaluation", "text-generation"]
+
+  #############################################################################
+  # TIER 2: BATCH 3 - Post-Deployment Monitoring (Dec 10, 2025)
+  #############################################################################
+
+  - key: adalovelace2025monitoring
+    title: "Safe Beyond Sale: Post-Deployment Monitoring of AI"
+    authors: ["Ada Lovelace Institute"]
+    year: 2025
+    url: "https://www.adalovelaceinstitute.org/blog/post-deployment-monitoring-of-ai/"
+    abstract: |
+      Analysis of post-deployment AI monitoring. Still nascent field - both governments and AI
+      companies have responsibilities to develop monitoring ecosystem. Notes "irony of information
+      age": companies collecting most data are least monitored by regulators. Important for
+      lifecycle evaluation considerations.
+    source: policy
+    priority: 7
+    subtopics: ["evaluation-methodology", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["monitoring", "post-deployment", "policy"]
