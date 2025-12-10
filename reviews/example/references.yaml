@@ -1,0 +1,54 @@
+# Literature Review References
+# Example review demonstrating the structure
+
+metadata:
+  review_name: "example"
+  topic: "Large Language Model Agents"
+  created: "2025-01-15"
+  last_updated: "2025-01-15"
+
+references:
+  - key: wang2024survey
+    title: "A Survey on Large Language Model based Autonomous Agents"
+    authors: ["Wang, Lei", "Ma, Chen", "Feng, Xueyang"]
+    year: 2024
+    url: "https://arxiv.org/abs/2308.11432"
+    doi: null
+    abstract: "Autonomous agents have long been a prominent research focus in both academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions."
+    source: arxiv
+    priority: 9
+    subtopics: ["agent-architectures", "surveys"]
+    read: true
+    notes_file: "notes/paper-summaries/wang2024survey.md"
+    added: "2025-01-15"
+    tags: ["foundational", "must-read"]
+
+  - key: yao2023react
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    authors: ["Yao, Shunyu", "Zhao, Jeffrey", "Yu, Dian"]
+    year: 2023
+    url: "https://arxiv.org/abs/2210.03629"
+    doi: null
+    abstract: "While large language models (LLMs) have demonstrated impressive capabilities across tasks in language understanding and interactive decision making, their abilities for reasoning and acting are studied separately. This paper explores the use of LLMs to generate both reasoning traces and task-specific actions in an interleaved manner."
+    source: arxiv
+    priority: 10
+    subtopics: ["reasoning", "agent-architectures"]
+    read: true
+    notes_file: "notes/paper-summaries/yao2023react.md"
+    added: "2025-01-15"
+    tags: ["seminal", "highly-cited"]
+
+  - key: shinn2023reflexion
+    title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
+    authors: ["Shinn, Noah", "Cassano, Federico", "Labash, Ashwin"]
+    year: 2023
+    url: "https://arxiv.org/abs/2303.11366"
+    doi: null
+    abstract: "Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error."
+    source: arxiv
+    priority: 8
+    subtopics: ["learning", "reasoning"]
+    read: false
+    notes_file: null
+    added: "2025-01-15"
+    tags: []

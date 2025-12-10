@@ -1,0 +1,55 @@
+# Subtopics Organization
+# LLM Agents literature organized by theme
+
+metadata:
+  last_updated: "2025-01-15"
+
+subtopics:
+  - name: agent-architectures
+    display_name: "Agent Architectures"
+    description: "Core architectural patterns for LLM-based agents including perception, planning, and action modules"
+    key_findings:
+      - "Most agents follow a perception-planning-action loop"
+      - "Memory systems (short-term and long-term) are critical for complex tasks"
+    open_questions:
+      - "What's the optimal balance between reasoning and acting?"
+      - "How should agents handle conflicting information?"
+    controversies: []
+    reference_keys:
+      - wang2024survey
+      - yao2023react
+    notes_file: "notes/themes/agent-architectures.md"
+
+  - name: reasoning
+    display_name: "Reasoning Capabilities"
+    description: "How LLM agents reason about tasks, including chain-of-thought and self-reflection"
+    key_findings:
+      - "Interleaved reasoning and acting (ReAct) improves task performance"
+    open_questions:
+      - "Can agents learn to reason more efficiently over time?"
+    controversies: []
+    reference_keys:
+      - yao2023react
+      - shinn2023reflexion
+    notes_file: "notes/themes/reasoning.md"
+
+  - name: learning
+    display_name: "Agent Learning"
+    description: "How agents learn from experience and improve over time"
+    key_findings: []
+    open_questions:
+      - "How can agents efficiently learn from sparse feedback?"
+    controversies: []
+    reference_keys:
+      - shinn2023reflexion
+    notes_file: "notes/themes/learning.md"
+
+  - name: surveys
+    display_name: "Surveys & Overviews"
+    description: "Survey papers providing broad coverage of the field"
+    key_findings: []
+    open_questions: []
+    controversies: []
+    reference_keys:
+      - wang2024survey
+    notes_file: null
