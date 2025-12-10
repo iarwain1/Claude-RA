@@ -23,8 +23,51 @@ Claude-Literature-Review-Agent/
 │   └── <your-review>/           # Your reviews go here
 ├── resources/                   # Shared resources
 ├── .claude/commands/            # Slash commands
+├── .claude/skills/              # Research skills (see below)
 └── custom-agent/                # Standalone Python agent (alternative)
 ```
+
+## Available Skills
+
+Skills provide detailed methodologies for specific research tasks. They are automatically invoked when relevant.
+
+| Skill | When It's Used |
+|-------|----------------|
+| `systematic-review` | Starting reviews, planning searches, ensuring methodological rigor |
+| `paper-analysis` | Reading papers critically, evaluating quality, taking structured notes |
+| `citation-helper` | Generating BibTeX, formatting citations, validating references |
+
+### systematic-review
+Comprehensive 7-phase methodology adapted from PRISMA guidelines:
+1. Planning & scoping (PICO framework)
+2. Search strategy development
+3. Screening & selection
+4. Data extraction
+5. Quality assessment
+6. Synthesis
+7. Reporting
+
+Use when: Starting a new review or ensuring systematic approach.
+
+### paper-analysis
+Critical evaluation framework combining scientific critical thinking with structured note-taking:
+- Two-pass reading strategy (overview → detailed)
+- Methodology assessment checklists
+- Bias detection and statistical red flags
+- Evidence quality rating (High/Medium/Low)
+- Standardized note template
+
+Use when: Reading papers with `/read-next` or `/summarize`.
+
+### citation-helper
+BibTeX and citation management guidance:
+- Entry types and required fields
+- Key generation conventions
+- Author and title formatting
+- Common citation styles (APA, IEEE, Chicago, Nature)
+- Validation checklist
+
+Use when: Exporting with `/export-bib` or formatting citations.
 
 ## Working on a Review
 

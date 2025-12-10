@@ -7,6 +7,7 @@ An AI-powered research assistant for conducting systematic literature reviews. U
 This repo turns Claude Code into a literature review agent through:
 - **CLAUDE.md** - Instructions that guide Claude's behavior as a research assistant
 - **Slash commands** - Quick workflows like `/search`, `/summarize`, `/status`
+- **Skills** - Detailed methodologies for systematic reviews, paper analysis, and citations
 - **Structured data files** - YAML files for references, notes, and organization
 - **Git versioning** - Full history of your research progress
 
@@ -27,6 +28,7 @@ This repo turns Claude Code into a literature review agent through:
 │              This Repository                                 │
 │  ├── CLAUDE.md              # Agent instructions            │
 │  ├── .claude/commands/      # Slash commands                │
+│  ├── .claude/skills/        # Research methodologies        │
 │  ├── templates/             # Templates for new reviews     │
 │  └── reviews/               # Your literature reviews       │
 │      └── <your-review>/                                     │
@@ -87,6 +89,21 @@ Or just chat naturally:
 | `/synthesize` | Generate literature review report |
 | `/export-bib` | Export references as BibTeX |
 
+## Skills
+
+Skills provide detailed methodologies that Claude uses automatically when relevant. They're adapted from [K-Dense-AI/claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) (MIT License).
+
+| Skill | Description |
+|-------|-------------|
+| `systematic-review` | 7-phase PRISMA-based methodology for rigorous literature reviews |
+| `paper-analysis` | Critical evaluation framework with bias detection and quality rating |
+| `citation-helper` | BibTeX formatting, citation styles, and reference validation |
+
+These skills are invoked automatically:
+- Starting a review → `systematic-review` guides planning
+- Reading papers → `paper-analysis` ensures thorough evaluation
+- Exporting citations → `citation-helper` ensures proper formatting
+
 ## Repository Structure
 
 ```
@@ -97,16 +114,20 @@ Claude-Literature-Review-Agent/
 ├── LICENSE
 │
 ├── .claude/
-│   └── commands/                # Slash commands
-│       ├── new-review.md
-│       ├── search.md
-│       ├── add-paper.md
-│       ├── read-next.md
-│       ├── summarize.md
-│       ├── status.md
-│       ├── organize.md
-│       ├── synthesize.md
-│       └── export-bib.md
+│   ├── commands/                # Slash commands
+│   │   ├── new-review.md
+│   │   ├── search.md
+│   │   ├── add-paper.md
+│   │   ├── read-next.md
+│   │   ├── summarize.md
+│   │   ├── status.md
+│   │   ├── organize.md
+│   │   ├── synthesize.md
+│   │   └── export-bib.md
+│   └── skills/                  # Research methodologies
+│       ├── systematic-review/
+│       ├── paper-analysis/
+│       └── citation-helper/
 │
 ├── templates/                   # Templates for new reviews
 │   ├── references.yaml
