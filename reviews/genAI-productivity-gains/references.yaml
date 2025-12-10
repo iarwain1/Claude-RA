@@ -740,3 +740,264 @@ references:
     key_findings:
       - "95% of organizations see no measurable ROI"
       - "42% of AI pilots abandoned by end of 2024 (up from 17%)"
+
+  #############################################################################
+  # TIER 2: BATCH 2 - Additional Sources (Dec 10, 2025)
+  #############################################################################
+
+  # Anthropic Internal Study
+  - key: anthropic2025internal
+    title: "How AI Is Transforming Work at Anthropic"
+    authors: ["Anthropic"]
+    year: 2025
+    month: 8
+    url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
+    abstract: |
+      Internal study: surveyed 132 engineers/researchers, 53 in-depth interviews, usage data.
+      Staff use Claude in ~60% of work, self-report 50% productivity gains. Can fully delegate
+      ~20% of tasks. KEY CAVEATS: Concerns about skill atrophy, reduced collaboration/mentorship,
+      "Claude is now the first stop for questions that used to go to colleagues."
+    source: ai_lab
+    priority: 9
+    subtopics: ["productivity-studies", "human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["internal-study", "skill-atrophy", "collaboration-concerns"]
+    key_findings:
+      - "60% of work uses Claude"
+      - "50% self-reported productivity gains"
+      - "20% of tasks fully delegatable"
+      - "Concerns about skill atrophy and reduced mentorship"
+
+  # User Heterogeneity Studies
+  - key: brynjolfsson2023customerservice
+    title: "Generative AI at Work"
+    authors: ["Brynjolfsson, Erik", "Li, Danielle", "Raymond, Lindsey"]
+    year: 2023
+    url: "https://www.nber.org/papers/w31161"
+    journal: "Quarterly Journal of Economics (2024)"
+    abstract: |
+      Study of 5,000+ customer support agents. AI assistance increases productivity 15% on average
+      but with SUBSTANTIAL HETEROGENEITY. Less experienced/lower-skilled workers: 34% productivity
+      increase. Most experienced/highest-skilled: small speed gains, SMALL DECLINES IN QUALITY.
+      KEY: Benefits primarily accrue to novices; experts may be harmed.
+    source: academic
+    priority: 10
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "heterogeneity", "skill-level-effects"]
+    key_findings:
+      - "15% average productivity increase"
+      - "34% increase for less experienced workers"
+      - "Small quality DECLINE for most experienced workers"
+      - "Novices move up skill distribution; experts may be harmed"
+
+  - key: noy2023writing
+    title: "The Heterogeneous Productivity Effects of Generative AI"
+    authors: ["Noy, Shakked", "Zhang, Whitney"]
+    year: 2024
+    url: "https://arxiv.org/abs/2403.01964"
+    abstract: |
+      Analysis of heterogeneous AI productivity effects. Gains predominantly favor individuals
+      with lower or medium levels of experience, skill, or productivity. Less experienced users
+      in Italy saw increased output quantity/quality; experienced users saw DECREASED productivity
+      on routine tasks.
+    source: academic
+    priority: 8
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["heterogeneity", "skill-level-effects"]
+
+  # SWE-Bench and Agent Evaluation
+  - key: runloop2025swebench
+    title: "SWE-Bench Deep Dive: Unmasking the Limitations of a Popular Benchmark"
+    authors: ["Runloop"]
+    year: 2025
+    url: "https://runloop.ai/blog/swe-bench-deep-dive-unmasking-the-limitations-of-a-popular-benchmark"
+    abstract: |
+      Critical analysis of SWE-Bench limitations: 32.67% have solution leakage in issue reports,
+      31.08% have weak test cases, only Python repos, Django over-represented (45%+), likely
+      data contamination. Models may be recalling memorized solutions rather than problem-solving.
+    source: industry
+    priority: 8
+    subtopics: ["benchmarks", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["benchmark-critique", "data-contamination"]
+    key_findings:
+      - "32.67% solution leakage in issue reports"
+      - "31.08% weak test cases"
+      - "Django over-represented at 45%+"
+      - "Likely data contamination from training"
+
+  - key: scale2025swebenchpro
+    title: "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?"
+    authors: ["Scale AI"]
+    year: 2025
+    month: 9
+    url: "https://arxiv.org/abs/2509.16941"
+    pdf: "https://static.scale.com/uploads/654197dc94d34f66c0f5184e/SWEAP_Eval_Scale%20(9).pdf"
+    abstract: |
+      New benchmark addressing SWE-Bench limitations. KEY FINDING: Models scoring 70%+ on
+      SWE-Bench Verified score only 23% on SWE-Bench Pro. GPT-5 and Claude Opus 4.1 both ~23%.
+      Massive performance drop shows benchmark inflation in original. Still limited: Java, C++,
+      Rust underrepresented; doesn't capture design, code review, documentation.
+    source: research_org
+    priority: 9
+    subtopics: ["benchmarks", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "benchmark-critique"]
+    key_findings:
+      - "70%+ on SWE-Bench Verified → 23% on SWE-Bench Pro"
+      - "Massive performance drop reveals benchmark inflation"
+      - "Real-world software engineering activities not captured"
+
+  # Trust Calibration
+  - key: patterns2024trust
+    title: "Calibrating workers' trust in intelligent automated systems"
+    authors: ["Cell Patterns"]
+    year: 2024
+    month: 8
+    url: "https://www.cell.com/patterns/fulltext/S2666-3899(24)00187-9"
+    abstract: |
+      Systematic review of trust calibration in human-automation teaming. Overtrust leads to
+      inappropriate/unsafe use; undertrust leads to underutilization. No definitive method for
+      achieving calibration exists. Approaches include uncertainty visualization, explanations,
+      soliciting human input, outcome feedback. Gaps remain in dynamic contexts.
+    source: academic
+    priority: 8
+    subtopics: ["human-ai-teaming", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["trust-calibration", "methodology"]
+
+  # Skill Atrophy / Deskilling
+  - key: medtech2025deskilling
+    title: "Deskilling in the Age of Artificial Intelligence: Implications, Mechanisms, and Mitigation Strategies"
+    authors: ["MedTechNews"]
+    year: 2025
+    url: "https://medtechnews.uk/research-reports/deskilling-in-the-age-of-artificial-intelligence-implications-mechanisms-and-mitigation-strategies/"
+    abstract: |
+      Analysis of AI-driven skill atrophy. Low-complexity roles show AI-driven skill atrophy
+      through over-reliance. GPS analogy: navigation AI reduces spatial reasoning. Junior/early
+      career most at risk - don't form debugging, verification, reasoning habits. Medical evidence:
+      colonoscopy detection rate fell 6 points after AI exposure.
+    source: web
+    priority: 7
+    subtopics: ["human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["skill-atrophy", "deskilling", "risk"]
+    key_findings:
+      - "Low-complexity roles most vulnerable to skill atrophy"
+      - "Juniors at highest risk - don't form foundational habits"
+      - "Medical study: 6-point detection rate drop post-AI exposure"
+
+  # MIT/NANDA AI Pilot Failure Study
+  - key: mit2025genaidivide
+    title: "The GenAI Divide: State of AI in Business 2025"
+    authors: ["MIT NANDA Initiative"]
+    year: 2025
+    month: 8
+    url: "https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/"
+    abstract: |
+      MIT NANDA report on enterprise AI adoption. KEY FINDING: Only 5% of AI pilots achieve
+      rapid revenue acceleration; 95% stall with no P&L impact. Core barrier is "learning gap"
+      not infrastructure/talent. 60% evaluated systems, only 20% reached pilot, only 5% reached
+      production. Buy beats build (67% vs 22% success). Back-office automation has highest ROI
+      but gets least investment. Shadow AI shows individual adoption outpaces enterprise.
+    source: academic
+    priority: 9
+    subtopics: ["economic-impact", "acquisition-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "enterprise-adoption", "pilot-failure"]
+    key_findings:
+      - "95% of AI pilots fail to deliver P&L impact"
+      - "60% evaluate → 20% pilot → 5% production"
+      - "Buy beats build: 67% vs 22% success rate"
+      - "Learning gap is core barrier, not tech"
+
+  - key: hbr2025aiframework
+    title: "Most AI Initiatives Fail. This 5-Part Framework Can Help."
+    authors: ["Harvard Business Review"]
+    year: 2025
+    month: 11
+    url: "https://hbr.org/2025/11/most-ai-initiatives-fail-this-5-part-framework-can-help"
+    abstract: |
+      Framework for successful AI adoption. Pilots fail due to lack of organizational scaffolding.
+      Success requires aligned incentives, redesigned decision processes, AI-ready culture.
+      Integration beats innovation - tools that plug into existing systems succeed while
+      standalone solutions languish. Empower domain experts, not central AI labs.
+    source: industry
+    priority: 7
+    subtopics: ["acquisition-guidance", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["framework", "adoption-guidance"]
+
+  # Ecological Validity
+  - key: chi2025ecological
+    title: "Ecological Validity Missing in AI-Assisted Clinical Decision Support Research"
+    authors: ["CHI Italy 2025"]
+    year: 2025
+    url: "https://dl.acm.org/doi/10.1145/3750069.3750072"
+    abstract: |
+      Research on ecological validity in AI evaluation. Current AI-assisted decision support
+      evaluations often lack ecological validity. "Patterns of overreliance on AI may result
+      from experimental setups, rather than reflecting real-world behavior." Gap between
+      experimental design and how decisions unfold in practice.
+    source: academic
+    priority: 7
+    subtopics: ["evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["ecological-validity", "methodology"]
+
+  # Collective Creativity Impact
+  - key: pnas2024creativity
+    title: "Generative AI enhances individual creativity but reduces the collective diversity of novel content"
+    authors: ["PNAS"]
+    year: 2024
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/"
+    abstract: |
+      Study finding AI enhances individual creativity but reduces collective diversity.
+      AI outputs are homogeneous - when many people use AI, aggregate output becomes more similar.
+      Important implication for organizational use: individual gains may mask collective costs.
+    source: academic
+    priority: 7
+    subtopics: ["productivity-studies", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["creativity", "homogeneity", "collective-effects"]
+
+  # Motivation Impact
+  - key: nature2025motivation
+    title: "Human-generative AI collaboration enhances task performance but undermines human's intrinsic motivation"
+    authors: ["Scientific Reports"]
+    year: 2025
+    url: "https://www.nature.com/articles/s41598-025-98385-2"
+    abstract: |
+      Study finding AI collaboration enhances performance but undermines intrinsic motivation.
+      Important for long-term adoption and skill development considerations.
+    source: academic
+    priority: 6
+    subtopics: ["human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["motivation", "psychological-effects"]
