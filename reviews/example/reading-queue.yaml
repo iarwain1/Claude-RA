@@ -1,0 +1,12 @@
+# Reading Queue
+# Papers prioritized for reading
+
+metadata:
+  last_updated: "2025-01-15"
+
+queue:
+  - key: shinn2023reflexion
+    priority: 8
+    reason: "Important work on agent learning and self-improvement"
+    added: "2025-01-15"
+    status: pending

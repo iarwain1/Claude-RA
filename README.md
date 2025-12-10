@@ -1,329 +1,277 @@
 # Literature Review Agent
 
-An AI-powered research assistant for conducting comprehensive literature reviews. This agent acts as your personal Research Assistant, handling the tedious aspects of literature review while keeping you informed and in control throughout the process.
+An AI-powered research assistant for conducting systematic literature reviews. Use **Claude Code** directly as your research assistant, with all your data stored in version-controlled files.
 
-## Features
+## How It Works
 
-### Reference Gathering
-- **URL Processing**: Extract and follow links from bookmarks, markdown files, or plain text URL lists
-- **Blog/Newsletter Scanning**: Crawl RSS feeds and blog archives for relevant content
-- **Academic Search**: Automated searches on arXiv and Semantic Scholar
-- **Local File Processing**: Parse Obsidian vaults, PDFs, and note collections
-- **Citation Following**: Discover new references by following citation trails
+This repo turns Claude Code into a literature review agent through:
+- **CLAUDE.md** - Instructions that guide Claude's behavior as a research assistant
+- **Slash commands** - Quick workflows like `/search`, `/summarize`, `/status`
+- **Skills** - Detailed methodologies for systematic reviews, paper analysis, and citations
+- **Structured data files** - YAML files for references, notes, and organization
+- **Git versioning** - Full history of your research progress
 
-### Organization & Prioritization
-- **Intelligent Tagging**: AI-powered categorization into subtopics
-- **Relevance Ranking**: Automatic prioritization based on your research questions
-- **Duplicate Detection**: Smart deduplication across multiple sources
-- **Reading Queue**: Organized queue sorted by priority
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    Claude Code                               │
+│              (Your Claude Max subscription)                  │
+├─────────────────────────────────────────────────────────────┤
+│  Built-in Tools:                                            │
+│  • WebSearch - Find papers on arXiv, Google Scholar         │
+│  • WebFetch - Read paper abstracts and blog posts           │
+│  • Read/Edit/Write - Manage your research files             │
+│  • Git - Track changes and sync progress                    │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│              This Repository                                 │
+│  ├── CLAUDE.md              # Agent instructions            │
+│  ├── .claude/commands/      # Slash commands                │
+│  ├── .claude/skills/        # Research methodologies        │
+│  ├── templates/             # Templates for new reviews     │
+│  └── reviews/               # Your literature reviews       │
+│      └── <your-review>/                                     │
+│          ├── references.yaml                                │
+│          ├── reading-queue.yaml                             │
+│          ├── subtopics.yaml                                 │
+│          └── notes/                                         │
+└─────────────────────────────────────────────────────────────┘
+```
 
-### Analysis & Note-Taking
-- **Document Reading**: Full-text extraction from PDFs and web pages
-- **Key Point Extraction**: AI-powered identification of important findings
-- **Automated Notes**: Generate structured notes while reading
-- **Quote Capture**: Save important quotes with context
+## Quick Start
 
-### Synthesis & Reporting
-- **Subtopic Summaries**: AI-generated summaries for each research area
-- **Full Report Generation**: Comprehensive literature review documents
-- **Export Formats**: Markdown, BibTeX, and more
-- **Progress Tracking**: Real-time statistics and progress reports
+### 1. Clone and Open in Claude Code
 
-### Interactive Communication
-- **Continuous Updates**: Regular progress notifications
-- **Question Prompts**: Agent asks for clarification when needed
-- **Insight Sharing**: Highlights particularly interesting findings
-- **Feedback Integration**: Adjusts based on your responses
-
-## Installation
-
-### Prerequisites
-- Python 3.10 or higher
-- Anthropic API key
-
-### Setup
-
-1. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/Claude-Literature-Review-Agent.git
 cd Claude-Literature-Review-Agent
 ```
 
-2. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+Open this folder in Claude Code (web, desktop, or CLI).
+
+### 2. Create a New Literature Review
+
+```
+/new-review my-research-topic
 ```
 
-3. Install the package:
-```bash
-pip install -e .
+Claude will create a new review directory with all the necessary files.
+
+### 3. Start Researching
+
+```
+/search transformer attention mechanisms 2024
+
+/add-paper https://arxiv.org/abs/2401.12345
+
+/status
+
+/read-next
+
+/synthesize
 ```
 
-4. Set up your API key:
-```bash
-cp .env.example .env
-# Edit .env and add your ANTHROPIC_API_KEY
+Or just chat naturally:
+> "Find recent papers on LLM agents and add the most relevant ones to my collection"
+
+## Slash Commands
+
+### Setup & Status
+| Command | Description |
+|---------|-------------|
+| `/new-review <name>` | Create a new literature review |
+| `/status` | Show review progress and statistics |
+
+### Gathering Sources
+| Command | Description |
+|---------|-------------|
+| `/search <query>` | Search academic databases for papers |
+| `/add-paper <url>` | Add a single paper from URL |
+| `/process-sources <file>` | Batch process a file of URLs you've collected |
+| `/scan-blogs <url>` | Scan blog/newsletter archives for papers |
+| `/scan-notes <folder>` | Scan Obsidian vault or notes folder |
+| `/find-citing <paper>` | Find papers that cite a reference |
+
+### Reading & Analysis
+| Command | Description |
+|---------|-------------|
+| `/read-next` | Read and summarize the next paper in queue |
+| `/summarize <key>` | Summarize a specific paper |
+| `/organize` | Organize references by subtopics |
+
+### Output
+| Command | Description |
+|---------|-------------|
+| `/synthesize` | Generate literature review report |
+| `/export-bib` | Export references as BibTeX |
+
+## Skills
+
+Skills provide detailed methodologies that Claude uses automatically when relevant. They're adapted from [K-Dense-AI/claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) (MIT License).
+
+| Skill | Description |
+|-------|-------------|
+| `systematic-review` | 7-phase PRISMA-based methodology for rigorous literature reviews |
+| `paper-analysis` | Critical evaluation framework with bias detection and quality rating |
+| `citation-helper` | BibTeX formatting, citation styles, and reference validation |
+
+These skills are invoked automatically:
+- Starting a review → `systematic-review` guides planning
+- Reading papers → `paper-analysis` ensures thorough evaluation
+- Exporting citations → `citation-helper` ensures proper formatting
+
+## Repository Structure
+
+```
+Claude-Literature-Review-Agent/
+├── CLAUDE.md                    # Agent instructions
+├── README.md                    # This file
+├── .gitignore
+├── LICENSE
+│
+├── .claude/
+│   ├── commands/                # Slash commands
+│   │   ├── new-review.md        # Create new review
+│   │   ├── search.md            # Search databases
+│   │   ├── add-paper.md         # Add single paper
+│   │   ├── process-sources.md   # Batch process URLs
+│   │   ├── scan-blogs.md        # Scan blog archives
+│   │   ├── scan-notes.md        # Scan notes folders
+│   │   ├── find-citing.md       # Citation chaining
+│   │   ├── read-next.md         # Read next paper
+│   │   ├── summarize.md         # Summarize paper
+│   │   ├── status.md            # Review status
+│   │   ├── organize.md          # Organize by subtopic
+│   │   ├── synthesize.md        # Generate report
+│   │   └── export-bib.md        # Export BibTeX
+│   └── skills/                  # Research methodologies
+│       ├── systematic-review/
+│       ├── paper-analysis/
+│       └── citation-helper/
+│
+├── templates/                   # Templates for new reviews
+│   ├── references.yaml
+│   ├── reading-queue.yaml
+│   ├── subtopics.yaml
+│   └── notes/
+│       └── questions.md
+│
+├── reviews/                     # Individual literature reviews
+│   └── example/                 # Example review (see below)
+│       ├── references.yaml
+│       ├── reading-queue.yaml
+│       ├── subtopics.yaml
+│       ├── notes/
+│       │   ├── paper-summaries/
+│       │   ├── themes/
+│       │   └── questions.md
+│       └── reports/
+│
+├── resources/                   # Shared resources
+│
+└── custom-agent/                # Standalone Python agent (alternative)
+    ├── pyproject.toml
+    ├── src/
+    └── ...
 ```
 
-## Quick Start
+## Review Data Files
 
-### Interactive Mode (Recommended for First-Time Users)
-
-```bash
-lit-review interactive
-```
-
-This launches a guided session where the agent will:
-1. Ask about your research topic
-2. Help you configure sources
-3. Guide you through each phase of the review
-
-### Command-Line Mode
-
-```bash
-# Start a new project
-lit-review new "AI Agents and Autonomous Systems"
-
-# Gather references from configured sources
-lit-review gather
-
-# Organize and prioritize references
-lit-review organize
-
-# Read and analyze papers
-lit-review read --count 10
-
-# Generate the final report
-lit-review report
-
-# Check project status
-lit-review status
-```
-
-## Configuration
-
-### Project Configuration
-
-Create a `config.yaml` file (see `config/default.yaml` for template):
-
+### references.yaml
 ```yaml
-llm:
-  model: "claude-sonnet-4-20250514"
-  max_tokens: 4096
-
-search:
-  arxiv_enabled: true
-  arxiv_max_results: 50
-  semantic_scholar_enabled: true
-
-processing:
-  extract_citations: true
-  follow_citations_depth: 1
-
-communication:
-  update_frequency: "regular"
-  ask_before_major_actions: true
+references:
+  - key: smith2024transformers
+    title: "Transformers for Scientific Discovery"
+    authors: ["Smith, J.", "Doe, A."]
+    year: 2024
+    url: "https://arxiv.org/abs/2401.12345"
+    priority: 8          # 1-10, higher = more important
+    subtopics: ["transformers", "scientific-ml"]
+    read: false
+    notes_file: null
 ```
 
-### Source Types
-
-#### URL Lists
-Plain text or markdown files containing URLs:
-```
-# My Research Links
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-- [BERT Paper](https://arxiv.org/abs/1810.04805)
-https://example.com/interesting-paper
+### reading-queue.yaml
+```yaml
+queue:
+  - key: smith2024transformers
+    priority: 8
+    reason: "Highly cited, directly relevant"
+    status: pending      # pending, in-progress, done, skipped
 ```
 
-#### Blogs/Newsletters
-RSS feeds or blog URLs:
-- The agent will automatically discover RSS feeds
-- Extracts links from posts to academic papers
-- Filters for relevance to your topic
-
-#### Local Notes (Obsidian-Compatible)
-- Reads markdown files from your notes folder
-- Extracts tags and links
-- Supports YAML frontmatter
-
-## Usage Examples
-
-### Python API
-
-```python
-import asyncio
-from literature_review_agent import LiteratureReviewAgent
-from literature_review_agent.models import SourceConfig
-
-async def main():
-    # Create agent
-    agent = LiteratureReviewAgent()
-
-    # Start a new project
-    await agent.start_new_project(
-        topic_name="Large Language Models",
-        topic_description="Research on transformer-based language models...",
-        key_questions=[
-            "What are the scaling laws for LLMs?",
-            "How do different training approaches compare?",
-        ],
-        key_terms=["transformer", "language model", "GPT", "scaling"],
-    )
-
-    # Add sources
-    await agent.add_source(SourceConfig(
-        name="My Bookmarks",
-        source_type="url_list",
-        path="/path/to/bookmarks.md",
-    ))
-
-    await agent.add_source(SourceConfig(
-        name="AI Blog",
-        source_type="blog",
-        url="https://example-ai-blog.com",
-    ))
-
-    # Run the research process
-    await agent.gather_references()
-    await agent.organize_references()
-    await agent.read_papers(max_papers=20)
-    await agent.generate_report()
-
-    await agent.close()
-
-asyncio.run(main())
+### subtopics.yaml
+```yaml
+subtopics:
+  - name: transformers
+    description: "Transformer architectures"
+    key_findings:
+      - "Finding 1"
+    open_questions:
+      - "Question 1"
+    reference_keys: ["smith2024transformers"]
 ```
 
-### Custom Callbacks
+## Example Review
 
-```python
-from literature_review_agent import LiteratureReviewAgent
-from literature_review_agent.models import AgentMessage
+See `reviews/example/` for a complete example of a literature review on "LLM Agents" with:
+- 3 references (2 read, 1 in queue)
+- 4 subtopics
+- Paper summaries in `notes/paper-summaries/`
+- Theme notes in `notes/themes/`
 
-def my_message_handler(message: AgentMessage):
-    if message.message_type == "insight":
-        print(f"Important: {message.content}")
-    elif message.message_type == "question":
-        print(f"Agent asks: {message.content}")
+## Workflow
 
-def my_input_handler(prompt: str, options: list[str] | None) -> str:
-    # Custom input handling (e.g., from a GUI)
-    return input(prompt)
+### 1. Gather Sources
+- `/search` - Find papers on arXiv, Google Scholar
+- `/add-paper` - Add specific papers by URL
+- `/process-sources` - Batch process your collected URL lists
+- `/scan-blogs` - Extract papers from blog/newsletter archives
+- `/scan-notes` - Find references in your Obsidian vault
+- `/find-citing` - Follow citation trails from key papers
 
-agent = LiteratureReviewAgent(
-    message_callback=my_message_handler,
-    input_callback=my_input_handler,
-)
-```
+### 2. Organize
+- `/organize` - Group references by theme
+- Claude identifies subtopics and tags papers
+- Update priorities based on relevance
 
-## Research Process
+### 3. Read & Note
+- `/read-next` - Read papers from queue (highest priority first)
+- Claude creates structured notes in `notes/paper-summaries/`
+- Uses `paper-analysis` skill for critical evaluation
+- Discovers new papers to add from Related Work sections
 
-The agent follows a structured research process:
+### 4. Synthesize
+- `/synthesize` - Generate the literature review report
+- `/export-bib` - Export citations
+- Iterate: go back to gathering if gaps are found
 
-### 1. Initialization
-- Define research topic and questions
-- Configure sources (URL lists, blogs, local files)
-- Set search parameters
+## Security Note
 
-### 2. Reference Gathering
-- Process URLs from your collections
-- Crawl blog/newsletter archives
-- Search academic databases (arXiv, Semantic Scholar)
-- Extract links from local notes
+This approach is more secure than MCP-based alternatives because:
+- **Sandboxed**: Claude only accesses files in this repo
+- **No external APIs**: Uses Claude's built-in web search (no API keys)
+- **Version controlled**: All changes tracked in git
+- **Limited exfiltration**: Can only push to your own GitHub repo
 
-### 3. Organization
-- Evaluate relevance of each reference
-- Assign priorities (Critical, High, Medium, Low)
-- Suggest and create subtopics
-- Build reading queue
+See the [security discussion](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) for more on AI agent security.
 
-### 4. Reading & Analysis
-- Read full text of high-priority papers
-- Extract key findings and methodology
-- Take structured notes
-- Identify citations to follow
+## Alternative: Standalone Python Agent
 
-### 5. Citation Following
-- Find papers cited in "Related Work" sections
-- Discover foundational papers
-- Add promising leads to the queue
-- Identify new subtopics
+If you prefer a standalone CLI application with direct API access to arXiv and Semantic Scholar, see the `custom-agent/` directory. This requires:
+- Python 3.10+
+- Anthropic API key
+- Installation: `pip install -e custom-agent/`
 
-### 6. Synthesis
-- Generate summaries for each subtopic
-- Compile key findings across the literature
-- Create comprehensive report
-- Export in various formats
+## Tips
 
-## Output
-
-### Literature Review Report
-A comprehensive markdown document including:
-- Executive summary
-- Subtopic summaries with key findings
-- Annotated bibliography
-- Open questions and future directions
-
-### Data Files
-- `references.json`: All collected references
-- `notes.json`: Research notes
-- `subtopics.json`: Topic organization
-- `project.json`: Project state
-
-### Export Formats
-- Markdown (default)
-- BibTeX (for citations)
-- Plain text
-
-## Tips for Best Results
-
-1. **Be Specific**: Detailed research questions help the agent prioritize better
-2. **Start with Your Links**: The agent can find new sources, but your curated links are valuable starting points
-3. **Review Subtopics**: Confirm or adjust suggested subtopics early
-4. **Iterate**: Run multiple reading sessions, following new leads each time
-5. **Check Insights**: The agent highlights important findings - don't miss them!
-
-## Architecture
-
-```
-literature_review_agent/
-├── agent.py           # Main orchestrator
-├── cli.py             # Command-line interface
-├── models.py          # Data models
-├── collectors/        # Source collectors
-│   ├── arxiv_collector.py
-│   ├── blog_collector.py
-│   ├── local_collector.py
-│   ├── semantic_scholar_collector.py
-│   ├── url_collector.py
-│   └── web_collector.py
-├── managers/          # Data management
-│   ├── note_manager.py
-│   ├── reference_manager.py
-│   └── subtopic_manager.py
-├── processors/        # Document processing
-│   ├── analyzer.py
-│   ├── document_reader.py
-│   └── report_generator.py
-└── utils/             # Utilities
-    ├── config.py
-    ├── logging.py
-    ├── persistence.py
-    └── text.py
-```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+1. **Commit often** - Use git to track progress
+2. **Be specific** - "Search arXiv for attention mechanisms in vision transformers 2024" > "find AI papers"
+3. **Iterate** - Start broad, then drill into subtopics
+4. **Follow citations** - Ask Claude to find papers citing important works
+5. **Check progress** - Use `/status` regularly
 
 ## License
 
 MIT License - see LICENSE file for details.
-
-## Acknowledgments
-
-- Built with [Claude](https://www.anthropic.com/claude) by Anthropic
-- Uses [Semantic Scholar API](https://www.semanticscholar.org/product/api) for academic search
-- arXiv integration via [arxiv.py](https://github.com/lukasschwab/arxiv.py)

@@ -1,0 +1,13 @@
+# Reading Queue
+# Papers prioritized for reading, in order of importance
+
+metadata:
+  last_updated: ""
+
+queue: []
+  # Example entry:
+  # - key: author2024keyword  # matches key in references.yaml
+  #   priority: 8
+  #   reason: "Why this paper is important to read"
+  #   added: "2025-01-15"
+  #   status: pending  # pending, in-progress, done, skipped

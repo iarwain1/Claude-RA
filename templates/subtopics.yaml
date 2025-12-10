@@ -1,0 +1,20 @@
+# Subtopics Organization
+# Organize your literature review by themes/subtopics
+
+metadata:
+  last_updated: ""
+
+subtopics: []
+  # Example entry:
+  # - name: subtopic-slug
+  #   display_name: "Subtopic Display Name"
+  #   description: "What this subtopic covers"
+  #   key_findings:
+  #     - "Important finding 1"
+  #     - "Important finding 2"
+  #   open_questions:
+  #     - "Question that needs investigation"
+  #   controversies: []  # Disagreements in the literature
+  #   reference_keys:
+  #     - author2024keyword
+  #   notes_file: "notes/themes/subtopic-slug.md"
