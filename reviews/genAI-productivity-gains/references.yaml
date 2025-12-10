@@ -490,3 +490,253 @@ references:
     notes_file: null
     added: "2025-12-10"
     tags: ["key-reference", "duplicate-of-openai2025gdpval"]
+
+  #############################################################################
+  # TIER 2: ADDITIONAL SOURCES FROM LINK PROCESSING (Dec 10, 2025)
+  #############################################################################
+
+  # Harvard/Wharton/BCG Studies
+  - key: dellacqua2023jagged
+    title: "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality"
+    authors: ["Dell'Acqua, Fabrizio", "McFowland, Edward", "Mollick, Ethan", "Lifshitz-Assaf, Hila", "Kellogg, Katherine", "Rajendran, Saran", "Krayer, Lisa", "Candelon, François", "Lakhani, Karim"]
+    year: 2023
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4573321"
+    abstract: |
+      Field experiment with 244 BCG consultants. AI users finished 12.2% more tasks, 25.1% faster,
+      40% higher quality. Introduced "Centaur" (clear human-AI division) and "Cyborg" (blended)
+      work patterns. First major study of enterprise AI use. KEY CAVEAT: Tasks inside the
+      "jagged frontier" showed gains; tasks outside showed AI failures and homogeneous outputs.
+    source: academic
+    priority: 10
+    subtopics: ["productivity-studies", "human-ai-teaming", "jagged-frontier"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "field-experiment", "centaurs-cyborgs"]
+    key_findings:
+      - "12.2% more tasks, 25.1% faster, 40% higher quality with AI"
+      - "Centaur vs Cyborg work patterns identified"
+      - "AI outputs homogeneous without human intervention"
+      - "Tasks outside jagged frontier showed AI failures"
+
+  # RAND Military/Defense Sources
+  - key: rand2025acquisition
+    title: "Acquiring Generative AI for U.S. Department of Defense Influence Activities"
+    authors: ["RAND Corporation"]
+    year: 2025
+    month: 7
+    url: "https://www.rand.org/pubs/research_briefs/RBA3157-1.html"
+    abstract: |
+      Recommends DoD rapidly acquire GenAI but with enterprise-wide oversight. No current
+      enterprisewide plan addresses GenAI implications. Emphasizes need for strategic, flexible
+      acquisition approach with sustainment process.
+    source: policy
+    priority: 8
+    subtopics: ["acquisition-guidance", "standards-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "acquisition", "policy"]
+
+  - key: rand2025rma
+    title: "An AI Revolution in Military Affairs? How Artificial Intelligence Could Reshape Future Warfare"
+    authors: ["RAND Corporation"]
+    year: 2025
+    url: "https://www.rand.org/pubs/working_papers/WRA4004-1.html"
+    abstract: |
+      Evaluates how AI could reshape four military competitions: quantity vs quality, hiding vs
+      finding, centralized vs decentralized C2, cyber offense vs defense. Argues AI-enabled warfare
+      will reward mass, deception, mission command, and network resilience.
+    source: policy
+    priority: 7
+    subtopics: ["acquisition-guidance", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "strategy"]
+
+  - key: rand2024limits
+    title: "Understanding the Limits of Artificial Intelligence for Warfighters: Volume 1, Summary"
+    authors: ["RAND Corporation"]
+    year: 2024
+    month: 1
+    url: "https://www.rand.org/pubs/research_reports/RRA1722-1.html"
+    abstract: |
+      First in five-volume series on AI limitations for military use. KEY FINDINGS: Distributional
+      shift degrades model performance - data must be recent for adaptive threats. AI is "tactically
+      brilliant but strategically naive." Aimed at policymakers and acquisition professionals.
+    source: policy
+    priority: 9
+    subtopics: ["acquisition-guidance", "evaluation-methodology", "jagged-frontier"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "key-reference", "ai-limitations"]
+    key_findings:
+      - "Distributional shift degrades model performance"
+      - "AI tactically brilliant but strategically naive"
+      - "Data must be recent for adaptive threats"
+
+  # IT Productivity Paradox / Economic Studies
+  - key: wharton2025productivity
+    title: "The Projected Impact of Generative AI on Future Productivity Growth"
+    authors: ["Penn Wharton Budget Model"]
+    year: 2025
+    month: 9
+    url: "https://budgetmodel.wharton.upenn.edu/issues/2025/9/8/projected-impact-of-generative-ai-on-future-productivity-growth"
+    abstract: "Economic analysis of generative AI's projected impact on productivity growth."
+    source: academic
+    priority: 7
+    subtopics: ["economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["economics", "projections"]
+
+  - key: brynjolfsson2023jcurve
+    title: "The Productivity J-Curve: How Intangibles Complement General Purpose Technologies"
+    authors: ["Brynjolfsson, Erik", "Rock, Daniel", "Syverson, Chad"]
+    year: 2023
+    url: null
+    abstract: |
+      Explains why early stages of major technology shifts show sluggish/negative productivity.
+      Unlocking value requires massive complementary investments: reorganizing workflows,
+      retraining staff, redesigning systems. These intangibles initially mask technology's
+      true potential. Directly relevant to current AI adoption.
+    source: academic
+    priority: 8
+    subtopics: ["economic-impact", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["economics", "IT-paradox", "complementary-investments"]
+    key_findings:
+      - "Productivity J-curve explains initial negative returns"
+      - "Massive complementary investments required"
+      - "Workflow redesign, retraining, infrastructure needed"
+
+  - key: acemoglu2024skeptic
+    title: "The Simple Macroeconomics of AI"
+    authors: ["Acemoglu, Daron"]
+    year: 2024
+    url: "https://www.nber.org/papers/w32487"
+    abstract: |
+      Nobel laureate argues AI productivity gains will be far smaller and take far longer than
+      optimists think. AI's impact on TFP growth remains small today - 0.01 percentage points
+      in 2025. Important skeptical counterweight to industry claims.
+    source: academic
+    priority: 8
+    subtopics: ["economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["economics", "skeptical-view", "nobel-laureate"]
+
+  # Benchmark Saturation and Evaluation Methodology
+  - key: epoch2025rosetta
+    title: "A Rosetta Stone for AI Benchmarks"
+    authors: ["Epoch AI", "Google DeepMind"]
+    year: 2025
+    url: null
+    abstract: |
+      Novel statistical framework to unify diverse AI benchmarks into singular metric.
+      Addresses benchmark saturation problem. Offers refined perspective on model comparisons
+      across different evaluation types.
+    source: research_org
+    priority: 7
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology", "benchmark-unification"]
+
+  - key: staufer2025deprecation
+    title: "Deprecating Benchmarks: Criteria and Framework"
+    authors: ["Staufer et al."]
+    year: 2025
+    url: "https://arxiv.org/abs/2507.06434"
+    abstract: |
+      Argues evaluations should include information about deprecation circumstances.
+      When is a benchmark no longer useful? Provides framework for benchmark lifecycle
+      management.
+    source: academic
+    priority: 6
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology", "benchmark-lifecycle"]
+
+  - key: jetbrains2025ecosystem
+    title: "The State of Developer Ecosystem 2025: Coding in the Age of AI"
+    authors: ["JetBrains Research"]
+    year: 2025
+    month: 10
+    url: "https://blog.jetbrains.com/research/2025/10/state-of-developer-ecosystem-2025/"
+    abstract: |
+      Large-scale survey on developer AI tool usage. 85% regularly use AI tools, 62% rely on
+      at least one AI assistant. 78% believe AI improves productivity. Stack Overflow survey:
+      only 16.3% said AI made them more productive "to a great extent"; 41.4% said little/no effect.
+    source: industry
+    priority: 7
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["survey", "developer-tools"]
+
+  - key: faros2025paradox
+    title: "The AI Productivity Paradox Research Report"
+    authors: ["Faros AI"]
+    year: 2025
+    url: "https://www.faros.ai/blog/ai-software-engineering"
+    abstract: |
+      75% of engineers use AI tools yet most organizations see no measurable performance gains.
+      AI adoption associated with 9% increase in bugs per developer and 154% increase in average
+      PR size. Important data on organization-level vs individual-level effects.
+    source: industry
+    priority: 8
+    subtopics: ["productivity-studies", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["organizational-effects", "negative-findings"]
+    key_findings:
+      - "75% of engineers use AI tools"
+      - "9% increase in bugs per developer"
+      - "154% increase in average PR size"
+      - "No measurable org-level performance gains"
+
+  - key: hbr2025workslop
+    title: "AI-Generated 'Workslop' Is Destroying Productivity"
+    authors: ["Harvard Business Review"]
+    year: 2025
+    month: 9
+    url: "https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity"
+    abstract: "Analysis of how low-quality AI-generated content creates organizational inefficiency."
+    source: industry
+    priority: 6
+    subtopics: ["productivity-studies", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["negative-effects", "organizational"]
+
+  - key: mit2025adoption
+    title: "MIT Media Lab AI ROI Study"
+    authors: ["MIT Media Lab"]
+    year: 2025
+    url: null
+    abstract: |
+      Found 95% of organizations see no measurable return on AI investment. Important data point
+      on enterprise AI adoption challenges despite high spending ($37B in 2025).
+    source: academic
+    priority: 7
+    subtopics: ["economic-impact", "productivity-studies"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["negative-findings", "enterprise"]
+    key_findings:
+      - "95% of organizations see no measurable ROI"
+      - "42% of AI pilots abandoned by end of 2024 (up from 17%)"
