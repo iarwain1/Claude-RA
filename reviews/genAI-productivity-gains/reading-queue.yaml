@@ -12,50 +12,120 @@ metadata:
 # 6 or below = Background reading
 
 queue:
-  # Highest priority - key empirical studies
-  - key: scale2025remotelabor
-    priority: 10
-    reason: "Key empirical anchor - 2.5% task automation finding illustrates benchmark-utility gap"
-    added: "2025-12-10"
-    status: pending
+  #############################################################################
+  # HIGHEST PRIORITY: Key empirical studies on AI productivity
+  #############################################################################
 
   - key: metr2025developer
     priority: 10
-    reason: "RCT with experienced developers - best methodological rigor for productivity claims"
+    reason: "KEY FINDING: 19% slowdown with AI (contradicts expectations). Best-designed RCT to date."
     added: "2025-12-10"
     status: pending
+    notes: "arXiv:2507.09089 - Full paper available"
+
+  - key: scale2025remotelabor
+    priority: 10
+    reason: "KEY FINDING: 2.5% automation rate. Critical empirical anchor for benchmark-utility gap."
+    added: "2025-12-10"
+    status: pending
+    notes: "arXiv:2510.26787 - PDF available"
 
   - key: openai2025gdpval
-    priority: 9
-    reason: "Multi-task comparative study - important methodology example"
+    priority: 10
+    reason: "Major methodology example - blind comparison, 100x faster/cheaper finding"
     added: "2025-12-10"
     status: pending
+    notes: "arXiv:2510.04374 - PDF available"
 
-  - key: toner2024jaggedness
-    priority: 9
-    reason: "Conceptual foundation for jagged frontier - key framing for evaluation challenges"
-    added: "2025-12-10"
-    status: pending
-
-  - key: metr2025longtasks
-    priority: 9
-    reason: "Methodology for evaluating AI on extended tasks - emerging evaluation paradigm"
+  - key: anthropic2025economic
+    priority: 10
+    reason: "57% augmentation vs 43% automation finding. Real usage data from millions of conversations."
     added: "2025-12-10"
     status: pending
 
   - key: upwork2025upbench
-    priority: 8
-    reason: "Real freelance task evaluation - good ecological validity"
+    priority: 9
+    reason: "70% boost with human+agent. Real freelance work evaluation."
+    added: "2025-12-10"
+    status: pending
+    notes: "PDF directly available"
+
+  #############################################################################
+  # HIGH PRIORITY: Conceptual frameworks
+  #############################################################################
+
+  - key: toner2024jaggedness
+    priority: 9
+    reason: "Key conceptual framework for jagged capability frontier"
     added: "2025-12-10"
     status: pending
 
-  - key: nist2023airisk
-    priority: 8
-    reason: "Standard framework for AI risk management - relevant to acquisition audience"
+  - key: epoch2025economic
+    priority: 9
+    reason: "Explains why benchmarks haven't reflected economic impacts - directly addresses core question"
     added: "2025-12-10"
     status: pending
 
-  # Already read (from previous conversations)
+  #############################################################################
+  # HIGH PRIORITY: Evaluation methodology
+  #############################################################################
+
+  - key: metr2025timehorizons
+    priority: 9
+    reason: "Understanding time horizons critical for evaluation design"
+    added: "2025-12-10"
+    status: pending
+
+  - key: anthropic2025statistical
+    priority: 8
+    reason: "Rigorous statistical methodology for model evaluation"
+    added: "2025-12-10"
+    status: pending
+
+  - key: aisi2024claude35
+    priority: 8
+    reason: "Government pre-deployment evaluation methodology example"
+    added: "2025-12-10"
+    status: pending
+
+  #############################################################################
+  # IMPORTANT: Supporting sources
+  #############################################################################
+
+  - key: metr2025domains
+    priority: 8
+    reason: "Time horizons across domains - informs task selection"
+    added: "2025-12-10"
+    status: pending
+
+  - key: metr2025rd
+    priority: 8
+    reason: "R&D evaluation framework"
+    added: "2025-12-10"
+    status: pending
+
+  - key: nber2025transformative
+    priority: 8
+    reason: "Academic economics perspective on AI productivity"
+    added: "2025-12-10"
+    status: pending
+
+  - key: epoch2025benchmarks
+    priority: 8
+    reason: "Benchmark tracking dashboard for context"
+    added: "2025-12-10"
+    status: pending
+
+  - key: cset2025military
+    priority: 8
+    reason: "Directly relevant to primary audience (military acquisition)"
+    added: "2025-12-10"
+    status: pending
+
+  #############################################################################
+  # ALREADY READ (from previous conversations)
+  #############################################################################
+
   - key: mollick2024interview
     priority: 9
     reason: "Key framing for evaluation approach - 'vibes' problem"
@@ -63,7 +133,7 @@ queue:
     status: done
 
   - key: anthropic2025productivity
-    priority: 10
-    reason: "Key methodology example - productivity estimation approach"
+    priority: 9
+    reason: "Productivity estimation methodology example"
     added: "2025-12-10"
     status: done

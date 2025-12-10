@@ -55,20 +55,43 @@ Located in `input/`:
 
 ## Current Literature Review Status
 
-### References Identified
+### Link Dump Processing (Completed 2025-12-10)
 
-See `references.yaml` for full list. Key papers already known:
+- **Total links extracted**: 1,623 unique URLs from 13 dump files
+- **Links with dates**: 640 (39%)
+- **Tier 1 (Score 9-10)**: 11 links - processed and added to references
+- **Tier 2 (Score 7-8)**: 343 links - to be reviewed
+- **Tier 3 (Score 5-6)**: 586 links - background reading
 
-**Already Read (from previous conversations):**
+### Key Empirical Studies Found (with summaries)
+
+| Study | Date | Key Finding |
+|-------|------|-------------|
+| **METR Developer Study** | Jul 2025 | **19% SLOWER with AI** (contradicts 24% expected speedup) |
+| **Scale Remote Labor Index** | Oct 2025 | **2.5% automation rate** (97.5% failure on professional work) |
+| **OpenAI GDPval** | Sep 2025 | **100x faster/cheaper** but human-assisted only 1.4x faster |
+| **Upwork UpBench** | Nov 2025 | **70% boost** with human+agent collaboration |
+| **Anthropic Economic Index** | 2025 | **57% augmentation vs 43% automation** |
+
+### References Status
+
+See `references.yaml` for full list (24 entries with detailed metadata).
+
+**Tier 1 Critical Papers (10):**
+- METR 2025 Developer Study - arXiv:2507.09089
+- Scale/CAIS Remote Labor Index - arXiv:2510.26787
+- OpenAI GDPval - arXiv:2510.04374
+- Upwork UpBench/HAPI
+- Anthropic Economic Index
+- Toner "Taking Jaggedness Seriously"
+- Mollick "Giving Your AI a Job Interview" (read)
+- Anthropic productivity estimation (read)
+- METR time horizons research
+- Epoch AI benchmark-economic gap analysis
+
+**Already Read:**
 - Mollick "Giving Your AI a Job Interview"
 - Anthropic "Estimating AI productivity gains"
-
-**High Priority (to find and read):**
-- METR developer productivity study (2025)
-- Scale/CAIS Remote Labor Index (2.5% automation finding)
-- OpenAI GDPval (2025)
-- Helen Toner "Taking Jaggedness Seriously"
-- METR "Measuring AI Ability to Complete Long Tasks"
 
 ### Subtopics Defined
 

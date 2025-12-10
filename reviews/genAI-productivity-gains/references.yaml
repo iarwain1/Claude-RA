@@ -9,15 +9,195 @@ metadata:
   primary_audience: "Military acquisition decision-makers"
   secondary_audience: "Testing & Evaluation (T&E) experts for military systems"
 
-# References already identified in previous conversations
 references:
-  # Key studies mentioned in handoff document
+  #############################################################################
+  # TIER 1: CRITICAL EMPIRICAL STUDIES (Score 9-10)
+  #############################################################################
+
+  - key: metr2025developer
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    authors: ["METR"]
+    year: 2025
+    month: 7
+    url: "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/"
+    arxiv: "https://arxiv.org/abs/2507.09089"
+    abstract: |
+      RCT with 16 experienced open-source developers, 246 tasks. KEY FINDING: AI tools made
+      developers 19% SLOWER, despite developers expecting 24% speedup and believing (even after)
+      they got 20% speedup. 3/4 participants saw reduced performance. Developers reported AI
+      behaved like inexperienced team member, spent 9% of time reviewing AI outputs + 4% waiting.
+      Tools: primarily Cursor Pro with Claude 3.5/3.7 Sonnet.
+    source: research_org
+    priority: 10
+    subtopics: ["productivity-studies", "human-ai-teaming", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "empirical-anchor", "RCT", "negative-finding"]
+    key_findings:
+      - "19% slowdown with AI tools (contradicts expectations)"
+      - "Developers believed they got 20% speedup despite actual slowdown"
+      - "75% of participants saw reduced performance"
+      - "Expert forecasters predicted 38-39% speedup"
+
+  - key: scale2025remotelabor
+    title: "Remote Labor Index: Measuring AI Automation of Remote Work"
+    authors: ["Scale AI", "Center for AI Safety (CAIS)"]
+    year: 2025
+    month: 10
+    url: "https://www.remotelabor.ai/"
+    arxiv: "https://arxiv.org/abs/2510.26787"
+    pdf: "https://static.scale.com/uploads/654197dc94d34f66c0f5184e/Remote_Labor_Index%20(4).pdf"
+    abstract: |
+      First benchmark testing AI agents on paid freelance work (240 projects, 23 categories,
+      6,000+ hours, $140K+). KEY FINDING: Best agent (Manus) achieved only 2.5% automation rate.
+      97.5% failure rate shows AI not capable of autonomously performing complex professional work.
+      Failures: 45.6% quality issues, 35.7% incomplete/malformed deliverables, 17.6% technical issues.
+      Success areas: audio tasks, image generation, report writing, data retrieval.
+    source: research_org
+    priority: 10
+    subtopics: ["productivity-studies", "agent-evaluation", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "empirical-anchor", "benchmark-utility-gap"]
+    key_findings:
+      - "2.5% automation rate (highest performing agent)"
+      - "97.5% failure rate on professional work"
+      - "Median project: 11.5 hours human time, $200 value"
+      - "AI succeeds on generative tasks, fails on complex editing/multi-step specs"
+
+  - key: openai2025gdpval
+    title: "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks"
+    authors: ["OpenAI"]
+    year: 2025
+    month: 9
+    url: "https://openai.com/index/gdpval/"
+    arxiv: "https://arxiv.org/abs/2510.04374"
+    pdf: "https://cdn.openai.com/pdf/d5eb7428-c4e9-4a33-bd86-86dd4bcf12ce/GDPval.pdf"
+    abstract: |
+      Evaluation suite covering 9 sectors, 44 occupations ($3T annually). Tasks created by
+      professionals averaging 14 years experience. Uses blind comparison methodology.
+      KEY FINDINGS: Frontier models 100x faster and 100x cheaper than industry experts.
+      Human-assisted workflows 1.4x faster, 1.6x cheaper. Performance doubled from GPT-4o to GPT-5.
+      Claude Opus 4.1 best on aesthetics; GPT-5 best on accuracy.
+    source: ai_lab
+    priority: 10
+    subtopics: ["productivity-studies", "evaluation-methodology", "benchmarks"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "methodology-example"]
+    key_findings:
+      - "100x faster and 100x cheaper than human experts"
+      - "Human+AI workflows 1.4x faster, 1.6x cheaper"
+      - "Humans averaged 6-7 hours ($361) per task"
+      - "Performance doubled GPT-4o → GPT-5"
+
+  - key: upwork2025upbench
+    title: "UpBench: A Dynamically Evolving Real-World Benchmark for AI Agents"
+    authors: ["Upwork"]
+    year: 2025
+    month: 11
+    url: "https://www.upwork.com/static/webflow/assets/webflow-human-agent-productivity-index/upbench_paper.pdf"
+    related_url: "https://investors.upwork.com/news-releases/news-release-details/upwork-humanagent-productivity-index-reveals-70-boost-work"
+    abstract: |
+      Real-world benchmark using paid Upwork projects. Human+Agent Productivity Index (HAPI)
+      findings: Human+agent collaboration increased project completion by up to 70% vs agents alone.
+      Claude Sonnet 4: 64%→93% completion with human feedback (data science). GPT-5: 30%→50%
+      (engineering). Web dev highest standalone: 68%. Expert freelancers (100% satisfaction,
+      top-rated, $1M+ cumulative earnings) evaluate outputs.
+    source: industry
+    priority: 9
+    subtopics: ["productivity-studies", "human-ai-teaming", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "real-world-data"]
+    key_findings:
+      - "70% boost in completion with human+agent vs agent alone"
+      - "Human feedback transforms agent performance (64%→93%)"
+      - "Orders of magnitude time savings vs human alone"
+      - "Per-criterion expert feedback enables fine-grained analysis"
+
+  - key: anthropic2025economic
+    title: "The Anthropic Economic Index"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://www.anthropic.com/news/the-anthropic-economic-index"
+    related_url: "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report"
+    abstract: |
+      Analysis of millions of anonymized Claude.ai conversations revealing AI integration into
+      real-world tasks. KEY FINDINGS: 57% augmentation vs 43% automation. 36% of occupations
+      use AI in 25%+ of tasks; 4% use it in 75%+ of tasks. Enterprise API shows 77% automation
+      rate vs consumer's 50%. Software dev and technical writing dominate usage. Open-sourced
+      dataset for researchers.
+    source: ai_lab
+    priority: 10
+    subtopics: ["productivity-studies", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "usage-data"]
+    key_findings:
+      - "57% augmentation vs 43% automation"
+      - "Enterprise API: 77% automation rate"
+      - "Directive automation grew from 27% to 39% in 8 months"
+      - "Educational instruction tasks grew 40%"
+
+  - key: anthropic2025productivity
+    title: "Estimating AI productivity gains from Claude conversations"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://assets.anthropic.com/m/28fda2ad148e2bf5/original/Estimating-AI-productivity-gains-from-Claude-conversations.pdf"
+    abstract: |
+      Uses Claude to estimate task completion times from 100K real conversations. 80% estimated
+      time savings. Validated against JIRA tickets. Acknowledges limitations of self-report and
+      selection bias.
+    source: ai_lab
+    priority: 9
+    subtopics: ["productivity-studies", "evaluation-methodology"]
+    read: true
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "methodology-example"]
+
+  #############################################################################
+  # TIER 1: KEY CONCEPTUAL/FRAMEWORK PAPERS
+  #############################################################################
+
+  - key: toner2024jaggedness
+    title: "Taking Jaggedness Seriously"
+    authors: ["Toner, Helen"]
+    year: 2024
+    url: "https://helentoner.substack.com/p/taking-jaggedness-seriously"
+    abstract: |
+      Conceptual analysis of the "jagged capability frontier" (term from Mollick/Karpathy).
+      Tasks that seem similarly difficult to humans vary wildly in AI capability - some easy,
+      some borderline, some impossible. KEY IMPLICATIONS: 1) Search space of possible futures
+      explodes, 2) AI-for-good matters more, 3) Centaurs (human-AI combinations) may persist
+      meaningfully. Many expect jaggedness to decrease but this may not happen.
+    source: blog
+    priority: 9
+    subtopics: ["jagged-frontier", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "conceptual-framework"]
+    key_findings:
+      - "Jagged frontier means similar-seeming tasks have wildly different AI capabilities"
+      - "Jaggedness may persist, not necessarily decrease over time"
+      - "Centaur (human+AI) combinations may be meaningful long-term"
+
   - key: mollick2024interview
     title: "Giving Your AI a Job Interview"
     authors: ["Mollick, Ethan"]
     year: 2024
     url: "https://www.oneusefulthing.org/p/giving-your-ai-a-job-interview"
-    abstract: "Discussion of benchmark limitations; 'vibes' matter but aren't rigorous; organizations need to 'interview' AI for their specific context"
+    abstract: |
+      Discussion of benchmark limitations; 'vibes' matter but aren't rigorous; organizations
+      need to 'interview' AI for their specific context. Introduces practical evaluation
+      approaches for organizations.
     source: blog
     priority: 9
     subtopics: ["evaluation-methodology", "benchmarks"]
@@ -26,116 +206,287 @@ references:
     added: "2025-12-10"
     tags: ["key-reference", "vibes-problem"]
 
-  - key: anthropic2025productivity
-    title: "Estimating AI productivity gains from Claude conversations"
-    authors: ["Anthropic"]
-    year: 2025
-    url: "https://assets.anthropic.com/m/28fda2ad148e2bf5/original/Estimating-AI-productivity-gains-from-Claude-conversations.pdf"
-    abstract: "Uses Claude to estimate task completion times from 100K real conversations; 80% estimated time savings; validated against JIRA tickets; acknowledges limitations"
-    source: web
-    priority: 10
-    subtopics: ["productivity-studies", "evaluation-methodology"]
-    read: true
-    notes_file: null
-    added: "2025-12-10"
-    tags: ["key-reference", "productivity-measurement"]
+  #############################################################################
+  # TIER 1: EVALUATION METHODOLOGY SOURCES
+  #############################################################################
 
-  # High-priority papers to fetch (from handoff)
-  - key: metr2025longtasks
-    title: "Measuring AI Ability to Complete Long Tasks"
+  - key: metr2025timehorizons
+    title: "Research Update: Towards Reconciling Slowdown with Time Horizons"
     authors: ["METR"]
     year: 2025
-    url: null  # To be found
-    abstract: "METR methodology for evaluating AI on extended tasks"
-    source: web
+    month: 8
+    url: "https://metr.org/blog/2025-08-12-research-update-towards-reconciling-slowdown-with-time-horizons/"
+    abstract: |
+      METR research update on AI capability slowdown vs. time horizons for task completion.
+      Analyzes how AI performance varies with task duration and complexity.
+    source: research_org
     priority: 9
     subtopics: ["evaluation-methodology", "agent-evaluation"]
     read: false
     notes_file: null
     added: "2025-12-10"
-    tags: ["to-find"]
+    tags: ["methodology"]
 
-  - key: metr2025developer
-    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+  - key: metr2025domains
+    title: "How Does Time Horizon Vary Across Domains?"
     authors: ["METR"]
     year: 2025
-    url: null  # To be found
-    abstract: "RCT with experienced developers showing mixed results; heterogeneous effects"
-    source: web
-    priority: 10
-    subtopics: ["productivity-studies", "human-ai-teaming"]
-    read: false
-    notes_file: null
-    added: "2025-12-10"
-    tags: ["key-reference", "to-find"]
-
-  - key: openai2025gdpval
-    title: "GDPval"
-    authors: ["OpenAI"]
-    year: 2025
-    url: null  # To be found
-    abstract: "Multi-task comparative study with varying results by task category; lab conditions"
-    source: web
-    priority: 9
-    subtopics: ["productivity-studies", "evaluation-methodology"]
-    read: false
-    notes_file: null
-    added: "2025-12-10"
-    tags: ["key-reference", "to-find"]
-
-  - key: scale2025remotelabor
-    title: "Remote Labor Index"
-    authors: ["Scale AI", "CAIS"]
-    year: 2025
-    url: null  # To be found
-    abstract: "~2.5% task automation finding on real freelance projects - key empirical anchor for benchmark-utility gap"
-    source: web
-    priority: 10
-    subtopics: ["productivity-studies", "benchmarks"]
-    read: false
-    notes_file: null
-    added: "2025-12-10"
-    tags: ["key-reference", "empirical-anchor", "to-find"]
-
-  - key: upwork2025upbench
-    title: "UpBench"
-    authors: ["Upwork"]
-    year: 2025
-    url: null  # To be found
-    abstract: "Real freelance task evaluation"
-    source: web
+    month: 7
+    url: "https://metr.org/blog/2025-07-14-how-does-time-horizon-vary-across-domains/"
+    abstract: |
+      Analysis of how AI time horizons (how long AI can work autonomously) vary across
+      different domains and task types.
+    source: research_org
     priority: 8
-    subtopics: ["productivity-studies", "evaluation-methodology"]
+    subtopics: ["evaluation-methodology", "agent-evaluation"]
     read: false
     notes_file: null
     added: "2025-12-10"
-    tags: ["to-find"]
+    tags: ["methodology"]
 
-  - key: toner2024jaggedness
-    title: "Taking Jaggedness Seriously"
-    authors: ["Toner, Helen"]
+  - key: aisi2024claude35
+    title: "Pre-deployment evaluation of Anthropic's upgraded Claude 3.5 Sonnet"
+    authors: ["UK AISI", "US AISI"]
     year: 2024
-    url: null  # To be found
-    abstract: "Analysis of jagged capability frontier and implications for AI evaluation"
-    source: web
-    priority: 9
-    subtopics: ["jagged-frontier", "evaluation-methodology"]
+    month: 11
+    url: "https://www.aisi.gov.uk/blog/pre-deployment-evaluation-of-anthropics-upgraded-claude-3-5-sonnet"
+    related_url: "https://www.nist.gov/news-events/news/2024/11/pre-deployment-evaluation-anthropics-upgraded-claude-35-sonnet"
+    abstract: |
+      First joint US-UK pre-deployment evaluation of frontier AI. Tested biological capabilities,
+      cyber capabilities, software/AI development, safeguard efficacy. Found safeguards can be
+      routinely circumvented. Model solved 36% of cybersecurity apprentice-level challenges.
+    source: government
+    priority: 8
+    subtopics: ["evaluation-methodology", "risk-management", "standards-frameworks"]
     read: false
     notes_file: null
     added: "2025-12-10"
-    tags: ["key-reference", "to-find"]
+    tags: ["government-eval", "pre-deployment"]
 
-  # Standards and frameworks
+  #############################################################################
+  # TIER 2: IMPORTANT SUPPORTING SOURCES
+  #############################################################################
+
+  - key: epoch2025benchmarks
+    title: "AI Benchmarking Dashboard"
+    authors: ["Epoch AI"]
+    year: 2025
+    url: "https://epoch.ai/benchmarks"
+    abstract: "Comprehensive tracking of AI benchmark performance over time."
+    source: research_org
+    priority: 8
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["dashboard", "tracking"]
+
+  - key: epoch2025economic
+    title: "The Real Reason AI Benchmarks Haven't Reflected Economic Impacts"
+    authors: ["Epoch AI"]
+    year: 2025
+    url: "https://epoch.ai/gradient-updates/the-real-reason-ai-benchmarks-havent-reflected-economic-impacts"
+    abstract: "Analysis of why benchmark improvements haven't translated to economic productivity gains."
+    source: research_org
+    priority: 9
+    subtopics: ["benchmarks", "economic-impact"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["benchmark-utility-gap"]
+
+  - key: epoch2025swebench
+    title: "What Skills Does SWE-Bench Verified Evaluate?"
+    authors: ["Epoch AI"]
+    year: 2025
+    url: "https://epoch.ai/blog/what-skills-does-swe-bench-verified-evaluate"
+    abstract: "Detailed analysis of what the popular SWE-Bench coding benchmark actually measures."
+    source: research_org
+    priority: 7
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["benchmark-analysis"]
+
+  - key: metr2025rd
+    title: "Evaluating R&D Capabilities of LLMs"
+    authors: ["METR"]
+    year: 2024
+    month: 11
+    url: "https://metr.org/blog/2024-11-22-evaluating-r-d-capabilities-of-llms/"
+    abstract: "Framework for evaluating AI R&D capabilities, relevant to understanding AI's potential for accelerating AI development."
+    source: research_org
+    priority: 8
+    subtopics: ["evaluation-methodology", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology", "ai-rd"]
+
+  - key: metr2025kernel
+    title: "Measuring Automated Kernel Engineering"
+    authors: ["METR"]
+    year: 2025
+    month: 2
+    url: "https://metr.org/blog/2025-02-14-measuring-automated-kernel-engineering/"
+    abstract: "Evaluation of AI capabilities in kernel engineering tasks."
+    source: research_org
+    priority: 7
+    subtopics: ["evaluation-methodology", "productivity-studies"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology"]
+
+  - key: anthropic2025statistical
+    title: "A Statistical Approach to Model Evaluations"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://www.anthropic.com/research/statistical-approach-to-model-evals"
+    abstract: "Methodology for rigorous statistical analysis of model evaluation results."
+    source: ai_lab
+    priority: 8
+    subtopics: ["evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["methodology", "statistics"]
+
+  - key: anthropic2025agents
+    title: "Building Effective Agents"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://www.anthropic.com/research/building-effective-agents"
+    abstract: "Best practices and design patterns for building AI agents."
+    source: ai_lab
+    priority: 7
+    subtopics: ["agent-evaluation", "acquisition-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["practical-guidance"]
+
+  - key: nber2025transformative
+    title: "A Research Agenda for the Economics of Transformative AI"
+    authors: ["NBER"]
+    year: 2025
+    url: "https://www.nber.org/papers/w34256"
+    abstract: "NBER research agenda on economics of transformative AI, including productivity measurement frameworks."
+    source: academic
+    priority: 8
+    subtopics: ["economic-impact", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["academic", "economics"]
+
+  #############################################################################
+  # STANDARDS AND FRAMEWORKS
+  #############################################################################
+
   - key: nist2023airisk
     title: "AI Risk Management Framework"
     authors: ["NIST"]
     year: 2023
     url: "https://www.nist.gov/itl/ai-risk-management-framework"
-    abstract: "NIST framework for AI risk management"
-    source: web
+    abstract: "NIST framework for AI risk management."
+    source: government
     priority: 8
     subtopics: ["risk-management", "standards-frameworks"]
     read: false
     notes_file: null
     added: "2025-12-10"
     tags: ["framework", "standards"]
+
+  - key: aisi2025safeguards
+    title: "Principles for Safeguard Evaluation"
+    authors: ["UK AISI"]
+    year: 2025
+    url: "https://www.aisi.gov.uk/work/principles-for-safeguard-evaluation"
+    abstract: "AISI principles for evaluating AI safeguards."
+    source: government
+    priority: 7
+    subtopics: ["evaluation-methodology", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["government-eval"]
+
+  - key: cset2025military
+    title: "AI for Military Decision-Making"
+    authors: ["CSET Georgetown"]
+    year: 2025
+    url: "https://cset.georgetown.edu/publication/ai-for-military-decision-making/"
+    abstract: "Analysis of AI applications in military decision-making contexts."
+    source: policy
+    priority: 8
+    subtopics: ["acquisition-guidance", "risk-management"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["military", "policy"]
+
+  #############################################################################
+  # TO PROCESS: HIGH-PRIORITY ARXIV PAPERS (from link dumps, Dec 2025)
+  #############################################################################
+
+  - key: arxiv2512_01786
+    title: "arXiv:2512.01786"
+    authors: ["Unknown"]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.01786"
+    abstract: "To be fetched and categorized"
+    source: academic
+    priority: 7
+    subtopics: ["general"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["to-process", "recent"]
+
+  - key: arxiv2510_26787
+    title: "Remote Labor Index: Measuring AI Automation of Remote Work"
+    authors: ["Scale AI", "CAIS"]
+    year: 2025
+    month: 10
+    url: "https://arxiv.org/abs/2510.26787"
+    abstract: "ArXiv version of Remote Labor Index paper"
+    source: academic
+    priority: 10
+    subtopics: ["productivity-studies", "agent-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "duplicate-of-scale2025remotelabor"]
+
+  - key: arxiv2507_09089
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    authors: ["METR"]
+    year: 2025
+    month: 7
+    url: "https://arxiv.org/abs/2507.09089"
+    abstract: "ArXiv version of METR developer productivity study"
+    source: academic
+    priority: 10
+    subtopics: ["productivity-studies", "human-ai-teaming"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "duplicate-of-metr2025developer"]
+
+  - key: arxiv2510_04374
+    title: "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks"
+    authors: ["OpenAI"]
+    year: 2025
+    month: 10
+    url: "https://arxiv.org/abs/2510.04374"
+    abstract: "ArXiv version of OpenAI GDPval paper"
+    source: academic
+    priority: 10
+    subtopics: ["productivity-studies", "evaluation-methodology"]
+    read: false
+    notes_file: null
+    added: "2025-12-10"
+    tags: ["key-reference", "duplicate-of-openai2025gdpval"]
