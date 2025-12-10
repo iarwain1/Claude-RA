@@ -221,12 +221,24 @@ subtopics:
 
 ## Available Slash Commands
 
+### Setup & Status
 - `/new-review <name>` - Create a new review from templates
-- `/search <query>` - Search for papers and add to references
-- `/add-paper <url>` - Add a paper from URL
+- `/status` - Show review progress and statistics
+
+### Gathering Sources
+- `/search <query>` - Search academic databases for papers
+- `/add-paper <url>` - Add a single paper from URL
+- `/process-sources <file>` - Batch process a file of URLs/links you've collected
+- `/scan-blogs <url>` - Scan blog/newsletter archives for relevant papers
+- `/scan-notes <folder>` - Scan Obsidian vault or notes folder for references
+- `/find-citing <paper>` - Find papers that cite a given reference
+
+### Reading & Analysis
 - `/read-next` - Read the next paper in queue
 - `/summarize <key>` - Summarize a specific paper
-- `/status` - Show review progress
+- `/organize` - Organize references by subtopics
+
+### Output
 - `/synthesize` - Generate literature review report
 - `/export-bib` - Export references as BibTeX
 

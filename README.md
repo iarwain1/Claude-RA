@@ -77,15 +77,32 @@ Or just chat naturally:
 
 ## Slash Commands
 
+### Setup & Status
 | Command | Description |
 |---------|-------------|
 | `/new-review <name>` | Create a new literature review |
-| `/search <query>` | Search for papers and add to references |
-| `/add-paper <url>` | Add a paper from URL |
+| `/status` | Show review progress and statistics |
+
+### Gathering Sources
+| Command | Description |
+|---------|-------------|
+| `/search <query>` | Search academic databases for papers |
+| `/add-paper <url>` | Add a single paper from URL |
+| `/process-sources <file>` | Batch process a file of URLs you've collected |
+| `/scan-blogs <url>` | Scan blog/newsletter archives for papers |
+| `/scan-notes <folder>` | Scan Obsidian vault or notes folder |
+| `/find-citing <paper>` | Find papers that cite a reference |
+
+### Reading & Analysis
+| Command | Description |
+|---------|-------------|
 | `/read-next` | Read and summarize the next paper in queue |
 | `/summarize <key>` | Summarize a specific paper |
-| `/status` | Show review progress and statistics |
 | `/organize` | Organize references by subtopics |
+
+### Output
+| Command | Description |
+|---------|-------------|
 | `/synthesize` | Generate literature review report |
 | `/export-bib` | Export references as BibTeX |
 
@@ -115,15 +132,19 @@ Claude-Literature-Review-Agent/
 │
 ├── .claude/
 │   ├── commands/                # Slash commands
-│   │   ├── new-review.md
-│   │   ├── search.md
-│   │   ├── add-paper.md
-│   │   ├── read-next.md
-│   │   ├── summarize.md
-│   │   ├── status.md
-│   │   ├── organize.md
-│   │   ├── synthesize.md
-│   │   └── export-bib.md
+│   │   ├── new-review.md        # Create new review
+│   │   ├── search.md            # Search databases
+│   │   ├── add-paper.md         # Add single paper
+│   │   ├── process-sources.md   # Batch process URLs
+│   │   ├── scan-blogs.md        # Scan blog archives
+│   │   ├── scan-notes.md        # Scan notes folders
+│   │   ├── find-citing.md       # Citation chaining
+│   │   ├── read-next.md         # Read next paper
+│   │   ├── summarize.md         # Summarize paper
+│   │   ├── status.md            # Review status
+│   │   ├── organize.md          # Organize by subtopic
+│   │   ├── synthesize.md        # Generate report
+│   │   └── export-bib.md        # Export BibTeX
 │   └── skills/                  # Research methodologies
 │       ├── systematic-review/
 │       ├── paper-analysis/
@@ -203,24 +224,28 @@ See `reviews/example/` for a complete example of a literature review on "LLM Age
 ## Workflow
 
 ### 1. Gather Sources
-- Use `/search` to find papers on arXiv, Google Scholar
-- Use `/add-paper` to add specific papers by URL
-- Ask Claude to process URL lists, blogs, or newsletters
+- `/search` - Find papers on arXiv, Google Scholar
+- `/add-paper` - Add specific papers by URL
+- `/process-sources` - Batch process your collected URL lists
+- `/scan-blogs` - Extract papers from blog/newsletter archives
+- `/scan-notes` - Find references in your Obsidian vault
+- `/find-citing` - Follow citation trails from key papers
 
 ### 2. Organize
-- Use `/organize` to group references by theme
+- `/organize` - Group references by theme
 - Claude identifies subtopics and tags papers
 - Update priorities based on relevance
 
 ### 3. Read & Note
-- Use `/read-next` to read papers from queue
+- `/read-next` - Read papers from queue (highest priority first)
 - Claude creates structured notes in `notes/paper-summaries/`
-- Follow citation trails to find more papers
+- Uses `paper-analysis` skill for critical evaluation
+- Discovers new papers to add from Related Work sections
 
 ### 4. Synthesize
-- Use `/synthesize` to generate the literature review
-- Export with `/export-bib` for citations
-- Iterate and refine
+- `/synthesize` - Generate the literature review report
+- `/export-bib` - Export citations
+- Iterate: go back to gathering if gaps are found
 
 ## Security Note
 
