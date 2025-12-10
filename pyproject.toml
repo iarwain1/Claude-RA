@@ -1,14 +1,14 @@
 [project]
 name = "literature-review-agent"
-version = "0.1.0"
-description = "An AI-powered literature review research assistant"
+version = "0.2.0"
+description = "An AI-powered literature review research assistant using Claude Agent SDK"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
     {name = "Literature Review Agent Team"}
 ]
-keywords = ["ai", "research", "literature-review", "agent", "academic"]
+keywords = ["ai", "research", "literature-review", "agent", "academic", "claude-agent-sdk"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -21,7 +21,9 @@ classifiers = [
 ]
 
 dependencies = [
+    "claude-code-sdk>=0.1.0",
     "anthropic>=0.39.0",
+    "anyio>=4.0.0",
     "httpx>=0.27.0",
     "beautifulsoup4>=4.12.0",
     "lxml>=5.0.0",

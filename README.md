@@ -1,39 +1,44 @@
 # Literature Review Agent
 
-An AI-powered research assistant for conducting comprehensive literature reviews. This agent acts as your personal Research Assistant, handling the tedious aspects of literature review while keeping you informed and in control throughout the process.
+An AI-powered research assistant for conducting comprehensive literature reviews, built on the **Claude Agent SDK**. This agent acts as your personal Research Assistant, autonomously handling research tasks while communicating with you throughout the process.
+
+## Built on Claude Agent SDK
+
+This project demonstrates how to build a sophisticated research agent using the Claude Agent SDK. The agent uses **custom MCP tools** to:
+
+- Search academic databases (arXiv, Semantic Scholar)
+- Process bookmarks, blogs, and local files
+- Manage references with intelligent deduplication
+- Take structured research notes
+- Generate reports and exports
+
+The SDK's agentic loop handles tool selection and execution, allowing the agent to autonomously decide which tools to use based on your requests.
 
 ## Features
 
 ### Reference Gathering
-- **URL Processing**: Extract and follow links from bookmarks, markdown files, or plain text URL lists
-- **Blog/Newsletter Scanning**: Crawl RSS feeds and blog archives for relevant content
 - **Academic Search**: Automated searches on arXiv and Semantic Scholar
+- **URL Processing**: Extract and follow links from bookmarks and markdown files
+- **Blog/Newsletter Scanning**: Crawl RSS feeds and extract paper links
 - **Local File Processing**: Parse Obsidian vaults, PDFs, and note collections
-- **Citation Following**: Discover new references by following citation trails
+- **Citation Following**: Discover new references through citation trails
 
-### Organization & Prioritization
-- **Intelligent Tagging**: AI-powered categorization into subtopics
-- **Relevance Ranking**: Automatic prioritization based on your research questions
-- **Duplicate Detection**: Smart deduplication across multiple sources
-- **Reading Queue**: Organized queue sorted by priority
+### Intelligent Organization
+- **AI-Powered Prioritization**: Claude evaluates relevance and sets priorities
+- **Subtopic Discovery**: Automatically identifies themes in the literature
+- **Smart Deduplication**: Recognizes duplicates across sources
+- **Reading Queue**: Prioritized list of papers to read
 
 ### Analysis & Note-Taking
 - **Document Reading**: Full-text extraction from PDFs and web pages
-- **Key Point Extraction**: AI-powered identification of important findings
-- **Automated Notes**: Generate structured notes while reading
+- **Automated Notes**: Generate structured notes with key findings
 - **Quote Capture**: Save important quotes with context
+- **Connection Discovery**: Identify links between papers
 
 ### Synthesis & Reporting
-- **Subtopic Summaries**: AI-generated summaries for each research area
-- **Full Report Generation**: Comprehensive literature review documents
-- **Export Formats**: Markdown, BibTeX, and more
-- **Progress Tracking**: Real-time statistics and progress reports
-
-### Interactive Communication
-- **Continuous Updates**: Regular progress notifications
-- **Question Prompts**: Agent asks for clarification when needed
-- **Insight Sharing**: Highlights particularly interesting findings
-- **Feedback Integration**: Adjusts based on your responses
+- **Progress Reports**: Real-time statistics and status
+- **Subtopic Summaries**: AI-generated summaries for each area
+- **Export Formats**: Markdown and BibTeX
 
 ## Installation
 
@@ -43,69 +48,190 @@ An AI-powered research assistant for conducting comprehensive literature reviews
 
 ### Setup
 
-1. Clone the repository:
 ```bash
+# Clone the repository
 git clone https://github.com/yourusername/Claude-Literature-Review-Agent.git
 cd Claude-Literature-Review-Agent
-```
 
-2. Create a virtual environment:
-```bash
+# Create virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
 
-3. Install the package:
-```bash
+# Install the package
 pip install -e .
-```
 
-4. Set up your API key:
-```bash
+# Set up your API key
 cp .env.example .env
 # Edit .env and add your ANTHROPIC_API_KEY
 ```
 
 ## Quick Start
 
-### Interactive Mode (Recommended for First-Time Users)
+### Interactive Mode (Recommended)
 
 ```bash
 lit-review interactive
 ```
 
-This launches a guided session where the agent will:
-1. Ask about your research topic
-2. Help you configure sources
-3. Guide you through each phase of the review
+This launches an interactive session where you can chat with the agent:
 
-### Command-Line Mode
+```
+You: Search arXiv for papers on LLM agents published in 2024
+  [Using: search_arxiv]
+
+Found 20 papers on arXiv:
+- Agents: An Open-source Framework for Autonomous Language Agents
+  Park et al. (2024)
+  arXiv: 2309.07870
+  ...
+
+Added 18 new references to collection.
+
+You: Show me the reading queue
+  [Using: get_reading_queue]
+
+Reading queue (5 papers):
+1. [HIGH] A Survey on Large Language Model based Autonomous Agents
+   ID: abc123 | Wang et al.
+...
+```
+
+### Single Query Mode
 
 ```bash
-# Start a new project
-lit-review new "AI Agents and Autonomous Systems"
+# Send a single query
+lit-review query "Search Semantic Scholar for transformer architecture papers"
 
-# Gather references from configured sources
-lit-review gather
+# Gather references on a topic
+lit-review gather "Large Language Model Agents"
 
-# Organize and prioritize references
-lit-review organize
-
-# Read and analyze papers
-lit-review read --count 10
-
-# Generate the final report
+# Generate a report
 lit-review report
+```
 
-# Check project status
-lit-review status
+### CLI Commands
+
+```bash
+lit-review interactive    # Interactive chat mode
+lit-review query "..."    # Single query
+lit-review gather "..."   # Gather references on topic
+lit-review organize       # Organize and prioritize
+lit-review read -n 5      # Read top 5 papers from queue
+lit-review report         # Generate report
+lit-review status         # Show statistics
+```
+
+## Architecture
+
+The agent is built using the Claude Agent SDK with custom MCP tools:
+
+```
+┌─────────────────────────────────────────────────────┐
+│                   Claude Agent SDK                   │
+│  ┌─────────────────────────────────────────────┐   │
+│  │              Agent Loop                      │   │
+│  │  (Tool selection, execution, reasoning)      │   │
+│  └─────────────────────────────────────────────┘   │
+│                        │                            │
+│  ┌─────────────────────┴───────────────────────┐   │
+│  │           Custom MCP Tools                   │   │
+│  ├──────────────────┬──────────────────────────┤   │
+│  │ Reference Tools  │ Search Tools             │   │
+│  │ - add_reference  │ - search_arxiv           │   │
+│  │ - search_refs    │ - search_semantic_scholar│   │
+│  │ - update_priority│ - get_paper_citations    │   │
+│  │ - get_queue      │ - get_recommendations    │   │
+│  ├──────────────────┼──────────────────────────┤   │
+│  │ Note Tools       │ Source Tools             │   │
+│  │ - create_note    │ - process_url_file       │   │
+│  │ - search_notes   │ - process_blog_feed      │   │
+│  │ - get_findings   │ - scan_local_folder      │   │
+│  ├──────────────────┼──────────────────────────┤   │
+│  │ Subtopic Tools   │ Report Tools             │   │
+│  │ - create_subtopic│ - generate_progress      │   │
+│  │ - add_finding    │ - export_bibtex          │   │
+│  │ - set_summary    │ - export_markdown        │   │
+│  └──────────────────┴──────────────────────────┘   │
+└─────────────────────────────────────────────────────┘
+                         │
+┌────────────────────────┴────────────────────────────┐
+│                   Data Layer                         │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐   │
+│  │ References  │ │    Notes    │ │  Subtopics  │   │
+│  │   Manager   │ │   Manager   │ │   Manager   │   │
+│  └─────────────┘ └─────────────┘ └─────────────┘   │
+└─────────────────────────────────────────────────────┘
+```
+
+### Project Structure
+
+```
+src/literature_review_agent/
+├── sdk_agent.py          # Main SDK-based agent
+├── sdk_tools/            # Custom MCP tools
+│   ├── server.py         # MCP server creation
+│   ├── reference_tools.py
+│   ├── note_tools.py
+│   ├── search_tools.py
+│   ├── source_tools.py
+│   ├── subtopic_tools.py
+│   └── report_tools.py
+├── collectors/           # Data source collectors
+├── managers/             # Data management
+├── processors/           # Document processing
+├── hooks.py              # Agent hooks
+├── models.py             # Data models
+└── cli.py                # CLI interface
+```
+
+## Python API
+
+```python
+import anyio
+from literature_review_agent import SDKLiteratureReviewAgent
+
+async def main():
+    agent = SDKLiteratureReviewAgent()
+
+    # Send queries to the agent
+    response = await agent.query(
+        "Search arXiv for papers on transformer architectures and "
+        "add the most relevant ones to the collection"
+    )
+    print(response)
+
+    # Or use the higher-level methods
+    await agent.gather_references(
+        topic="Large Language Model Agents",
+        on_progress=print
+    )
+
+    await agent.organize_references()
+    await agent.read_papers(count=5)
+    await agent.generate_report()
+
+anyio.run(main)
+```
+
+### Custom Callbacks
+
+```python
+def on_message(msg: str):
+    print(f"Agent: {msg}")
+
+def on_tool_use(tool_name: str, args: dict):
+    print(f"Using tool: {tool_name}")
+
+response = await agent.query(
+    "Your research query",
+    on_message=on_message,
+    on_tool_use=on_tool_use,
+)
 ```
 
 ## Configuration
 
-### Project Configuration
-
-Create a `config.yaml` file (see `config/default.yaml` for template):
+Create a `config.yaml` file:
 
 ```yaml
 llm:
@@ -116,6 +242,7 @@ search:
   arxiv_enabled: true
   arxiv_max_results: 50
   semantic_scholar_enabled: true
+  semantic_scholar_max_results: 50
 
 processing:
   extract_citations: true
@@ -123,200 +250,58 @@ processing:
 
 communication:
   update_frequency: "regular"
-  ask_before_major_actions: true
 ```
 
-### Source Types
+## Available Tools
 
-#### URL Lists
-Plain text or markdown files containing URLs:
-```
-# My Research Links
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-- [BERT Paper](https://arxiv.org/abs/1810.04805)
-https://example.com/interesting-paper
-```
+The agent has access to 25+ specialized tools:
 
-#### Blogs/Newsletters
-RSS feeds or blog URLs:
-- The agent will automatically discover RSS feeds
-- Extracts links from posts to academic papers
-- Filters for relevance to your topic
+### Reference Management
+| Tool | Description |
+|------|-------------|
+| `add_reference` | Add a new reference to the collection |
+| `search_references` | Search by query, tags, status, priority |
+| `update_reference_priority` | Set priority (critical/high/medium/low) |
+| `update_reference_status` | Track reading progress |
+| `get_reading_queue` | Get prioritized reading list |
+| `get_reference_stats` | Collection statistics |
 
-#### Local Notes (Obsidian-Compatible)
-- Reads markdown files from your notes folder
-- Extracts tags and links
-- Supports YAML frontmatter
+### Academic Search
+| Tool | Description |
+|------|-------------|
+| `search_arxiv` | Search arXiv preprints |
+| `search_semantic_scholar` | Search Semantic Scholar |
+| `get_paper_citations` | Find papers citing a paper |
+| `get_paper_references` | Find papers cited by a paper |
+| `get_recommendations` | AI-powered paper recommendations |
 
-## Usage Examples
+### Source Processing
+| Tool | Description |
+|------|-------------|
+| `process_url_file` | Process bookmarks/URL lists |
+| `process_blog_feed` | Process RSS feeds |
+| `scan_local_folder` | Scan Obsidian/local files |
+| `fetch_webpage_content` | Fetch and extract web content |
 
-### Python API
-
-```python
-import asyncio
-from literature_review_agent import LiteratureReviewAgent
-from literature_review_agent.models import SourceConfig
-
-async def main():
-    # Create agent
-    agent = LiteratureReviewAgent()
-
-    # Start a new project
-    await agent.start_new_project(
-        topic_name="Large Language Models",
-        topic_description="Research on transformer-based language models...",
-        key_questions=[
-            "What are the scaling laws for LLMs?",
-            "How do different training approaches compare?",
-        ],
-        key_terms=["transformer", "language model", "GPT", "scaling"],
-    )
-
-    # Add sources
-    await agent.add_source(SourceConfig(
-        name="My Bookmarks",
-        source_type="url_list",
-        path="/path/to/bookmarks.md",
-    ))
-
-    await agent.add_source(SourceConfig(
-        name="AI Blog",
-        source_type="blog",
-        url="https://example-ai-blog.com",
-    ))
-
-    # Run the research process
-    await agent.gather_references()
-    await agent.organize_references()
-    await agent.read_papers(max_papers=20)
-    await agent.generate_report()
-
-    await agent.close()
-
-asyncio.run(main())
-```
-
-### Custom Callbacks
-
-```python
-from literature_review_agent import LiteratureReviewAgent
-from literature_review_agent.models import AgentMessage
-
-def my_message_handler(message: AgentMessage):
-    if message.message_type == "insight":
-        print(f"Important: {message.content}")
-    elif message.message_type == "question":
-        print(f"Agent asks: {message.content}")
-
-def my_input_handler(prompt: str, options: list[str] | None) -> str:
-    # Custom input handling (e.g., from a GUI)
-    return input(prompt)
-
-agent = LiteratureReviewAgent(
-    message_callback=my_message_handler,
-    input_callback=my_input_handler,
-)
-```
-
-## Research Process
-
-The agent follows a structured research process:
-
-### 1. Initialization
-- Define research topic and questions
-- Configure sources (URL lists, blogs, local files)
-- Set search parameters
-
-### 2. Reference Gathering
-- Process URLs from your collections
-- Crawl blog/newsletter archives
-- Search academic databases (arXiv, Semantic Scholar)
-- Extract links from local notes
-
-### 3. Organization
-- Evaluate relevance of each reference
-- Assign priorities (Critical, High, Medium, Low)
-- Suggest and create subtopics
-- Build reading queue
-
-### 4. Reading & Analysis
-- Read full text of high-priority papers
-- Extract key findings and methodology
-- Take structured notes
-- Identify citations to follow
-
-### 5. Citation Following
-- Find papers cited in "Related Work" sections
-- Discover foundational papers
-- Add promising leads to the queue
-- Identify new subtopics
-
-### 6. Synthesis
-- Generate summaries for each subtopic
-- Compile key findings across the literature
-- Create comprehensive report
-- Export in various formats
-
-## Output
-
-### Literature Review Report
-A comprehensive markdown document including:
-- Executive summary
-- Subtopic summaries with key findings
-- Annotated bibliography
-- Open questions and future directions
-
-### Data Files
-- `references.json`: All collected references
-- `notes.json`: Research notes
-- `subtopics.json`: Topic organization
-- `project.json`: Project state
-
-### Export Formats
-- Markdown (default)
-- BibTeX (for citations)
-- Plain text
+### Notes & Organization
+| Tool | Description |
+|------|-------------|
+| `create_note` | Create research note |
+| `create_subtopic` | Create subtopic for organization |
+| `add_subtopic_finding` | Record key finding |
+| `generate_progress_report` | Generate status report |
 
 ## Tips for Best Results
 
-1. **Be Specific**: Detailed research questions help the agent prioritize better
-2. **Start with Your Links**: The agent can find new sources, but your curated links are valuable starting points
-3. **Review Subtopics**: Confirm or adjust suggested subtopics early
-4. **Iterate**: Run multiple reading sessions, following new leads each time
-5. **Check Insights**: The agent highlights important findings - don't miss them!
+1. **Be Specific**: "Search arXiv for papers on attention mechanisms in transformers" works better than "find AI papers"
 
-## Architecture
+2. **Use Natural Language**: The agent understands complex requests like "Find the most cited papers on BERT and add them to the reading queue"
 
-```
-literature_review_agent/
-├── agent.py           # Main orchestrator
-├── cli.py             # Command-line interface
-├── models.py          # Data models
-├── collectors/        # Source collectors
-│   ├── arxiv_collector.py
-│   ├── blog_collector.py
-│   ├── local_collector.py
-│   ├── semantic_scholar_collector.py
-│   ├── url_collector.py
-│   └── web_collector.py
-├── managers/          # Data management
-│   ├── note_manager.py
-│   ├── reference_manager.py
-│   └── subtopic_manager.py
-├── processors/        # Document processing
-│   ├── analyzer.py
-│   ├── document_reader.py
-│   └── report_generator.py
-└── utils/             # Utilities
-    ├── config.py
-    ├── logging.py
-    ├── persistence.py
-    └── text.py
-```
+3. **Iterate**: Start broad, then drill down into specific subtopics
 
-## Contributing
+4. **Follow Citations**: Ask the agent to find papers citing important works
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+5. **Check Progress**: Regularly ask for a progress report to see where you are
 
 ## License
 
@@ -324,6 +309,6 @@ MIT License - see LICENSE file for details.
 
 ## Acknowledgments
 
-- Built with [Claude](https://www.anthropic.com/claude) by Anthropic
+- Built with [Claude Agent SDK](https://docs.anthropic.com/en/docs/claude-code/sdk) by Anthropic
 - Uses [Semantic Scholar API](https://www.semanticscholar.org/product/api) for academic search
 - arXiv integration via [arxiv.py](https://github.com/lukasschwab/arxiv.py)
