@@ -54,8 +54,10 @@ Critical evaluation framework combining scientific critical thinking with struct
 - Two-pass reading strategy (overview → detailed)
 - Methodology assessment checklists
 - Bias detection and statistical red flags
+- **Currency assessment** (especially important for fast-moving fields)
+- **Conclusion strength evaluation** (do claims match evidence? buried caveats?)
 - Evidence quality rating (High/Medium/Low)
-- Standardized note template
+- Standardized note template with guidance on appropriate citation use
 
 Use when: Reading papers with `/read-next` or `/summarize`.
 
@@ -242,6 +244,24 @@ subtopics:
 - `/synthesize` - Generate literature review report
 - `/export-bib` - Export references as BibTeX
 
+## Critical Reading Principles
+
+**Every paper should be read with healthy skepticism.** Even peer-reviewed work in top venues can have significant flaws. When reading papers:
+
+1. **Check currency**: In fast-moving fields like AI, papers from 6-12 months ago may already be outdated. Ask: Are these findings still relevant? Have later papers contradicted or refined this?
+
+2. **Verify claims match evidence**: Authors sometimes overstate conclusions. Compare what the abstract claims to what the results actually show. Look for buried caveats in limitations sections, footnotes, or appendices.
+
+3. **Assess generalizability**: A finding about GPT-4 may not apply to Claude. A study with 10 participants may not generalize. Benchmark performance may not predict real-world utility.
+
+4. **Note methodological limitations**: Sample size issues, selection bias, confounders, inappropriate baselines, p-hacking, etc. The `paper-analysis` skill has detailed checklists.
+
+5. **Consider motivated reasoning**: Who funded the study? What are the authors' incentives? AI lab papers about their own products warrant extra scrutiny.
+
+6. **Track how to cite appropriately**: A flawed paper may still be valuable - note specifically what it can and cannot be cited for in your synthesis.
+
+The goal is not to dismiss papers but to understand their actual contribution and limitations, so your literature review reflects the true state of knowledge.
+
 ## Tips
 
 1. **Commit often** - Use git to track progress and enable rollback
@@ -249,3 +269,4 @@ subtopics:
 3. **Balance breadth and depth** - Don't go too deep too early
 4. **Track provenance** - Note where each reference came from
 5. **Question everything** - Note disagreements and contradictions in the literature
+6. **Weight evidence appropriately** - Not all papers are equal; account for quality and currency in synthesis

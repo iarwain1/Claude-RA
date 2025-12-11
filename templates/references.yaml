@@ -23,3 +23,10 @@ references: []
   #   notes_file: null  # path to notes, e.g., "notes/paper-summaries/author2024keyword.md"
   #   added: "2025-01-15"
   #   tags: []  # freeform tags
+  #
+  #   # Quality assessment (fill in after reading):
+  #   quality_rating: null  # High/Medium/Low/Very Low
+  #   still_current: null  # Yes/Partially/No - is this still relevant?
+  #   key_caveats: []  # Important limitations that affect interpretation
+  #   cite_for: null  # What this paper can appropriately be cited for
+  #   superseded_by: []  # Later papers that update/contradict findings

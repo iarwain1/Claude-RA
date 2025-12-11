@@ -84,6 +84,21 @@ Thorough examination with critical eye:
 
 ### 3. Critical Thinking Checklist
 
+#### Currency and Relevance (Especially for Fast-Moving Fields)
+- [ ] **Publication date**: How old is this paper? In AI, 6 months can be a long time.
+- [ ] **Superseded findings**: Have later papers contradicted or refined these findings?
+- [ ] **Model versions**: If about specific AI models, are those models still current/available?
+- [ ] **Benchmark validity**: If using benchmarks, are those benchmarks still meaningful?
+- [ ] **Methodology currency**: Are the methods state-of-the-art or have better approaches emerged?
+
+#### Conclusion Strength vs. Evidence
+- [ ] **Overstatement**: Do conclusions go beyond what the evidence supports?
+- [ ] **Hedging adequacy**: Are appropriate caveats included? ("may", "in this context", etc.)
+- [ ] **Generalization scope**: Do authors claim broader applicability than warranted?
+- [ ] **Buried caveats**: Are important limitations tucked away in footnotes, appendices, or late in the paper?
+- [ ] **Abstract vs. body**: Does the abstract accurately represent findings, or oversell them?
+- [ ] **Press release vs. paper**: If you saw coverage of this paper, does actual paper match the hype?
+
 #### Bias Detection
 - [ ] **Selection bias**: Non-representative samples
 - [ ] **Confirmation bias**: Seeking supporting evidence only
@@ -169,6 +184,15 @@ When creating paper summaries in `notes/paper-summaries/`, include:
 
 ### Quality Rating
 [High/Medium/Low] - [brief justification]
+
+### Currency Assessment
+- **Still current?** [Yes/Partially/No] - [explanation]
+- **Superseded by:** [later papers if applicable]
+
+### Conclusion Reliability
+- **Claims match evidence?** [Yes/Partially/No]
+- **Key caveats:** [important limitations that affect interpretation]
+- **How to cite:** [guidance on appropriate use in synthesis - e.g., "cite for methodology only", "findings may not generalize to current models", "useful as historical context"]
 
 ## Relevance to My Review
 [How this connects to your research questions]

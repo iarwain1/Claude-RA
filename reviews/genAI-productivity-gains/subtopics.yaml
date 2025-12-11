@@ -1,0 +1,145 @@
+# Subtopics Organization
+# Literature review on measuring productivity gains from generative AI
+
+metadata:
+  last_updated: "2025-12-10"
+
+subtopics:
+  # Core topic areas derived from paper outline
+
+  - name: benchmarks
+    display_name: "Benchmarks and Automated Evaluation"
+    description: "Standardized AI benchmarks, automated metrics, their limitations, gaming, and contamination issues"
+    key_findings: []
+    open_questions:
+      - "How contaminated are major benchmarks from training data?"
+      - "What is the predictive validity of benchmarks for real-world performance?"
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/benchmarks.md"
+    paper_sections: ["Part 1", "Section 5A"]
+
+  - name: productivity-studies
+    display_name: "AI Productivity Studies"
+    description: "Empirical studies measuring productivity gains from AI tools (METR, GDPval, Anthropic study, etc.)"
+    key_findings:
+      - "Remote Labor Index: ~2.5% task automation on real projects despite high benchmarks"
+      - "Anthropic study: 80% estimated time savings (self-report limitations)"
+      - "METR developer study: mixed results, heterogeneous effects"
+    open_questions:
+      - "Why is there such a large gap between benchmark performance and real-world automation?"
+      - "What drives heterogeneity in productivity gains across users?"
+    controversies: []
+    reference_keys:
+      - anthropic2025productivity
+      - metr2025developer
+      - scale2025remotelabor
+    notes_file: "notes/themes/productivity-studies.md"
+    paper_sections: ["Part 2"]
+
+  - name: jagged-frontier
+    display_name: "Jagged Capability Frontier"
+    description: "Understanding unpredictable AI capabilities - why AI fails on similar-seeming tasks"
+    key_findings: []
+    open_questions:
+      - "Can we predict where AI capabilities will break down?"
+      - "How does jaggedness affect evaluation methodology?"
+    controversies: []
+    reference_keys:
+      - toner2024jaggedness
+    notes_file: "notes/themes/jagged-frontier.md"
+    paper_sections: ["Part 3", "Section 4E"]
+
+  - name: human-ai-teaming
+    display_name: "Human-AI Teaming and User Factors"
+    description: "Trust calibration, user heterogeneity, skill amplification, adaptation over time"
+    key_findings:
+      - "'Being good at AI' is independent of domain expertise"
+      - "User skill varies enormously and affects all evaluation results"
+    open_questions:
+      - "How does AI proficiency develop? What training works?"
+      - "Who benefits from AI and who doesn't?"
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/human-ai-teaming.md"
+    paper_sections: ["Part 3", "Section 7"]
+
+  - name: evaluation-methodology
+    display_name: "Evaluation Methodology"
+    description: "Methods and frameworks for evaluating AI systems - from benchmarks to operational pilots"
+    key_findings: []
+    open_questions:
+      - "What methods best predict operational performance from controlled studies?"
+      - "How to handle evaluation when models change continuously?"
+    controversies: []
+    reference_keys:
+      - mollick2024interview
+    notes_file: "notes/themes/evaluation-methodology.md"
+    paper_sections: ["Part 3", "Section 5"]
+
+  - name: economic-impact
+    display_name: "Economic and Organizational Impact"
+    description: "IT productivity paradox, organizational effects, complementary investments"
+    key_findings:
+      - "IT took decades to show productivity gains due to need for complementary investments"
+    open_questions:
+      - "How long before AI productivity gains materialize at organizational level?"
+      - "What complementary investments are required?"
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/economic-impact.md"
+    paper_sections: ["Part 3", "Section 6"]
+
+  - name: risk-management
+    display_name: "Risk and Safety Evaluation"
+    description: "AI risk management, red teaming, adversarial evaluation, safety cases"
+    key_findings: []
+    open_questions: []
+    controversies: []
+    reference_keys:
+      - nist2023airisk
+    notes_file: "notes/themes/risk-management.md"
+    paper_sections: ["Part 3", "Section 8"]
+
+  - name: agent-evaluation
+    display_name: "Agent Evaluation (Emerging)"
+    description: "Evaluating AI agents and autonomous systems - emerging methodologies"
+    key_findings: []
+    open_questions:
+      - "How to evaluate long-horizon agent tasks?"
+      - "What transfers from autonomous systems T&E?"
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/agent-evaluation.md"
+    paper_sections: ["Section 4C"]
+
+  - name: standards-frameworks
+    display_name: "Standards and Frameworks"
+    description: "NIST AI RMF, emerging ISO standards, industry frameworks"
+    key_findings: []
+    open_questions: []
+    controversies: []
+    reference_keys:
+      - nist2023airisk
+    notes_file: "notes/themes/standards-frameworks.md"
+    paper_sections: ["Appendix E"]
+
+  - name: acquisition-guidance
+    display_name: "Acquisition and Deployment Guidance"
+    description: "Practical guidance for AI acquisition decisions, pilots, contracts, governance"
+    key_findings: []
+    open_questions: []
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/acquisition-guidance.md"
+    paper_sections: ["Part 4", "Section 12"]
+
+  - name: disciplinary-foundations
+    display_name: "Disciplinary Foundations"
+    description: "What transfers and breaks from adjacent fields (software T&E, psychometrics, econometrics, etc.)"
+    key_findings: []
+    open_questions: []
+    controversies: []
+    reference_keys: []
+    notes_file: "notes/themes/disciplinary-foundations.md"
+    paper_sections: ["Part 2", "Appendix A"]
