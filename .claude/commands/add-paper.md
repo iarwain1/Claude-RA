@@ -26,9 +26,9 @@ Add a paper to the current literature review from: $ARGUMENTS
    - What subtopics does it relate to?
    - Should it be added to the reading queue?
 
-6. Add to `reviews/<review-name>/references.yaml`
+6. Add to `<review-name>/References/references.yaml`
 
-7. If priority >= 6, add to `reviews/<review-name>/reading-queue.yaml`
+7. If priority >= 6, add to `<review-name>/References/reading-queue.yaml`
 
 8. Commit with message "Add reference: <title>"
 

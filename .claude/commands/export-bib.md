@@ -6,7 +6,7 @@ Export all references as a BibTeX file.
 
 1. Confirm which review you're working on.
 
-2. Read `reviews/<review-name>/references.yaml`
+2. Read `<review-name>/References/references.yaml`
 
 3. Convert each reference to BibTeX format:
 
@@ -28,7 +28,7 @@ Export all references as a BibTeX file.
    - `@misc` for arXiv preprints and web sources
    - `@online` for blogs and websites
 
-4. Write to `reviews/<review-name>/reports/references.bib`
+4. Write to `<review-name>/Drafts/references.bib`
 
 5. Report:
    - Number of references exported

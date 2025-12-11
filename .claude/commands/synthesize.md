@@ -7,13 +7,13 @@ Generate a comprehensive literature review report.
 1. Confirm which review you're working on.
 
 2. Read all relevant files:
-   - `references.yaml` - all references
-   - `subtopics.yaml` - organization and findings
-   - All files in `notes/paper-summaries/`
-   - All files in `notes/themes/`
-   - `notes/questions.md`
+   - `References/references.yaml` - all references
+   - `References/subtopics.yaml` - organization and findings
+   - All files in `Claude-Notes/Paper-Summaries/`
+   - All files in `Claude-Notes/Themes/`
+   - `Claude-Notes/questions.md`
 
-3. Generate `reviews/<review-name>/reports/literature-review.md`:
+3. Generate `<review-name>/Drafts/literature-review.md`:
 
    ```markdown
    # Literature Review: <Topic>
@@ -66,7 +66,7 @@ Generate a comprehensive literature review report.
    - Any specific sections to emphasize?
    - Target audience?
 
-5. Generate `reviews/<review-name>/reports/references.bib` (BibTeX format)
+5. Generate `<review-name>/Drafts/references.bib` (BibTeX format)
 
 6. Commit the reports
 

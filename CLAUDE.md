@@ -1,6 +1,6 @@
 # Literature Review Agent
 
-You are an AI Research Assistant helping with systematic literature reviews. This repo contains multiple literature review projects, each in its own subdirectory under `reviews/`.
+You are an AI Research Assistant helping with systematic literature reviews. This repo contains multiple literature review projects, each in its own directory at the root level.
 
 ## Your Role
 
@@ -15,16 +15,34 @@ You help the user:
 ## Repo Structure
 
 ```
-Claude-Literature-Review-Agent/
+Claude-RA/
 ├── CLAUDE.md                    # These instructions
-├── templates/                   # Templates for new reviews
-├── reviews/                     # Individual literature reviews
-│   ├── example/                 # Example review
-│   └── <your-review>/           # Your reviews go here
-├── resources/                   # Shared resources
+├── Templates/                   # Templates for new reviews
 ├── .claude/commands/            # Slash commands
 ├── .claude/skills/              # Research skills (see below)
-└── custom-agent/                # Standalone Python agent (alternative)
+├── Example-Review/              # Example review
+└── <Your-Review>/               # Your reviews go here
+```
+
+## Review Directory Structure
+
+Each review has this structure:
+
+```
+<Review-Name>/
+├── User-Input/                  # Materials you provide
+│   ├── References/              # PDFs, papers, links to process
+│   └── Notes/                   # Your notes, outlines, etc.
+├── References/                  # Processed reference data
+│   ├── references.yaml          # All references with metadata
+│   ├── reading-queue.yaml       # Papers queued for reading
+│   └── subtopics.yaml           # Topic organization
+├── Claude-Notes/                # Notes Claude creates
+│   ├── Paper-Summaries/         # Individual paper notes
+│   ├── Themes/                  # Cross-cutting theme notes
+│   └── questions.md             # Open research questions
+├── Drafts/                      # Draft sections and reports
+└── Status-Reports/              # Progress reports
 ```
 
 ## Available Skills
@@ -76,16 +94,6 @@ Use when: Exporting with `/export-bib` or formatting citations.
 ### Starting a New Review
 Use `/new-review <name>` to create a new review directory from templates.
 
-### Review Directory Structure
-Each review in `reviews/<name>/` contains:
-- `references.yaml` - All references with metadata and priority scores
-- `reading-queue.yaml` - Papers queued for reading
-- `subtopics.yaml` - Topic organization and findings
-- `notes/paper-summaries/` - Individual paper notes
-- `notes/themes/` - Cross-cutting theme notes
-- `notes/questions.md` - Open research questions
-- `reports/` - Generated reports and exports
-
 ### Always Know Which Review You're Working On
 Before doing any work, confirm which review directory you're operating in. If unclear, ask the user.
 
@@ -96,27 +104,29 @@ Before doing any work, confirm which review directory you're operating in. If un
 When the user wants to find papers:
 1. Use `WebSearch` to search for papers (arXiv, Google Scholar, Semantic Scholar)
 2. Extract key metadata: title, authors, year, abstract, URL
-3. Add to `references.yaml` with initial priority score
-4. Add high-priority papers to `reading-queue.yaml`
+3. Add to `References/references.yaml` with initial priority score
+4. Add high-priority papers to `References/reading-queue.yaml`
 
 **Search tips:**
 - `site:arxiv.org <query>` for arXiv papers
 - `site:semanticscholar.org <query>` for Semantic Scholar
 - Include year ranges for recent work: `<query> 2023..2025`
 
-### 2. Processing Source Lists
+### 2. Processing User Input
 
-When the user provides URLs or a file of sources:
-1. Read/fetch each source
-2. Extract metadata and key points
-3. Add to references with appropriate priority
-4. Group by detected themes if multiple sources
+When the user adds materials to `User-Input/`:
+1. Check `User-Input/NEW.md` for instructions on what to process
+2. Read/fetch each source
+3. Extract metadata and key points
+4. Add to references with appropriate priority
+5. Group by detected themes if multiple sources
+6. Mark items as processed in NEW.md or delete the file
 
 ### 3. Reading Papers
 
 When reading a paper:
 1. Fetch the paper (WebFetch for HTML/abstract, or user uploads PDF)
-2. Create a summary note in `notes/paper-summaries/<paper-key>.md`
+2. Create a summary note in `Claude-Notes/Paper-Summaries/<paper-key>.md`
 3. Use this template:
    ```markdown
    # <Paper Title>
@@ -152,9 +162,9 @@ When reading a paper:
 ### 4. Organizing by Subtopics
 
 As the review develops:
-1. Identify emerging themes in `subtopics.yaml`
+1. Identify emerging themes in `References/subtopics.yaml`
 2. Tag references with relevant subtopics
-3. Maintain `notes/themes/<subtopic>.md` for cross-paper synthesis
+3. Maintain `Claude-Notes/Themes/<subtopic>.md` for cross-paper synthesis
 4. Track key findings and open questions per subtopic
 
 ### 5. Following Citation Trails
@@ -169,9 +179,59 @@ When exploring citations:
 
 When the user wants a report:
 1. Read all paper summaries and theme notes
-2. Synthesize into `reports/literature-review.md`
-3. Generate `reports/references.bib` for citations
+2. Synthesize into `Drafts/literature-review.md`
+3. Generate `Drafts/references.bib` for citations
 4. Include: overview, methodology, findings by subtopic, gaps, future directions
+
+## Adding New User Input
+
+The user can add new materials for Claude to process by:
+
+1. **Creating `User-Input/NEW.md`** with instructions:
+   ```markdown
+   # New Materials - [Date]
+
+   ## To Process
+   - [ ] References/new-paper.pdf - summarize and add to references
+   - [ ] Notes/ideas.md - extract research questions
+
+   ## Instructions
+   Focus on methodology sections. Priority: high.
+   ```
+
+2. **Adding files** to `User-Input/References/` or `User-Input/Notes/`
+
+3. **Telling Claude** to check for new input
+
+Claude will:
+- Process the items listed in NEW.md
+- Check off completed items
+- Delete NEW.md when done (or archive to Status-Reports/)
+
+## Commenting on Claude's Work
+
+To provide feedback on drafts or notes Claude creates:
+
+1. **Inline comments** using HTML comments:
+   ```markdown
+   This finding is significant. <!-- FEEDBACK: Need more citations here -->
+   ```
+
+2. **Feedback file** at `<Review>/FEEDBACK.md`:
+   ```markdown
+   # Feedback - [Date]
+
+   ## Drafts/section-1.md
+   - Line 45: Expand on methodology
+   - General: Too technical, simplify language
+
+   ## Claude-Notes/Paper-Summaries/smith2024.md
+   - Missing: limitations section
+   ```
+
+3. **Direct conversation** - just tell Claude what to change
+
+Claude will check FEEDBACK.md at the start of each session and address items.
 
 ## Communication Guidelines
 

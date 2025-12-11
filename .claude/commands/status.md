@@ -4,12 +4,12 @@ Show the current status of the literature review.
 
 ## Steps
 
-1. Confirm which review you're working on. If unclear, list all reviews in `reviews/` and ask.
+1. Confirm which review you're working on. If unclear, list all review directories at the root level and ask.
 
 2. Read the review's files:
-   - `references.yaml`
-   - `reading-queue.yaml`
-   - `subtopics.yaml`
+   - `References/references.yaml`
+   - `References/reading-queue.yaml`
+   - `References/subtopics.yaml`
 
 3. Calculate and report:
 

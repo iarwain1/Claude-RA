@@ -10,7 +10,7 @@ This command helps follow citation trails by finding papers that cite an importa
 
 2. Identify the target paper:
    - $ARGUMENTS may be a reference key, title, DOI, or arXiv ID
-   - Look up in `references.yaml` if it's a key
+   - Look up in `References/references.yaml` if it's a key
    - If not found, search for it
 
 3. Search for citing papers:
@@ -31,7 +31,7 @@ This command helps follow citation trails by finding papers that cite an importa
    - Citation count of the citing paper
    - Whether it's a survey/review (often good for context)
 
-6. Add new relevant papers to `references.yaml`:
+6. Add new relevant papers to `References/references.yaml`:
    - Note the citation relationship
    - Set `source: citation-trail`
 
