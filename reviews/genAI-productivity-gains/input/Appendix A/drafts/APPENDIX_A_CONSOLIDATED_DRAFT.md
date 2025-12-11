@@ -278,16 +278,62 @@ Drawing across all disciplines, effective AI evaluation should:
 
 ## Individual Section Drafts
 
-The individual section drafts are contained in separate files:
-- `appendix_a_section_1_1_draft.md` through `appendix_a_section_1_4_draft.md` (existing)
-- `appendix_a_section_1_5_draft.md` (Cybersecurity)
-- `appendix_a_section_2_draft.md` (Experimental and Statistical Methods)
-- `appendix_a_section_3_draft.md` (Economics and Productivity)
-- `appendix_a_section_4_draft.md` (Risk, Quality, and Assurance)
-- `appendix_a_section_5_draft.md` (Human and Organizational Factors)
-- `appendix_a_section_6_draft.md` (Evaluation and Assessment Traditions)
-- `appendix_a_section_7_draft.md` (Standards and Governance)
-- `appendix_a_section_8_draft.md` (Synthesis and Crosswalks)
+All drafts are located in the `drafts/` folder. Each section has separate subsection files following the pattern used in Section 1:
+
+**Section 1: Testing and Evaluation Traditions**
+- `appendix_a_section_1_1_draft.md` - Software Testing and Quality Assurance
+- `appendix_a_section_1_2_draft.md` - Systems Engineering and Hardware T&E
+- `appendix_a_section_1_3_draft.md` - Autonomous Systems Testing and Evaluation
+- `appendix_a_section_1_4_draft.md` - Traditional Machine Learning Evaluation
+- `appendix_a_section_1_5_draft.md` - Cybersecurity Testing and Red Teaming
+
+**Section 2: Experimental and Statistical Methods**
+- `appendix_a_section_2_1_draft.md` - Experimental Design and Analysis
+- `appendix_a_section_2_2_draft.md` - Psychometrics and Measurement Theory
+- `appendix_a_section_2_3_draft.md` - Econometrics and Causal Inference
+- `appendix_a_section_2_4_draft.md` - Qualitative Research Methods
+- `appendix_a_section_2_5_draft.md` - Survey Methodology
+
+**Section 3: Economics and Productivity**
+- `appendix_a_section_3_1_draft.md` - Information Systems Economics
+- `appendix_a_section_3_2_draft.md` - Productivity Measurement and Economics
+- `appendix_a_section_3_3_draft.md` - Cost Analysis and Investment Evaluation
+
+**Section 4: Risk, Quality, and Assurance**
+- `appendix_a_section_4_1_draft.md` - Risk Analysis and Management
+- `appendix_a_section_4_2_draft.md` - Reliability Engineering
+- `appendix_a_section_4_3_draft.md` - Quality Management
+- `appendix_a_section_4_4_draft.md` - Audit and Assurance
+- `appendix_a_section_4_5_draft.md` - Safety Engineering
+
+**Section 5: Human and Organizational Factors**
+- `appendix_a_section_5_1_draft.md` - Human-Computer Interaction and UX Research
+- `appendix_a_section_5_2_draft.md` - Human Factors and Human-Machine Systems
+- `appendix_a_section_5_3_draft.md` - Organizational Behavior and Change Management
+- `appendix_a_section_5_4_draft.md` - Judgment and Decision Making
+- `appendix_a_section_5_5_draft.md` - Industrial-Organizational Psychology
+
+**Section 6: Evaluation and Assessment Traditions**
+- `appendix_a_section_6_1_draft.md` - AI Safety Evaluation (Emerging)
+- `appendix_a_section_6_2_draft.md` - Program Evaluation
+- `appendix_a_section_6_3_draft.md` - Educational Measurement
+- `appendix_a_section_6_4_draft.md` - Clinical Trial Methodology
+
+**Section 7: Standards and Governance**
+- `appendix_a_section_7_1_draft.md` - Metrology (Science of Measurement)
+- `appendix_a_section_7_2_draft.md` - Standards Development and Governance
+
+**Section 8: Synthesis and Crosswalks**
+- `appendix_a_section_8_1_draft.md` - What Transfers Directly
+- `appendix_a_section_8_2_draft.md` - What Breaks for Generative AI
+- `appendix_a_section_8_3_draft.md` - What Requires Adaptation
+- `appendix_a_section_8_4_draft.md` - What's Genuinely New
+- `appendix_a_section_8_5_draft.md` - Terminology Crosswalk
+- `appendix_a_section_8_6_draft.md` - Synthesis: What AI Evaluation Requires
+- `appendix_a_section_8_7_draft.md` - Reader Guide
+
+**Legacy combined drafts** (retained for reference):
+- `appendix_a_section_2_draft.md` through `appendix_a_section_8_draft.md`
 
 ---
 
@@ -297,5 +343,5 @@ References from all sections should be compiled into a master bibliography for t
 
 ---
 
-*Draft version - December 2025*
-*Individual sections contain detailed treatment of each discipline*
+*Draft version - December 2025 (updated)*
+*Individual subsection drafts now available for all sections (1-8)*
