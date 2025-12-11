@@ -6,13 +6,13 @@ Summarize the paper with key "$ARGUMENTS".
 
 1. Confirm which review you're working on.
 
-2. Look up the paper in `reviews/<review-name>/references.yaml` by key.
+2. Look up the paper in `<review-name>/References/references.yaml` by key.
 
 3. If not found, search by partial title match. If still not found, ask the user for clarification.
 
 4. Fetch the paper content using WebFetch.
 
-5. Create a detailed summary note at `reviews/<review-name>/notes/paper-summaries/<key>.md`:
+5. Create a detailed summary note at `<review-name>/Claude-Notes/Paper-Summaries/<key>.md`:
 
    ```markdown
    # <Title>
@@ -56,7 +56,7 @@ Summarize the paper with key "$ARGUMENTS".
    - <observations>
    ```
 
-6. Update `references.yaml`: set `read: true`, `notes_file`
+6. Update `References/references.yaml`: set `read: true`, `notes_file`
 
 7. If in reading queue, mark as done
 

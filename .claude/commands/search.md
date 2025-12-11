@@ -16,9 +16,9 @@ Search for academic papers related to: "$ARGUMENTS"
    - Assess relevance and assign priority (1-10)
    - Identify potential subtopics
 
-4. Add new references to `reviews/<review-name>/references.yaml`
+4. Add new references to `<review-name>/References/references.yaml`
 
-5. Add high-priority papers (7+) to `reviews/<review-name>/reading-queue.yaml`
+5. Add high-priority papers (7+) to `<review-name>/References/reading-queue.yaml`
 
 6. Report findings to user:
    - List papers found with brief descriptions

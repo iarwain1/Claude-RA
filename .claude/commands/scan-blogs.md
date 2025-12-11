@@ -33,14 +33,14 @@ This command processes blogs, newsletters, or RSS feeds to find papers and sourc
      - Relevance to review topic
      - Recency and citation count (if available)
 
-6. Add to `reviews/<review-name>/references.yaml`:
+6. Add to `<review-name>/References/references.yaml`:
    - Set `source: blog`
    - Note which blog it came from
    - Include blogger's context if relevant
 
 7. Add high-priority items to reading queue
 
-8. Update `subtopics.yaml` if new themes emerge
+8. Update `References/subtopics.yaml` if new themes emerge
 
 9. Report to user:
    - Blogs/newsletters scanned: N

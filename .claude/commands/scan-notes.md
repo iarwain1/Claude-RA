@@ -43,7 +43,7 @@ This command processes the user's existing notes and documents to extract refere
    - Use context from notes to assess priority
    - Note the user's existing thoughts
 
-7. Add to `reviews/<review-name>/references.yaml`:
+7. Add to `<review-name>/References/references.yaml`:
    - Set `source: user-provided`
    - Include path to source note
    - Include user's context/commentary

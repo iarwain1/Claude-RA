@@ -28,7 +28,7 @@ This command handles the user's collected links - URLs gathered over time that m
       - Identify potential subtopics
    d. If not relevant, note why and skip
 
-5. Add relevant references to `reviews/<review-name>/references.yaml`
+5. Add relevant references to `<review-name>/References/references.yaml`
    - Set `source: user-provided`
    - Include where the link came from (if known)
 

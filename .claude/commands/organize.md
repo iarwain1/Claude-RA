@@ -6,9 +6,9 @@ Analyze and organize the current references into subtopics.
 
 1. Confirm which review you're working on.
 
-2. Read `reviews/<review-name>/references.yaml` to get all references.
+2. Read `<review-name>/References/references.yaml` to get all references.
 
-3. Read `reviews/<review-name>/subtopics.yaml` for existing organization.
+3. Read `<review-name>/References/subtopics.yaml` for existing organization.
 
 4. Analyze the references:
    - Group by themes, methodologies, or research questions
@@ -28,9 +28,9 @@ Analyze and organize the current references into subtopics.
    - How should multi-subtopic papers be handled?
 
 7. After confirmation, update:
-   - `subtopics.yaml` with the new organization
-   - `references.yaml` with subtopic tags for each reference
-   - Create theme notes in `notes/themes/` for each subtopic
+   - `References/subtopics.yaml` with the new organization
+   - `References/references.yaml` with subtopic tags for each reference
+   - Create theme notes in `Claude-Notes/Themes/` for each subtopic
 
 8. Commit changes
 

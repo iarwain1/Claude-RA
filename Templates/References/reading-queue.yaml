@@ -1,0 +1,7 @@
+# Reading Queue for [REVIEW_NAME]
+# Papers queued for detailed reading
+
+review_name: "[REVIEW_NAME]"
+last_updated: "[DATE]"
+
+queue: []
