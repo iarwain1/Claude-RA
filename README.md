@@ -29,14 +29,13 @@ This repo turns Claude Code into a literature review agent through:
 │  ├── CLAUDE.md              # Agent instructions            │
 │  ├── .claude/commands/      # Slash commands                │
 │  ├── .claude/skills/        # Research methodologies        │
-│  ├── templates/             # Templates for new reviews     │
-│  └── reviews/               # Your literature reviews       │
-│      └── <your-review>/                                     │
-│          ├── input/             # YOUR starting materials   │
-│          ├── references.yaml                                │
-│          ├── reading-queue.yaml                             │
-│          ├── subtopics.yaml                                 │
-│          └── notes/                                         │
+│  ├── Templates/             # Templates for new reviews     │
+│  └── <Your-Review>/         # Your literature reviews       │
+│      ├── User-Input/        # YOUR starting materials       │
+│      ├── References/        # Processed reference data      │
+│      ├── Claude-Notes/      # Notes Claude creates          │
+│      ├── Drafts/            # Draft sections                │
+│      └── Status-Reports/    # Progress tracking             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -45,8 +44,8 @@ This repo turns Claude Code into a literature review agent through:
 ### 1. Clone and Open in Claude Code
 
 ```bash
-git clone https://github.com/yourusername/Claude-Literature-Review-Agent.git
-cd Claude-Literature-Review-Agent
+git clone https://github.com/yourusername/Claude-RA.git
+cd Claude-RA
 ```
 
 Open this folder in Claude Code (web, desktop, or CLI).
@@ -86,32 +85,34 @@ If you have existing materials (project descriptions, collected links, notes), h
 /new-review my-topic
 ```
 
-Then copy your files into the `input/` folder:
+Then copy your files into the `User-Input/` folder:
 
 ```
-reviews/my-topic/input/
+my-topic/User-Input/
 ├── project_description.md      # What you're researching
 ├── outline.md                  # Any preliminary structure
-├── link_dumps/                 # Your collected URLs
-│   ├── bookmarks.md
-│   ├── reading_list.docx
+├── References/                 # PDFs, papers to process
+│   ├── important-paper.pdf
 │   └── ...
-└── notes/                      # Your existing notes
-    ├── background.md
-    └── ...
+├── Notes/                      # Your existing notes
+│   ├── background.md
+│   └── ...
+└── Link Dumps/                 # Your collected URLs (optional)
+    ├── bookmarks.md
+    └── reading_list.docx
 ```
 
 ### 2. Process your materials
 
 ```
 # Have Claude read your project description
-"Read my project description in input/ and set up the review"
+"Read my project description in User-Input/ and set up the review"
 
 # Process your collected links
-/process-sources input/link_dumps/
+/process-sources User-Input/References/
 
 # Scan your notes for references
-/scan-notes input/notes/
+/scan-notes User-Input/Notes/
 ```
 
 Claude will:
@@ -123,6 +124,51 @@ Claude will:
 ### 3. Continue with normal workflow
 
 After processing your inputs, continue with `/search`, `/read-next`, etc.
+
+## Adding New Materials Mid-Review
+
+When you have new materials to add during an ongoing review:
+
+1. **Drop files** into `User-Input/References/` or `User-Input/Notes/`
+
+2. **Create `User-Input/NEW.md`** to tell Claude what to process:
+   ```markdown
+   # New Materials - Dec 11, 2025
+
+   ## To Process
+   - [ ] References/new-paper.pdf - high priority, summarize
+   - [ ] Notes/meeting-notes.md - extract any citations
+
+   ## Instructions
+   Focus on methodology sections. Priority: high.
+   ```
+
+3. **Tell Claude** "check for new input" - it will process items, check them off, and delete NEW.md when done
+
+## Providing Feedback on Claude's Work
+
+Three options for commenting on drafts or notes:
+
+### Option A: Inline HTML Comments
+```markdown
+This claim needs stronger evidence. <!-- FEEDBACK: Add 2-3 more citations -->
+```
+
+### Option B: FEEDBACK.md File
+Create `<Review>/FEEDBACK.md`:
+```markdown
+# Feedback - Dec 11
+
+## Drafts/section-1.md
+- Line 45: Too technical, simplify
+- Missing: transition paragraph
+
+## Claude-Notes/Paper-Summaries/smith2024.md
+- Add limitations section
+```
+
+### Option C: Direct Conversation
+Just tell Claude what to change.
 
 ## Slash Commands
 
@@ -157,7 +203,7 @@ After processing your inputs, continue with `/search`, `/read-next`, etc.
 
 ## Skills
 
-Skills provide detailed methodologies that Claude uses automatically when relevant. They're adapted from [K-Dense-AI/claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) (MIT License).
+Skills provide detailed methodologies that Claude uses automatically when relevant.
 
 | Skill | Description |
 |-------|-------------|
@@ -173,7 +219,7 @@ These skills are invoked automatically:
 ## Repository Structure
 
 ```
-Claude-Literature-Review-Agent/
+Claude-RA/
 ├── CLAUDE.md                    # Agent instructions
 ├── README.md                    # This file
 ├── .gitignore
@@ -181,56 +227,52 @@ Claude-Literature-Review-Agent/
 │
 ├── .claude/
 │   ├── commands/                # Slash commands
-│   │   ├── new-review.md        # Create new review
-│   │   ├── search.md            # Search databases
-│   │   ├── add-paper.md         # Add single paper
-│   │   ├── process-sources.md   # Batch process URLs
-│   │   ├── scan-blogs.md        # Scan blog archives
-│   │   ├── scan-notes.md        # Scan notes folders
-│   │   ├── find-citing.md       # Citation chaining
-│   │   ├── read-next.md         # Read next paper
-│   │   ├── summarize.md         # Summarize paper
-│   │   ├── status.md            # Review status
-│   │   ├── organize.md          # Organize by subtopic
-│   │   ├── synthesize.md        # Generate report
-│   │   └── export-bib.md        # Export BibTeX
+│   │   ├── new-review.md
+│   │   ├── search.md
+│   │   ├── add-paper.md
+│   │   ├── process-sources.md
+│   │   ├── scan-blogs.md
+│   │   ├── scan-notes.md
+│   │   ├── find-citing.md
+│   │   ├── read-next.md
+│   │   ├── summarize.md
+│   │   ├── status.md
+│   │   ├── organize.md
+│   │   ├── synthesize.md
+│   │   └── export-bib.md
 │   └── skills/                  # Research methodologies
 │       ├── systematic-review/
 │       ├── paper-analysis/
 │       └── citation-helper/
 │
-├── templates/                   # Templates for new reviews
-│   ├── references.yaml
-│   ├── reading-queue.yaml
-│   ├── subtopics.yaml
-│   └── notes/
-│       └── questions.md
+├── Templates/                   # Templates for new reviews
+│   ├── User-Input/
+│   ├── References/
+│   ├── Claude-Notes/
+│   ├── Drafts/
+│   └── Status-Reports/
 │
-├── reviews/                     # Individual literature reviews
-│   └── example/                 # Example review (see below)
-│       ├── input/               # Your starting materials
-│       │   ├── link_dumps/      # Collected URLs
-│       │   └── notes/           # Your existing notes
-│       ├── references.yaml
-│       ├── reading-queue.yaml
-│       ├── subtopics.yaml
-│       ├── notes/
-│       │   ├── paper-summaries/
-│       │   ├── themes/
-│       │   └── questions.md
-│       └── reports/
+├── Example-Review/              # Example review
+│   ├── User-Input/              # Your starting materials
+│   │   ├── References/
+│   │   └── Notes/
+│   ├── References/              # Processed reference data
+│   │   ├── references.yaml
+│   │   ├── reading-queue.yaml
+│   │   └── subtopics.yaml
+│   ├── Claude-Notes/            # Notes Claude creates
+│   │   ├── Paper-Summaries/
+│   │   ├── Themes/
+│   │   └── questions.md
+│   ├── Drafts/                  # Draft sections and reports
+│   └── Status-Reports/          # Progress tracking
 │
-├── resources/                   # Shared resources
-│
-└── custom-agent/                # Standalone Python agent (alternative)
-    ├── pyproject.toml
-    ├── src/
-    └── ...
+└── <Your-Review>/               # Your reviews at root level
 ```
 
 ## Review Data Files
 
-### references.yaml
+### References/references.yaml
 ```yaml
 references:
   - key: smith2024transformers
@@ -244,7 +286,7 @@ references:
     notes_file: null
 ```
 
-### reading-queue.yaml
+### References/reading-queue.yaml
 ```yaml
 queue:
   - key: smith2024transformers
@@ -253,7 +295,7 @@ queue:
     status: pending      # pending, in-progress, done, skipped
 ```
 
-### subtopics.yaml
+### References/subtopics.yaml
 ```yaml
 subtopics:
   - name: transformers
@@ -264,14 +306,6 @@ subtopics:
       - "Question 1"
     reference_keys: ["smith2024transformers"]
 ```
-
-## Example Review
-
-See `reviews/example/` for a complete example of a literature review on "LLM Agents" with:
-- 3 references (2 read, 1 in queue)
-- 4 subtopics
-- Paper summaries in `notes/paper-summaries/`
-- Theme notes in `notes/themes/`
 
 ## Workflow
 
@@ -290,7 +324,7 @@ See `reviews/example/` for a complete example of a literature review on "LLM Age
 
 ### 3. Read & Note
 - `/read-next` - Read papers from queue (highest priority first)
-- Claude creates structured notes in `notes/paper-summaries/`
+- Claude creates structured notes in `Claude-Notes/Paper-Summaries/`
 - Uses `paper-analysis` skill for critical evaluation
 - Discovers new papers to add from Related Work sections
 
@@ -307,15 +341,6 @@ This approach is more secure than MCP-based alternatives because:
 - **Version controlled**: All changes tracked in git
 - **Limited exfiltration**: Can only push to your own GitHub repo
 
-See the [security discussion](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) for more on AI agent security.
-
-## Alternative: Standalone Python Agent
-
-If you prefer a standalone CLI application with direct API access to arXiv and Semantic Scholar, see the `custom-agent/` directory. This requires:
-- Python 3.10+
-- Anthropic API key
-- Installation: `pip install -e custom-agent/`
-
 ## Tips
 
 1. **Commit often** - Use git to track progress
@@ -323,6 +348,7 @@ If you prefer a standalone CLI application with direct API access to arXiv and S
 3. **Iterate** - Start broad, then drill into subtopics
 4. **Follow citations** - Ask Claude to find papers citing important works
 5. **Check progress** - Use `/status` regularly
+6. **Use NEW.md** - When adding materials mid-review, create NEW.md so Claude knows what's new
 
 ## License
 
