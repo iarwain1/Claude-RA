@@ -20,6 +20,7 @@ Claude-RA/
 ├── Templates/                   # Templates for new reviews
 ├── .claude/commands/            # Slash commands
 ├── .claude/skills/              # Research skills (see below)
+├── link-dumps/                  # Cross-project link database (see below)
 ├── Example-Review/              # Example review
 └── <Your-Review>/               # Your reviews go here
 ```
@@ -330,3 +331,118 @@ The goal is not to dismiss papers but to understand their actual contribution an
 4. **Track provenance** - Note where each reference came from
 5. **Question everything** - Note disagreements and contradictions in the literature
 6. **Weight evidence appropriately** - Not all papers are equal; account for quality and currency in synthesis
+
+---
+
+## Link Dumps Database
+
+The `link-dumps/` directory contains a cross-project database for collecting and organizing links across all literature reviews.
+
+### Structure
+
+```
+link-dumps/
+├── links.yaml           # Main link database
+├── tags.yaml            # Hierarchical tag taxonomy
+├── research-notes.md    # Design decisions and tag system documentation
+├── CHANGELOG.md         # Database change history
+├── figures/             # Key figures/tables from links
+├── notes/               # Detailed notes on specific links
+└── *.docx               # Original link dump source files
+```
+
+### Database Schema (links.yaml)
+
+Each link entry has these fields:
+- `id`: Unique identifier
+- `title`: Resource title
+- `authors`: List of authors with affiliations
+- `url`: Primary URL
+- `alternate_urls`: Other URLs for same resource
+- `date_published`: Publication date
+- `date_updated`: Last update date
+- `bibtex`: BibTeX citation
+- `tags`: List of tags from taxonomy
+- `importance`: `low` | `normal` | `high` | `very-high`
+- `figures`: Key figures/tables with paths and descriptions
+- `notes`: Inline notes or file references
+- `related_links`: Connections to other entries with relationship type
+- `abstract`: Brief summary
+- `source_files`: Which dump files this came from
+- `date_added`: When added to database
+- `read`: Whether fully read
+- `archived`: Whether archived copy exists
+
+### Tag Taxonomy (tags.yaml)
+
+Three facets:
+1. **Domain** - Subject matter (ai-safety, evaluations, agents, policy, etc.)
+2. **Content Type** - Format (paper, blog-post, tool, dataset, etc.)
+3. **Source** - Origin (arxiv, github, anthropic, openai, etc.)
+
+Domain tags support polyhierarchy (multiple parents) following these rules:
+- A child must fully inherit from ALL parents
+- No cross-facet hierarchies
+- Don't overuse - each polyhierarchy should be justified
+
+### Link Dump Commands
+
+| Command | Description |
+|---------|-------------|
+| `/add-links` | Add new links to database from text, URLs, or files |
+| `/search-links <query>` | Search/filter the link database |
+
+### Adding New Links
+
+The user can add new links by:
+
+1. **Direct input** - Paste URLs/hyperlinks into chat with optional notes
+2. **File upload** - Provide a file (txt, md, doc, docx, pdf) containing links
+3. **Mixed input** - Combine URLs with inline notes and comments
+
+Example:
+```
+/add-links
+
+https://arxiv.org/abs/2412.12345 - Important alignment paper
+https://anthropic.com/research/new-work - Tag with interpretability
+
+Notes:
+- First one is high priority
+- Second relates to circuits work
+```
+
+Claude will:
+1. Extract and deduplicate URLs
+2. Fetch metadata (title, authors, date)
+3. Assign appropriate tags
+4. Add to `links.yaml`
+5. Update `CHANGELOG.md`
+
+### Searching Links
+
+```
+/search-links alignment                    # Text search
+/search-links #ai-safety #paper            # Tag filter
+/search-links importance:high              # Importance filter
+/search-links #arxiv 2024 importance:high  # Combined
+```
+
+### Relationship Types
+
+Links can be connected via `related_links`:
+- `blog-version` / `paper-version` - Different formats of same work
+- `rebuttal` / `rebutted-by` - Direct responses
+- `extends` / `extended-by` - Building on prior work
+- `cites` / `cited-by` - Citation relationships
+- `same-topic` - Related but independent
+- `code-for` / `paper-for` - Implementation relationships
+
+### Using Links in Reviews
+
+When starting a new review, search the link database for relevant existing links:
+```
+/search-links #ai-safety #evaluations
+```
+
+High-value links can be imported into a review's `References/references.yaml`.

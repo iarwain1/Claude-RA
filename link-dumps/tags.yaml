@@ -1,0 +1,717 @@
+# Hierarchical Tags Database for Link Dumps
+#
+# Structure:
+# - Tags are organized into facets (top-level mutually exclusive categories)
+# - Within facets, tags can have multiple parents (polyhierarchy)
+# - Each tag has: id, name, description, parents[], children[]
+#
+# Rules (from research):
+# 1. Polyhierarchy only within facets, not across facets
+# 2. A child must fully inherit from ALL parents (the All-Some Rule)
+# 3. Avoid mixing relationship types (is-a vs part-of vs instance-of)
+
+version: 1.0
+last_updated: "2025-12-15"
+
+facets:
+  # ============================================================================
+  # DOMAIN FACET - What the content is about
+  # ============================================================================
+  - id: domain
+    name: Domain
+    description: The subject matter or field the content addresses
+    tags:
+      # --- AI Capabilities ---
+      - id: ai-capabilities
+        name: AI Capabilities
+        description: Research on what AI systems can do
+        parents: []
+        children: [models, benchmarks, agents, reasoning, multimodal]
+
+      - id: models
+        name: Models
+        description: Specific AI models and architectures
+        parents: [ai-capabilities]
+        children: [llms, vision-models, multimodal-models]
+
+      - id: llms
+        name: Large Language Models
+        description: Large language models (GPT, Claude, Llama, etc.)
+        parents: [models]
+        children: []
+        aliases: [large-language-models]
+
+      - id: vision-models
+        name: Vision Models
+        description: Computer vision and image models
+        parents: [models]
+        children: []
+
+      - id: multimodal-models
+        name: Multimodal Models
+        description: Models handling multiple modalities
+        parents: [models, multimodal]
+        children: []
+
+      - id: benchmarks
+        name: Benchmarks
+        description: Evaluation benchmarks and datasets
+        parents: [ai-capabilities]
+        children: [capability-benchmarks, safety-benchmarks]
+
+      - id: capability-benchmarks
+        name: Capability Benchmarks
+        description: Benchmarks measuring model capabilities
+        parents: [benchmarks]
+        children: []
+
+      - id: safety-benchmarks
+        name: Safety Benchmarks
+        description: Benchmarks for safety evaluation
+        parents: [benchmarks, evaluations]
+        children: []
+
+      - id: agents
+        name: AI Agents
+        description: Autonomous AI agents and agentic systems
+        parents: [ai-capabilities]
+        children: [coding-agents, research-agents]
+        aliases: [agentic-ai]
+
+      - id: coding-agents
+        name: Coding Agents
+        description: AI agents for software development
+        parents: [agents, coding]
+        children: []
+
+      - id: research-agents
+        name: Research Agents
+        description: AI agents for research tasks
+        parents: [agents]
+        children: []
+
+      - id: reasoning
+        name: Reasoning
+        description: Reasoning capabilities in AI
+        parents: [ai-capabilities]
+        children: [chain-of-thought, planning]
+
+      - id: chain-of-thought
+        name: Chain of Thought
+        description: Chain-of-thought reasoning
+        parents: [reasoning]
+        children: []
+        aliases: [cot]
+
+      - id: planning
+        name: Planning
+        description: AI planning and task decomposition
+        parents: [reasoning]
+        children: []
+
+      - id: multimodal
+        name: Multimodal
+        description: Multimodal AI capabilities
+        parents: [ai-capabilities]
+        children: [multimodal-models]
+
+      # --- AI Safety ---
+      - id: ai-safety
+        name: AI Safety
+        description: Research on making AI systems safe
+        parents: []
+        children: [alignment, interpretability, evaluations, red-teaming, robustness, deception]
+
+      - id: alignment
+        name: Alignment
+        description: Aligning AI with human values and intent
+        parents: [ai-safety]
+        children: [rlhf, reward-hacking, alignment-faking]
+
+      - id: rlhf
+        name: RLHF
+        description: Reinforcement learning from human feedback
+        parents: [alignment]
+        children: []
+        aliases: [reinforcement-learning-human-feedback]
+
+      - id: reward-hacking
+        name: Reward Hacking
+        description: Models gaming reward signals
+        parents: [alignment]
+        children: []
+
+      - id: alignment-faking
+        name: Alignment Faking
+        description: Models appearing aligned while not being so
+        parents: [alignment, deception]
+        children: []
+
+      - id: interpretability
+        name: Interpretability
+        description: Understanding how AI systems work internally
+        parents: [ai-safety]
+        children: [mechanistic-interp, circuits]
+        aliases: [interp, explainability]
+
+      - id: mechanistic-interp
+        name: Mechanistic Interpretability
+        description: Understanding model internals mechanistically
+        parents: [interpretability]
+        children: []
+        aliases: [mech-interp]
+
+      - id: circuits
+        name: Circuits
+        description: Circuit-level interpretability
+        parents: [interpretability]
+        children: []
+
+      - id: evaluations
+        name: Evaluations
+        description: AI evaluation methods and frameworks
+        parents: [ai-safety]
+        children: [safety-benchmarks, capability-evals, dangerous-capability-evals]
+        aliases: [evals]
+
+      - id: capability-evals
+        name: Capability Evaluations
+        description: Evaluating AI capabilities
+        parents: [evaluations]
+        children: []
+
+      - id: dangerous-capability-evals
+        name: Dangerous Capability Evaluations
+        description: Evaluating potentially dangerous capabilities
+        parents: [evaluations]
+        children: [biosecurity-evals, cyber-evals, autonomy-evals]
+        aliases: [dce]
+
+      - id: biosecurity-evals
+        name: Biosecurity Evaluations
+        description: Evaluating biological/chemical risk capabilities
+        parents: [dangerous-capability-evals]
+        children: []
+
+      - id: cyber-evals
+        name: Cybersecurity Evaluations
+        description: Evaluating cybersecurity capabilities
+        parents: [dangerous-capability-evals]
+        children: []
+
+      - id: autonomy-evals
+        name: Autonomy Evaluations
+        description: Evaluating autonomous operation capabilities
+        parents: [dangerous-capability-evals]
+        children: []
+
+      - id: red-teaming
+        name: Red Teaming
+        description: Adversarial testing of AI systems
+        parents: [ai-safety]
+        children: [jailbreaks, adversarial-attacks]
+
+      - id: jailbreaks
+        name: Jailbreaks
+        description: Bypassing AI safety measures
+        parents: [red-teaming]
+        children: []
+
+      - id: adversarial-attacks
+        name: Adversarial Attacks
+        description: Adversarial inputs to AI systems
+        parents: [red-teaming]
+        children: []
+
+      - id: robustness
+        name: Robustness
+        description: AI system robustness and reliability
+        parents: [ai-safety]
+        children: []
+
+      - id: deception
+        name: Deception
+        description: AI deception and dishonesty
+        parents: [ai-safety]
+        children: [alignment-faking, sandbagging]
+
+      - id: sandbagging
+        name: Sandbagging
+        description: AI hiding capabilities
+        parents: [deception]
+        children: []
+
+      # --- AI Governance & Policy ---
+      - id: governance
+        name: Governance
+        description: AI governance and policy
+        parents: []
+        children: [policy, regulation, standards, international]
+        aliases: [ai-governance]
+
+      - id: policy
+        name: Policy
+        description: AI policy and recommendations
+        parents: [governance]
+        children: []
+        aliases: [ai-policy]
+
+      - id: regulation
+        name: Regulation
+        description: AI regulation and compliance
+        parents: [governance]
+        children: []
+
+      - id: standards
+        name: Standards
+        description: AI standards and frameworks
+        parents: [governance]
+        children: []
+
+      - id: international
+        name: International
+        description: International AI governance
+        parents: [governance]
+        children: [national-security]
+
+      - id: national-security
+        name: National Security
+        description: AI and national security
+        parents: [international]
+        children: []
+
+      # --- Risk & Forecasting ---
+      - id: risk
+        name: Risk
+        description: AI risks and risk management
+        parents: []
+        children: [existential-risk, misuse, systemic-risk]
+        aliases: [ai-risk]
+
+      - id: existential-risk
+        name: Existential Risk
+        description: Existential and catastrophic AI risks
+        parents: [risk]
+        children: []
+        aliases: [x-risk]
+
+      - id: misuse
+        name: Misuse
+        description: AI misuse risks
+        parents: [risk]
+        children: []
+
+      - id: systemic-risk
+        name: Systemic Risk
+        description: Systemic risks from AI deployment
+        parents: [risk]
+        children: []
+
+      - id: forecasting
+        name: Forecasting
+        description: AI capability and timeline forecasting
+        parents: []
+        children: [timelines, economics]
+
+      - id: timelines
+        name: Timelines
+        description: AI development timelines
+        parents: [forecasting]
+        children: []
+        aliases: [agi-timelines]
+
+      # --- Economics ---
+      - id: economics
+        name: Economics
+        description: Economic impacts of AI
+        parents: [forecasting]
+        children: [productivity, labor]
+        aliases: [ai-economics]
+
+      - id: productivity
+        name: Productivity
+        description: AI productivity impacts
+        parents: [economics]
+        children: []
+
+      - id: labor
+        name: Labor
+        description: AI impacts on labor and jobs
+        parents: [economics]
+        children: []
+
+      # --- Technical/Theory ---
+      - id: technical
+        name: Technical
+        description: Technical AI research
+        parents: []
+        children: [theory, architecture, training]
+
+      - id: theory
+        name: Theory
+        description: Theoretical foundations
+        parents: [technical]
+        children: [information-theory, math]
+
+      - id: information-theory
+        name: Information Theory
+        description: Information theoretic approaches
+        parents: [theory]
+        children: []
+
+      - id: math
+        name: Mathematics
+        description: Mathematical foundations
+        parents: [theory]
+        children: []
+
+      - id: architecture
+        name: Architecture
+        description: Model architectures
+        parents: [technical]
+        children: [transformers, ssm]
+
+      - id: transformers
+        name: Transformers
+        description: Transformer architectures
+        parents: [architecture]
+        children: []
+
+      - id: ssm
+        name: State Space Models
+        description: State space model architectures
+        parents: [architecture]
+        children: []
+        aliases: [mamba]
+
+      - id: training
+        name: Training
+        description: Model training methods
+        parents: [technical]
+        children: [fine-tuning, post-training]
+
+      - id: fine-tuning
+        name: Fine-tuning
+        description: Model fine-tuning methods
+        parents: [training]
+        children: []
+
+      - id: post-training
+        name: Post-training
+        description: Post-training modifications
+        parents: [training]
+        children: []
+
+      # --- Practical/Applied ---
+      - id: practical
+        name: Practical
+        description: Practical AI applications and usage
+        parents: []
+        children: [coding, prompting, tools, applications]
+
+      - id: coding
+        name: Coding
+        description: AI for coding and software development
+        parents: [practical]
+        children: [coding-agents]
+
+      - id: prompting
+        name: Prompting
+        description: Prompt engineering and techniques
+        parents: [practical]
+        children: []
+        aliases: [prompt-engineering]
+
+      - id: tools
+        name: Tools
+        description: AI tools and products
+        parents: [practical]
+        children: []
+
+      - id: applications
+        name: Applications
+        description: AI applications in specific domains
+        parents: [practical]
+        children: [science, medicine, finance]
+
+      - id: science
+        name: Science
+        description: AI for scientific research
+        parents: [applications]
+        children: []
+
+      - id: medicine
+        name: Medicine
+        description: AI in healthcare and medicine
+        parents: [applications]
+        children: []
+
+      - id: finance
+        name: Finance
+        description: AI in finance
+        parents: [applications]
+        children: []
+
+      # --- Security ---
+      - id: security
+        name: Security
+        description: AI security (not safety)
+        parents: []
+        children: [cybersecurity, privacy]
+
+      - id: cybersecurity
+        name: Cybersecurity
+        description: AI and cybersecurity
+        parents: [security]
+        children: []
+
+      - id: privacy
+        name: Privacy
+        description: AI and privacy
+        parents: [security]
+        children: []
+
+      # --- Meta/Process ---
+      - id: meta
+        name: Meta
+        description: Meta-level AI topics
+        parents: []
+        children: [methodology, industry, open-source]
+
+      - id: methodology
+        name: Methodology
+        description: Research methodology
+        parents: [meta]
+        children: []
+
+      - id: industry
+        name: Industry
+        description: AI industry news and developments
+        parents: [meta]
+        children: [companies]
+
+      - id: companies
+        name: Companies
+        description: AI companies and labs
+        parents: [industry]
+        children: [anthropic, openai, google, meta-ai]
+
+      - id: anthropic
+        name: Anthropic
+        description: Anthropic-related content
+        parents: [companies]
+        children: []
+
+      - id: openai
+        name: OpenAI
+        description: OpenAI-related content
+        parents: [companies]
+        children: []
+
+      - id: google
+        name: Google
+        description: Google AI-related content
+        parents: [companies]
+        children: []
+        aliases: [deepmind, google-deepmind]
+
+      - id: meta-ai
+        name: Meta AI
+        description: Meta AI-related content
+        parents: [companies]
+        children: []
+        aliases: [facebook-ai]
+
+      - id: open-source
+        name: Open Source
+        description: Open source AI
+        parents: [meta]
+        children: []
+
+  # ============================================================================
+  # CONTENT TYPE FACET - What kind of content it is
+  # ============================================================================
+  - id: content-type
+    name: Content Type
+    description: The format or type of the content
+    tags:
+      - id: paper
+        name: Paper
+        description: Academic paper or preprint
+        parents: []
+        children: []
+
+      - id: blog-post
+        name: Blog Post
+        description: Blog post or essay
+        parents: []
+        children: []
+
+      - id: report
+        name: Report
+        description: Technical report or whitepaper
+        parents: []
+        children: []
+
+      - id: tool
+        name: Tool
+        description: Software tool or product
+        parents: []
+        children: []
+
+      - id: dataset
+        name: Dataset
+        description: Dataset or benchmark
+        parents: []
+        children: []
+
+      - id: tutorial
+        name: Tutorial
+        description: Tutorial or guide
+        parents: []
+        children: []
+
+      - id: news
+        name: News
+        description: News article
+        parents: []
+        children: []
+
+      - id: social-media
+        name: Social Media
+        description: Social media post (X/Twitter, etc.)
+        parents: []
+        children: []
+
+      - id: video
+        name: Video
+        description: Video content
+        parents: []
+        children: []
+
+      - id: podcast
+        name: Podcast
+        description: Podcast or audio
+        parents: []
+        children: []
+
+      - id: documentation
+        name: Documentation
+        description: Official documentation
+        parents: []
+        children: []
+
+      - id: survey
+        name: Survey
+        description: Survey or literature review paper
+        parents: []
+        children: []
+
+  # ============================================================================
+  # SOURCE FACET - Where the content comes from
+  # ============================================================================
+  - id: source
+    name: Source
+    description: The origin or publisher of the content
+    tags:
+      - id: arxiv
+        name: arXiv
+        description: arXiv preprint
+        parents: []
+        children: []
+
+      - id: github
+        name: GitHub
+        description: GitHub repository
+        parents: []
+        children: []
+
+      - id: substack
+        name: Substack
+        description: Substack newsletter
+        parents: []
+        children: []
+
+      - id: lesswrong
+        name: LessWrong
+        description: LessWrong post
+        parents: []
+        children: []
+
+      - id: alignment-forum
+        name: Alignment Forum
+        description: Alignment Forum post
+        parents: []
+        children: []
+
+      - id: ea-forum
+        name: EA Forum
+        description: Effective Altruism Forum post
+        parents: []
+        children: []
+
+      - id: x-twitter
+        name: X/Twitter
+        description: X (formerly Twitter) post
+        parents: []
+        children: []
+
+      - id: youtube
+        name: YouTube
+        description: YouTube video
+        parents: []
+        children: []
+
+      - id: anthropic-source
+        name: Anthropic
+        description: Official Anthropic publication
+        parents: []
+        children: []
+
+      - id: openai-source
+        name: OpenAI
+        description: Official OpenAI publication
+        parents: []
+        children: []
+
+      - id: google-source
+        name: Google
+        description: Official Google/DeepMind publication
+        parents: []
+        children: []
+
+      - id: meta-source
+        name: Meta
+        description: Official Meta AI publication
+        parents: []
+        children: []
+
+      - id: aisi
+        name: AISI
+        description: AI Safety Institute (UK)
+        parents: []
+        children: []
+
+      - id: nist
+        name: NIST
+        description: NIST publication
+        parents: []
+        children: []
+
+      - id: academic-journal
+        name: Academic Journal
+        description: Peer-reviewed journal
+        parents: []
+        children: []
+
+      - id: think-tank
+        name: Think Tank
+        description: Think tank or policy organization
+        parents: []
+        children: []
+
+      - id: news-outlet
+        name: News Outlet
+        description: News organization
+        parents: []
+        children: []
