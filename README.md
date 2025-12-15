@@ -201,6 +201,12 @@ Just tell Claude what to change.
 | `/synthesize` | Generate literature review report |
 | `/export-bib` | Export references as BibTeX |
 
+### Link Database
+| Command | Description |
+|---------|-------------|
+| `/add-links` | Add new links to cross-project database |
+| `/search-links <query>` | Search/filter link database by text, tags, importance |
+
 ## Skills
 
 Skills provide detailed methodologies that Claude uses automatically when relevant.
@@ -230,6 +236,8 @@ Claude-RA/
 │   │   ├── new-review.md
 │   │   ├── search.md
 │   │   ├── add-paper.md
+│   │   ├── add-links.md         # Add links to database
+│   │   ├── search-links.md      # Search link database
 │   │   ├── process-sources.md
 │   │   ├── scan-blogs.md
 │   │   ├── scan-notes.md
@@ -244,6 +252,15 @@ Claude-RA/
 │       ├── systematic-review/
 │       ├── paper-analysis/
 │       └── citation-helper/
+│
+├── link-dumps/                  # Cross-project link database
+│   ├── links.yaml               # Main link database (618 entries)
+│   ├── tags.yaml                # Hierarchical tag taxonomy
+│   ├── CHANGELOG.md             # Database change history
+│   ├── research-notes.md        # Tag system design docs
+│   ├── figures/                 # Key figures from links
+│   ├── notes/                   # Detailed notes
+│   └── *.docx                   # Original source files
 │
 ├── Templates/                   # Templates for new reviews
 │   ├── User-Input/
@@ -341,6 +358,53 @@ This approach is more secure than MCP-based alternatives because:
 - **Version controlled**: All changes tracked in git
 - **Limited exfiltration**: Can only push to your own GitHub repo
 
+## Link Dumps Database
+
+The `link-dumps/` directory is a cross-project database for collecting and organizing links that can be used across all literature reviews.
+
+### Why a Separate Database?
+
+- **Cross-project access**: Links collected for one review may be useful for others
+- **Persistent collection**: Keep collecting links even when not actively reviewing
+- **Rich metadata**: More fields than review-specific references.yaml
+- **Hierarchical tags**: Flexible categorization with polyhierarchy support
+
+### Quick Usage
+
+**Add new links:**
+```
+/add-links
+
+https://arxiv.org/abs/2412.12345 - Important paper on X
+https://anthropic.com/research/new - High priority
+
+Notes: First one relates to alignment
+```
+
+**Search links:**
+```
+/search-links alignment                    # Text search
+/search-links #ai-safety #paper            # By tags
+/search-links importance:high              # By importance
+```
+
+### Database Files
+
+| File | Description |
+|------|-------------|
+| `links.yaml` | Main database with 618 entries |
+| `tags.yaml` | Hierarchical tag taxonomy (80+ tags, 3 facets) |
+| `CHANGELOG.md` | All database changes |
+| `research-notes.md` | Tag system design decisions |
+
+### Tag Facets
+
+1. **Domain**: ai-safety, evaluations, agents, governance, economics, etc.
+2. **Content Type**: paper, blog-post, tool, dataset, tutorial, etc.
+3. **Source**: arxiv, github, anthropic, openai, lesswrong, etc.
+
+See `CLAUDE.md` for full documentation of the link-dumps system.
+
 ## Tips
 
 1. **Commit often** - Use git to track progress
@@ -349,6 +413,7 @@ This approach is more secure than MCP-based alternatives because:
 4. **Follow citations** - Ask Claude to find papers citing important works
 5. **Check progress** - Use `/status` regularly
 6. **Use NEW.md** - When adding materials mid-review, create NEW.md so Claude knows what's new
+7. **Use the link database** - Search `/search-links` before starting a new review to find existing relevant links
 
 ## License
 
