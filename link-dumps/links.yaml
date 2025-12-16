@@ -143,34 +143,42 @@ links:
     archived: false
 
   - id: alignment-2e88fa
-    title: ">"
+    title: "OpenAI - Scaling Code Verification"
     url: "https://alignment.openai.com/scaling-code-verification/"
     tags: ['uncategorized', 'openai-source']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: alignmentforum-7fcd56
-    title: ">"
+    title: "A Pragmatic Vision for Interpretability"
+    authors: ["Neel Nanda", "Josh Engels", "Arthur Conmy", "et al."]
     url: "https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability"
-    tags: ['blog-post', 'uncategorized', 'alignment-forum']
-    importance: normal
+    date_published: "2025-12-01"
+    tags: ['interpretability', 'methodology', 'ai-safety', 'blog-post', 'alignment-forum']
+    importance: high
+    notes:
+      - type: file
+        path: "notes/alignment-forum-pragmatic-vision-interpretability.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: anthropic-1c8f97
-    title: ">>"
+    title: "How AI is Transforming Work at Anthropic"
     url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
-    tags: ['uncategorized', 'anthropic-source']
-    importance: normal
+    tags: ["productivity", "industry", "anthropic", "anthropic-source"]
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/anthropic-how-ai-transforming-work.md"
 
   - id: anthropic-5879c7
     title: "https://www.anthropic.com/news/language-models-mostly-know-what-they-know"
@@ -323,9 +331,9 @@ links:
     archived: false
 
   - id: arxiv-2401.03188
-    title: "A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence (arxiv.org)"
+    title: "A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence"
     url: "https://arxiv.org/abs/2401.03188"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'technical', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -643,14 +651,17 @@ links:
     archived: false
 
   - id: arxiv-2405.19550
-    title: "Stress-Testing Capability Elicitation With Password-Locked Models (arxiv.org)"
+    title: "Stress-Testing Capability Elicitation With Password-Locked Models"
     url: "https://arxiv.org/abs/2405.19550"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "capability-evals", "sandbagging", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2405.19550.md"
 
   - id: arxiv-2405.21018
     title: "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models (arxiv.org)"
@@ -733,9 +744,9 @@ links:
     archived: false
 
   - id: arxiv-2406.02061
-    title: "Alice in Wonderland: Simple Tasks Showing Complete Reasoning Breakdown in State-Of-the-Art Large Language Models (arxiv.org)"
+    title: "Alice in Wonderland: Simple Tasks Showing Complete Reasoning Breakdown in State-Of-the-Art Large Language Models"
     url: "https://arxiv.org/abs/2406.02061"
-    tags: ['arxiv', 'paper', 'interpretability', 'theory']
+    tags: ['reasoning', 'evaluations', 'llms', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -863,14 +874,17 @@ links:
     archived: false
 
   - id: arxiv-2406.04313
-    title: "Improving Alignment and Robustness with Short Circuiting (arxiv.org)"
+    title: "Improving Alignment and Robustness with Short Circuiting"
     url: "https://arxiv.org/abs/2406.04313"
-    tags: ['alignment', 'paper', 'arxiv']
+    tags: ["alignment", "robustness", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.04313.md"
 
   - id: arxiv-2406.04370
     title: "Large Language Model Confidence Estimation via Black-Box Access (arxiv.org)"
@@ -1785,7 +1799,7 @@ links:
   - id: arxiv-2407.07890
     title: "Training on the Test Task Confounds Evaluation and Emergence"
     url: "https://arxiv.org/abs/2407.07890"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'methodology', 'benchmarks', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1873,9 +1887,9 @@ links:
     archived: false
 
   - id: arxiv-2407.09468
-    title: "Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures (arxiv.org)"
+    title: "Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures"
     url: "https://arxiv.org/abs/2407.09468"
-    tags: ['paper', 'arxiv', 'theory']
+    tags: ['theory', 'math', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1893,9 +1907,9 @@ links:
     archived: false
 
   - id: arxiv-2407.11969
-    title: "Does Refusal Training in LLMs Generalize to the Past Tense? (arxiv.org)"
+    title: "Does Refusal Training in LLMs Generalize to the Past Tense?"
     url: "https://arxiv.org/abs/2407.11969"
-    tags: ['jailbreaks', 'paper', 'arxiv']
+    tags: ['jailbreaks', 'alignment', 'red-teaming', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1923,9 +1937,9 @@ links:
     archived: false
 
   - id: arxiv-2407.12784
-    title: "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases (arxiv.org)"
+    title: "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases"
     url: "https://arxiv.org/abs/2407.12784"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['agents', 'red-teaming', 'adversarial-attacks', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1973,9 +1987,9 @@ links:
     archived: false
 
   - id: arxiv-2407.14937
-    title: "Operationalizing a Threat Model for Red-Teaming Large Language Models (LLMs) (arxiv.org)"
+    title: "Operationalizing a Threat Model for Red-Teaming Large Language Models (LLMs)"
     url: "https://arxiv.org/abs/2407.14937"
-    tags: ['paper', 'arxiv', 'red-teaming']
+    tags: ['red-teaming', 'ai-safety', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2003,9 +2017,9 @@ links:
     archived: false
 
   - id: arxiv-2407.16216
-    title: "A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More (arxiv.org)"
+    title: "A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More"
     url: "https://arxiv.org/abs/2407.16216"
-    tags: ['paper', 'ai-safety', 'arxiv']
+    tags: ['alignment', 'rlhf', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2745,12 +2759,15 @@ links:
   - id: arxiv-2411.00640
     title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations"
     url: "https://arxiv.org/abs/2411.00640"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "methodology", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.00640.md"
 
   - id: arxiv-2411.06037
     title: "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
@@ -2775,7 +2792,7 @@ links:
   - id: arxiv-2411.08088
     title: "Safety case template for frontier AI: A cyber inability argument"
     url: "https://arxiv.org/abs/2411.08088"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['ai-safety', 'cyber-evals', 'governance', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2785,7 +2802,7 @@ links:
   - id: arxiv-2411.12820
     title: "Declare and Justify: Explicit assumptions in AI evaluations are necessary for effective regulation"
     url: "https://arxiv.org/abs/2411.12820"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'governance', 'regulation', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2805,7 +2822,7 @@ links:
   - id: arxiv-2411.15594
     title: "A Survey on LLM-as-a-Judge"
     url: "https://arxiv.org/abs/2411.15594"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "llms", "survey", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2835,7 +2852,7 @@ links:
   - id: arxiv-2412.02159
     title: "Jailbreak Defense in a Narrow Domain: Limitations of Existing Methods and a New Transcript-Classifier Approach"
     url: "https://arxiv.org/abs/2412.02159"
-    tags: ['jailbreaks', 'paper', 'arxiv']
+    tags: ['jailbreaks', 'ai-safety', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4025,7 +4042,7 @@ links:
   - id: arxiv-2503.19887
     title: "AI threats to national security can be countered through an incident regime"
     url: "https://arxiv.org/abs/2503.19887"
-    tags: ['paper', 'arxiv', 'national-security']
+    tags: ['national-security', 'governance', 'policy', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4085,12 +4102,15 @@ links:
   - id: arxiv-2504.05259
     title: "How to evaluate control measures for LLM agents? A trajectory from today to superintelligence"
     url: "https://arxiv.org/abs/2504.05259"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["evaluations", "agents", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.05259.md"
 
   - id: arxiv-2504.09823
     title: "RAKG:Document-level Retrieval Augmented Knowledge Graph Construction"
@@ -4155,7 +4175,7 @@ links:
   - id: arxiv-2504.13839
     title: "Audit Cards: Contextualizing AI Evaluations"
     url: "https://arxiv.org/abs/2504.13839"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'governance', 'methodology', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4165,7 +4185,7 @@ links:
   - id: arxiv-2504.15585
     title: "A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment"
     url: "https://arxiv.org/abs/2504.15585"
-    tags: ['paper', 'technical', 'ai-safety', 'arxiv']
+    tags: ['ai-safety', 'agents', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -5155,12 +5175,15 @@ links:
   - id: arxiv-2509.15541
     title: "Stress Testing Deliberative Alignment for Anti-Scheming Training"
     url: "https://arxiv.org/abs/2509.15541"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["alignment", "deception", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link superdump 11-7-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2509.15541.md"
 
   - id: arxiv-2509.18058
     title: "Strategic Dishonesty Can Undermine AI Safety Evaluations of Frontier LLMs"
@@ -5393,19 +5416,24 @@ links:
     archived: false
 
   - id: arxiv-2511.04703
-    title: ">>"
+    title: "Measuring what Matters: Construct Validity in Large Language Model Benchmarks"
+    authors: ["Andrew M. Bean", "Ryan Othniel Kearns", "Angelika Romanou", "et al."]
     url: "https://arxiv.org/abs/2511.04703"
-    tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    date_published: "2025-11-03"
+    tags: ['evaluations', 'methodology', 'benchmarks', 'paper', 'arxiv']
+    importance: very-high
+    notes:
+      - type: file
+        path: "notes/arxiv-2511.04703.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2511.04860
     title: "GPT-5 at CTFs: Case Studies From Top-Tier Cybersecurity Events"
     url: "https://arxiv.org/abs/2511.04860"
-    tags: ['ai-capabilities', 'paper', 'arxiv']
+    tags: ["cybersecurity", "ai-capabilities", "cyber-evals", "paper", "arxiv"]
     importance: normal
     source_files: ['Link Dump 11-19-25.docx']
     date_added: "2025-12-15"
@@ -5503,44 +5531,62 @@ links:
     archived: false
 
   - id: arxiv-2512.00193
-    title: ">"
+    title: "A Rosetta Stone for AI Benchmarks"
+    authors: ["Anson Ho", "Jean-Stanislas Denain", "David Atanasov", "Samuel Albanie", "Rohin Shah"]
     url: "https://arxiv.org/abs/2512.00193"
-    tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    date_published: "2025-11-28"
+    tags: ['evaluations', 'benchmarks', 'forecasting', 'methodology', 'paper', 'arxiv']
+    importance: high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.00193.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.04123
-    title: ">>"
+    title: "Measuring Agents in Production"
+    authors: ["Melissa Z. Pan", "Negar Arabzadeh", "Riccardo Cogo", "Joseph E. Gonzalez", "Ion Stoica", "Matei Zaharia", "et al."]
     url: "https://arxiv.org/abs/2512.04123"
-    tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    date_published: "2025-12-02"
+    tags: ['agents', 'evaluations', 'industry', 'paper', 'arxiv']
+    importance: very-high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.04123.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.04921
-    title: ">"
+    title: "The AI Consumer Index (ACE)"
+    authors: ["Julien Benchek", "Rohit Shetty", "Benjamin Hunsberger", "Bertie Vidgen", "et al."]
     url: "https://arxiv.org/abs/2512.04921"
-    tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    date_published: "2025-12-04"
+    tags: ['evaluations', 'benchmarks', 'applications', 'paper', 'arxiv']
+    importance: high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.04921.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.07810
     title: "Auditing Games for Sandbagging"
     url: "https://arxiv.org/abs/2512.07810"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["sandbagging", "evaluations", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.07810.md"
 
   - id: astralcodexten-098b4c
     title: "https://www.astralcodexten.com/p/mantic-monday-21924"
@@ -5563,13 +5609,17 @@ links:
     archived: false
 
   - id: blog-a7ae04
-    title: ">"
+    title: "LangSmith Agent Builder Now in Public Beta"
     url: "https://blog.langchain.com/langsmith-agent-builder-now-in-public-beta/"
-    tags: ['uncategorized']
-    importance: normal
+    date_published: "2025-12"
+    tags: ['agents', 'tools', 'blog-post', 'langchain']
+    importance: high
+    notes:
+      - type: file
+        path: "notes/langsmith-agent-builder.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: cloud-71038e
@@ -5653,20 +5703,20 @@ links:
     archived: false
 
   - id: lesswrong-7483be
-    title: ">"
+    title: "AI in 2025: Gestalt"
     url: "https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt"
     tags: ['blog-post', 'uncategorized', 'lesswrong']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: livedeepresearch-df9685
-    title: ">"
+    title: "Live Deep Research"
     url: "https://livedeepresearch.github.io/"
     tags: ['uncategorized', 'github']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5683,13 +5733,16 @@ links:
     archived: false
 
   - id: nist-1a8165
-    title: ">>"
+    title: "Accelerating AI Innovation Through Measurement Science - NIST"
     url: "https://nist.gov/blogs/caisi-research-blog/accelerating-ai-innovation-through-measurement-science"
-    tags: ['uncategorized', 'nist']
-    importance: normal
+    tags: ['evaluations', 'methodology', 'policy', 'standards', 'nist']
+    importance: very-high
+    notes:
+      - type: file
+        path: "notes/nist-ai-measurement-science.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: oasis-04608d
@@ -5713,10 +5766,10 @@ links:
     archived: false
 
   - id: openai-78fdb3
-    title: ">"
+    title: "The State of Enterprise AI 2025 Report"
     url: "https://openai.com/index/the-state-of-enterprise-ai-2025-report/"
     tags: ['uncategorized', 'openai-source']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -6253,10 +6306,10 @@ links:
     archived: false
 
   - id: x-8b81da
-    title: ">  (search)"
+    title: "X Post (search)"
     url: "https://x.com/i/status/1997805305439367564"
     tags: ['uncategorized', 'x-twitter', 'social-media']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -6303,10 +6356,10 @@ links:
     archived: false
 
   - id: x-cf1201
-    title: ">"
+    title: "Chris Barber X Post"
     url: "https://x.com/chrisbarber/status/1995526542701813872"
     tags: ['uncategorized', 'x-twitter', 'social-media']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
