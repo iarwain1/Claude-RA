@@ -4,6 +4,23 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.7] - 2025-12-16
+
+### Added
+- Final batch: 4 additional paper notes (total now 60):
+  - `arxiv-2302.06590.md` - GitHub Copilot productivity study (55.8% faster)
+  - `arxiv-2305.15324.md` - Model Evaluation for Extreme Risks (foundational multi-lab paper)
+  - `arxiv-2307.03172.md` - Lost in the Middle (long context limitations)
+  - `arxiv-2401.02843.md` - Thousands of AI Authors Survey (2,778 researchers)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 60 processed links (~9.7%)
+- Processing now covers papers from February 2023 through December 2024
+
+### Technical Notes
+- ~558 links still pending full processing
+- Session processed 32 new papers total
+
 ## [1.0.6] - 2025-12-16
 
 ### Added

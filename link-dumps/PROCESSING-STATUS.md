@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 56
-- **Titles updated:** 56+
-- **Pending full processing:** ~562
+- **Fully processed (with notes):** 60
+- **Titles updated:** 60+
+- **Pending full processing:** ~558
 
 ## Access Issues
 
@@ -85,6 +85,10 @@ The following links have been fully processed with abstracts/summaries in the `n
 54. `arxiv-2406.14598` - SORRY-Bench: Safety Refusal Evaluation
 55. `arxiv-2308.03688` - AgentBench (ICLR 2024)
 56. `arxiv-2401.03568` - Agent AI Survey (Microsoft/Stanford)
+57. `arxiv-2302.06590` - GitHub Copilot Productivity Study (55.8% faster)
+58. `arxiv-2305.15324` - Model Evaluation for Extreme Risks (multi-lab)
+59. `arxiv-2307.03172` - Lost in the Middle (long context limitations)
+60. `arxiv-2401.02843` - Thousands of AI Authors Survey (forecasting)
 
 ## Links Still Needing Processing
 
