@@ -165,12 +165,15 @@ links:
   - id: anthropic-1c8f97
     title: "How AI is Transforming Work at Anthropic"
     url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
-    tags: ['uncategorized', 'anthropic-source']
+    tags: ["productivity", "industry", "anthropic", "anthropic-source"]
     importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/anthropic-how-ai-transforming-work.md"
 
   - id: anthropic-5879c7
     title: "https://www.anthropic.com/news/language-models-mostly-know-what-they-know"
@@ -643,14 +646,17 @@ links:
     archived: false
 
   - id: arxiv-2405.19550
-    title: "Stress-Testing Capability Elicitation With Password-Locked Models (arxiv.org)"
+    title: "Stress-Testing Capability Elicitation With Password-Locked Models"
     url: "https://arxiv.org/abs/2405.19550"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "capability-evals", "sandbagging", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2405.19550.md"
 
   - id: arxiv-2405.21018
     title: "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models (arxiv.org)"
@@ -863,14 +869,17 @@ links:
     archived: false
 
   - id: arxiv-2406.04313
-    title: "Improving Alignment and Robustness with Short Circuiting (arxiv.org)"
+    title: "Improving Alignment and Robustness with Short Circuiting"
     url: "https://arxiv.org/abs/2406.04313"
-    tags: ['alignment', 'paper', 'arxiv']
+    tags: ["alignment", "robustness", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.04313.md"
 
   - id: arxiv-2406.04370
     title: "Large Language Model Confidence Estimation via Black-Box Access (arxiv.org)"
@@ -2745,12 +2754,15 @@ links:
   - id: arxiv-2411.00640
     title: "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations"
     url: "https://arxiv.org/abs/2411.00640"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "methodology", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.00640.md"
 
   - id: arxiv-2411.06037
     title: "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
@@ -2805,7 +2817,7 @@ links:
   - id: arxiv-2411.15594
     title: "A Survey on LLM-as-a-Judge"
     url: "https://arxiv.org/abs/2411.15594"
-    tags: ['arxiv', 'paper', 'evaluations']
+    tags: ["evaluations", "llms", "survey", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2835,7 +2847,7 @@ links:
   - id: arxiv-2412.02159
     title: "Jailbreak Defense in a Narrow Domain: Limitations of Existing Methods and a New Transcript-Classifier Approach"
     url: "https://arxiv.org/abs/2412.02159"
-    tags: ['jailbreaks', 'paper', 'arxiv']
+    tags: ["jailbreaks", "red-teaming", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4085,12 +4097,15 @@ links:
   - id: arxiv-2504.05259
     title: "How to evaluate control measures for LLM agents? A trajectory from today to superintelligence"
     url: "https://arxiv.org/abs/2504.05259"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["evaluations", "agents", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.05259.md"
 
   - id: arxiv-2504.09823
     title: "RAKG:Document-level Retrieval Augmented Knowledge Graph Construction"
@@ -5155,12 +5170,15 @@ links:
   - id: arxiv-2509.15541
     title: "Stress Testing Deliberative Alignment for Anti-Scheming Training"
     url: "https://arxiv.org/abs/2509.15541"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["alignment", "deception", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link superdump 11-7-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2509.15541.md"
 
   - id: arxiv-2509.18058
     title: "Strategic Dishonesty Can Undermine AI Safety Evaluations of Frontier LLMs"
@@ -5405,7 +5423,7 @@ links:
   - id: arxiv-2511.04860
     title: "GPT-5 at CTFs: Case Studies From Top-Tier Cybersecurity Events"
     url: "https://arxiv.org/abs/2511.04860"
-    tags: ['ai-capabilities', 'paper', 'arxiv']
+    tags: ["cybersecurity", "ai-capabilities", "cyber-evals", "paper", "arxiv"]
     importance: normal
     source_files: ['Link Dump 11-19-25.docx']
     date_added: "2025-12-15"
@@ -5535,12 +5553,15 @@ links:
   - id: arxiv-2512.07810
     title: "Auditing Games for Sandbagging"
     url: "https://arxiv.org/abs/2512.07810"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ["sandbagging", "evaluations", "ai-safety", "paper", "arxiv"]
     importance: normal
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.07810.md"
 
   - id: astralcodexten-098b4c
     title: "https://www.astralcodexten.com/p/mantic-monday-21924"

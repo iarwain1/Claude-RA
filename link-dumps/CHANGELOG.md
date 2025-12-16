@@ -4,6 +4,29 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.2] - 2025-12-16
+
+### Added
+- Created detailed notes for 7 key papers/articles in `notes/` directory:
+  - `arxiv-2411.00640.md` - Adding Error Bars to Evals (methodology)
+  - `arxiv-2405.19550.md` - Stress-Testing Capability Elicitation (sandbagging)
+  - `arxiv-2406.04313.md` - Short Circuiting for Alignment (jailbreak defense)
+  - `arxiv-2512.07810.md` - Auditing Games for Sandbagging (AISI)
+  - `arxiv-2509.15541.md` - Deliberative Alignment Anti-Scheming (Apollo/AISI)
+  - `arxiv-2504.05259.md` - Evaluating Control Measures (control evaluations)
+  - `anthropic-how-ai-transforming-work.md` - AI productivity research
+- Created `PROCESSING-STATUS.md` documenting progress and pending work
+
+### Changed
+- Updated titles for 10+ entries with proper paper/article titles
+- Updated tags for processed entries to match content
+- Added notes field references to 7 database entries
+
+### Technical Notes
+- WebFetch blocked on most sites (arXiv, Anthropic, OpenAI, LessWrong, etc.)
+- Used WebSearch as workaround to retrieve metadata from search results
+- ~600 links still need full processing (titles from URLs only)
+
 ## [1.0.1] - 2025-12-16
 
 ### Fixed
