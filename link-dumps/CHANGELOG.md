@@ -4,6 +4,17 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.1] - 2025-12-16
+
+### Fixed
+- Corrected interpretation of `>` and `>>` markers in source files
+  - `>` now sets importance to `high` (was incorrectly used as title)
+  - `>>` now sets importance to `very-high` (was incorrectly used as title)
+- Updated 14 entries with proper titles and importance levels:
+  - 4 entries set to `very-high` importance
+  - 10 entries set to `high` importance
+- Replaced placeholder titles with descriptive titles derived from URLs
+
 ## [1.0.0] - 2025-12-15
 
 ### Added

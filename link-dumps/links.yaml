@@ -143,30 +143,30 @@ links:
     archived: false
 
   - id: alignment-2e88fa
-    title: ">"
+    title: "OpenAI - Scaling Code Verification"
     url: "https://alignment.openai.com/scaling-code-verification/"
     tags: ['uncategorized', 'openai-source']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: alignmentforum-7fcd56
-    title: ">"
+    title: "A Pragmatic Vision for Interpretability"
     url: "https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability"
     tags: ['blog-post', 'uncategorized', 'alignment-forum']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: anthropic-1c8f97
-    title: ">>"
+    title: "How AI is Transforming Work at Anthropic"
     url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
     tags: ['uncategorized', 'anthropic-source']
-    importance: normal
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5393,10 +5393,10 @@ links:
     archived: false
 
   - id: arxiv-2511.04703
-    title: ">>"
+    title: "arXiv:2511.04703"
     url: "https://arxiv.org/abs/2511.04703"
     tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5503,30 +5503,30 @@ links:
     archived: false
 
   - id: arxiv-2512.00193
-    title: ">"
+    title: "arXiv:2512.00193"
     url: "https://arxiv.org/abs/2512.00193"
     tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: arxiv-2512.04123
-    title: ">>"
+    title: "arXiv:2512.04123"
     url: "https://arxiv.org/abs/2512.04123"
     tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: arxiv-2512.04921
-    title: ">"
+    title: "arXiv:2512.04921"
     url: "https://arxiv.org/abs/2512.04921"
     tags: ['uncategorized', 'paper', 'arxiv']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5563,10 +5563,10 @@ links:
     archived: false
 
   - id: blog-a7ae04
-    title: ">"
+    title: "LangSmith Agent Builder Now in Public Beta"
     url: "https://blog.langchain.com/langsmith-agent-builder-now-in-public-beta/"
     tags: ['uncategorized']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5653,20 +5653,20 @@ links:
     archived: false
 
   - id: lesswrong-7483be
-    title: ">"
+    title: "AI in 2025: Gestalt"
     url: "https://www.lesswrong.com/posts/Q9ewXs8pQSAX5vL7H/ai-in-2025-gestalt"
     tags: ['blog-post', 'uncategorized', 'lesswrong']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
     archived: false
 
   - id: livedeepresearch-df9685
-    title: ">"
+    title: "Live Deep Research"
     url: "https://livedeepresearch.github.io/"
     tags: ['uncategorized', 'github']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5683,10 +5683,10 @@ links:
     archived: false
 
   - id: nist-1a8165
-    title: ">>"
+    title: "Accelerating AI Innovation Through Measurement Science - NIST"
     url: "https://nist.gov/blogs/caisi-research-blog/accelerating-ai-innovation-through-measurement-science"
     tags: ['uncategorized', 'nist']
-    importance: normal
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -5713,10 +5713,10 @@ links:
     archived: false
 
   - id: openai-78fdb3
-    title: ">"
+    title: "The State of Enterprise AI 2025 Report"
     url: "https://openai.com/index/the-state-of-enterprise-ai-2025-report/"
     tags: ['uncategorized', 'openai-source']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -6253,10 +6253,10 @@ links:
     archived: false
 
   - id: x-8b81da
-    title: ">  (search)"
+    title: "X Post (search)"
     url: "https://x.com/i/status/1997805305439367564"
     tags: ['uncategorized', 'x-twitter', 'social-media']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
@@ -6303,10 +6303,10 @@ links:
     archived: false
 
   - id: x-cf1201
-    title: ">"
+    title: "Chris Barber X Post"
     url: "https://x.com/chrisbarber/status/1995526542701813872"
     tags: ['uncategorized', 'x-twitter', 'social-media']
-    importance: normal
+    importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
     read: false
