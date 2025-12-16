@@ -154,12 +154,17 @@ links:
 
   - id: alignmentforum-7fcd56
     title: "A Pragmatic Vision for Interpretability"
+    authors: ["Neel Nanda", "Josh Engels", "Arthur Conmy", "et al."]
     url: "https://www.alignmentforum.org/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability"
-    tags: ['blog-post', 'uncategorized', 'alignment-forum']
+    date_published: "2025-12-01"
+    tags: ['interpretability', 'methodology', 'ai-safety', 'blog-post', 'alignment-forum']
     importance: high
+    notes:
+      - type: file
+        path: "notes/alignment-forum-pragmatic-vision-interpretability.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: anthropic-1c8f97
@@ -5411,13 +5416,18 @@ links:
     archived: false
 
   - id: arxiv-2511.04703
-    title: "arXiv:2511.04703"
+    title: "Measuring what Matters: Construct Validity in Large Language Model Benchmarks"
+    authors: ["Andrew M. Bean", "Ryan Othniel Kearns", "Angelika Romanou", "et al."]
     url: "https://arxiv.org/abs/2511.04703"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    date_published: "2025-11-03"
+    tags: ['evaluations', 'methodology', 'benchmarks', 'paper', 'arxiv']
     importance: very-high
+    notes:
+      - type: file
+        path: "notes/arxiv-2511.04703.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2511.04860
@@ -5521,33 +5531,48 @@ links:
     archived: false
 
   - id: arxiv-2512.00193
-    title: "arXiv:2512.00193"
+    title: "A Rosetta Stone for AI Benchmarks"
+    authors: ["Anson Ho", "Jean-Stanislas Denain", "David Atanasov", "Samuel Albanie", "Rohin Shah"]
     url: "https://arxiv.org/abs/2512.00193"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    date_published: "2025-11-28"
+    tags: ['evaluations', 'benchmarks', 'forecasting', 'methodology', 'paper', 'arxiv']
     importance: high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.00193.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.04123
-    title: "arXiv:2512.04123"
+    title: "Measuring Agents in Production"
+    authors: ["Melissa Z. Pan", "Negar Arabzadeh", "Riccardo Cogo", "Joseph E. Gonzalez", "Ion Stoica", "Matei Zaharia", "et al."]
     url: "https://arxiv.org/abs/2512.04123"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    date_published: "2025-12-02"
+    tags: ['agents', 'evaluations', 'industry', 'paper', 'arxiv']
     importance: very-high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.04123.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.04921
-    title: "arXiv:2512.04921"
+    title: "The AI Consumer Index (ACE)"
+    authors: ["Julien Benchek", "Rohit Shetty", "Benjamin Hunsberger", "Bertie Vidgen", "et al."]
     url: "https://arxiv.org/abs/2512.04921"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    date_published: "2025-12-04"
+    tags: ['evaluations', 'benchmarks', 'applications', 'paper', 'arxiv']
     importance: high
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.04921.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: arxiv-2512.07810
@@ -5586,11 +5611,15 @@ links:
   - id: blog-a7ae04
     title: "LangSmith Agent Builder Now in Public Beta"
     url: "https://blog.langchain.com/langsmith-agent-builder-now-in-public-beta/"
-    tags: ['uncategorized']
+    date_published: "2025-12"
+    tags: ['agents', 'tools', 'blog-post', 'langchain']
     importance: high
+    notes:
+      - type: file
+        path: "notes/langsmith-agent-builder.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: cloud-71038e
@@ -5706,11 +5735,14 @@ links:
   - id: nist-1a8165
     title: "Accelerating AI Innovation Through Measurement Science - NIST"
     url: "https://nist.gov/blogs/caisi-research-blog/accelerating-ai-innovation-through-measurement-science"
-    tags: ['uncategorized', 'nist']
+    tags: ['evaluations', 'methodology', 'policy', 'standards', 'nist']
     importance: very-high
+    notes:
+      - type: file
+        path: "notes/nist-ai-measurement-science.md"
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
 
   - id: oasis-04608d

@@ -4,6 +4,27 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.4] - 2025-12-16
+
+### Added
+- Completed processing of all high-importance links (7 more notes):
+  - `arxiv-2511.04703.md` - Construct Validity in LLM Benchmarks (very-high, 29 expert reviewers, 445 benchmarks)
+  - `arxiv-2512.04123.md` - Measuring Agents in Production (very-high, 306 practitioners surveyed)
+  - `nist-ai-measurement-science.md` - NIST CAISI Measurement Science (very-high, policy)
+  - `arxiv-2512.00193.md` - A Rosetta Stone for AI Benchmarks (high, capability forecasting)
+  - `arxiv-2512.04921.md` - AI Consumer Index ACE (high, consumer task benchmark)
+  - `alignment-forum-pragmatic-vision-interpretability.md` - GDM Mech Interp Team's strategic pivot (high)
+  - `langsmith-agent-builder.md` - LangChain no-code agent builder (high)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 28 processed links
+- All high-importance links (> and >>) now have full notes
+- Updated tags for processed entries to reflect content
+
+### Technical Notes
+- WebSearch continues to work as primary metadata retrieval method
+- ~590 links still pending full processing
+
 ## [1.0.3] - 2025-12-16
 
 ### Added

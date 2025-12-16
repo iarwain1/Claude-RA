@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 21
-- **Titles updated:** 21+
-- **Pending full processing:** ~597
+- **Fully processed (with notes):** 28
+- **Titles updated:** 28+
+- **Pending full processing:** ~590
 
 ## Access Issues
 
@@ -50,12 +50,18 @@ The following links have been fully processed with abstracts/summaries in the `n
 19. `arxiv-2503.19887` - AI Threats via Incident Regime
 20. `arxiv-2504.13839` - Audit Cards: Contextualizing AI Evaluations
 21. `arxiv-2504.15585` - LLM(-Agent) Full Stack Safety Survey
+22. `arxiv-2511.04703` - Measuring what Matters: Construct Validity in LLM Benchmarks (very-high)
+23. `arxiv-2512.04123` - Measuring Agents in Production (very-high)
+24. `nist-1a8165` - Accelerating AI Innovation Through Measurement Science (very-high)
+25. `arxiv-2512.00193` - A Rosetta Stone for AI Benchmarks (high)
+26. `arxiv-2512.04921` - The AI Consumer Index (ACE) (high)
+27. `alignmentforum-7fcd56` - A Pragmatic Vision for Interpretability (high)
+28. `blog-a7ae04` - LangSmith Agent Builder Now in Public Beta (high)
 
 ## Links Still Needing Processing
 
 ### High Priority (marked > or >> in original dumps)
-All 14 high-importance links have had titles and importance updated. Notes still needed for:
-- Most high-importance links
+All high-importance links have now been processed with full notes.
 
 ### By Source Type
 
