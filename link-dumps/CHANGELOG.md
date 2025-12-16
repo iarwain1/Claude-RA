@@ -4,6 +4,77 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.7] - 2025-12-16
+
+### Added
+- Final batch: 4 additional paper notes (total now 60):
+  - `arxiv-2302.06590.md` - GitHub Copilot productivity study (55.8% faster)
+  - `arxiv-2305.15324.md` - Model Evaluation for Extreme Risks (foundational multi-lab paper)
+  - `arxiv-2307.03172.md` - Lost in the Middle (long context limitations)
+  - `arxiv-2401.02843.md` - Thousands of AI Authors Survey (2,778 researchers)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 60 processed links (~9.7%)
+- Processing now covers papers from February 2023 through December 2024
+
+### Technical Notes
+- ~558 links still pending full processing
+- Session processed 32 new papers total
+
+## [1.0.6] - 2025-12-16
+
+### Added
+- Continued batch processing: 10 additional paper notes (total now 56):
+  - `arxiv-2310.01405.md` - Representation Engineering (foundational RepE paper)
+  - `arxiv-2312.06942.md` - **AI Control** (Redwood Research, ICML 2024) - CRITICAL
+  - `arxiv-2402.05369.md` - Noise Contrastive Alignment (extends DPO)
+  - `arxiv-2403.02436.md` - GaLore: Memory-efficient LLM training
+  - `arxiv-2404.14082.md` - Mechanistic Interpretability Review
+  - `arxiv-2405.06624.md` - Guaranteed Safe AI (Bengio, Russell, et al.)
+  - `arxiv-2406.01252.md` - Scalable Automated Alignment Survey
+  - `arxiv-2406.14598.md` - SORRY-Bench: Safety refusal evaluation
+  - `arxiv-2308.03688.md` - AgentBench (ICLR 2024)
+  - `arxiv-2401.03568.md` - Agent AI Survey (Microsoft/Stanford)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 56 processed links (~9%)
+- Processing now covers papers from August 2023 through December 2024
+
+### Technical Notes
+- WebSearch continues to work intermittently
+- ~562 links still pending full processing
+
+## [1.0.5] - 2025-12-16
+
+### Added
+- Major batch processing: 18 additional paper notes (total now 46):
+  - `arxiv-2407.21787.md` - Large Language Monkeys: Inference-time scaling laws
+  - `arxiv-2408.02479.md` - LLMs to LLM-based Agents for SE Survey
+  - `arxiv-2409.03793.md` - Safeguarding AI Agents: Safety architectures
+  - `arxiv-2410.05229.md` - GSM-Symbolic: Math reasoning limitations (ICLR 2025)
+  - `arxiv-2410.07095.md` - MLE-bench: ML engineering agents (ICLR 2025)
+  - `arxiv-2410.09024.md` - AgentHarm: Agent harmfulness benchmark (ICLR 2025)
+  - `arxiv-2410.13787.md` - Looking Inward: LLM introspection capabilities
+  - `arxiv-2411.00114.md` - Project Sid: Many-agent AI civilization simulations
+  - `arxiv-2411.01114.md` - Infant Agent: 90x improvement on SWE-bench
+  - `arxiv-2411.02306.md` - Targeted Manipulation in RLHF (deceptive targeting)
+  - `arxiv-2411.04986.md` - Semantic Hub Hypothesis (ICLR 2025)
+  - `arxiv-2411.10053.md` - That Chip Has Sailed: AlphaChip rebuttal
+  - `arxiv-2411.15594.md` - LLM-as-a-Judge comprehensive survey
+  - `arxiv-2412.09563.md` - Intermediate layer representations (LeCun)
+  - `arxiv-2412.14093.md` - **Alignment Faking** (Anthropic) - CRITICAL SAFETY PAPER
+  - `arxiv-2403.13793.md` - Evaluating Dangerous Capabilities (DeepMind)
+  - `arxiv-2406.12442.md` - Abstraction-of-Thought reasoning
+  - `arxiv-2405.00332.md` - GSM1k: Contamination detection benchmark
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 46 processed links
+- Processing now covers papers from March 2024 through December 2024
+
+### Technical Notes
+- WebSearch intermittently available; processed during availability windows
+- ~572 links still pending full processing
+
 ## [1.0.4] - 2025-12-16
 
 ### Added
