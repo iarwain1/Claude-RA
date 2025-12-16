@@ -4,6 +4,37 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.5] - 2025-12-16
+
+### Added
+- Major batch processing: 18 additional paper notes (total now 46):
+  - `arxiv-2407.21787.md` - Large Language Monkeys: Inference-time scaling laws
+  - `arxiv-2408.02479.md` - LLMs to LLM-based Agents for SE Survey
+  - `arxiv-2409.03793.md` - Safeguarding AI Agents: Safety architectures
+  - `arxiv-2410.05229.md` - GSM-Symbolic: Math reasoning limitations (ICLR 2025)
+  - `arxiv-2410.07095.md` - MLE-bench: ML engineering agents (ICLR 2025)
+  - `arxiv-2410.09024.md` - AgentHarm: Agent harmfulness benchmark (ICLR 2025)
+  - `arxiv-2410.13787.md` - Looking Inward: LLM introspection capabilities
+  - `arxiv-2411.00114.md` - Project Sid: Many-agent AI civilization simulations
+  - `arxiv-2411.01114.md` - Infant Agent: 90x improvement on SWE-bench
+  - `arxiv-2411.02306.md` - Targeted Manipulation in RLHF (deceptive targeting)
+  - `arxiv-2411.04986.md` - Semantic Hub Hypothesis (ICLR 2025)
+  - `arxiv-2411.10053.md` - That Chip Has Sailed: AlphaChip rebuttal
+  - `arxiv-2411.15594.md` - LLM-as-a-Judge comprehensive survey
+  - `arxiv-2412.09563.md` - Intermediate layer representations (LeCun)
+  - `arxiv-2412.14093.md` - **Alignment Faking** (Anthropic) - CRITICAL SAFETY PAPER
+  - `arxiv-2403.13793.md` - Evaluating Dangerous Capabilities (DeepMind)
+  - `arxiv-2406.12442.md` - Abstraction-of-Thought reasoning
+  - `arxiv-2405.00332.md` - GSM1k: Contamination detection benchmark
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 46 processed links
+- Processing now covers papers from March 2024 through December 2024
+
+### Technical Notes
+- WebSearch intermittently available; processed during availability windows
+- ~572 links still pending full processing
+
 ## [1.0.4] - 2025-12-16
 
 ### Added

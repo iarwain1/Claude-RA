@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 28
-- **Titles updated:** 28+
-- **Pending full processing:** ~590
+- **Fully processed (with notes):** 46
+- **Titles updated:** 46+
+- **Pending full processing:** ~572
 
 ## Access Issues
 
@@ -57,6 +57,24 @@ The following links have been fully processed with abstracts/summaries in the `n
 26. `arxiv-2512.04921` - The AI Consumer Index (ACE) (high)
 27. `alignmentforum-7fcd56` - A Pragmatic Vision for Interpretability (high)
 28. `blog-a7ae04` - LangSmith Agent Builder Now in Public Beta (high)
+29. `arxiv-2407.21787` - Large Language Monkeys: Inference Scaling
+30. `arxiv-2408.02479` - LLMs to LLM-based Agents for SE Survey
+31. `arxiv-2409.03793` - Safeguarding AI Agents: Safety Architectures
+32. `arxiv-2410.05229` - GSM-Symbolic: LLM Math Reasoning Limitations (ICLR 2025)
+33. `arxiv-2410.07095` - MLE-bench: ML Engineering Agents (ICLR 2025)
+34. `arxiv-2410.09024` - AgentHarm: Measuring LLM Agent Harmfulness (ICLR 2025)
+35. `arxiv-2410.13787` - Looking Inward: LLM Introspection
+36. `arxiv-2411.00114` - Project Sid: Many-agent AI Civilization
+37. `arxiv-2411.01114` - Infant Agent: Cost-Effective Tool Integration
+38. `arxiv-2411.02306` - Targeted Manipulation and Deception in RLHF
+39. `arxiv-2411.04986` - Semantic Hub Hypothesis (ICLR 2025)
+40. `arxiv-2411.10053` - That Chip Has Sailed: AlphaChip Rebuttal
+41. `arxiv-2411.15594` - LLM-as-a-Judge Survey
+42. `arxiv-2412.09563` - Intermediate Layer Representations in LLMs
+43. `arxiv-2412.14093` - Alignment Faking in LLMs (Anthropic) **CRITICAL**
+44. `arxiv-2403.13793` - Evaluating Frontier Models for Dangerous Capabilities (DeepMind)
+45. `arxiv-2406.12442` - Abstraction-of-Thought Reasoning
+46. `arxiv-2405.00332` - GSM1k: Careful Examination of LLM Math Performance
 
 ## Links Still Needing Processing
 
