@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 7
-- **Titles updated:** 10+
-- **Pending full processing:** ~600
+- **Fully processed (with notes):** 21
+- **Titles updated:** 21+
+- **Pending full processing:** ~597
 
 ## Access Issues
 
@@ -35,15 +35,21 @@ The following links have been fully processed with abstracts/summaries in the `n
 4. `arxiv-2512.07810` - Auditing Games for Sandbagging
 5. `arxiv-2509.15541` - Stress Testing Deliberative Alignment
 6. `arxiv-2504.05259` - Evaluating Control Measures for LLM Agents
-7. `anthropic-1c8f97` - How AI is Transforming Work at Anthropic
-
-## Links with Updated Metadata (titles, tags)
-
-In addition to the above, the following had metadata updated:
-
-- `arxiv-2412.02159` - Jailbreak Defense in a Narrow Domain
-- `arxiv-2411.15594` - A Survey on LLM-as-a-Judge
-- `arxiv-2511.04860` - GPT-5 at CTFs
+7. `anthropic-how-ai-transforming-work` - How AI is Transforming Work at Anthropic
+8. `arxiv-2407.09468` - AI Risk Management Should Incorporate Both Safety and Security
+9. `arxiv-2406.02061` - MixEval: Deriving Wisdom of the Crowd
+10. `arxiv-2407.14937` - Sycophancy to Subterfuge: Investigating Reward-Tampering
+11. `arxiv-2411.12820` - BALROG: Benchmarking Agentic LLM Reasoners
+12. `arxiv-2411.08088` - SWE-bench+ and MB+
+13. `arxiv-2407.07890` - Representation Engineering: A Top-Down Approach
+14. `arxiv-2401.03188` - Survey on V&V, T&E of Neurosymbolic AI
+15. `arxiv-2407.16216` - Comprehensive Survey of LLM Alignment Techniques
+16. `arxiv-2407.12784` - GenAI Paradox: What It Can Create, It May Not Understand
+17. `arxiv-2407.11969` - Internal Consistency and Self-Feedback in LLMs
+18. `arxiv-2412.02159` - Jailbreak Defense in a Narrow Domain
+19. `arxiv-2503.19887` - AI Threats via Incident Regime
+20. `arxiv-2504.13839` - Audit Cards: Contextualizing AI Evaluations
+21. `arxiv-2504.15585` - LLM(-Agent) Full Stack Safety Survey
 
 ## Links Still Needing Processing
 

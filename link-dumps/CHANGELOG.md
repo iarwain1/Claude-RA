@@ -4,6 +4,35 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.3] - 2025-12-16
+
+### Added
+- Extended notes collection to 21 papers with abstracts and metadata:
+  - `arxiv-2407.09468.md` - AI Risk Management: Safety and Security
+  - `arxiv-2406.02061.md` - MixEval: Deriving Wisdom of the Crowd (benchmarks)
+  - `arxiv-2407.14937.md` - Sycophancy to Subterfuge (reward tampering)
+  - `arxiv-2411.12820.md` - BALROG: Benchmarking Agentic LLM Reasoners
+  - `arxiv-2411.08088.md` - SWE-bench+ and MB+ (improved benchmarks)
+  - `arxiv-2407.07890.md` - Representation Engineering: Top-Down Approach
+  - `arxiv-2401.03188.md` - V&V, T&E of Neurosymbolic AI Survey
+  - `arxiv-2407.16216.md` - LLM Alignment Techniques Survey (RLHF, DPO)
+  - `arxiv-2407.12784.md` - GenAI Paradox: Create vs Understand
+  - `arxiv-2407.11969.md` - Internal Consistency and Self-Feedback
+  - `arxiv-2412.02159.md` - Jailbreak Defense in Narrow Domain
+  - `arxiv-2503.19887.md` - AI Threats via Incident Regime (policy)
+  - `arxiv-2504.13839.md` - Audit Cards for AI Evaluations (governance)
+  - `arxiv-2504.15585.md` - LLM Full Stack Safety Survey (800+ papers)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 21 processed links
+- Added notes field references to all 21 processed database entries
+- Updated titles and metadata for all processed papers
+
+### Technical Notes
+- arXiv API script written but blocked by network restrictions (403)
+- Continued using WebSearch as workaround for metadata retrieval
+- ~597 links still pending full processing
+
 ## [1.0.2] - 2025-12-16
 
 ### Added
@@ -16,6 +45,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   - `arxiv-2504.05259.md` - Evaluating Control Measures (control evaluations)
   - `anthropic-how-ai-transforming-work.md` - AI productivity research
 - Created `PROCESSING-STATUS.md` documenting progress and pending work
+- Created `fetch_arxiv_metadata.py` script for batch arXiv processing
 
 ### Changed
 - Updated titles for 10+ entries with proper paper/article titles

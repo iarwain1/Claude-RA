@@ -326,9 +326,9 @@ links:
     archived: false
 
   - id: arxiv-2401.03188
-    title: "A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence (arxiv.org)"
+    title: "A Survey on Verification and Validation, Testing and Evaluations of Neurosymbolic Artificial Intelligence"
     url: "https://arxiv.org/abs/2401.03188"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'technical', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -739,9 +739,9 @@ links:
     archived: false
 
   - id: arxiv-2406.02061
-    title: "Alice in Wonderland: Simple Tasks Showing Complete Reasoning Breakdown in State-Of-the-Art Large Language Models (arxiv.org)"
+    title: "Alice in Wonderland: Simple Tasks Showing Complete Reasoning Breakdown in State-Of-the-Art Large Language Models"
     url: "https://arxiv.org/abs/2406.02061"
-    tags: ['arxiv', 'paper', 'interpretability', 'theory']
+    tags: ['reasoning', 'evaluations', 'llms', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1794,7 +1794,7 @@ links:
   - id: arxiv-2407.07890
     title: "Training on the Test Task Confounds Evaluation and Emergence"
     url: "https://arxiv.org/abs/2407.07890"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'methodology', 'benchmarks', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1882,9 +1882,9 @@ links:
     archived: false
 
   - id: arxiv-2407.09468
-    title: "Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures (arxiv.org)"
+    title: "Beyond Euclid: An Illustrated Guide to Modern Machine Learning with Geometric, Topological, and Algebraic Structures"
     url: "https://arxiv.org/abs/2407.09468"
-    tags: ['paper', 'arxiv', 'theory']
+    tags: ['theory', 'math', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1902,9 +1902,9 @@ links:
     archived: false
 
   - id: arxiv-2407.11969
-    title: "Does Refusal Training in LLMs Generalize to the Past Tense? (arxiv.org)"
+    title: "Does Refusal Training in LLMs Generalize to the Past Tense?"
     url: "https://arxiv.org/abs/2407.11969"
-    tags: ['jailbreaks', 'paper', 'arxiv']
+    tags: ['jailbreaks', 'alignment', 'red-teaming', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1932,9 +1932,9 @@ links:
     archived: false
 
   - id: arxiv-2407.12784
-    title: "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases (arxiv.org)"
+    title: "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases"
     url: "https://arxiv.org/abs/2407.12784"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['agents', 'red-teaming', 'adversarial-attacks', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -1982,9 +1982,9 @@ links:
     archived: false
 
   - id: arxiv-2407.14937
-    title: "Operationalizing a Threat Model for Red-Teaming Large Language Models (LLMs) (arxiv.org)"
+    title: "Operationalizing a Threat Model for Red-Teaming Large Language Models (LLMs)"
     url: "https://arxiv.org/abs/2407.14937"
-    tags: ['paper', 'arxiv', 'red-teaming']
+    tags: ['red-teaming', 'ai-safety', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2012,9 +2012,9 @@ links:
     archived: false
 
   - id: arxiv-2407.16216
-    title: "A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More (arxiv.org)"
+    title: "A Comprehensive Survey of LLM Alignment Techniques: RLHF, RLAIF, PPO, DPO and More"
     url: "https://arxiv.org/abs/2407.16216"
-    tags: ['paper', 'ai-safety', 'arxiv']
+    tags: ['alignment', 'rlhf', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh’s AI Link Dumps_ 7_25_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2787,7 +2787,7 @@ links:
   - id: arxiv-2411.08088
     title: "Safety case template for frontier AI: A cyber inability argument"
     url: "https://arxiv.org/abs/2411.08088"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['ai-safety', 'cyber-evals', 'governance', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2797,7 +2797,7 @@ links:
   - id: arxiv-2411.12820
     title: "Declare and Justify: Explicit assumptions in AI evaluations are necessary for effective regulation"
     url: "https://arxiv.org/abs/2411.12820"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'governance', 'regulation', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -2847,7 +2847,7 @@ links:
   - id: arxiv-2412.02159
     title: "Jailbreak Defense in a Narrow Domain: Limitations of Existing Methods and a New Transcript-Classifier Approach"
     url: "https://arxiv.org/abs/2412.02159"
-    tags: ["jailbreaks", "red-teaming", "ai-safety", "paper", "arxiv"]
+    tags: ['jailbreaks', 'ai-safety', 'paper', 'arxiv']
     importance: normal
     source_files: ['Link dump Nov _ Dec 2024.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4037,7 +4037,7 @@ links:
   - id: arxiv-2503.19887
     title: "AI threats to national security can be countered through an incident regime"
     url: "https://arxiv.org/abs/2503.19887"
-    tags: ['paper', 'arxiv', 'national-security']
+    tags: ['national-security', 'governance', 'policy', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4170,7 +4170,7 @@ links:
   - id: arxiv-2504.13839
     title: "Audit Cards: Contextualizing AI Evaluations"
     url: "https://arxiv.org/abs/2504.13839"
-    tags: ['uncategorized', 'paper', 'arxiv']
+    tags: ['evaluations', 'governance', 'methodology', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_21_25.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
@@ -4180,7 +4180,7 @@ links:
   - id: arxiv-2504.15585
     title: "A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment"
     url: "https://arxiv.org/abs/2504.15585"
-    tags: ['paper', 'technical', 'ai-safety', 'arxiv']
+    tags: ['ai-safety', 'agents', 'survey', 'paper', 'arxiv']
     importance: normal
     source_files: ['Aryeh_s AI Link Dumps 4_24.docx', 'Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
