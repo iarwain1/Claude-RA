@@ -4,6 +4,29 @@ All notable changes to the link dumps database will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.6] - 2025-12-16
+
+### Added
+- Continued batch processing: 10 additional paper notes (total now 56):
+  - `arxiv-2310.01405.md` - Representation Engineering (foundational RepE paper)
+  - `arxiv-2312.06942.md` - **AI Control** (Redwood Research, ICML 2024) - CRITICAL
+  - `arxiv-2402.05369.md` - Noise Contrastive Alignment (extends DPO)
+  - `arxiv-2403.02436.md` - GaLore: Memory-efficient LLM training
+  - `arxiv-2404.14082.md` - Mechanistic Interpretability Review
+  - `arxiv-2405.06624.md` - Guaranteed Safe AI (Bengio, Russell, et al.)
+  - `arxiv-2406.01252.md` - Scalable Automated Alignment Survey
+  - `arxiv-2406.14598.md` - SORRY-Bench: Safety refusal evaluation
+  - `arxiv-2308.03688.md` - AgentBench (ICLR 2024)
+  - `arxiv-2401.03568.md` - Agent AI Survey (Microsoft/Stanford)
+
+### Changed
+- Updated `PROCESSING-STATUS.md` to reflect 56 processed links (~9%)
+- Processing now covers papers from August 2023 through December 2024
+
+### Technical Notes
+- WebSearch continues to work intermittently
+- ~562 links still pending full processing
+
 ## [1.0.5] - 2025-12-16
 
 ### Added

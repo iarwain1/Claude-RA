@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 46
-- **Titles updated:** 46+
-- **Pending full processing:** ~572
+- **Fully processed (with notes):** 56
+- **Titles updated:** 56+
+- **Pending full processing:** ~562
 
 ## Access Issues
 
@@ -75,6 +75,16 @@ The following links have been fully processed with abstracts/summaries in the `n
 44. `arxiv-2403.13793` - Evaluating Frontier Models for Dangerous Capabilities (DeepMind)
 45. `arxiv-2406.12442` - Abstraction-of-Thought Reasoning
 46. `arxiv-2405.00332` - GSM1k: Careful Examination of LLM Math Performance
+47. `arxiv-2310.01405` - Representation Engineering (foundational RepE)
+48. `arxiv-2312.06942` - AI Control: Safety Despite Intentional Subversion (ICML 2024) **CRITICAL**
+49. `arxiv-2402.05369` - Noise Contrastive Alignment
+50. `arxiv-2403.02436` - GaLore: Memory-Efficient LLM Training
+51. `arxiv-2404.14082` - Mechanistic Interpretability for AI Safety Review
+52. `arxiv-2405.06624` - Guaranteed Safe AI (Bengio, Russell, et al.)
+53. `arxiv-2406.01252` - Scalable Automated Alignment Survey
+54. `arxiv-2406.14598` - SORRY-Bench: Safety Refusal Evaluation
+55. `arxiv-2308.03688` - AgentBench (ICLR 2024)
+56. `arxiv-2401.03568` - Agent AI Survey (Microsoft/Stanford)
 
 ## Links Still Needing Processing
 
