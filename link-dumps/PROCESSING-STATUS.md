@@ -5,9 +5,9 @@
 ## Summary
 
 - **Total links:** 618
-- **Fully processed (with notes):** 121
-- **Processing progress:** ~19.6%
-- **Pending full processing:** ~497
+- **Fully processed (with notes):** 125
+- **Processing progress:** ~20.2%
+- **Pending full processing:** ~493
 
 ## Access Issues
 
