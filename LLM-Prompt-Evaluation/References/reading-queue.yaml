@@ -10,94 +10,134 @@ queue:
     priority: 10
     reason: "Core foundational guide on LLM evals with 3-level framework. Most cited resource on topic."
     added: "2025-12-17"
+    status: done
 
   - key: husain2024llmjudge
     priority: 10
     reason: "Comprehensive guide on LLM-as-judge - key evaluation methodology. Based on 30+ company implementations."
     added: "2025-12-17"
+    status: done
 
   - key: husain2025evalsfaq
     priority: 10
     reason: "FAQ covers agentic evaluation, RAG, multi-step workflows - directly relevant to review scope."
     added: "2025-12-17"
+    status: done
 
   - key: husain2025fieldguide
     priority: 9
     reason: "Practical guidance on avoiding evaluation pitfalls. Based on production implementations."
     added: "2025-12-17"
+    status: done
 
   # Survey papers
   - key: guo2025agentbenchmark
     priority: 9
     reason: "Recent comprehensive survey (150+ papers) on LLM benchmarks and solutions taxonomy."
     added: "2025-12-17"
+    status: done
 
   # Anthropic resources
   - key: anthropic2025evaltool
     priority: 8
     reason: "Official Anthropic evaluation tooling documentation - practical implementation reference."
     added: "2025-12-17"
+    status: done
 
   - key: anthropic2025toolsforagents
     priority: 8
     reason: "Agent/tool evaluation best practices from major LLM provider."
     added: "2025-12-17"
+    status: done
 
   # Evaluation frameworks
   - key: openai_evals_framework
     priority: 8
     reason: "Standard open-source evaluation framework. Widely used in industry."
     added: "2025-12-17"
+    status: done
 
   # Context/prompt optimization
   - key: ace2025contextengineering
     priority: 7
     reason: "Novel framework for evolving prompts/contexts. Addresses key problems in iterative prompting."
     added: "2025-12-17"
+    status: done
 
   - key: survey2025codeintelligence
     priority: 7
     reason: "Comprehensive survey covering prompting paradigms and evaluation in code domain."
     added: "2025-12-17"
+    status: done
 
   # Additional Anthropic resources
   - key: anthropic2025promptengineering
     priority: 7
     reason: "Official prompt engineering overview with evaluation guidance."
     added: "2025-12-17"
+    status: done
 
   - key: liu_6ragevals
     priority: 7
-    reason: "Referenced framework for RAG evaluation. Need to find URL."
+    reason: "Simplified RAG evaluation framework - 6 conditional relationships, 3-tier structure."
     added: "2025-12-17"
+    status: done
 
-  # Lower priority - need to verify relevance
-  - key: arxiv2507_13334
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  # Major survey - now verified
+  - key: mei2025contextengineering
+    priority: 9
+    reason: "Massive survey (1,400+ papers) on context engineering. Covers RAG, memory, tool reasoning, multi-agent systems."
     added: "2025-12-17"
+    status: done
 
-  - key: arxiv2510_26493
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  # Additional verified papers
+  - key: anam2025prompteffectiveness
+    priority: 7
+    reason: "Empirical study (243 respondents) on prompt structure vs. effectiveness. Human evaluation data."
     added: "2025-12-17"
+    status: done
 
-  - key: arxiv2509_19894
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  - key: contexteng2025evolution
+    priority: 6
+    reason: "Historical perspective on context engineering evolution. Good background context."
     added: "2025-12-17"
+    status: done
 
-  - key: arxiv2510_06000
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  # Now verified
+  - key: prompting2025practice
+    priority: 8
+    reason: "Empirical study of real developer prompting behavior. High relevance for practical evaluation."
     added: "2025-12-17"
+    status: done
 
-  - key: arxiv2507_18638
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  - key: promptcot2025scaling
+    priority: 7
+    reason: "Prompt synthesis scaling for reasoning. Relevant to automated prompt optimization."
     added: "2025-12-17"
+    status: done
 
-  - key: arxiv2512_01822
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  - key: innogym2025benchmark
+    priority: 6
+    reason: "Agent benchmarking framework. Relevant to agentic evaluation subtopic."
     added: "2025-12-17"
+    status: done
+
+  # Additional Anthropic resources (priority 6)
+  - key: anthropic2025claude4bestpractices
+    priority: 6
+    reason: "Claude 4.x specific guidance for prompt engineering."
+    added: "2025-12-17"
+    status: done
+
+  - key: anthropic2025promptimprover
+    priority: 6
+    reason: "Automatic prompt refinement tool and techniques."
+    added: "2025-12-17"
+    status: done
+
+  # User-provided (ITEA)
+  - key: itea2025llmtesting
+    priority: 8
+    reason: "DoD/operational testing perspective on LLM evaluation. Discusses LLM-as-Judge limitations."
+    added: "2025-12-17"
+    status: done
