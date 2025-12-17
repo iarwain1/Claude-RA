@@ -211,43 +211,43 @@ references:
     notes_file: null
     added: "2025-12-17"
 
-  # === ARXIV PAPERS (USER PROVIDED - STILL NEED VERIFICATION) ===
+  # === ARXIV PAPERS (USER PROVIDED - NOW VERIFIED) ===
 
-  - key: arxiv2509_19894
-    title: "[To Verify] arXiv 2509.19894"
+  - key: promptcot2025scaling
+    title: "PromptCoT 2.0: Scaling Prompt Synthesis for Large Language Model Reasoning"
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2509.19894"
-    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
+    abstract: "Prompt synthesis and scaling for LLM reasoning. Relevant to automated prompt optimization and evaluation."
     source: arxiv
-    priority: 5
-    subtopics: []
+    priority: 7
+    subtopics: ["prompt-optimization", "automated-metrics"]
     read: false
     notes_file: null
     added: "2025-12-17"
 
-  - key: arxiv2510_06000
-    title: "[To Verify] arXiv 2510.06000"
+  - key: prompting2025practice
+    title: "Prompting in Practice: Investigating Software Developers' Use of Generative AI Tools"
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2510.06000"
-    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
+    abstract: "Empirical study of how software developers actually use prompts with generative AI tools. Real-world usage patterns and effectiveness."
     source: arxiv
-    priority: 5
-    subtopics: []
+    priority: 8
+    subtopics: ["human-evaluation", "practical-guidance"]
     read: false
     notes_file: null
     added: "2025-12-17"
 
-  - key: arxiv2512_01822
-    title: "[To Verify] arXiv 2512.01822"
+  - key: innogym2025benchmark
+    title: "InnoGym: Benchmarking the Innovation Potential of AI Agents"
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2512.01822"
-    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
+    abstract: "Benchmarking framework for evaluating AI agent innovation potential. Relevant to agentic system evaluation."
     source: arxiv
-    priority: 5
-    subtopics: []
+    priority: 6
+    subtopics: ["agentic-evaluation", "automated-metrics"]
     read: false
     notes_file: null
     added: "2025-12-17"

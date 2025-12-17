@@ -88,18 +88,18 @@ queue:
     reason: "Historical perspective on context engineering evolution. Good background context."
     added: "2025-12-17"
 
-  # Still need to verify content and relevance
-  - key: arxiv2509_19894
-    priority: 5
-    reason: "User-provided. Metadata verification failed - web search unavailable."
+  # Now verified
+  - key: prompting2025practice
+    priority: 8
+    reason: "Empirical study of real developer prompting behavior. High relevance for practical evaluation."
     added: "2025-12-17"
 
-  - key: arxiv2510_06000
-    priority: 5
-    reason: "User-provided. Metadata verification failed - web search unavailable."
+  - key: promptcot2025scaling
+    priority: 7
+    reason: "Prompt synthesis scaling for reasoning. Relevant to automated prompt optimization."
     added: "2025-12-17"
 
-  - key: arxiv2512_01822
-    priority: 5
-    reason: "User-provided. Metadata verification failed - web search unavailable."
+  - key: innogym2025benchmark
+    priority: 6
+    reason: "Agent benchmarking framework. Relevant to agentic evaluation subtopic."
     added: "2025-12-17"
