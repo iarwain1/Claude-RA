@@ -1,0 +1,279 @@
+# References for LLM Prompt Evaluation
+# Created: 2025-12-17
+# Last updated: 2025-12-17
+
+review_name: "LLM Prompt Evaluation"
+topic: "Methods for evaluating the effectiveness of prompts in LLM-based systems"
+created: "2025-12-17"
+last_updated: "2025-12-17"
+
+references:
+  # === PRACTITIONER GUIDES (Hamel Husain) ===
+
+  - key: husain2024evals
+    title: "Your AI Product Needs Evals"
+    authors: ["Husain, Hamel"]
+    year: 2024
+    url: "https://hamel.dev/blog/posts/evals/"
+    abstract: "Comprehensive guide to LLM evaluation covering three levels: Level 1 (unit tests/assertions), Level 2 (model-based evaluation with human correlation tracking), and Level 3 (A/B testing for mature products). Emphasizes error analysis as the foundation for effective evals."
+    source: blog
+    priority: 10
+    subtopics: ["evaluation-frameworks", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: husain2024llmjudge
+    title: "Using LLM-as-a-Judge For Evaluation: A Complete Guide"
+    authors: ["Husain, Hamel"]
+    year: 2024
+    url: "https://hamel.dev/blog/posts/llm-judge/"
+    abstract: "Detailed guide on using LLMs to evaluate other LLM outputs. Key insight: must measure LLM-as-judge agreement with human judgments to validate trustworthiness. Based on experience helping 30+ companies set up evaluation systems."
+    source: blog
+    priority: 10
+    subtopics: ["llm-as-judge", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: husain2025fieldguide
+    title: "A Field Guide to Rapidly Improving AI Products"
+    authors: ["Husain, Hamel"]
+    year: 2025
+    url: "https://hamel.dev/blog/posts/field-guide/"
+    abstract: "Practical guide based on 30+ production implementations. Warns against the 'tools trap' and generic metrics. Emphasizes custom data viewers, maintaining trust in evaluations, and systematic iteration over tool selection."
+    source: blog
+    priority: 9
+    subtopics: ["evaluation-frameworks", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: husain2025evalsfaq
+    title: "AI Evals FAQ"
+    authors: ["Husain, Hamel"]
+    year: 2025
+    url: "https://hamel.dev/blog/posts/evals-faq/"
+    abstract: "Collection of FAQs covering: what are LLM evals, evaluating agentic workflows, RAG evaluation, multi-step workflows, error analysis methodology, eval-driven development, model selection, and synthetic data generation."
+    source: blog
+    priority: 10
+    subtopics: ["evaluation-frameworks", "agentic-evaluation", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  # === ANTHROPIC RESOURCES ===
+
+  - key: anthropic2025evaltool
+    title: "Using the Evaluation Tool"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://docs.anthropic.com/en/docs/test-and-evaluate/eval-tool"
+    abstract: "Documentation for Anthropic Console's Evaluation tool. Covers manual test cases, auto-generated test cases, CSV import, prompt versioning, and iterative testing workflow."
+    source: web
+    priority: 8
+    subtopics: ["automated-metrics", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: anthropic2025promptengineering
+    title: "Prompt Engineering Overview"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+    abstract: "Overview of prompt engineering with guidance on success criteria controllable through prompting vs. other factors like model selection, latency, and cost optimization."
+    source: web
+    priority: 7
+    subtopics: ["evaluation-frameworks", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: anthropic2025claude4bestpractices
+    title: "Claude 4 Best Practices"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices.md"
+    abstract: "Specific prompt engineering techniques for Claude 4 models (Opus 4.1, Opus 4, Sonnet 4). Emphasizes explicit instructions and precise instruction following."
+    source: web
+    priority: 6
+    subtopics: ["practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: anthropic2025toolsforagents
+    title: "Writing Tools for Agents"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://www.anthropic.com/engineering/writing-tools-for-agents"
+    abstract: "Engineering blog post on tool evaluation best practices. Each evaluation prompt should be paired with verifiable responses. Recommends realistic data sources over 'sandbox' environments."
+    source: blog
+    priority: 8
+    subtopics: ["agentic-evaluation", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: anthropic2025promptimprover
+    title: "Use our prompt improver to optimize your prompts"
+    authors: ["Anthropic"]
+    year: 2025
+    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver"
+    abstract: "Tool for automatic prompt refinement using Claude. Adds chain-of-thought instructions, XML tag organization, and standardized example formatting."
+    source: web
+    priority: 6
+    subtopics: ["prompt-optimization"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  # === ARXIV PAPERS (CONFIRMED DETAILS) ===
+
+  - key: guo2025agentbenchmark
+    title: "A Comprehensive Survey on Benchmarks and Solutions in Software Engineering of LLM-Empowered Agentic System"
+    authors: ["Guo, Jiale", "Huang, Suizhi", "Li, Mei", "Huang, Dong", "Chen, Xingsheng", "Zhang, Regina", "Guo, Zhijiang", "Yu, Han", "Yiu, Siu-Ming", "Lio, Pietro", "Lam, Kwok-Yan"]
+    year: 2025
+    url: "https://arxiv.org/abs/2510.09721"
+    abstract: "Comprehensive survey reviewing 150+ papers on LLM-powered software engineering. Proposes taxonomy along Solutions (prompt-based, fine-tuning-based, agent-based) and Benchmarks (code generation, translation, repair). Analyzes evolution from prompt engineering to sophisticated agentic systems."
+    source: arxiv
+    priority: 9
+    subtopics: ["evaluation-frameworks", "agentic-evaluation", "automated-metrics"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: ace2025contextengineering
+    title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2510.04618"
+    abstract: "ACE framework treats contexts as evolving playbooks that accumulate, refine, and organize strategies through generation, reflection, and curation. Addresses brevity bias and context collapse in iterative prompting. Builds on Dynamic Cheatsheet concept."
+    source: arxiv
+    priority: 7
+    subtopics: ["prompt-optimization", "agentic-evaluation"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: survey2025codeintelligence
+    title: "From Code Foundation Models to Agents and Applications: A Comprehensive Survey and Practical Guide to Code Intelligence"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2511.18538"
+    abstract: "Comprehensive survey on code LLMs covering data curation, post-training, advanced prompting paradigms, pre-training, supervised fine-tuning, reinforcement learning, and autonomous coding agents. Notes evolution from single-digit to 95%+ success rates on HumanEval."
+    source: arxiv
+    priority: 7
+    subtopics: ["evaluation-frameworks", "agentic-evaluation", "automated-metrics"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  # === ARXIV PAPERS (USER PROVIDED - DETAILS TO VERIFY) ===
+
+  - key: arxiv2507_13334
+    title: "[To Verify] arXiv 2507.13334"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2507.13334"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: arxiv2510_26493
+    title: "[To Verify] arXiv 2510.26493"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2510.26493"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: arxiv2509_19894
+    title: "[To Verify] arXiv 2509.19894"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2509.19894"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: arxiv2510_06000
+    title: "[To Verify] arXiv 2510.06000"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2510.06000"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: arxiv2507_18638
+    title: "[To Verify] arXiv 2507.18638"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2507.18638"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: arxiv2512_01822
+    title: "[To Verify] arXiv 2512.01822"
+    authors: []
+    year: 2025
+    url: "https://arxiv.org/abs/2512.01822"
+    abstract: "User-provided arXiv paper. Metadata needs verification."
+    source: arxiv
+    priority: 5
+    subtopics: []
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  # === TO EXPLORE (Mentioned Resources) ===
+
+  - key: openai_evals_framework
+    title: "OpenAI Evals Framework"
+    authors: ["OpenAI"]
+    year: 2023
+    url: "https://github.com/openai/evals"
+    abstract: "Open-source evaluation framework. Supports basic evals (exact/fuzzy match), model-graded evals, and custom evaluation logic. Standard tool for evaluating LLM outputs."
+    source: web
+    priority: 8
+    subtopics: ["automated-metrics", "evaluation-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  - key: liu_6ragevals
+    title: "There Are Only 6 RAG Evals"
+    authors: ["Liu, Jason"]
+    year: 2024
+    url: null
+    abstract: "Framework for RAG evaluation with tiers mapping retrieval and generation metrics. Referenced in Hamel Husain's FAQ. URL needs to be found."
+    source: web
+    priority: 7
+    subtopics: ["automated-metrics", "evaluation-frameworks"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"

@@ -1,0 +1,48 @@
+# Subtopics for LLM Prompt Evaluation
+# Topic organization and findings
+
+review_name: "LLM Prompt Evaluation"
+last_updated: "2025-12-17"
+
+subtopics:
+  - name: evaluation-frameworks
+    description: "General frameworks and methodologies for evaluating LLM prompts"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: llm-as-judge
+    description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: automated-metrics
+    description: "Automated metrics and benchmarks for prompt quality"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: human-evaluation
+    description: "Human evaluation methodologies for prompt effectiveness"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: agentic-evaluation
+    description: "Evaluation specific to agentic systems, tool use, and workflows"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: prompt-optimization
+    description: "Methods for iteratively improving prompts based on evaluation"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
+
+  - name: practical-guidance
+    description: "Practitioner-focused guidance and case studies"
+    key_findings: []
+    open_questions: []
+    reference_keys: []
