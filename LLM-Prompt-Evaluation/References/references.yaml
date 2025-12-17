@@ -170,40 +170,55 @@ references:
     notes_file: null
     added: "2025-12-17"
 
-  # === ARXIV PAPERS (USER PROVIDED - DETAILS TO VERIFY) ===
+  # === ARXIV PAPERS (USER PROVIDED - VERIFIED) ===
 
-  - key: arxiv2507_13334
-    title: "[To Verify] arXiv 2507.13334"
-    authors: []
+  - key: mei2025contextengineering
+    title: "A Survey of Context Engineering for Large Language Models"
+    authors: ["Mei, Lingrui", "Yao, Jiayu", "Ge, Yuyao", "Wang, Yiwei", "Bi, Baolong", "Cai, Yujun", "Liu, Jiazhi", "Li, Mingyu", "Li, Zhong-Zhi", "Zhang, Duzhen", "Zhou, Chenlin", "Mao, Jiayi", "Xia, Tianze", "Guo, Jiafeng", "Liu, Shenghua"]
     year: 2025
     url: "https://arxiv.org/abs/2507.13334"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
+    abstract: "Comprehensive survey of 1,400+ papers introducing Context Engineering as a formal discipline. Covers context retrieval/generation, processing, management, and system implementations including RAG, memory systems, tool-integrated reasoning, and multi-agent systems. Key finding: models can understand vast contexts but struggle to generate equally sophisticated outputs."
     source: arxiv
-    priority: 5
-    subtopics: []
+    priority: 9
+    subtopics: ["evaluation-frameworks", "agentic-evaluation", "prompt-optimization"]
     read: false
     notes_file: null
     added: "2025-12-17"
 
-  - key: arxiv2510_26493
-    title: "[To Verify] arXiv 2510.26493"
+  - key: contexteng2025evolution
+    title: "Context Engineering 2.0: The Context of Context Engineering"
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2510.26493"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
+    abstract: "Maps evolution of context engineering through stages: 1.0 Context as Translation (humans adapt to computers), 2.0 Context as Instruction (LLMs interpret natural language), 3.0 Context as Scenario (agents understand goals), 4.0 Context as World (AI proactively builds environment). Traces roots back 20+ years."
     source: arxiv
-    priority: 5
-    subtopics: []
+    priority: 6
+    subtopics: ["evaluation-frameworks"]
     read: false
     notes_file: null
     added: "2025-12-17"
+
+  - key: anam2025prompteffectiveness
+    title: "Prompt Engineering and the Effectiveness of Large Language Models in Enhancing Human Productivity"
+    authors: ["Anam, Rizal Khoirul"]
+    year: 2025
+    url: "https://arxiv.org/abs/2507.18638"
+    abstract: "Survey study of 243 respondents analyzing AI usage habits, prompting strategies, and user satisfaction. Finds users with clear, structured, context-aware prompts report higher task efficiency and better outcomes. Empirical evidence for prompt engineering value."
+    source: arxiv
+    priority: 7
+    subtopics: ["human-evaluation", "practical-guidance"]
+    read: false
+    notes_file: null
+    added: "2025-12-17"
+
+  # === ARXIV PAPERS (USER PROVIDED - STILL NEED VERIFICATION) ===
 
   - key: arxiv2509_19894
     title: "[To Verify] arXiv 2509.19894"
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2509.19894"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
+    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
     source: arxiv
     priority: 5
     subtopics: []
@@ -216,20 +231,7 @@ references:
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2510.06000"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
-    source: arxiv
-    priority: 5
-    subtopics: []
-    read: false
-    notes_file: null
-    added: "2025-12-17"
-
-  - key: arxiv2507_18638
-    title: "[To Verify] arXiv 2507.18638"
-    authors: []
-    year: 2025
-    url: "https://arxiv.org/abs/2507.18638"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
+    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
     source: arxiv
     priority: 5
     subtopics: []
@@ -242,7 +244,7 @@ references:
     authors: []
     year: 2025
     url: "https://arxiv.org/abs/2512.01822"
-    abstract: "User-provided arXiv paper. Metadata needs verification."
+    abstract: "User-provided arXiv paper. Metadata needs verification - web search unavailable."
     source: arxiv
     priority: 5
     subtopics: []

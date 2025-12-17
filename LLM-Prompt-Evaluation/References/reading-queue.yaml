@@ -71,33 +71,35 @@ queue:
     reason: "Referenced framework for RAG evaluation. Need to find URL."
     added: "2025-12-17"
 
-  # Lower priority - need to verify relevance
-  - key: arxiv2507_13334
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  # Major survey - now verified
+  - key: mei2025contextengineering
+    priority: 9
+    reason: "Massive survey (1,400+ papers) on context engineering. Covers RAG, memory, tool reasoning, multi-agent systems."
     added: "2025-12-17"
 
-  - key: arxiv2510_26493
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+  # Additional verified papers
+  - key: anam2025prompteffectiveness
+    priority: 7
+    reason: "Empirical study (243 respondents) on prompt structure vs. effectiveness. Human evaluation data."
     added: "2025-12-17"
 
+  - key: contexteng2025evolution
+    priority: 6
+    reason: "Historical perspective on context engineering evolution. Good background context."
+    added: "2025-12-17"
+
+  # Still need to verify content and relevance
   - key: arxiv2509_19894
     priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+    reason: "User-provided. Metadata verification failed - web search unavailable."
     added: "2025-12-17"
 
   - key: arxiv2510_06000
     priority: 5
-    reason: "User-provided. Need to verify content and relevance."
-    added: "2025-12-17"
-
-  - key: arxiv2507_18638
-    priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+    reason: "User-provided. Metadata verification failed - web search unavailable."
     added: "2025-12-17"
 
   - key: arxiv2512_01822
     priority: 5
-    reason: "User-provided. Need to verify content and relevance."
+    reason: "User-provided. Metadata verification failed - web search unavailable."
     added: "2025-12-17"
