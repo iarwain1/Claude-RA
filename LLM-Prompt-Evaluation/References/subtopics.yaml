@@ -22,9 +22,15 @@ subtopics:
       - "Must validate LLM judge agreement with humans through 3-4 iteration rounds [husain2024evals]"
       - "Binary Pass/Fail better than Likert scales - forces clarity, reduces noise [husain2024evals]"
       - "Save LLM-as-judge for persistent generalization failures, not trivially fixable issues [husain2024evals]"
+      - "Validate using TPR/TNR metrics on held-out labeled test set; use these to correct judge estimates for actual failure rates [husain2024llmjudge]"
+      - "Criteria drift: evaluation criteria evolve through grading - cannot fully specify criteria before seeing outputs [husain2024llmjudge]"
+      - "Binary judgment + detailed critique structure: critique must be detailed enough for few-shot prompting [husain2024llmjudge]"
+      - "Building the LLM judge is a 'hack' to force teams to look at data - the process matters more than the artifact [husain2024llmjudge]"
+      - "Temperature 0 for deterministic outputs; fine-tuning judges generally not recommended [husain2024llmjudge]"
     open_questions:
       - "What agreement threshold between LLM judge and human is acceptable?"
-    reference_keys: ["husain2024evals"]
+      - "How to handle criteria drift in rapidly evolving systems?"
+    reference_keys: ["husain2024evals", "husain2024llmjudge"]
 
   - name: automated-metrics
     description: "Automated metrics and benchmarks for prompt quality"
@@ -57,5 +63,7 @@ subtopics:
       - "Review 100+ fresh traces every 2-4 weeks after significant changes [husain2024evals]"
       - "Cannot outsource open coding to LLM - it lacks context and tribal knowledge [husain2024evals]"
       - "Conquer Level 1 tests before moving to Level 2 [husain2024evals]"
+      - "Common mistakes: too many metrics, arbitrary 1-5 scoring, ignoring domain experts [husain2024llmjudge]"
+      - "You cannot write a good judge prompt until you've seen the data [husain2024llmjudge]"
     open_questions: []
-    reference_keys: ["husain2024evals"]
+    reference_keys: ["husain2024evals", "husain2024llmjudge"]
