@@ -216,13 +216,13 @@ Skills provide detailed methodologies that Claude uses automatically when releva
 | `systematic-review` | 7-phase PRISMA-based methodology for rigorous literature reviews |
 | `paper-analysis` | Critical evaluation framework with bias detection and quality rating |
 | `citation-helper` | BibTeX formatting, citation styles, and reference validation |
-| `large-file-handling` | Strategies for processing files that exceed context limits (PDFs, documents, etc.) |
+| `large-file-handling` | Strategies for reading AND writing files that exceed context limits (PDFs, documents, etc.) |
 
 These skills are invoked automatically:
 - Starting a review → `systematic-review` guides planning
 - Reading papers → `paper-analysis` ensures thorough evaluation
 - Exporting citations → `citation-helper` ensures proper formatting
-- Large files (>100K tokens) → `large-file-handling` provides chunking and targeted extraction
+- Large files → `large-file-handling` handles reading (>100K tokens) and writing (>5K lines) with chunking, incremental generation, and targeted extraction
 
 ## Repository Structure
 

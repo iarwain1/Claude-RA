@@ -55,7 +55,7 @@ Skills provide detailed methodologies for specific research tasks. They are auto
 | `systematic-review` | Starting reviews, planning searches, ensuring methodological rigor |
 | `paper-analysis` | Reading papers critically, evaluating quality, taking structured notes |
 | `citation-helper` | Generating BibTeX, formatting citations, validating references |
-| `large-file-handling` | Processing files that exceed context window limits (large PDFs, documents, markdown) |
+| `large-file-handling` | Reading AND writing files that exceed context window limits (large PDFs, documents, markdown) |
 
 ### systematic-review
 Comprehensive 7-phase methodology adapted from PRISMA guidelines:
@@ -92,14 +92,22 @@ BibTeX and citation management guidance:
 Use when: Exporting with `/export-bib` or formatting citations.
 
 ### large-file-handling
-Strategies for processing files that exceed context window limits:
+Strategies for reading AND writing files that exceed context window limits:
+
+**For Reading:**
 - Chunking and hierarchical navigation techniques
 - Targeted extraction by section/page range
 - Progressive summarization workflows
 - File type-specific approaches (PDF, markdown, code, data files)
-- Multi-file processing strategies
 
-Use when: Files exceed ~100,000 tokens (~400 pages), receive truncation warnings, or need to process large documents strategically.
+**For Writing:**
+- Incremental/section-by-section generation
+- Multi-file splitting strategies
+- Template-first approaches
+- Edit-based modifications for existing large files
+- Proactive size estimation and user warnings
+
+Use when: Files exceed ~100,000 tokens (~400 pages) for reading, or ~5,000 lines for writing. Automatically triggered on truncation warnings or when generating large outputs.
 
 ## Working on a Review
 
