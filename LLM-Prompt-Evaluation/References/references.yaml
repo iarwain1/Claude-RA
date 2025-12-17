@@ -73,8 +73,8 @@ references:
     source: web
     priority: 8
     subtopics: ["automated-metrics", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anthropic2025evaltool.md"
     added: "2025-12-17"
 
   - key: anthropic2025promptengineering
@@ -112,8 +112,8 @@ references:
     source: blog
     priority: 8
     subtopics: ["agentic-evaluation", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anthropic2025toolsforagents.md"
     added: "2025-12-17"
 
   - key: anthropic2025promptimprover
@@ -146,15 +146,15 @@ references:
 
   - key: ace2025contextengineering
     title: "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models"
-    authors: []
+    authors: ["Zhang, Qizheng", "Hu, Changran", "Upasani, Shubhangi", "Ma, Boyuan", "Hong, Fenglu", "Kamanuru, Vamsidhar", "Rainton, Jay", "Wu, Chen", "Ji, Mengmeng", "Li, Hanchen", "Thakker, Urmish", "Zou, James", "Olukotun, Kunle"]
     year: 2025
     url: "https://arxiv.org/abs/2510.04618"
-    abstract: "ACE framework treats contexts as evolving playbooks that accumulate, refine, and organize strategies through generation, reflection, and curation. Addresses brevity bias and context collapse in iterative prompting. Builds on Dynamic Cheatsheet concept."
+    abstract: "ACE framework treats contexts as evolving playbooks through Generator/Reflector/Curator roles. Addresses brevity bias and context collapse. Results: +10.6% AppWorld, +8.6% finance reasoning, 86.9% latency reduction. No labeled supervision required."
     source: arxiv
     priority: 7
     subtopics: ["prompt-optimization", "agentic-evaluation"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/ace2025contextengineering.md"
     added: "2025-12-17"
 
   - key: survey2025codeintelligence
@@ -181,8 +181,8 @@ references:
     source: arxiv
     priority: 9
     subtopics: ["evaluation-frameworks", "agentic-evaluation", "prompt-optimization"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/mei2025contextengineering.md"
     added: "2025-12-17"
 
   - key: contexteng2025evolution
@@ -207,8 +207,8 @@ references:
     source: arxiv
     priority: 7
     subtopics: ["human-evaluation", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anam2025prompteffectiveness.md"
     added: "2025-12-17"
 
   # === ARXIV PAPERS (USER PROVIDED - NOW VERIFIED) ===
@@ -228,15 +228,15 @@ references:
 
   - key: prompting2025practice
     title: "Prompting in Practice: Investigating Software Developers' Use of Generative AI Tools"
-    authors: []
+    authors: ["Otten, Daniel", "Stalnaker, Trevor", "Wintersgill, Nathan", "Chaparro, Oscar", "Poshyvanyk, Denys"]
     year: 2025
     url: "https://arxiv.org/abs/2510.06000"
-    abstract: "Empirical study of how software developers actually use prompts with generative AI tools. Real-world usage patterns and effectiveness."
+    abstract: "Empirical study of 91 software engineers on GenAI usage. Key findings: iterative multi-turn prompting preferred (10+ turns common), task-specific reliability varies (documentation highest, complex reasoning lowest), strategy usage rates quantified (Output Style 82%, Few-Shot 75%)."
     source: arxiv
     priority: 8
     subtopics: ["human-evaluation", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/prompting2025practice.md"
     added: "2025-12-17"
 
   - key: innogym2025benchmark
@@ -259,12 +259,12 @@ references:
     authors: ["OpenAI"]
     year: 2023
     url: "https://github.com/openai/evals"
-    abstract: "Open-source evaluation framework. Supports basic evals (exact/fuzzy match), model-graded evals, and custom evaluation logic. Standard tool for evaluating LLM outputs."
+    abstract: "Open-source evaluation framework. Supports basic evals (exact/fuzzy match), model-graded evals, and custom evaluation logic. Includes YAML/JSON-based eval creation without code. Model-graded templates: fact, closedqa, battle."
     source: web
     priority: 8
     subtopics: ["automated-metrics", "evaluation-frameworks"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/openai_evals_framework.md"
     added: "2025-12-17"
 
   - key: liu_6ragevals
@@ -278,4 +278,19 @@ references:
     subtopics: ["automated-metrics", "evaluation-frameworks"]
     read: false
     notes_file: null
+    added: "2025-12-17"
+
+  # === USER-PROVIDED (ITEA) ===
+
+  - key: itea2025llmtesting
+    title: "Advancing the Test Science of LLM-enabled Systems: A Survey of Factors and Conditions that Matter Most"
+    authors: ["O'Brien, Karen"]
+    year: 2025
+    url: "https://itea.org/journals/volume-46-3/advancing-the-test-science-of-llm-enabled-systems/"
+    abstract: "ITEA Journal article on scientific operational testing of LLM-enabled systems for DoD applications. Emphasizes architecture diagrams for identifying evaluation factors, discusses LLM-as-Judge limitations for complex cognitive tasks (68%/64% agreement rates with SMEs), and recommends human SME scoring for nuanced evaluation."
+    source: journal
+    priority: 8
+    subtopics: ["evaluation-frameworks", "llm-as-judge", "practical-guidance"]
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/itea2025llmtesting.md"
     added: "2025-12-17"

@@ -42,23 +42,27 @@ queue:
     priority: 8
     reason: "Official Anthropic evaluation tooling documentation - practical implementation reference."
     added: "2025-12-17"
+    status: done
 
   - key: anthropic2025toolsforagents
     priority: 8
     reason: "Agent/tool evaluation best practices from major LLM provider."
     added: "2025-12-17"
+    status: done
 
   # Evaluation frameworks
   - key: openai_evals_framework
     priority: 8
     reason: "Standard open-source evaluation framework. Widely used in industry."
     added: "2025-12-17"
+    status: done
 
   # Context/prompt optimization
   - key: ace2025contextengineering
     priority: 7
     reason: "Novel framework for evolving prompts/contexts. Addresses key problems in iterative prompting."
     added: "2025-12-17"
+    status: done
 
   - key: survey2025codeintelligence
     priority: 7
@@ -81,12 +85,14 @@ queue:
     priority: 9
     reason: "Massive survey (1,400+ papers) on context engineering. Covers RAG, memory, tool reasoning, multi-agent systems."
     added: "2025-12-17"
+    status: done
 
   # Additional verified papers
   - key: anam2025prompteffectiveness
     priority: 7
     reason: "Empirical study (243 respondents) on prompt structure vs. effectiveness. Human evaluation data."
     added: "2025-12-17"
+    status: done
 
   - key: contexteng2025evolution
     priority: 6
@@ -98,6 +104,7 @@ queue:
     priority: 8
     reason: "Empirical study of real developer prompting behavior. High relevance for practical evaluation."
     added: "2025-12-17"
+    status: done
 
   - key: promptcot2025scaling
     priority: 7
@@ -108,3 +115,10 @@ queue:
     priority: 6
     reason: "Agent benchmarking framework. Relevant to agentic evaluation subtopic."
     added: "2025-12-17"
+
+  # User-provided (ITEA)
+  - key: itea2025llmtesting
+    priority: 8
+    reason: "DoD/operational testing perspective on LLM evaluation. Discusses LLM-as-Judge limitations."
+    added: "2025-12-17"
+    status: done
