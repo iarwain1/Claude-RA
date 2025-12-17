@@ -19,8 +19,8 @@ references:
     source: blog
     priority: 10
     subtopics: ["evaluation-frameworks", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/husain2024evals.md"
     added: "2025-12-17"
 
   - key: husain2024llmjudge

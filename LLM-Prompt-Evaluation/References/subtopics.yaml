@@ -7,15 +7,24 @@ last_updated: "2025-12-17"
 subtopics:
   - name: evaluation-frameworks
     description: "General frameworks and methodologies for evaluating LLM prompts"
-    key_findings: []
-    open_questions: []
-    reference_keys: []
+    key_findings:
+      - "Three-level hierarchy: Level 1 (assertions, every code change) → Level 2 (LLM-as-judge, set cadence) → Level 3 (A/B testing, after significant changes) [husain2024evals]"
+      - "Error analysis should precede eval design: write evaluators for discovered errors, not imagined ones [husain2024evals]"
+      - "Objective/rule-based failures → code assertions; Subjective failures → LLM-as-judge [husain2024evals]"
+    open_questions:
+      - "How to evaluate prompts before deployment when no user data exists?"
+    reference_keys: ["husain2024evals"]
 
   - name: llm-as-judge
     description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
-    key_findings: []
-    open_questions: []
-    reference_keys: []
+    key_findings:
+      - "LLM-as-judge requires 100+ labeled examples and ongoing weekly maintenance [husain2024evals]"
+      - "Must validate LLM judge agreement with humans through 3-4 iteration rounds [husain2024evals]"
+      - "Binary Pass/Fail better than Likert scales - forces clarity, reduces noise [husain2024evals]"
+      - "Save LLM-as-judge for persistent generalization failures, not trivially fixable issues [husain2024evals]"
+    open_questions:
+      - "What agreement threshold between LLM judge and human is acceptable?"
+    reference_keys: ["husain2024evals"]
 
   - name: automated-metrics
     description: "Automated metrics and benchmarks for prompt quality"
@@ -43,6 +52,10 @@ subtopics:
 
   - name: practical-guidance
     description: "Practitioner-focused guidance and case studies"
-    key_findings: []
+    key_findings:
+      - "Error analysis methodology from qualitative research: open coding (journaling) → axial coding (failure taxonomy) [husain2024evals]"
+      - "Review 100+ fresh traces every 2-4 weeks after significant changes [husain2024evals]"
+      - "Cannot outsource open coding to LLM - it lacks context and tribal knowledge [husain2024evals]"
+      - "Conquer Level 1 tests before moving to Level 2 [husain2024evals]"
     open_questions: []
-    reference_keys: []
+    reference_keys: ["husain2024evals"]
