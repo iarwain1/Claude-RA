@@ -37,9 +37,15 @@ subtopics:
 
   - name: automated-metrics
     description: "Automated metrics and benchmarks for prompt quality"
-    key_findings: []
-    open_questions: []
-    reference_keys: []
+    key_findings:
+      - "Pass@k metric: measures if correct solution appears in top-k outputs - standard for code generation [guo2025agentbenchmark]"
+      - "Benchmark evolution: HumanEval (function-level, 164 problems) → SWE-bench (repository-level, 2,294 real GitHub issues) [guo2025agentbenchmark]"
+      - "HumanEval+ extends test coverage from 9.6 to 764.1 test cases per problem for better edge case detection [guo2025agentbenchmark]"
+      - "Gap between benchmarks and production: 'state-of-the-art models continue to struggle with real engineering tasks' [guo2025agentbenchmark]"
+    open_questions:
+      - "How do benchmark metrics correlate with real-world prompt effectiveness?"
+      - "What metrics beyond Pass@k capture prompt quality for non-generation tasks?"
+    reference_keys: ["guo2025agentbenchmark"]
 
   - name: human-evaluation
     description: "Human evaluation methodologies for prompt effectiveness"
@@ -55,10 +61,13 @@ subtopics:
       - "Multi-step workflows: use both outcome and process metrics; process failures are more deterministic so tackle first [husain2025evalsfaq]"
       - "Segment error analysis by workflow stage: early stage errors cascade, so early improvements have most impact [husain2025evalsfaq]"
       - "RAG evaluation: separate retrieval (IR metrics: Recall@k, Precision@k, MRR) from generation (LLM-as-judge) [husain2025evalsfaq]"
+      - "Three solution paradigms: prompt-based (no model changes), fine-tuning-based (parameter updates), agent-based (planning, reasoning, memory, tools) [guo2025agentbenchmark]"
+      - "Agent evolution: from simple prompts → sophisticated systems with planning, reasoning, memory mechanisms, and tool augmentation [guo2025agentbenchmark]"
+      - "SWE-bench evaluates agents on real GitHub issues: given codebase + issue description → generate patch [guo2025agentbenchmark]"
     open_questions:
       - "How to evaluate tool selection prompts vs. tool execution prompts?"
       - "What step-level metrics are most predictive of end-to-end success?"
-    reference_keys: ["husain2025evalsfaq"]
+    reference_keys: ["husain2025evalsfaq", "guo2025agentbenchmark"]
 
   - name: prompt-optimization
     description: "Methods for iteratively improving prompts based on evaluation"
