@@ -68,17 +68,20 @@ queue:
     priority: 7
     reason: "Comprehensive survey covering prompting paradigms and evaluation in code domain."
     added: "2025-12-17"
+    status: done
 
   # Additional Anthropic resources
   - key: anthropic2025promptengineering
     priority: 7
     reason: "Official prompt engineering overview with evaluation guidance."
     added: "2025-12-17"
+    status: done
 
   - key: liu_6ragevals
     priority: 7
-    reason: "Referenced framework for RAG evaluation. Need to find URL."
+    reason: "Simplified RAG evaluation framework - 6 conditional relationships, 3-tier structure."
     added: "2025-12-17"
+    status: done
 
   # Major survey - now verified
   - key: mei2025contextengineering
@@ -110,6 +113,7 @@ queue:
     priority: 7
     reason: "Prompt synthesis scaling for reasoning. Relevant to automated prompt optimization."
     added: "2025-12-17"
+    status: done
 
   - key: innogym2025benchmark
     priority: 6

@@ -19,10 +19,14 @@ subtopics:
       - "Architecture-based evaluation: each functional node and connection is a potential source of evaluation questions [itea2025llmtesting]"
       - "DoD scientific rigor standard: reusable test designs enable ongoing performance monitoring over time [itea2025llmtesting]"
       - "OpenAI Evals: basic evals (exact/fuzzy match), model-graded evals, custom logic - no code needed with YAML/JSON [openai_evals_framework]"
+      - "Six-stage code intelligence evolution: manual → tool-assisted → framework-driven → AI-assisted → AI-driven → AI-autonomous [survey2025codeintelligence]"
+      - "Focus on controllable success criteria: not all failing evals are best solved by prompt engineering (vs. model selection) [anthropic2025promptengineering]"
+      - "RAG evaluation: 6 conditional relationships (Q|C, A|C, A|Q, C|A, Q|C, Q|A) cover all aspects; debug retrieval before generation [liu_6ragevals]"
     open_questions:
       - "How to evaluate prompts before deployment when no user data exists?"
       - "How to balance evaluation of context comprehension vs generation quality?"
-    reference_keys: ["husain2024evals", "husain2025evalsfaq", "husain2025fieldguide", "mei2025contextengineering", "itea2025llmtesting", "openai_evals_framework"]
+      - "When should evaluation lead to prompt changes vs. model changes?"
+    reference_keys: ["husain2024evals", "husain2025evalsfaq", "husain2025fieldguide", "mei2025contextengineering", "itea2025llmtesting", "openai_evals_framework", "survey2025codeintelligence", "anthropic2025promptengineering", "liu_6ragevals"]
 
   - name: llm-as-judge
     description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
@@ -39,11 +43,12 @@ subtopics:
       - "LLM-as-Judge suitable for low-level cognitive tasks (recall, list) with single correct answers; human SMEs better for summarization, reasoning, disambiguation [itea2025llmtesting]"
       - "Quantified limitations: 68% agreement (dietetics domain), 64% agreement (mental health) between SMEs and LLM judges for expert tasks [itea2025llmtesting]"
       - "OpenAI model-graded templates: fact, closedqa, battle - evaluation model and evaluated model can differ [openai_evals_framework]"
+      - "RAG Tier 2: Use LLM-as-judge for generation quality (A|C faithfulness, A|Q relevance) after fixing retrieval [liu_6ragevals]"
     open_questions:
       - "What agreement threshold between LLM judge and human is acceptable?"
       - "How to handle criteria drift in rapidly evolving systems?"
       - "When to use LLM-as-judge vs human SMEs for different cognitive task types?"
-    reference_keys: ["husain2024evals", "husain2024llmjudge", "itea2025llmtesting", "openai_evals_framework"]
+    reference_keys: ["husain2024evals", "husain2024llmjudge", "itea2025llmtesting", "openai_evals_framework", "liu_6ragevals"]
 
   - name: automated-metrics
     description: "Automated metrics and benchmarks for prompt quality"
@@ -56,11 +61,16 @@ subtopics:
       - "Anthropic tool evaluation: collect accuracy, runtime, token consumption, tool error metrics [anthropic2025toolsforagents]"
       - "ACE framework metrics: +10.6% AppWorld, +8.6% finance reasoning, 86.9% latency reduction demonstrate context optimization impact [ace2025contextengineering]"
       - "AIME2024: GPT-4.1 improved from 26.7% to 43.3% through structured cognitive operation sequences [mei2025contextengineering]"
+      - "HumanEval potentially saturated (95%+ success rates); SWE-bench better for production relevance [survey2025codeintelligence]"
+      - "PromptCoT 2.0: SOTA results with +4.4-5.3 on AIME 24/25, +6.1 on LiveCodeBench, +35 Elo Codeforces [promptcot2025scaling]"
+      - "Synthetic prompts can outperform human-curated data: 4.8M synthetic prompts trained model beats hybrid data [promptcot2025scaling]"
+      - "RAG Tier 1: Traditional IR metrics (Precision@K, Recall@K, MAP@K, MRR@K) - fast, no LLM needed, quick iteration [liu_6ragevals]"
     open_questions:
       - "How do benchmark metrics correlate with real-world prompt effectiveness?"
       - "What metrics beyond Pass@k capture prompt quality for non-generation tasks?"
       - "How to balance multiple metrics (accuracy, latency, cost) in prompt evaluation?"
-    reference_keys: ["guo2025agentbenchmark", "anthropic2025evaltool", "anthropic2025toolsforagents", "ace2025contextengineering", "mei2025contextengineering"]
+      - "When is synthetic evaluation data preferable to human-curated data?"
+    reference_keys: ["guo2025agentbenchmark", "anthropic2025evaltool", "anthropic2025toolsforagents", "ace2025contextengineering", "mei2025contextengineering", "survey2025codeintelligence", "promptcot2025scaling", "liu_6ragevals"]
 
   - name: human-evaluation
     description: "Human evaluation methodologies for prompt effectiveness"
@@ -93,11 +103,12 @@ subtopics:
       - "Evaluation tasks should require multiple tool calls (potentially dozens) - single-tool tests miss coordination issues [anthropic2025toolsforagents]"
       - "Analyze agent reasoning to identify improvement areas, not just outcomes [anthropic2025toolsforagents]"
       - "Context Engineering system implementations: RAG, memory systems, tool-integrated reasoning, multi-agent systems [mei2025contextengineering]"
+      - "Commercial tools (Copilot, Cursor, Claude Code) represent AI-assisted stage; AI-driven and AI-autonomous stages emerging [survey2025codeintelligence]"
     open_questions:
       - "How to evaluate tool selection prompts vs. tool execution prompts?"
       - "What step-level metrics are most predictive of end-to-end success?"
       - "How to test agent coordination in multi-tool scenarios?"
-    reference_keys: ["husain2025evalsfaq", "guo2025agentbenchmark", "anthropic2025toolsforagents", "mei2025contextengineering"]
+    reference_keys: ["husain2025evalsfaq", "guo2025agentbenchmark", "anthropic2025toolsforagents", "mei2025contextengineering", "survey2025codeintelligence"]
 
   - name: prompt-optimization
     description: "Methods for iteratively improving prompts based on evaluation"
@@ -108,11 +119,14 @@ subtopics:
       - "Helpful/harmful counters track strategy effectiveness over time through incremental delta merging [ace2025contextengineering]"
       - "Anthropic prompt improver: adds chain-of-thought, XML tag organization, standardized example formatting [anthropic2025promptimprover]"
       - "Prompt versioning enables controlled experiments and iteration tracking [anthropic2025evaltool]"
+      - "PromptCoT 2.0: EM-based framework replaces hand-crafted heuristics with learnable, domain-agnostic optimization [promptcot2025scaling]"
+      - "Two training regimes: Self-Play (no teacher needed, verifiable feedback) and SFT (learn from teacher traces) [promptcot2025scaling]"
+      - "Prompt engineering faster than finetuning: resource-efficient, cost-effective, automatically inherits model updates [anthropic2025promptengineering]"
     open_questions:
       - "How to detect when automated prompt evolution is going wrong?"
       - "When does manual iteration outperform automated optimization?"
       - "How to combine execution-based and human feedback for optimization?"
-    reference_keys: ["ace2025contextengineering", "anthropic2025promptimprover", "anthropic2025evaltool"]
+    reference_keys: ["ace2025contextengineering", "anthropic2025promptimprover", "anthropic2025evaltool", "promptcot2025scaling", "anthropic2025promptengineering"]
 
   - name: practical-guidance
     description: "Practitioner-focused guidance and case studies"
@@ -134,8 +148,11 @@ subtopics:
       - "Anthropic Console removes spreadsheet friction for prompt evaluation; auto-generate test cases from seed examples [anthropic2025evaltool]"
       - "Iterative improvement loop: prototype → evaluate → improve with agents → re-evaluate → repeat [anthropic2025toolsforagents]"
       - "Prompt engineering becoming essential digital competence as LLMs find broader application [anam2025prompteffectiveness]"
+      - "Prerequisites for prompting: clear success criteria, empirical testing methods, draft prompt to iterate on [anthropic2025promptengineering]"
+      - "Technique ordering: try broadly effective techniques first, then specialized - actual impact depends on use case [anthropic2025promptengineering]"
+      - "RAG workflow: debug retrieval with IR metrics first, then tackle generation with LLM judges [liu_6ragevals]"
     open_questions:
       - "When is eval-driven development appropriate (beyond known constraints)?"
       - "What makes a data viewer 'thoughtfully designed' vs generic dashboard?"
       - "How to train domain experts to iterate on prompts effectively?"
-    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq", "husain2025fieldguide", "anthropic2025evaltool", "anthropic2025toolsforagents", "anam2025prompteffectiveness"]
+    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq", "husain2025fieldguide", "anthropic2025evaltool", "anthropic2025toolsforagents", "anam2025prompteffectiveness", "anthropic2025promptengineering", "liu_6ragevals"]

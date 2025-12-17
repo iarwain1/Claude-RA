@@ -86,8 +86,8 @@ references:
     source: web
     priority: 7
     subtopics: ["evaluation-frameworks", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anthropic2025promptengineering.md"
     added: "2025-12-17"
 
   - key: anthropic2025claude4bestpractices
@@ -159,15 +159,15 @@ references:
 
   - key: survey2025codeintelligence
     title: "From Code Foundation Models to Agents and Applications: A Comprehensive Survey and Practical Guide to Code Intelligence"
-    authors: []
+    authors: ["Yang, Jian", "et al."]
     year: 2025
     url: "https://arxiv.org/abs/2511.18538"
-    abstract: "Comprehensive survey on code LLMs covering data curation, post-training, advanced prompting paradigms, pre-training, supervised fine-tuning, reinforcement learning, and autonomous coding agents. Notes evolution from single-digit to 95%+ success rates on HumanEval."
+    abstract: "Comprehensive survey (70+ authors) on code LLMs covering entire model lifecycle. Six-stage evolution: manual → tool-assisted → framework-driven → AI-assisted → AI-driven → AI-autonomous. Performance from single-digit to 95%+ on HumanEval."
     source: arxiv
     priority: 7
     subtopics: ["evaluation-frameworks", "agentic-evaluation", "automated-metrics"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/survey2025codeintelligence.md"
     added: "2025-12-17"
 
   # === ARXIV PAPERS (USER PROVIDED - VERIFIED) ===
@@ -215,15 +215,15 @@ references:
 
   - key: promptcot2025scaling
     title: "PromptCoT 2.0: Scaling Prompt Synthesis for Large Language Model Reasoning"
-    authors: []
+    authors: ["Zhao, Xueliang", "Wu, Wei", "Guan, Jian", "Gong, Zhuocheng", "Kong, Lingpeng"]
     year: 2025
     url: "https://arxiv.org/abs/2509.19894"
-    abstract: "Prompt synthesis and scaling for LLM reasoning. Relevant to automated prompt optimization and evaluation."
+    abstract: "EM-based framework for scaling prompt synthesis. Self-play and SFT regimes. SOTA results: +4.4-5.3 on AIME 24/25, +6.1 on LiveCodeBench. Synthetic prompts outperform human-curated data. 4.8M synthetic prompts."
     source: arxiv
     priority: 7
     subtopics: ["prompt-optimization", "automated-metrics"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/promptcot2025scaling.md"
     added: "2025-12-17"
 
   - key: prompting2025practice
@@ -270,14 +270,14 @@ references:
   - key: liu_6ragevals
     title: "There Are Only 6 RAG Evals"
     authors: ["Liu, Jason"]
-    year: 2024
-    url: null
-    abstract: "Framework for RAG evaluation with tiers mapping retrieval and generation metrics. Referenced in Hamel Husain's FAQ. URL needs to be found."
-    source: web
+    year: 2025
+    url: "https://jxnl.co/writing/2025/05/19/there-are-only-6-rag-evals/"
+    abstract: "Simplified RAG evaluation framework using 6 conditional relationships between Q (Question), C (Context), A (Answer). Three-tier structure: Tier 1 (IR metrics), Tier 2 (primary RAG), Tier 3 (advanced). Key insight: debug retrieval first, then generation."
+    source: blog
     priority: 7
     subtopics: ["automated-metrics", "evaluation-frameworks"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/liu_6ragevals.md"
     added: "2025-12-17"
 
   # === USER-PROVIDED (ITEA) ===
