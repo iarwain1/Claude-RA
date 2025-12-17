@@ -101,6 +101,7 @@ queue:
     priority: 6
     reason: "Historical perspective on context engineering evolution. Good background context."
     added: "2025-12-17"
+    status: done
 
   # Now verified
   - key: prompting2025practice
@@ -119,6 +120,20 @@ queue:
     priority: 6
     reason: "Agent benchmarking framework. Relevant to agentic evaluation subtopic."
     added: "2025-12-17"
+    status: done
+
+  # Additional Anthropic resources (priority 6)
+  - key: anthropic2025claude4bestpractices
+    priority: 6
+    reason: "Claude 4.x specific guidance for prompt engineering."
+    added: "2025-12-17"
+    status: done
+
+  - key: anthropic2025promptimprover
+    priority: 6
+    reason: "Automatic prompt refinement tool and techniques."
+    added: "2025-12-17"
+    status: done
 
   # User-provided (ITEA)
   - key: itea2025llmtesting

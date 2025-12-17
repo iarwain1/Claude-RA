@@ -22,11 +22,14 @@ subtopics:
       - "Six-stage code intelligence evolution: manual → tool-assisted → framework-driven → AI-assisted → AI-driven → AI-autonomous [survey2025codeintelligence]"
       - "Focus on controllable success criteria: not all failing evals are best solved by prompt engineering (vs. model selection) [anthropic2025promptengineering]"
       - "RAG evaluation: 6 conditional relationships (Q|C, A|C, A|Q, C|A, Q|C, Q|A) cover all aspects; debug retrieval before generation [liu_6ragevals]"
+      - "Four-stage context engineering evolution: 1.0 Translation → 2.0 Instruction → 3.0 Scenario → 4.0 World; currently in 2.0→3.0 transition [contexteng2025evolution]"
+      - "Context engineering as entropy reduction: transforming high-entropy human intentions into low-entropy machine formats [contexteng2025evolution]"
     open_questions:
       - "How to evaluate prompts before deployment when no user data exists?"
       - "How to balance evaluation of context comprehension vs generation quality?"
       - "When should evaluation lead to prompt changes vs. model changes?"
-    reference_keys: ["husain2024evals", "husain2025evalsfaq", "husain2025fieldguide", "mei2025contextengineering", "itea2025llmtesting", "openai_evals_framework", "survey2025codeintelligence", "anthropic2025promptengineering", "liu_6ragevals"]
+      - "How do evaluation approaches differ across context engineering stages (instruction vs. scenario vs. world)?"
+    reference_keys: ["husain2024evals", "husain2025evalsfaq", "husain2025fieldguide", "mei2025contextengineering", "itea2025llmtesting", "openai_evals_framework", "survey2025codeintelligence", "anthropic2025promptengineering", "liu_6ragevals", "contexteng2025evolution"]
 
   - name: llm-as-judge
     description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
@@ -65,12 +68,16 @@ subtopics:
       - "PromptCoT 2.0: SOTA results with +4.4-5.3 on AIME 24/25, +6.1 on LiveCodeBench, +35 Elo Codeforces [promptcot2025scaling]"
       - "Synthetic prompts can outperform human-curated data: 4.8M synthetic prompts trained model beats hybrid data [promptcot2025scaling]"
       - "RAG Tier 1: Traditional IR metrics (Precision@K, Recall@K, MAP@K, MRR@K) - fast, no LLM needed, quick iteration [liu_6ragevals]"
+      - "Innovation benchmarking dual metrics: performance gain (improvement over SOTA) + novelty (methodological difference) [innogym2025benchmark]"
+      - "Novelty alone insufficient: true innovation requires originality + correctness + effectiveness [innogym2025benchmark]"
+      - "Prompt improver results: 30% accuracy increase (Haiku classification), 100% format compliance [anthropic2025promptimprover]"
     open_questions:
       - "How do benchmark metrics correlate with real-world prompt effectiveness?"
       - "What metrics beyond Pass@k capture prompt quality for non-generation tasks?"
       - "How to balance multiple metrics (accuracy, latency, cost) in prompt evaluation?"
       - "When is synthetic evaluation data preferable to human-curated data?"
-    reference_keys: ["guo2025agentbenchmark", "anthropic2025evaltool", "anthropic2025toolsforagents", "ace2025contextengineering", "mei2025contextengineering", "survey2025codeintelligence", "promptcot2025scaling", "liu_6ragevals"]
+      - "How to measure novelty in prompt approaches alongside effectiveness?"
+    reference_keys: ["guo2025agentbenchmark", "anthropic2025evaltool", "anthropic2025toolsforagents", "ace2025contextengineering", "mei2025contextengineering", "survey2025codeintelligence", "promptcot2025scaling", "liu_6ragevals", "innogym2025benchmark", "anthropic2025promptimprover"]
 
   - name: human-evaluation
     description: "Human evaluation methodologies for prompt effectiveness"
@@ -104,11 +111,14 @@ subtopics:
       - "Analyze agent reasoning to identify improvement areas, not just outcomes [anthropic2025toolsforagents]"
       - "Context Engineering system implementations: RAG, memory systems, tool-integrated reasoning, multi-agent systems [mei2025contextengineering]"
       - "Commercial tools (Copilot, Cursor, Claude Code) represent AI-assisted stage; AI-driven and AI-autonomous stages emerging [survey2025codeintelligence]"
+      - "iGym execution environment: unified framework, long-horizon recovery, resource management, concurrency support [innogym2025benchmark]"
+      - "Current agents still perform significantly below human SOTA on complex tasks [innogym2025benchmark]"
     open_questions:
       - "How to evaluate tool selection prompts vs. tool execution prompts?"
       - "What step-level metrics are most predictive of end-to-end success?"
       - "How to test agent coordination in multi-tool scenarios?"
-    reference_keys: ["husain2025evalsfaq", "guo2025agentbenchmark", "anthropic2025toolsforagents", "mei2025contextengineering", "survey2025codeintelligence"]
+      - "How to evaluate agent innovation potential vs. just task completion?"
+    reference_keys: ["husain2025evalsfaq", "guo2025agentbenchmark", "anthropic2025toolsforagents", "mei2025contextengineering", "survey2025codeintelligence", "innogym2025benchmark"]
 
   - name: prompt-optimization
     description: "Methods for iteratively improving prompts based on evaluation"
@@ -122,11 +132,16 @@ subtopics:
       - "PromptCoT 2.0: EM-based framework replaces hand-crafted heuristics with learnable, domain-agnostic optimization [promptcot2025scaling]"
       - "Two training regimes: Self-Play (no teacher needed, verifiable feedback) and SFT (learn from teacher traces) [promptcot2025scaling]"
       - "Prompt engineering faster than finetuning: resource-efficient, cost-effective, automatically inherits model updates [anthropic2025promptengineering]"
+      - "Prompt improver 5 techniques: chain-of-thought reasoning, example standardization, example enrichment, prompt rewriting, prefill addition [anthropic2025promptimprover]"
+      - "Improved prompts produce longer, more thorough but slower responses - tradeoff with latency/cost [anthropic2025promptimprover]"
+      - "Claude 4.x explicit instruction emphasis: 'above and beyond' behavior now needs explicit request [anthropic2025claude4bestpractices]"
+      - "Claude 4.x thinking capabilities: guide initial/interleaved thinking for complex multi-step reasoning [anthropic2025claude4bestpractices]"
     open_questions:
       - "How to detect when automated prompt evolution is going wrong?"
       - "When does manual iteration outperform automated optimization?"
       - "How to combine execution-based and human feedback for optimization?"
-    reference_keys: ["ace2025contextengineering", "anthropic2025promptimprover", "anthropic2025evaltool", "promptcot2025scaling", "anthropic2025promptengineering"]
+      - "How to balance prompt improvement thoroughness with latency/cost constraints?"
+    reference_keys: ["ace2025contextengineering", "anthropic2025promptimprover", "anthropic2025evaltool", "promptcot2025scaling", "anthropic2025promptengineering", "anthropic2025claude4bestpractices"]
 
   - name: practical-guidance
     description: "Practitioner-focused guidance and case studies"
@@ -151,8 +166,12 @@ subtopics:
       - "Prerequisites for prompting: clear success criteria, empirical testing methods, draft prompt to iterate on [anthropic2025promptengineering]"
       - "Technique ordering: try broadly effective techniques first, then specialized - actual impact depends on use case [anthropic2025promptengineering]"
       - "RAG workflow: debug retrieval with IR metrics first, then tackle generation with LLM judges [liu_6ragevals]"
+      - "Claude 4.x requires explicit instructions; don't assume model will infer requirements [anthropic2025claude4bestpractices]"
+      - "Examples highly influential in Claude 4.x: ensure examples align with desired behaviors, minimize behaviors to avoid [anthropic2025claude4bestpractices]"
+      - "Claude 4.5 excels at long-horizon: exceptional state tracking, focus on incremental progress [anthropic2025claude4bestpractices]"
     open_questions:
       - "When is eval-driven development appropriate (beyond known constraints)?"
       - "What makes a data viewer 'thoughtfully designed' vs generic dashboard?"
       - "How to train domain experts to iterate on prompts effectively?"
-    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq", "husain2025fieldguide", "anthropic2025evaltool", "anthropic2025toolsforagents", "anam2025prompteffectiveness", "anthropic2025promptengineering", "liu_6ragevals"]
+      - "How to adapt prompts when moving between model versions with different instruction-following behavior?"
+    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq", "husain2025fieldguide", "anthropic2025evaltool", "anthropic2025toolsforagents", "anam2025prompteffectiveness", "anthropic2025promptengineering", "liu_6ragevals", "anthropic2025claude4bestpractices"]

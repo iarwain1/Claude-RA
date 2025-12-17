@@ -94,13 +94,13 @@ references:
     title: "Claude 4 Best Practices"
     authors: ["Anthropic"]
     year: 2025
-    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices.md"
-    abstract: "Specific prompt engineering techniques for Claude 4 models (Opus 4.1, Opus 4, Sonnet 4). Emphasizes explicit instructions and precise instruction following."
+    url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/claude-4-best-practices"
+    abstract: "Claude 4.x-specific guidance: explicit instructions, example sensitivity, thinking capabilities, long-horizon tasks. 'Above and beyond' behavior now needs explicit request. Models trained for precise instruction following."
     source: web
     priority: 6
-    subtopics: ["practical-guidance"]
-    read: false
-    notes_file: null
+    subtopics: ["practical-guidance", "prompt-optimization"]
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anthropic2025claude4bestpractices.md"
     added: "2025-12-17"
 
   - key: anthropic2025toolsforagents
@@ -121,12 +121,12 @@ references:
     authors: ["Anthropic"]
     year: 2025
     url: "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver"
-    abstract: "Tool for automatic prompt refinement using Claude. Adds chain-of-thought instructions, XML tag organization, and standardized example formatting."
+    abstract: "Automatic prompt refinement using 5 techniques: chain-of-thought, example standardization, example enrichment, prompt rewriting, prefill addition. Results: 30% accuracy increase (Haiku classification), 100% format compliance. Creates longer but slower responses."
     source: web
     priority: 6
     subtopics: ["prompt-optimization"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/anthropic2025promptimprover.md"
     added: "2025-12-17"
 
   # === ARXIV PAPERS (CONFIRMED DETAILS) ===
@@ -187,15 +187,15 @@ references:
 
   - key: contexteng2025evolution
     title: "Context Engineering 2.0: The Context of Context Engineering"
-    authors: []
+    authors: ["Hua, Qishuo", "Ye, Lyumanshan", "Fu, Dayuan", "Xiao, Yang", "Cai, Xiaojie", "Wu, Yunze", "Lin, Jifan", "Wang, Junfei", "Liu, Pengfei"]
     year: 2025
     url: "https://arxiv.org/abs/2510.26493"
-    abstract: "Maps evolution of context engineering through stages: 1.0 Context as Translation (humans adapt to computers), 2.0 Context as Instruction (LLMs interpret natural language), 3.0 Context as Scenario (agents understand goals), 4.0 Context as World (AI proactively builds environment). Traces roots back 20+ years."
+    abstract: "Four-stage evolutionary model (1.0-4.0): Translation → Instruction → Scenario → World. Currently in 2.0→3.0 transition. Defines context engineering as entropy reduction - transforming high-entropy intentions into low-entropy machine formats. 20+ year history."
     source: arxiv
     priority: 6
     subtopics: ["evaluation-frameworks"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/contexteng2025evolution.md"
     added: "2025-12-17"
 
   - key: anam2025prompteffectiveness
@@ -241,15 +241,15 @@ references:
 
   - key: innogym2025benchmark
     title: "InnoGym: Benchmarking the Innovation Potential of AI Agents"
-    authors: []
+    authors: ["Zhang, Jintian", "et al."]
     year: 2025
     url: "https://arxiv.org/abs/2512.01822"
-    abstract: "Benchmarking framework for evaluating AI agent innovation potential. Relevant to agentic system evaluation."
+    abstract: "First benchmark for AI agent innovation. Dual metrics: performance gain + novelty. 18 real-world tasks. iGym execution environment. Key finding: novelty alone insufficient - innovation requires originality + correctness + effectiveness."
     source: arxiv
     priority: 6
     subtopics: ["agentic-evaluation", "automated-metrics"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/innogym2025benchmark.md"
     added: "2025-12-17"
 
   # === TO EXPLORE (Mentioned Resources) ===
