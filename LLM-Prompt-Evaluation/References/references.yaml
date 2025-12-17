@@ -45,8 +45,8 @@ references:
     source: blog
     priority: 9
     subtopics: ["evaluation-frameworks", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/husain2025fieldguide.md"
     added: "2025-12-17"
 
   - key: husain2025evalsfaq

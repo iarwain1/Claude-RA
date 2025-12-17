@@ -12,9 +12,11 @@ subtopics:
       - "Error analysis should precede eval design: write evaluators for discovered errors, not imagined ones [husain2024evals]"
       - "Objective/rule-based failures → code assertions; Subjective failures → LLM-as-judge [husain2024evals]"
       - "Synthetic retrieval test data: documents → extract facts → generate questions those facts would answer (reverse process) [husain2025evalsfaq]"
+      - "Generic metrics 'worse than useless' - create false confidence with vanity metrics that don't correlate with real problems [husain2025fieldguide]"
+      - "Success pattern: obsess over measurement and iteration, not tools; successful teams barely discuss tools [husain2025fieldguide]"
     open_questions:
       - "How to evaluate prompts before deployment when no user data exists?"
-    reference_keys: ["husain2024evals", "husain2025evalsfaq"]
+    reference_keys: ["husain2024evals", "husain2025evalsfaq", "husain2025fieldguide"]
 
   - name: llm-as-judge
     description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
@@ -77,6 +79,11 @@ subtopics:
       - "Synthetic data: use dimensional structure (categories of user query variation); avoid unstructured 'give me test queries' prompts [husain2025evalsfaq]"
       - "Model selection should not be primary improvement lever - ask 'does error analysis suggest model is the problem?' first [husain2025evalsfaq]"
       - "One domain expert as 'benevolent dictator' for quality decisions; notebooks are most effective tool for analysis [husain2025evalsfaq]"
+      - "The 'tools trap': belief that right tools/frameworks will solve AI problems; generic metrics actively impede progress [husain2025fieldguide]"
+      - "Custom data viewers: teams with thoughtfully designed viewers iterate 10x faster; more valuable than complex dashboards [husain2025fieldguide]"
+      - "Empower domain experts to iterate on prompts directly; technical jargon creates unnecessary barriers [husain2025fieldguide]"
+      - "Maintaining trust in evaluations: metrics must align with production; binary judgments + regular alignment checks [husain2025fieldguide]"
     open_questions:
       - "When is eval-driven development appropriate (beyond known constraints)?"
-    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq"]
+      - "What makes a data viewer 'thoughtfully designed' vs generic dashboard?"
+    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq", "husain2025fieldguide"]
