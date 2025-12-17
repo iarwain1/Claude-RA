@@ -11,9 +11,10 @@ subtopics:
       - "Three-level hierarchy: Level 1 (assertions, every code change) → Level 2 (LLM-as-judge, set cadence) → Level 3 (A/B testing, after significant changes) [husain2024evals]"
       - "Error analysis should precede eval design: write evaluators for discovered errors, not imagined ones [husain2024evals]"
       - "Objective/rule-based failures → code assertions; Subjective failures → LLM-as-judge [husain2024evals]"
+      - "Synthetic retrieval test data: documents → extract facts → generate questions those facts would answer (reverse process) [husain2025evalsfaq]"
     open_questions:
       - "How to evaluate prompts before deployment when no user data exists?"
-    reference_keys: ["husain2024evals"]
+    reference_keys: ["husain2024evals", "husain2025evalsfaq"]
 
   - name: llm-as-judge
     description: "Using LLMs to evaluate other LLM outputs (self-evaluation, cross-evaluation)"
@@ -46,9 +47,16 @@ subtopics:
 
   - name: agentic-evaluation
     description: "Evaluation specific to agentic systems, tool use, and workflows"
-    key_findings: []
-    open_questions: []
-    reference_keys: []
+    key_findings:
+      - "Two-level approach: end-to-end task success (did we meet user's goal?) + step-level diagnostics (tool choice, parameter extraction, error handling, context retention, efficiency) [husain2025evalsfaq]"
+      - "Transition failure matrices show which state transitions cause most failures - transforms complexity into actionable insights [husain2025evalsfaq]"
+      - "Multi-step workflows: use both outcome and process metrics; process failures are more deterministic so tackle first [husain2025evalsfaq]"
+      - "Segment error analysis by workflow stage: early stage errors cascade, so early improvements have most impact [husain2025evalsfaq]"
+      - "RAG evaluation: separate retrieval (IR metrics: Recall@k, Precision@k, MRR) from generation (LLM-as-judge) [husain2025evalsfaq]"
+    open_questions:
+      - "How to evaluate tool selection prompts vs. tool execution prompts?"
+      - "What step-level metrics are most predictive of end-to-end success?"
+    reference_keys: ["husain2025evalsfaq"]
 
   - name: prompt-optimization
     description: "Methods for iteratively improving prompts based on evaluation"
@@ -65,5 +73,10 @@ subtopics:
       - "Conquer Level 1 tests before moving to Level 2 [husain2024evals]"
       - "Common mistakes: too many metrics, arbitrary 1-5 scoring, ignoring domain experts [husain2024llmjudge]"
       - "You cannot write a good judge prompt until you've seen the data [husain2024llmjudge]"
-    open_questions: []
-    reference_keys: ["husain2024evals", "husain2024llmjudge"]
+      - "Eval-driven development generally doesn't work - LLMs have infinite failure surface area; write evaluators for discovered errors, not imagined ones [husain2025evalsfaq]"
+      - "Synthetic data: use dimensional structure (categories of user query variation); avoid unstructured 'give me test queries' prompts [husain2025evalsfaq]"
+      - "Model selection should not be primary improvement lever - ask 'does error analysis suggest model is the problem?' first [husain2025evalsfaq]"
+      - "One domain expert as 'benevolent dictator' for quality decisions; notebooks are most effective tool for analysis [husain2025evalsfaq]"
+    open_questions:
+      - "When is eval-driven development appropriate (beyond known constraints)?"
+    reference_keys: ["husain2024evals", "husain2024llmjudge", "husain2025evalsfaq"]

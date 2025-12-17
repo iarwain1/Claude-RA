@@ -51,15 +51,15 @@ references:
 
   - key: husain2025evalsfaq
     title: "AI Evals FAQ"
-    authors: ["Husain, Hamel"]
+    authors: ["Husain, Hamel", "Shankar, Shreya"]
     year: 2025
     url: "https://hamel.dev/blog/posts/evals-faq/"
     abstract: "Collection of FAQs covering: what are LLM evals, evaluating agentic workflows, RAG evaluation, multi-step workflows, error analysis methodology, eval-driven development, model selection, and synthetic data generation."
     source: blog
     priority: 10
     subtopics: ["evaluation-frameworks", "agentic-evaluation", "practical-guidance"]
-    read: false
-    notes_file: null
+    read: true
+    notes_file: "Claude-Notes/Paper-Summaries/husain2025evalsfaq.md"
     added: "2025-12-17"
 
   # === ANTHROPIC RESOURCES ===
