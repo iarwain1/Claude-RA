@@ -11,19 +11,53 @@
 
 ## Access Issues
 
-Due to rate limiting and access restrictions, the following sources could not be directly fetched:
+### Root Cause: Egress Proxy Whitelist
 
-### Blocked by WebFetch (403 errors)
-- **arxiv.org** - All arXiv papers blocked
-- **anthropic.com** - Most pages blocked
-- **openai.com** - Most pages blocked
+The Claude Code remote environment uses an **egress proxy with a strict allowlist** of hosts. This is a security control that cannot be bypassed. The allowlist includes package managers and developer tools (github.com, pypi.org, npmjs.org, etc.) but **excludes** research sites:
+
+- **arxiv.org** - Blocked (API and web)
+- **semanticscholar.org** - Blocked
+- **anthropic.com** - Blocked (blog pages)
+- **openai.com** - Blocked
 - **lesswrong.com** - Blocked
 - **alignmentforum.org** - Blocked
-- **rand.org** - Blocked
-- **blog.langchain.com** - Blocked
 
-### Workaround Used
-WebSearch was used to retrieve metadata and abstracts from search results, which worked for many papers but is slower and less complete than direct access.
+### Available Workarounds
+
+#### 1. Run `fetch_metadata_local.py` Locally (Recommended)
+
+A script has been created that you can run **on your local machine** where there are no network restrictions:
+
+```bash
+cd link-dumps
+python fetch_metadata_local.py --test          # Test API connectivity
+python fetch_metadata_local.py                  # Process all unprocessed papers
+python fetch_metadata_local.py --limit 100     # Process 100 papers
+python fetch_metadata_local.py --semantic-only # Use Semantic Scholar only
+```
+
+Features:
+- Uses arXiv API (primary) with Semantic Scholar fallback
+- Creates note files with abstracts
+- Updates links.yaml with metadata
+- Creates backups before modifying files
+
+#### 2. WebSearch (Works in Claude Code)
+
+The `WebSearch` tool works through a different pathway and can retrieve metadata from search results. This is slower but functional within the Claude Code environment. It's how the 136 existing notes were created.
+
+#### 3. GitHub-Hosted Data
+
+GitHub is whitelisted. Some metadata sources:
+- [arxiv.py](https://github.com/lukasschwab/arxiv.py) - Python wrapper for arXiv API
+- [semanticscholar](https://github.com/danielnsilva/semanticscholar) - Python client for S2 API
+
+### Why Standard Bypass Techniques Don't Work
+
+Common web scraping bypasses (user-agent rotation, headers, proxies) won't help because:
+1. The 403 comes from the egress proxy, not the target server
+2. All HTTP/HTTPS traffic goes through the proxy
+3. The proxy validates requests against a JWT-embedded allowlist
 
 ## Links with Full Notes
 
