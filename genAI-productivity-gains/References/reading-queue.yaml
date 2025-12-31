@@ -37,43 +37,49 @@ queue:
     priority: 9
     reason: "Explains 11-15% variance from scaffolds alone. Critical for understanding benchmark reproducibility problems."
     added: "2025-12-31"
-    status: pending
-    notes: "Epoch AI analysis - Note file available in link-dumps. Practical evaluation challenges."
+    status: done
+    read_date: "2025-12-31"
+    notes: "Epoch AI analysis - Summary in Claude-Notes/Paper-Summaries/brand2025benchmarking.md"
 
   - key: anthropic2025workdec
     priority: 9
     reason: "Updated Anthropic internal study with 200K transcripts. 60% usage, skill atrophy concerns. More detailed than Aug version."
     added: "2025-12-31"
-    status: pending
-    notes: "Dec 2025 update - Note file available. Replaces/supplements anthropic2025internal."
+    status: done
+    read_date: "2025-12-31"
+    notes: "Dec 2025 update - Summary in Claude-Notes/Paper-Summaries/anthropic2025workdec.md"
 
   - key: kim2025scaling
     priority: 9
     reason: "Framework for agent system scaling. Important for Part 6 research agenda and multi-agent DoD applications."
     added: "2025-12-31"
-    status: pending
-    notes: "arXiv:2512.08296 - Note file available. 19 authors from MIT, Google, Meta."
+    status: done
+    read_date: "2025-12-31"
+    notes: "arXiv:2512.08296 - Summary in Claude-Notes/Paper-Summaries/kim2025scaling.md"
 
   - key: ho2025rosetta
     priority: 8
     reason: "Statistical framework for cross-benchmark comparison and long-term tracking. Addresses saturation problem."
     added: "2025-12-31"
-    status: pending
-    notes: "arXiv:2512.00193 - Note file available. Rohin Shah involvement (safety perspective)."
+    status: done
+    read_date: "2025-12-31"
+    notes: "arXiv:2512.00193 - Summary in Claude-Notes/Paper-Summaries/ho2025rosetta.md"
 
   - key: lmarena2025expert
     priority: 8
     reason: "Expert vs novice rating divergence. Critical for evaluator selection and interpreting heterogeneity findings."
     added: "2025-12-31"
-    status: pending
-    notes: "LMArena analysis - Note file available. Connects to Brynjolfsson/Noy skill-level effects."
+    status: done
+    read_date: "2025-12-31"
+    notes: "LMArena analysis - Summary in Claude-Notes/Paper-Summaries/lmarena2025expert.md"
 
   - key: benchek2025ace
     priority: 7
     reason: "Consumer task evaluation (56% top score). Complements productivity focus, shows practical utility gaps."
     added: "2025-12-31"
-    status: pending
-    notes: "arXiv:2512.04921 - Note file available. Grounding-based evaluation methodology."
+    status: done
+    read_date: "2025-12-31"
+    notes: "arXiv:2512.04921 - Summary in Claude-Notes/Paper-Summaries/benchek2025ace.md"
 
   #############################################################################
   # HIGHEST PRIORITY: Key empirical studies on AI productivity

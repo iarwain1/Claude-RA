@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python fetch_metadata_local.py:*)",
+      "Bash(cat:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd: Batch processed arXiv metadata for 525 papers\n\n- Fetched metadata \\(titles, abstracts, authors\\) from arXiv API\n- Created 447 markdown note files in notes/\n- Updated links.yaml with proper titles and publication dates\n- Fixed Unicode encoding issues in fetch script for Windows compatibility\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git config:*)",
+      "Bash(git push:*)",
+      "Bash(ls:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd: Process high-priority links and research tools\n\nHigh-priority content \\(5 of 6 completed\\):\n- ✅ Anthropic: How AI is Transforming Work at Anthropic\n- ✅ Anthropic: Language Models \\(Mostly\\) Know What They Know\n- ✅ OpenAI: Scaling Code Verification\n- ✅ Chip Huyen: Agents\n- ✅ Simon Willison: Agents\n- ⚠️  OpenAI: Express Uncertainty \\(blocked - 403\\)\n\nResearch Tools & Benchmarks \\(4 of 5 completed\\):\n- ✅ Agent Laboratory - Automated research assistant\n- ✅ DarkBench - Dark patterns evaluation\n- ✅ LiveResearchBench - Deep research evaluation\n- ✅ OASIS - Social media simulation\n- ⚠️  Gradual Disempowerment \\(TLS error\\)\n\nProgress:\n- Created 8 new detailed note files\n- Updated links.yaml with metadata, authors, dates\n- Added PROCESSING-SUMMARY.md tracking document\n- 9 additional high-value links fully processed\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git reset:*)",
+      "Bash(git commit:*)",
+      "Bash(done)",
+      "Bash(wc:*)"
+    ]
+  }
+}

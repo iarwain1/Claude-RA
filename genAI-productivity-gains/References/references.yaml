@@ -1630,8 +1630,9 @@ references:
     source: research_org
     priority: 9
     subtopics: ["benchmarks", "evaluation-methodology"]
-    read: false
-    notes_file: "../../link-dumps/notes/epoch-ai-why-benchmarking-is-hard.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/brand2025benchmarking.md"
     added: "2025-12-31"
     tags: ["benchmark-critique", "reproducibility", "methodology"]
     key_findings:
@@ -1659,8 +1660,9 @@ references:
     source: academic
     priority: 8
     subtopics: ["benchmarks", "evaluation-methodology"]
-    read: false
-    notes_file: "../../link-dumps/notes/arxiv-2512.00193.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/ho2025rosetta.md"
     added: "2025-12-31"
     tags: ["methodology", "benchmark-unification", "forecasting"]
     key_findings:
@@ -1685,10 +1687,16 @@ references:
     source: academic
     priority: 9
     subtopics: ["agent-evaluation", "scaling-laws"]
-    read: false
-    notes_file: "../../link-dumps/notes/arxiv-2512.08296.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/kim2025scaling.md"
     added: "2025-12-31"
     tags: ["agent-systems", "multi-agent", "scaling", "methodology"]
+    key_findings:
+      - "Tool-coordination tradeoff under fixed budgets"
+      - "Diminishing returns from coordination above 45% single-agent performance"
+      - "Centralized coordination: 80.8% improvement on parallelizable tasks"
+      - "Multi-agent degrades performance on sequential reasoning tasks"
 
   - key: lmarena2025expert
     title: "Arena Expert Model Comparison"
@@ -1706,14 +1714,16 @@ references:
     source: research_org
     priority: 8
     subtopics: ["benchmarks", "evaluation-methodology", "human-ai-teaming"]
-    read: false
-    notes_file: "../../link-dumps/notes/lmarena-expert-comparison.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/lmarena2025expert.md"
     added: "2025-12-31"
     tags: ["user-heterogeneity", "expert-evaluation", "skill-effects"]
     key_findings:
-      - "Expert users rate models differently than general users"
-      - "Rating divergence has implications for evaluation design"
-      - "Connects to heterogeneity findings (skill-level effects)"
+      - "24-point gap between expert and novice preferences (thinking +15, non-thinking -9)"
+      - "Claude Opus 4.5: +85 expert advantage (highest of any model)"
+      - "Anthropic models: +22 average expert advantage (company-level quality differences)"
+      - "Expert preferences diverge markedly from general user benchmarks"
 
   - key: anthropic2025workdec
     title: "How AI is Transforming Work at Anthropic (December 2025 Update)"
@@ -1734,14 +1744,16 @@ references:
     source: ai_lab
     priority: 9
     subtopics: ["productivity-studies", "human-ai-teaming", "risk-management"]
-    read: false
-    notes_file: "../../link-dumps/notes/anthropic-ai-transforming-work.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/anthropic2025workdec.md"
     added: "2025-12-31"
     tags: ["internal-study", "skill-atrophy", "collaboration-concerns", "updated-data"]
     key_findings:
       - "60% of work uses Claude (doubled from 28% prior year)"
       - "50% self-reported productivity gains"
-      - "20% of tasks fully delegatable, autonomy doubled"
+      - "27% of Claude work is entirely new tasks (capability expansion)"
+      - "Autonomy doubled (10→20 consecutive actions)"
       - "Concerns: skill atrophy, reduced mentorship, career uncertainty"
 
   - key: benchek2025ace
@@ -1762,15 +1774,16 @@ references:
     source: ai_lab
     priority: 7
     subtopics: ["benchmarks", "evaluation-methodology"]
-    read: false
-    notes_file: "../../link-dumps/notes/arxiv-2512.04921.md"
+    read: true
+    read_date: "2025-12-31"
+    notes_file: "../Claude-Notes/Paper-Summaries/benchek2025ace.md"
     added: "2025-12-31"
-    tags: ["consumer-applications", "grounding", "practical-utility"]
+    tags: ["consumer-tasks", "grounding", "practical-utility"]
     key_findings:
-      - "Top model scores only 56.1% on consumer tasks"
-      - "Shopping domain under 50% (domain-specific variation)"
-      - "Grounding-based evaluation methodology (vs hallucination)"
-      - "Gap between capabilities and practical utility"
+      - "Top model (GPT-5 Thinking=High): 56.1% (43.9% failure rate)"
+      - "Shopping domain: <50% (significant domain variation)"
+      - "Grounding-based evaluation methodology (check against sources)"
+      - "Gap between frontier capabilities and practical consumer utility"
 
   #############################################################################
   # TIER 2: MEDIUM-PRIORITY RECENT ADDITIONS (Dec 31, 2025)

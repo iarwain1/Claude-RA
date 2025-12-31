@@ -112,11 +112,17 @@ See `references.yaml` for full list (**91 entries** with detailed metadata - upd
 - NIST Standards: 3 new sources (ARIA, Zero Drafts, GenAI pilot)
 - Post-Deployment: 1 new source (Ada Lovelace)
 
-**Already Read (4 papers):**
+**Already Read (10 papers):**
 - Mollick "Giving Your AI a Job Interview"
 - Anthropic "Estimating AI productivity gains"
 - **Bean et al. "Construct Validity in LLM Benchmarks" (Dec 31, 2025)** - Priority 10
 - **Pan et al. "Measuring Agents in Production" (Dec 31, 2025)** - Priority 10
+- **Brand & Denain "Why Benchmarking is Hard" (Dec 31, 2025)** - Priority 9
+- **Huang et al. "How AI is Transforming Work at Anthropic" (Dec 31, 2025)** - Priority 9
+- **Kim et al. "Towards a Science of Scaling Agent Systems" (Dec 31, 2025)** - Priority 9
+- **Ho et al. "A Rosetta Stone for AI Benchmarks" (Dec 31, 2025)** - Priority 8
+- **LMArena Team "Arena Expert Model Comparison" (Dec 31, 2025)** - Priority 8
+- **Benchek et al. "The AI Consumer Index (ACE)" (Dec 31, 2025)** - Priority 7
 
 ### Subtopics Defined
 
