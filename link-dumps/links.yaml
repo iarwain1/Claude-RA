@@ -8639,22 +8639,28 @@ links:
   - id: alphaxiv-sota
     title: "AlphaXiv - State of the Art"
     url: "https://www.alphaxiv.org/state-of-the-art"
-    tags: ['tools', 'research-tools', 'paper-discovery']
-    importance: normal
+    tags: ['tools', 'research-tools', 'paper-discovery', 'benchmarks']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/alphaxiv-sota.md"
 
   - id: martinalderson-agents
     title: "AI Agents Are Starting to Eat SaaS"
     url: "https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/"
-    tags: ['ai-agents', 'industry', 'blog-post']
-    importance: normal
+    tags: ['ai-agents', 'industry', 'blog-post', 'ai-impact']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/martinalderson-agents-saas.md"
 
   - id: x-2000605774
     title: "X Post 2000605774"
@@ -8669,12 +8675,15 @@ links:
   - id: bennokrojer-interp
     title: "Mechanistic Interpretability Resources"
     url: "https://bennokrojer.com/interp.html"
-    tags: ['interpretability', 'resources', 'website']
-    importance: normal
+    tags: ['interpretability', 'resources', 'blog-post']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/bennokrojer-interp.md"
 
   - id: openai-frontier-science
     title: "Frontier Science"
@@ -8689,12 +8698,15 @@ links:
   - id: roots-progress-slop
     title: "In Defense of Slop"
     url: "https://newsletter.rootsofprogress.org/p/in-defense-of-slop"
-    tags: ['ai-impact', 'blog-post', 'newsletter']
-    importance: normal
+    tags: ['ai-impact', 'blog-post', 'newsletter', 'content-creation']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/roots-progress-slop-defense.md"
 
   - id: update-brief-launch
     title: "Launching The Update"
@@ -8731,14 +8743,17 @@ links:
         path: "notes/aisi-frontier-trends.md"
 
   - id: shallow-review
-    title: "Shallow Review AI"
+    title: "Shallow Review: Technical AI Safety 2025"
     url: "https://shallowreview.ai/"
-    tags: ['tools', 'research-tools', 'website']
-    importance: normal
+    tags: ['tools', 'research-tools', 'ai-safety', 'catalog']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/shallowreview-ai.md"
 
   - id: x-2001681881
     title: "X Post 2001681881"
@@ -8795,13 +8810,17 @@ links:
 
   - id: addyo-llm-workflow
     title: "My LLM Coding Workflow Going Into 2025"
+    authors: ["Addy Osmani"]
     url: "https://addyo.substack.com/p/my-llm-coding-workflow-going-into"
-    tags: ['coding', 'workflows', 'blog-post', 'substack']
-    importance: normal
+    tags: ['coding', 'workflows', 'blog-post', 'substack', 'ai-assisted-dev']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/addyo-llm-workflow.md"
 
   - id: x-2002861706
     title: "X Post 2002861706"
@@ -8836,22 +8855,29 @@ links:
   - id: sankalp-claude-code
     title: "My Experience with Claude Code 2.0"
     url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
-    tags: ['coding-agents', 'claude-code', 'blog-post']
-    importance: normal
+    tags: ['coding-agents', 'claude-code', 'blog-post', 'user-experience']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/sankalp-claude-code-experience.md"
 
   - id: steipete-inference-speed
     title: "Shipping at Inference Speed"
+    authors: ["Peter Steinberger"]
     url: "https://steipete.me/posts/2025/shipping-at-inference-speed"
-    tags: ['development', 'blog-post']
-    importance: normal
+    tags: ['development', 'blog-post', 'ai-assisted-dev', 'workflows']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/steipete-inference-speed.md"
 
   - id: x-2005424424
     title: "X Post 2005424424"
@@ -8879,20 +8905,29 @@ links:
 
   - id: tecunningham-llm-verification
     title: "LLM Verification"
+    authors: ["Tom Cunningham"]
     url: "https://tecunningham.github.io/posts/2025-12-30-llm-verification.html"
-    tags: ['verification', 'blog-post']
-    importance: normal
+    date_published: "2025-12-30"
+    tags: ['verification', 'blog-post', 'trust', 'quality-assurance']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/tecunningham-llm-verification.md"
 
   - id: ai-futures-dec-2025
     title: "AI Futures Model Dec 2025 Update"
     url: "https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update"
-    tags: ['ai-forecasting', 'blog-post']
-    importance: normal
+    date_published: "2025-12"
+    tags: ['ai-forecasting', 'blog-post', 'timelines']
+    importance: very-high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/ai-futures-dec-2025.md"
