@@ -133,24 +133,32 @@ links:
 
 
   - id: agentlaboratory-17edd1
-    title: "https://agentlaboratory.github.io/"
+    title: "Agent Laboratory"
     url: "https://agentlaboratory.github.io/"
-    tags: ['github', 'benchmarks']
+    tags: ['research-tool', 'ai-systems', 'automation']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/agent-laboratory.md"
 
   - id: alignment-2e88fa
-    title: "OpenAI - Scaling Code Verification"
+    title: "A Practical Approach to Verifying Code at Scale"
+    authors: ["Maja Trębacz", "Sam Arnesen", "Albin Cassirer", "Max Johnson", "Xin Lin", "Thibault Sottiaux", "Codex team"]
     url: "https://alignment.openai.com/scaling-code-verification/"
-    tags: ['uncategorized', 'openai-source']
-    importance: high
+    date_published: "2025-12-01"
+    tags: ['ai-safety', 'scalable-oversight', 'code-verification', 'openai-source', 'deployment']
+    importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/openai-scaling-code-verification.md"
 
   - id: alignmentforum-7fcd56
     title: "A Pragmatic Vision for Interpretability"
@@ -183,14 +191,18 @@ links:
         path: "notes/anthropic-ai-transforming-work.md"
 
   - id: anthropic-5879c7
-    title: "https://www.anthropic.com/news/language-models-mostly-know-what-they-know"
+    title: "Language Models (Mostly) Know What They Know"
     url: "https://www.anthropic.com/news/language-models-mostly-know-what-they-know"
-    tags: ['uncategorized', 'anthropic-source']
-    importance: normal
+    date_published: "2022-07-11"
+    tags: ['ai-safety', 'truthfulness', 'calibration', 'anthropic-source', 'research-announcement']
+    importance: high
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/anthropic-language-models-know-what-they-know.md"
 
   - id: arxiv-1802.01528
     title: "The Matrix Calculus You Need For Deep Learning"
@@ -7735,14 +7747,17 @@ links:
     archived: false
 
   - id: darkbench-cecf0d
-    title: "https://darkbench.ai/"
+    title: "DarkBench"
     url: "https://darkbench.ai/"
-    tags: ['evaluations']
-    importance: normal
+    tags: ['benchmarks', 'ai-safety', 'evaluations', 'dark-patterns']
+    importance: high
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/darkbench.md"
 
   - id: davidmanheim-34954a
     title: "https://davidmanheim.substack.com/p/security-complacency-meets-frontier"
@@ -7795,14 +7810,19 @@ links:
     archived: false
 
   - id: huyenchip-ec9564
-    title: "https://huyenchip.com/2025/01/07/agents.html"
+    title: "Agents"
+    authors: ["Chip Huyen"]
     url: "https://huyenchip.com/2025/01/07/agents.html"
-    tags: ['agents']
-    importance: normal
+    date_published: "2025-01-07"
+    tags: ['agents', 'ai-systems', 'blog-post', 'practical']
+    importance: high
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/chip-huyen-agents-2025.md"
 
   - id: lesswrong-7483be
     title: "AI in 2025: Gestalt"
@@ -7815,14 +7835,17 @@ links:
     archived: false
 
   - id: livedeepresearch-df9685
-    title: "Live Deep Research"
+    title: "LiveResearchBench"
     url: "https://livedeepresearch.github.io/"
-    tags: ['uncategorized', 'github']
+    tags: ['benchmarks', 'research-tools', 'evaluations']
     importance: high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/live-research-bench.md"
 
   - id: modelcontextprotocol-f0f1d0
     title: "https://modelcontextprotocol.io/llms-full.txt"
@@ -7848,14 +7871,17 @@ links:
     archived: false
 
   - id: oasis-04608d
-    title: "GitHub"
+    title: "OASIS: Open Agents Social Interaction Simulations"
     url: "https://oasis.camel-ai.org"
-    tags: ['agents']
+    tags: ['research-tool', 'agents', 'social-simulation']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/oasis-social-simulation.md"
 
   - id: openai-71086c
     title: "https://openai.com/index/teaching-models-to-express-their-uncertainty-in-words/"
@@ -7888,14 +7914,19 @@ links:
     archived: false
 
   - id: simonwillison-4f47da
-    title: "https://simonwillison.net/2025/Jan/11/agents/"
+    title: "Agents"
+    authors: ["Simon Willison"]
     url: "https://simonwillison.net/2025/Jan/11/agents/"
-    tags: ['agents']
+    date_published: "2025-01-11"
+    tags: ['agents', 'ai-systems', 'blog-post', 'practical']
     importance: normal
     source_files: ['Link dumps (OneNote export June 2024 - Dec 2025).docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/simon-willison-agents-2025.md"
 
   - id: t-05e12a
     title: "Eugene Yan (SF 22"
