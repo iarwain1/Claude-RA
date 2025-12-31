@@ -169,16 +169,18 @@ links:
 
   - id: anthropic-1c8f97
     title: "How AI is Transforming Work at Anthropic"
+    authors: ["Saffron Huang", "Bryan Seethor", "Esin Durmus", "Kunal Handa", "Miles McCain", "Michael Stern", "Deep Ganguli"]
     url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
-    tags: ["productivity", "industry", "anthropic", "anthropic-source"]
+    date_published: "2025-12-02"
+    tags: ["productivity", "industry", "anthropic", "anthropic-source", "research-study", "ai-impact"]
     importance: very-high
     source_files: ['Link dump 12-09-25.docx']
     date_added: "2025-12-15"
-    read: false
+    read: true
     archived: false
     notes:
       - type: file
-        path: "notes/anthropic-how-ai-transforming-work.md"
+        path: "notes/anthropic-ai-transforming-work.md"
 
   - id: anthropic-5879c7
     title: "https://www.anthropic.com/news/language-models-mostly-know-what-they-know"
@@ -326,6 +328,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2308.03688.md"
 
   - id: arxiv-2308.16175
     title: "Quantifying Uncertainty in Answers from any Language Model and Enhancing their Trustworthiness"
@@ -365,6 +370,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2311.08268.md"
 
   - id: arxiv-2311.09766
     title: "LLMs as Narcissistic Evaluators: When Ego Inflates Evaluation Scores"
@@ -390,6 +398,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2401.03188.md"
 
   - id: arxiv-2401.07187
     title: "A Survey on Statistical Theory of Deep Learning: Approximation, Training Dynamics, and Generative Models"
@@ -485,6 +496,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2402.18563.md"
 
   - id: arxiv-2402.19379
     title: "Wisdom of the Silicon Crowd: LLM Ensemble Prediction Capabilities Rival Human Crowd Accuracy"
@@ -859,6 +873,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2405.21060.md"
 
   - id: arxiv-2406.00343
     title: "Beyond Metrics: Evaluating LLMs' Effectiveness in Culturally Nuanced, Low-Resource Real-World Scenarios"
@@ -954,6 +971,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.02061.md"
 
   - id: arxiv-2406.02394
     title: "Pattern Recognition or Medical Knowledge? The Problem with Multiple-Choice Questions in Medicine"
@@ -1063,6 +1083,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.04127.md"
 
   - id: arxiv-2406.04244
     title: "Benchmark Data Contamination of Large Language Models: A Survey"
@@ -1269,6 +1292,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.07358.md"
 
   - id: arxiv-2406.08391
     title: "Large Language Models Must Be Taught to Know What They Don't Know"
@@ -1378,6 +1404,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.11036.md"
 
   - id: arxiv-2406.11233
     title: "Probing the Decision Boundaries of In-context Learning in Large Language Models"
@@ -1445,6 +1474,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.12624.md"
 
   - id: arxiv-2406.12830
     title: "What Are the Odds? Language Models Are Capable of Probabilistic Reasoning"
@@ -1498,6 +1530,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.13352.md"
 
   - id: arxiv-2406.13439
     title: "Finding Blind Spots in Evaluator LLMs with Interpretable Checklists"
@@ -1523,6 +1558,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.13843.md"
 
   - id: arxiv-2406.14393
     title: "Jailbreaking as a Reward Misspecification Problem"
@@ -1576,6 +1614,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.14598.md"
 
   - id: arxiv-2406.14644
     title: "Unveiling the Spectrum of Data Contamination in Language Models: A Survey from Detection to Remediation"
@@ -1615,6 +1656,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.14713.md"
 
   - id: arxiv-2406.14873
     title: "Beyond Accidents and Misuse: Decoding the Structural Risk Dynamics of Artificial Intelligence"
@@ -1822,6 +1866,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.18495.md"
 
   - id: arxiv-2406.18510
     title: "WildTeaming at Scale: From In-the-Wild Jailbreaks to (Adversarially) Safer Language Models"
@@ -1833,6 +1880,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2406.18510.md"
 
   - id: arxiv-2406.18922
     title: "Time Matters: Scaling Laws for Any Budget"
@@ -1998,6 +2048,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.01489.md"
 
   - id: arxiv-2407.01502
     title: "AI Agents That Matter"
@@ -2009,6 +2062,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.01502.md"
 
   - id: arxiv-2407.01509
     title: "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs"
@@ -2244,6 +2300,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.04549.md"
 
   - id: arxiv-2407.04622
     title: "On scalable oversight with weak LLMs judging strong LLMs"
@@ -2255,6 +2314,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.04622.md"
 
   - id: arxiv-2407.04694
     title: "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
@@ -2266,6 +2328,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.04694.md"
 
   - id: arxiv-2407.05778
     title: "When is the consistent prediction likely to be a correct prediction?"
@@ -2291,6 +2356,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.06023.md"
 
   - id: arxiv-2407.06172
     title: "On Speeding Up Language Model Evaluation"
@@ -2330,6 +2398,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.07300.md"
 
   - id: arxiv-2407.07565
     title: "On Leakage of Code Generation Evaluation Datasets"
@@ -2369,6 +2440,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.07890.md"
 
   - id: arxiv-2407.08351
     title: "AutoBencher: Towards Declarative Benchmark Construction"
@@ -2492,6 +2566,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.09468.md"
 
   - id: arxiv-2407.10817
     title: "Foundational Autoraters: Taming Large Language Models for Better Automatic Evaluation"
@@ -2517,6 +2594,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.11969.md"
 
   - id: arxiv-2407.12220
     title: "Questionable practices in machine learning"
@@ -2556,6 +2636,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.12784.md"
 
   - id: arxiv-2407.12858
     title: "Grounding and Evaluation for Large Language Models: Practical Challenges and Lessons Learned (Survey)"
@@ -2595,6 +2678,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.13692.md"
 
   - id: arxiv-2407.13948
     title: "Assurance of AI Systems From a Dependability Perspective"
@@ -2620,6 +2706,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.14937.md"
 
   - id: arxiv-2407.14981
     title: "Open Problems in Technical AI Governance"
@@ -2631,6 +2720,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.14981.md"
 
   - id: arxiv-2407.15549
     title: "Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs"
@@ -2656,6 +2748,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.16216.md"
 
   - id: arxiv-2407.16318
     title: "PrimeGuard: Safe and Helpful LLMs through Tuning-Free Routing"
@@ -2695,6 +2790,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.16711.md"
 
   - id: arxiv-2407.17915
     title: "The Dark Side of Function Calling: Pathways to Jailbreaking Large Language Models"
@@ -2832,6 +2930,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2407.21792.md"
 
   - id: arxiv-2408.00724
     title: "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models"
@@ -2871,6 +2972,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2408.01420.md"
 
   - id: arxiv-2408.02442
     title: "Let Me Speak Freely? A Study on the Impact of Format Restrictions on Performance of Large Language Models"
@@ -2980,6 +3084,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2408.06292.md"
 
   - id: arxiv-2408.08435
     title: "Automated Design of Agentic Systems"
@@ -2991,6 +3098,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2408.08435.md"
 
   - id: arxiv-2408.09169
     title: "Automatic Metrics in Natural Language Generation: A Survey of Current Evaluation Practices"
@@ -3086,6 +3196,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2408.16074.md"
 
   - id: arxiv-2408.16984
     title: "Beyond Preferences in AI Alignment"
@@ -3195,6 +3308,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2409.07985.md"
 
   - id: arxiv-2409.08264
     title: "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale"
@@ -3318,6 +3434,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2409.12822.md"
 
   - id: arxiv-2409.13174
     title: "Manipulation Facing Threats: Evaluating Physical Vulnerabilities in End-to-End Vision Language Action Models"
@@ -3483,6 +3602,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2410.01606.md"
 
   - id: arxiv-2410.02536
     title: "Intelligence at the Edge of Chaos"
@@ -3508,6 +3630,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2410.02828.md"
 
   - id: arxiv-2410.03092
     title: "Strategic Insights from Simulation Gaming of AI Race Dynamics"
@@ -3561,6 +3686,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2410.05229.md"
 
   - id: arxiv-2410.05362
     title: "LLMs Are In-Context Bandit Reinforcement Learners"
@@ -3586,6 +3714,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2410.07095.md"
 
   - id: arxiv-2410.08385
     title: "Language model developers should report train-test overlap"
@@ -3611,6 +3742,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2410.09638.md"
 
   - id: arxiv-2410.10786
     title: "On Information-Theoretic Measures of Predictive Uncertainty"
@@ -3691,6 +3825,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.08088.md"
 
   - id: arxiv-2411.12820
     title: "Declare and Justify: Explicit assumptions in AI evaluations are necessary for effective regulation"
@@ -3702,6 +3839,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.12820.md"
 
   - id: arxiv-2411.14257
     title: "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models"
@@ -3727,6 +3867,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.15594.md"
 
   - id: arxiv-2411.17693
     title: "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats"
@@ -3738,6 +3881,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2411.17693.md"
 
   - id: arxiv-2411.18676
     title: "Embodied Red Teaming for Auditing Robotic Foundation Models"
@@ -3763,6 +3909,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2412.02159.md"
 
   - id: arxiv-2412.03556
     title: "Best-of-N Jailbreaking"
@@ -3774,6 +3923,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2412.03556.md"
 
   - id: arxiv-2412.04758
     title: "Measuring Goal-Directedness"
@@ -3785,6 +3937,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2412.04758.md"
 
   - id: arxiv-2412.07031
     title: "Large Language Models: An Applied Econometric Framework"
@@ -3810,6 +3965,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2412.12480.md"
 
   - id: arxiv-2412.14161
     title: "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks"
@@ -3821,6 +3979,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2412.14161.md"
 
   - id: arxiv-2412.15249
     title: "LitLLMs, LLMs for Literature Review: Are we there yet?"
@@ -3916,6 +4077,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.04952.md"
 
   - id: arxiv-2501.05366
     title: "Search-o1: Agentic Search-Enhanced Large Reasoning Models"
@@ -4025,6 +4189,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.07238.md"
 
   - id: arxiv-2501.07278
     title: "Lifelong Learning of Large Language Model based Agents: A Roadmap"
@@ -4092,6 +4259,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.07913.md"
 
   - id: arxiv-2501.08156
     title: "Are DeepSeek R1 And Other Reasoning Models More Faithful?"
@@ -4369,6 +4539,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.16496.md"
 
   - id: arxiv-2501.16513
     title: "Deception in LLMs: Self-Preservation and Autonomous Goals in Large Language Models"
@@ -4380,6 +4553,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.16513.md"
 
   - id: arxiv-2501.17030
     title: "Challenges in Ensuring AI Safety in DeepSeek-R1 Models: The Shortcomings of Reinforcement Learning Strategies"
@@ -4433,6 +4609,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.17315.md"
 
   - id: arxiv-2501.17399
     title: "MultiChallenge: A Realistic Multi-Turn Conversation Evaluation Benchmark Challenging to Frontier LLMs"
@@ -4486,6 +4665,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2501.18837.md"
 
   - id: arxiv-2502.00072
     title: "LLM Cyber Evaluations Don't Capture Real-World Risk"
@@ -4497,6 +4679,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.00072.md"
 
   - id: arxiv-2502.00406
     title: "Agents Are All You Need for LLM Unlearning"
@@ -4522,6 +4707,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.00561.md"
 
   - id: arxiv-2502.00911
     title: "Developing Compelling Safety Cases"
@@ -4631,6 +4819,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.02649.md"
 
   - id: arxiv-2502.02960
     title: "Large Language Model Adversarial Landscape Through the Lens of Attack Objectives"
@@ -4684,6 +4875,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.04313.md"
 
   - id: arxiv-2502.04384
     title: "Enhancing Reasoning to Adapt Large Language Models for Domain-Specific Applications"
@@ -4821,6 +5015,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.07663.md"
 
   - id: arxiv-2502.08586
     title: "Commercial LLM Agents Are Already Vulnerable to Simple Yet Dangerous Attacks"
@@ -4902,6 +5099,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.12206.md"
 
   - id: arxiv-2502.12292
     title: "Independence Tests for Language Models"
@@ -4941,6 +5141,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.13295.md"
 
   - id: arxiv-2502.14739
     title: "SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines"
@@ -5078,6 +5281,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2502.17424.md"
 
   - id: arxiv-2502.17578
     title: "How Do Large Language Monkeys Get Their Power (Laws)?"
@@ -5145,6 +5351,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.03750.md"
 
   - id: arxiv-2503.04474
     title: "Know Thy Judge: On the Robustness Meta-Evaluation of LLM Safety Judges"
@@ -5170,6 +5379,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.04744.md"
 
   - id: arxiv-2503.05710
     title: "AGI, Governments, and Free Societies"
@@ -5195,6 +5407,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.05812.md"
 
   - id: arxiv-2503.05937
     title: "The Unified Control Framework: Establishing a Common Foundation for Enterprise AI Governance, Risk Management and Regulatory Compliance"
@@ -5276,6 +5491,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.11926.md"
 
   - id: arxiv-2503.13395
     title: "Causal Emergence 2.0: Quantifying emergent complexity"
@@ -5315,6 +5533,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.13657.md"
 
   - id: arxiv-2503.15612
     title: "Unification of observational entropy with maximum entropy principles"
@@ -5354,6 +5575,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2503.19887.md"
 
   - id: arxiv-2503.21460
     title: "Large Language Model Agent: A Survey on Methodology, Applications and Challenges"
@@ -5462,6 +5686,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.10374.md"
 
   - id: arxiv-2504.12170
     title: "AI Behind Closed Doors: a Primer on The Governance of Internal Deployment"
@@ -5515,6 +5742,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.13707.md"
 
   - id: arxiv-2504.13839
     title: "Audit Cards: Contextualizing AI Evaluations"
@@ -5526,6 +5756,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.13839.md"
 
   - id: arxiv-2504.15585
     title: "A Comprehensive Survey in LLM(-Agent) Full Stack Safety: Data, Training and Deployment"
@@ -5537,6 +5770,9 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2504.15585.md"
 
   - id: arxiv-2504.16078
     title: "LLMs are Greedy Agents: Effects of RL Fine-tuning on Decision-Making Abilities"

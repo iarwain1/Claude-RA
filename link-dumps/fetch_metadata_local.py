@@ -349,8 +349,14 @@ def update_links_yaml(content, updates, notes_created):
                             count=1
                         )
 
-        # Add notes reference
-        if entry_id in notes_created:
+        # Add notes reference - check both newly created and existing files
+        note_filename = f"{entry_id}.md"
+        note_filepath = os.path.join('notes', note_filename)
+
+        # Check if note file exists (either just created or already present)
+        should_add_notes = entry_id in notes_created or os.path.exists(note_filepath)
+
+        if should_add_notes:
             entry_match = re.search(
                 rf'(  - id: {re.escape(entry_id)}.*?)((?=\n  - id:)|$)',
                 content,
@@ -364,7 +370,7 @@ def update_links_yaml(content, updates, notes_created):
                     if re.search(insert_pattern, content, re.DOTALL):
                         content = re.sub(
                             insert_pattern,
-                            rf'\1\n    notes:\n      - type: file\n        path: "notes/{notes_created[entry_id]}"',
+                            rf'\1\n    notes:\n      - type: file\n        path: "notes/{note_filename}"',
                             content,
                             flags=re.DOTALL,
                             count=1
