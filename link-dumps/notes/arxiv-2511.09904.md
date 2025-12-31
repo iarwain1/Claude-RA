@@ -1,0 +1,13 @@
+# CTRL-ALT-DECEIT: Sabotage Evaluations for Automated AI R&D
+
+**arXiv:** [2511.09904](https://arxiv.org/abs/2511.09904)
+**Authors:** Francis Rhys Ward, Teun van der Weij, Hanna Gábor, Sam Martin, Raja Mehta Moreno, et al. (9 total)
+**Date:** 2025-11-13
+**Categories:** cs.AI
+
+## Abstract
+
+AI systems are increasingly able to autonomously conduct realistic software engineering tasks, and may soon be deployed to automate machine learning (ML) R&D itself. Frontier AI systems may be deployed in safety-critical settings, including to help ensure the safety of future systems. Unfortunately, frontier and future systems may not be sufficiently trustworthy, and there is evidence that these systems may even be misaligned with their developers or users. Therefore, we investigate the capabilities of AI agents to act against the interests of their users when conducting ML engineering, by sabotaging ML models, sandbagging their performance, and subverting oversight mechanisms. First, we extend MLE-Bench, a benchmark for realistic ML tasks, with code-sabotage tasks such as implanting backdoors and purposefully causing generalisation failures. Frontier agents make meaningful progress on our sabotage tasks. In addition, we study agent capabilities to sandbag on MLE-Bench. Agents can calibrate their performance to specified target levels below their actual capability. To mitigate sabotage, we use LM monitors to detect suspicious agent behaviour, and we measure model capability to sabotage and sandbag without being detected by these monitors. Overall, monitors are capable at detecting code-sabotage attempts but our results suggest that detecting sandbagging is more difficult. Additionally, aggregating multiple monitor predictions works well, but monitoring may not be sufficiently reliable to mitigate sabotage in high-stakes domains. Our benchmark is implemented in the UK AISI's Inspect framework and we make our code publicly available at https://github.com/TeunvdWeij/ctrl-alt-deceit
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

@@ -1,0 +1,13 @@
+# BELLS: A Framework Towards Future Proof Benchmarks for the Evaluation of LLM Safeguards
+
+**arXiv:** [2406.01364](https://arxiv.org/abs/2406.01364)
+**Authors:** Diego Dorn, Alexandre Variengien, Charbel-Raphaël Segerie, Vincent Corruble
+**Date:** 2024-06-03
+**Categories:** cs.CR, cs.AI, cs.CL
+
+## Abstract
+
+Input-output safeguards are used to detect anomalies in the traces produced by Large Language Models (LLMs) systems. These detectors are at the core of diverse safety-critical applications such as real-time monitoring, offline evaluation of traces, and content moderation. However, there is no widely recognized methodology to evaluate them. To fill this gap, we introduce the Benchmarks for the Evaluation of LLM Safeguards (BELLS), a structured collection of tests, organized into three categories: (1) established failure tests, based on already-existing benchmarks for well-defined failure modes, aiming to compare the performance of current input-output safeguards; (2) emerging failure tests, to measure generalization to never-seen-before failure modes and encourage the development of more general safeguards; (3) next-gen architecture tests, for more complex scaffolding (such as LLM-agents and multi-agent systems), aiming to foster the development of safeguards that could adapt to future applications for which no safeguard currently exists. Furthermore, we implement and share the first next-gen architecture test, using the MACHIAVELLI environment, along with an interactive visualization of the dataset.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

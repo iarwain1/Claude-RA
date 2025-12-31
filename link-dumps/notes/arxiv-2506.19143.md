@@ -1,0 +1,13 @@
+# Thought Anchors: Which LLM Reasoning Steps Matter?
+
+**arXiv:** [2506.19143](https://arxiv.org/abs/2506.19143)
+**Authors:** Paul C. Bogdan, Uzay Macar, Neel Nanda, Arthur Conmy
+**Date:** 2025-06-23
+**Categories:** cs.LG, cs.AI, cs.CL
+
+## Abstract
+
+Current frontier large-language models rely on reasoning to achieve state-of-the-art performance. Many existing interpretability are limited in this area, as standard methods have been designed to study single forward passes of a model rather than the multi-token computational steps that unfold during reasoning. We argue that analyzing reasoning traces at the sentence level is a promising approach to understanding reasoning processes. We introduce a black-box method that measures each sentence's counterfactual importance by repeatedly sampling replacement sentences from the model, filtering for semantically different ones, and continuing the chain of thought from that point onwards to quantify the sentence's impact on the distribution of final answers. We discover that certain sentences can have an outsized impact on the trajectory of the reasoning trace and final answer. We term these sentences \textit{thought anchors}. These are generally planning or uncertainty management sentences, and specialized attention heads consistently attend from subsequent sentences to thought anchors. We further show that examining sentence-sentence causal links within a reasoning trace gives insight into a model's behavior. Such information can be used to predict a problem's difficulty and the extent different question domains involve sequential or diffuse reasoning. As a proof-of-concept, we demonstrate that our techniques together provide a practical toolkit for analyzing reasoning models by conducting a detailed case study of how the model solves a difficult math problem, finding that our techniques yield a consistent picture of the reasoning trace's structure. We provide an open-source tool (thought-anchors.com) for visualizing the outputs of our methods on further problems. The convergence across our methods shows the potential of sentence-level analysis for a deeper understanding of reasoning models.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

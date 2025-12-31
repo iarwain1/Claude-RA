@@ -1,0 +1,13 @@
+# AGI, Governments, and Free Societies
+
+**arXiv:** [2503.05710](https://arxiv.org/abs/2503.05710)
+**Authors:** Justin B. Bullock, Samuel Hammond, Seb Krier
+**Date:** 2025-02-14
+**Categories:** cs.CY
+
+## Abstract
+
+This paper examines how artificial general intelligence (AGI) could fundamentally reshape the delicate balance between state capacity and individual liberty that sustains free societies. Building on Acemoglu and Robinson's 'narrow corridor' framework, we argue that AGI poses distinct risks of pushing societies toward either a 'despotic Leviathan' through enhanced state surveillance and control, or an 'absent Leviathan' through the erosion of state legitimacy relative to AGI-empowered non-state actors. Drawing on public administration theory and recent advances in AI capabilities, we analyze how these dynamics could unfold through three key channels: the automation of discretionary decision-making within agencies, the evolution of bureaucratic structures toward system-level architectures, and the transformation of democratic feedback mechanisms. Our analysis reveals specific failure modes that could destabilize liberal institutions. Enhanced state capacity through AGI could enable unprecedented surveillance and control, potentially entrenching authoritarian practices. Conversely, rapid diffusion of AGI capabilities to non-state actors could undermine state legitimacy and governability. We examine how these risks manifest differently at the micro level of individual bureaucratic decisions, the meso level of organizational structure, and the macro level of democratic processes. To preserve the narrow corridor of liberty, we propose a governance framework emphasizing robust technical safeguards, hybrid institutional designs that maintain meaningful human oversight, and adaptive regulatory mechanisms.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

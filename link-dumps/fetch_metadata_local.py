@@ -53,11 +53,11 @@ def test_apis():
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = resp.read().decode('utf-8')
             if '<entry>' in data:
-                print("   ✓ arXiv API: Working")
+                print("   [OK] arXiv API: Working")
             else:
-                print("   ✗ arXiv API: No data returned")
+                print("   [X] arXiv API: No data returned")
     except Exception as e:
-        print(f"   ✗ arXiv API: {e}")
+        print(f"   [X] arXiv API: {e}")
 
     # Test Semantic Scholar
     print("\n2. Testing Semantic Scholar API...")
@@ -67,12 +67,12 @@ def test_apis():
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read())
             if data.get('title'):
-                print(f"   ✓ Semantic Scholar API: Working")
+                print(f"   [OK] Semantic Scholar API: Working")
                 print(f"      Found: {data['title'][:60]}...")
             else:
-                print("   ✗ Semantic Scholar API: No data returned")
+                print("   [X] Semantic Scholar API: No data returned")
     except Exception as e:
-        print(f"   ✗ Semantic Scholar API: {e}")
+        print(f"   [X] Semantic Scholar API: {e}")
 
     print("\nTest complete.")
 

@@ -1,0 +1,13 @@
+# Challenges and Paths Towards AI for Software Engineering
+
+**arXiv:** [2503.22625](https://arxiv.org/abs/2503.22625)
+**Authors:** Alex Gu, Naman Jain, Wen-Ding Li, Manish Shetty, Yijia Shao, et al. (10 total)
+**Date:** 2025-03-28
+**Categories:** cs.SE, cs.AI, cs.LG
+
+## Abstract
+
+AI for software engineering has made remarkable progress recently, becoming a notable success within generative AI. Despite this, there are still many challenges that need to be addressed before automated software engineering reaches its full potential. It should be possible to reach high levels of automation where humans can focus on the critical decisions of what to build and how to balance difficult tradeoffs while most routine development effort is automated away. Reaching this level of automation will require substantial research and engineering efforts across academia and industry. In this paper, we aim to discuss progress towards this in a threefold manner. First, we provide a structured taxonomy of concrete tasks in AI for software engineering, emphasizing the many other tasks in software engineering beyond code generation and completion. Second, we outline several key bottlenecks that limit current approaches. Finally, we provide an opinionated list of promising research directions toward making progress on these bottlenecks, hoping to inspire future research in this rapidly maturing field.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

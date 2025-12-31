@@ -1,0 +1,13 @@
+# Large Language Model-Based Agents for Software Engineering: A Survey
+
+**arXiv:** [2409.02977](https://arxiv.org/abs/2409.02977)
+**Authors:** Junwei Liu, Kaixin Wang, Yixuan Chen, Xin Peng, Zhenpeng Chen, et al. (7 total)
+**Date:** 2024-09-04
+**Categories:** cs.SE, cs.AI
+
+## Abstract
+
+The recent advance in Large Language Models (LLMs) has shaped a new paradigm of AI agents, i.e., LLM-based agents. Compared to standalone LLMs, LLM-based agents substantially extend the versatility and expertise of LLMs by enhancing LLMs with the capabilities of perceiving and utilizing external resources and tools. To date, LLM-based agents have been applied and shown remarkable effectiveness in Software Engineering (SE). The synergy between multiple agents and human interaction brings further promise in tackling complex real-world SE problems. In this work, we present a comprehensive and systematic survey on LLM-based agents for SE. We collect 124 papers and categorize them from two perspectives, i.e., the SE and agent perspectives. In addition, we discuss open challenges and future directions in this critical domain. The repository of this survey is at https://github.com/FudanSELab/Agent4SE-Paper-List.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

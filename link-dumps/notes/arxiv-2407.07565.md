@@ -1,0 +1,13 @@
+# On Leakage of Code Generation Evaluation Datasets
+
+**arXiv:** [2407.07565](https://arxiv.org/abs/2407.07565)
+**Authors:** Alexandre Matton, Tom Sherborne, Dennis Aumiller, Elena Tommasone, Milad Alizadeh, et al. (10 total)
+**Date:** 2024-07-10
+**Categories:** cs.CL
+
+## Abstract
+
+In this paper, we consider contamination by code generation test sets, in particular in their use in modern large language models. We discuss three possible sources of such contamination and show findings supporting each of them: (i) direct data leakage, (ii) indirect data leakage through the use of synthetic data and (iii) overfitting to evaluation sets during model selection. To address this, we release Less Basic Python Problems (LBPP): an uncontaminated new benchmark of 161 prompts with their associated Python solutions. LBPP is released at https://huggingface.co/datasets/CohereForAI/lbpp .
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

@@ -1,0 +1,13 @@
+# Adversaries Can Misuse Combinations of Safe Models
+
+**arXiv:** [2406.14595](https://arxiv.org/abs/2406.14595)
+**Authors:** Erik Jones, Anca Dragan, Jacob Steinhardt
+**Date:** 2024-06-20
+**Categories:** cs.CR, cs.AI, cs.LG
+
+## Abstract
+
+Developers try to evaluate whether an AI system can be misused by adversaries before releasing it; for example, they might test whether a model enables cyberoffense, user manipulation, or bioterrorism. In this work, we show that individually testing models for misuse is inadequate; adversaries can misuse combinations of models even when each individual model is safe. The adversary accomplishes this by first decomposing tasks into subtasks, then solving each subtask with the best-suited model. For example, an adversary might solve challenging-but-benign subtasks with an aligned frontier model, and easy-but-malicious subtasks with a weaker misaligned model. We study two decomposition methods: manual decomposition where a human identifies a natural decomposition of a task, and automated decomposition where a weak model generates benign tasks for a frontier model to solve, then uses the solutions in-context to solve the original task. Using these decompositions, we empirically show that adversaries can create vulnerable code, explicit images, python scripts for hacking, and manipulative tweets at much higher rates with combinations of models than either individual model. Our work suggests that even perfectly-aligned frontier systems can enable misuse without ever producing malicious outputs, and that red-teaming efforts should extend beyond single models in isolation.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

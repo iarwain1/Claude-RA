@@ -1,0 +1,13 @@
+# A Survey of Multimodal Large Language Model from A Data-centric Perspective
+
+**arXiv:** [2405.16640](https://arxiv.org/abs/2405.16640)
+**Authors:** Tianyi Bai, Hao Liang, Binwang Wan, Yanran Xu, Xi Li, et al. (15 total)
+**Date:** 2024-05-26
+**Categories:** cs.AI, cs.CL, cs.CV
+
+## Abstract
+
+Multimodal large language models (MLLMs) enhance the capabilities of standard large language models by integrating and processing data from multiple modalities, including text, vision, audio, video, and 3D environments. Data plays a pivotal role in the development and refinement of these models. In this survey, we comprehensively review the literature on MLLMs from a data-centric perspective. Specifically, we explore methods for preparing multimodal data during the pretraining and adaptation phases of MLLMs. Additionally, we analyze the evaluation methods for the datasets and review the benchmarks for evaluating MLLMs. Our survey also outlines potential future research directions. This work aims to provide researchers with a detailed understanding of the data-driven aspects of MLLMs, fostering further exploration and innovation in this field.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

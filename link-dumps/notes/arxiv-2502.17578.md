@@ -1,0 +1,13 @@
+# How Do Large Language Monkeys Get Their Power (Laws)?
+
+**arXiv:** [2502.17578](https://arxiv.org/abs/2502.17578)
+**Authors:** Rylan Schaeffer, Joshua Kazdan, John Hughes, Jordan Juravsky, Sara Price, et al. (10 total)
+**Date:** 2025-02-24
+**Categories:** cs.AI, cs.LG
+
+## Abstract
+
+Recent research across mathematical problem solving, proof assistant programming and multimodal jailbreaking documents a striking finding: when (multimodal) language model tackle a suite of tasks with multiple attempts per task -- succeeding if any attempt is correct -- then the negative log of the average success rate scales a power law in the number of attempts. In this work, we identify an apparent puzzle: a simple mathematical calculation predicts that on each problem, the failure rate should fall exponentially with the number of attempts. We confirm this prediction empirically, raising a question: from where does aggregate polynomial scaling emerge? We then answer this question by demonstrating per-problem exponential scaling can be made consistent with aggregate polynomial scaling if the distribution of single-attempt success probabilities is heavy tailed such that a small fraction of tasks with extremely low success probabilities collectively warp the aggregate success trend into a power law - even as each problem scales exponentially on its own. We further demonstrate that this distributional perspective explains previously observed deviations from power law scaling, and provides a simple method for forecasting the power law exponent with an order of magnitude lower relative error, or equivalently, ${\sim}2-4$ orders of magnitude less inference compute. Overall, our work contributes to a better understanding of how neural language model performance improves with scaling inference compute and the development of scaling-predictable evaluations of (multimodal) language models.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*

@@ -1,0 +1,13 @@
+# StructEval: Deepen and Broaden Large Language Model Assessment via Structured Evaluation
+
+**arXiv:** [2408.03281](https://arxiv.org/abs/2408.03281)
+**Authors:** Boxi Cao, Mengjie Ren, Hongyu Lin, Xianpei Han, Feng Zhang, et al. (7 total)
+**Date:** 2024-08-06
+**Categories:** cs.CL, cs.AI, cs.LG
+
+## Abstract
+
+Evaluation is the baton for the development of large language models. Current evaluations typically employ a single-item assessment paradigm for each atomic test objective, which struggles to discern whether a model genuinely possesses the required capabilities or merely memorizes/guesses the answers to specific questions. To this end, we propose a novel evaluation framework referred to as StructEval. Starting from an atomic test objective, StructEval deepens and broadens the evaluation by conducting a structured assessment across multiple cognitive levels and critical concepts, and therefore offers a comprehensive, robust and consistent evaluation for LLMs. Experiments on three widely-used benchmarks demonstrate that StructEval serves as a reliable tool for resisting the risk of data contamination and reducing the interference of potential biases, thereby providing more reliable and consistent conclusions regarding model capabilities. Our framework also sheds light on the design of future principled and trustworthy LLM evaluation protocols.
+
+---
+*Metadata fetched via arxiv API on 2025-12-31*
