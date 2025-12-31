@@ -108,9 +108,11 @@ See `references.yaml` for full list (**88 entries** with detailed metadata - upd
 - NIST Standards: 3 new sources (ARIA, Zero Drafts, GenAI pilot)
 - Post-Deployment: 1 new source (Ada Lovelace)
 
-**Already Read:**
+**Already Read (4 papers):**
 - Mollick "Giving Your AI a Job Interview"
 - Anthropic "Estimating AI productivity gains"
+- **Bean et al. "Construct Validity in LLM Benchmarks" (Dec 31, 2025)** - Priority 10
+- **Pan et al. "Measuring Agents in Production" (Dec 31, 2025)** - Priority 10
 
 ### Subtopics Defined
 
@@ -219,7 +221,8 @@ genAI-productivity-gains/
 │   ├── handoff_document_v2.md
 │   └── paper_outline_v3.md
 ├── Claude-Notes/
-│   └── Paper-Summaries/                    # Individual paper notes (21 summaries)
+│   ├── Paper-Summaries/                    # Individual paper notes (2 summaries)
+│   └── questions.md                        # Open research questions
 └── Drafts/
     └── Cross-Disciplinary-Background/
         ├── Cross-Disciplinary-Background.md  # ✅ COMPLETE (~70KB)

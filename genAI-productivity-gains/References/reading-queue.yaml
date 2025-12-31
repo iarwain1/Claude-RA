@@ -21,15 +21,17 @@ queue:
     priority: 10
     reason: "CRITICAL: Systematic review of 445 benchmarks identifying construct validity failures. Essential for understanding benchmark-utility gap."
     added: "2025-12-31"
-    status: pending
-    notes: "arXiv:2511.04703 - Note file available in link-dumps. 29 expert reviewers, 8 actionable recommendations."
+    status: done
+    read_date: "2025-12-31"
+    notes: "arXiv:2511.04703 - Summary in Claude-Notes/Paper-Summaries/bean2025construct.md"
 
   - key: pan2025agents
     priority: 10
     reason: "CRITICAL: First large-scale production agent study. 68% need human at ≤10 steps, 74% use human eval. Massive research-practice gap."
     added: "2025-12-31"
-    status: pending
-    notes: "arXiv:2512.04123 - Note file available. 306 practitioners, 26 domains. Essential for Part 4 guidance."
+    status: done
+    read_date: "2025-12-31"
+    notes: "arXiv:2512.04123 - Summary in Claude-Notes/Paper-Summaries/pan2025agents.md"
 
   - key: brand2025benchmarking
     priority: 9
