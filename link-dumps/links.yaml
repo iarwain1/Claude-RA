@@ -8721,12 +8721,15 @@ links:
   - id: github-langsmith-fetch
     title: "LangSmith Fetch"
     url: "https://github.com/langchain-ai/langsmith-fetch"
-    tags: ['tools', 'langchain', 'github']
-    importance: normal
+    tags: ['tools', 'langchain', 'github', 'cli', 'observability']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/langsmith-fetch.md"
 
   - id: aisi-frontier-trends
     title: "Frontier AI Trends Report"
@@ -8767,13 +8770,18 @@ links:
 
   - id: santafe-ergodicity
     title: "Introduction to Ergodicity Economics"
+    authors: ["Ole Peters", "Alexander Adamou"]
     url: "https://www.santafe.edu/news-center/news/book-introduction-to-ergodicity-economics"
-    tags: ['economics', 'theory', 'book']
-    importance: normal
+    date_published: "2025-06"
+    tags: ['economics', 'theory', 'book', 'statistical-mechanics']
+    importance: high
     source_files: ['Manual batch 2025-12-31']
     date_added: "2025-12-31"
-    read: false
+    read: true
     archived: false
+    notes:
+      - type: file
+        path: "notes/santafe-ergodicity.md"
 
   - id: x-2002118205
     title: "X Post 2002118205"
