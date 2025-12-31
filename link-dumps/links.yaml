@@ -8497,3 +8497,402 @@ links:
     date_added: "2025-12-15"
     read: false
     archived: false
+
+  - id: arxiv-2512.08296
+    title: "Towards a Science of Scaling Agent Systems"
+    authors: ["Yubin Kim", "Ken Gu", "Chanwoo Park", "Chunjong Park", "Samuel Schmidgall", "A. Ali Heydari", "Yao Yan", "Zhihan Zhang", "Yuchen Zhuang", "Mark Malhotra", "Paul Pu Liang", "Hae Won Park", "Yuzhe Yang", "Xuhai Xu", "Yilun Du", "Shwetak Patel", "Tim Althoff", "Daniel McDuff", "Xin Liu"]
+    url: "https://arxiv.org/abs/2512.08296"
+    date_published: "2025-12-09"
+    date_updated: "2025-12-17"
+    tags: ['ai-agents', 'multi-agent', 'scaling-laws', 'arxiv', 'paper', 'cs.AI', 'cs.MA']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.08296.md"
+
+  - id: epoch-ai-benchmark
+    title: "Why Benchmarking is Hard"
+    authors: ["Florian Brand", "Jean-Stanislas Denain"]
+    url: "https://epoch.ai/gradient-updates/why-benchmarking-is-hard"
+    date_published: "2025-12-23"
+    tags: ['evaluations', 'benchmarking', 'methodology', 'blog-post', 'epoch-ai']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/epoch-ai-why-benchmarking-is-hard.md"
+
+  - id: anthropic-1c8f97
+    title: "Project Vend: Phase Two"
+    url: "https://www.anthropic.com/research/project-vend-2"
+    date_published: "2025-12-18"
+    tags: ['ai-agents', 'ai-safety', 'alignment', 'anthropic', 'anthropic-source', 'research-study']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/anthropic-project-vend-2.md"
+
+  - id: github-d8a4c3
+    title: "Continuous Claude"
+    authors: ["David Ackerman"]
+    url: "https://github.com/dackerman/continuous-claude"
+    tags: ['tools', 'context-management', 'github', 'developer-tools']
+    importance: high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/continuous-claude.md"
+
+  - id: github-kather-agents
+    title: "Coding Agents for Research"
+    url: "https://github.com/KatherLab/coding-agents-for-research"
+    tags: ['ai-agents', 'research-tools', 'github', 'coding']
+    importance: high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/coding-agents-for-research.md"
+
+  - id: arxiv-2512.10047
+    title: "Detailed balance in large language model-driven agents"
+    url: "https://arxiv.org/abs/2512.10047"
+    date_published: "2025-12"
+    tags: ['ai-agents', 'theory', 'arxiv', 'paper', 'cs.CL', 'cs.LG']
+    importance: high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.10047.md"
+
+  - id: arxiv-2512.16856
+    title: "Distributional AGI Safety"
+    url: "https://arxiv.org/abs/2512.16856"
+    date_published: "2025-12"
+    tags: ['ai-safety', 'agi', 'alignment', 'arxiv', 'paper', 'cs.AI', 'cs.LG']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.16856.md"
+
+  - id: arxiv-2512.15584
+    title: "A Decision-Theoretic Approach for Managing Misalignment"
+    url: "https://arxiv.org/abs/2512.15584"
+    date_published: "2025-12"
+    tags: ['ai-safety', 'alignment', 'decision-theory', 'arxiv', 'paper', 'cs.AI']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2512.15584.md"
+
+  - id: arxiv-2109.08065
+    title: "When Sigmoids Behave Badly"
+    url: "https://arxiv.org/abs/2109.08065"
+    date_published: "2021-09"
+    tags: ['neural-networks', 'training', 'arxiv', 'paper', 'cs.LG', 'stat.ML']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/arxiv-2109.08065.md"
+
+  - id: anthropic-activation-oracles
+    title: "Activation Oracles"
+    url: "https://alignment.anthropic.com/2025/activation-oracles/"
+    tags: ['interpretability', 'anthropic', 'anthropic-source', 'research-article']
+    importance: high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: alphaxiv-sota
+    title: "AlphaXiv - State of the Art"
+    url: "https://www.alphaxiv.org/state-of-the-art"
+    tags: ['tools', 'research-tools', 'paper-discovery']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: martinalderson-agents
+    title: "AI Agents Are Starting to Eat SaaS"
+    url: "https://martinalderson.com/posts/ai-agents-are-starting-to-eat-saas/"
+    tags: ['ai-agents', 'industry', 'blog-post']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2000605774
+    title: "X Post 2000605774"
+    url: "https://x.com/i/status/2000605774695837711"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: bennokrojer-interp
+    title: "Mechanistic Interpretability Resources"
+    url: "https://bennokrojer.com/interp.html"
+    tags: ['interpretability', 'resources', 'website']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: openai-frontier-science
+    title: "Frontier Science"
+    url: "https://openai.com/index/frontierscience/"
+    tags: ['research', 'openai', 'openai-source', 'website']
+    importance: high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: roots-progress-slop
+    title: "In Defense of Slop"
+    url: "https://newsletter.rootsofprogress.org/p/in-defense-of-slop"
+    tags: ['ai-impact', 'blog-post', 'newsletter']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: update-brief-launch
+    title: "Launching The Update"
+    url: "https://theupdatebrief.substack.com/p/launching-the-update"
+    tags: ['newsletter', 'substack']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: github-langsmith-fetch
+    title: "LangSmith Fetch"
+    url: "https://github.com/langchain-ai/langsmith-fetch"
+    tags: ['tools', 'langchain', 'github']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: aisi-frontier-trends
+    title: "Frontier AI Trends Report"
+    url: "https://www.aisi.gov.uk/frontier-ai-trends-report"
+    date_published: "2025"
+    tags: ['report', 'ai-policy', 'government', 'aisi', 'ai-safety', 'evaluations']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/aisi-frontier-trends.md"
+
+  - id: shallow-review
+    title: "Shallow Review AI"
+    url: "https://shallowreview.ai/"
+    tags: ['tools', 'research-tools', 'website']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2001681881
+    title: "X Post 2001681881"
+    url: "https://x.com/i/status/2001681881398689895"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: santafe-ergodicity
+    title: "Introduction to Ergodicity Economics"
+    url: "https://www.santafe.edu/news-center/news/book-introduction-to-ergodicity-economics"
+    tags: ['economics', 'theory', 'book']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2002118205
+    title: "X Post 2002118205"
+    url: "https://x.com/i/status/2002118205729562949"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2001864355
+    title: "X Post 2001864355"
+    url: "https://x.com/i/status/2001864355160429043"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: forethought-transformative-ai
+    title: "The First Type of Transformative AI"
+    url: "https://www.forethought.org/research/the-first-type-of-transformative-ai"
+    tags: ['agi', 'ai-forecasting', 'research-article', 'strategy', 'ai-safety']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/forethought-transformative-ai.md"
+
+  - id: addyo-llm-workflow
+    title: "My LLM Coding Workflow Going Into 2025"
+    url: "https://addyo.substack.com/p/my-llm-coding-workflow-going-into"
+    tags: ['coding', 'workflows', 'blog-post', 'substack']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2002861706
+    title: "X Post 2002861706"
+    url: "https://x.com/i/status/2002861706658398211"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: psyarxiv-c5gh8
+    title: "PsyArXiv Preprint c5gh8"
+    url: "https://osf.io/preprints/psyarxiv/c5gh8_v1"
+    tags: ['preprint', 'psychology', 'psyarxiv']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2004727298
+    title: "X Post 2004727298"
+    url: "https://x.com/i/status/2004727298054881342"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: sankalp-claude-code
+    title: "My Experience with Claude Code 2.0"
+    url: "https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/"
+    tags: ['coding-agents', 'claude-code', 'blog-post']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: steipete-inference-speed
+    title: "Shipping at Inference Speed"
+    url: "https://steipete.me/posts/2025/shipping-at-inference-speed"
+    tags: ['development', 'blog-post']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: x-2005424424
+    title: "X Post 2005424424"
+    url: "https://x.com/i/status/2005424424254673263"
+    tags: ['x-twitter', 'social-media']
+    importance: low
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: lmarena-expert-comparison
+    title: "Arena Expert Model Comparison"
+    url: "https://news.lmarena.ai/arena-expert-model-comparison/"
+    date_published: "2025-12"
+    tags: ['evaluations', 'benchmarks', 'lmarena', 'blog-post', 'model-comparison']
+    importance: very-high
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: true
+    archived: false
+    notes:
+      - type: file
+        path: "notes/lmarena-expert-comparison.md"
+
+  - id: tecunningham-llm-verification
+    title: "LLM Verification"
+    url: "https://tecunningham.github.io/posts/2025-12-30-llm-verification.html"
+    tags: ['verification', 'blog-post']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
+
+  - id: ai-futures-dec-2025
+    title: "AI Futures Model Dec 2025 Update"
+    url: "https://blog.ai-futures.org/p/ai-futures-model-dec-2025-update"
+    tags: ['ai-forecasting', 'blog-post']
+    importance: normal
+    source_files: ['Manual batch 2025-12-31']
+    date_added: "2025-12-31"
+    read: false
+    archived: false
