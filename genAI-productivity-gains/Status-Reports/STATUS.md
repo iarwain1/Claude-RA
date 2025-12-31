@@ -9,7 +9,7 @@
 
 **Start Date**: 2025-12-10
 **Current Phase**: Literature review development
-**Last Updated**: 2025-12-31
+**Last Updated**: 2025-12-31 (Recent source discovery completed)
 
 ---
 
@@ -129,22 +129,77 @@ See `subtopics.yaml` for details:
 
 ---
 
+## Recent Source Discovery (Dec 31, 2025)
+
+### Link Dumps Database Review
+
+Conducted systematic review of link-dumps database (664 entries) focusing on Oct 2025+ publications relevant to GenAI productivity gains.
+
+**Analysis document:** `Status-Reports/RECOMMENDED-ADDITIONS-2025-12-31.md`
+
+### Key Findings
+
+**14 highly relevant recent papers identified** (Oct-Dec 2025):
+
+**Critical additions (Priority 9-10):**
+1. **arxiv-2511.04703** - Construct Validity in LLM Benchmarks (Nov 3, 2025)
+   - Systematic review of 445 benchmarks, 29 expert reviewers
+   - Identifies pervasive validity issues in what benchmarks actually measure
+
+2. **arxiv-2512.04123** - Measuring Agents in Production (Dec 2, 2025)
+   - First large-scale study of production agents (306 practitioners, 26 domains)
+   - KEY: 68% execute ≤10 steps, 74% rely on human evaluation
+
+3. **epoch-ai-benchmark** - Why Benchmarking is Hard (Dec 23, 2025)
+   - Epoch AI analysis of practical benchmarking challenges
+   - Documents 11-15% variance from setup variables alone
+
+4. **arxiv-2512.00193** - A Rosetta Stone for AI Benchmarks (Nov 28, 2025)
+   - Framework for cross-benchmark comparison and long-term tracking
+
+5. **arxiv-2512.08296** - Towards a Science of Scaling Agent Systems (Dec 9, 2025)
+   - Framework for understanding multi-agent system scaling
+
+6. **lmarena-expert-comparison** - Arena Expert Model Comparison (Dec 2025)
+   - Expert users rate models differently than general users
+   - Critical for understanding user heterogeneity in AI utility
+
+**Additional relevant papers:**
+- 3 medium-priority papers (safety/alignment, deployment)
+- 5 lower-priority papers (specialized topics, tools)
+
+**Coverage by report section:**
+- Part 1 (Benchmark-Utility Gap): 7 papers directly relevant
+- Part 4 (Practical Guidance): 4 papers directly relevant
+- Part 5 (T&E Considerations): 4 papers directly relevant
+- Part 6 (Research Agenda): 3 papers directly relevant
+
+### Recommended Actions
+
+1. **Immediate:** Add 8 high-priority papers to references.yaml
+2. **Verify:** Check if Dec 2 Anthropic paper differs from Aug version (anthropic2025internal)
+3. **Prioritize reading:** Focus on construct validity and production agents papers
+4. **Medium-term:** Add 3 medium-priority papers to references
+
+---
+
 ## Next Steps
 
 ### Immediate (Current Session)
-1. Process link dump files to extract relevant sources
-2. Add extracted references to references.yaml
-3. Prioritize reading queue
+1. ~~Process link dump files to extract relevant sources~~ ✅ COMPLETED
+2. Add high-priority recent papers (8) to references.yaml
+3. Update reading queue with recent sources
+4. Verify Anthropic paper versions (Aug vs Dec)
 
 ### Short-term
-1. Find and fetch high-priority papers (METR, Scale, OpenAI studies)
-2. Read and summarize key papers
-3. Develop Part 2 (Literature Review) content
+1. Read and summarize high-priority recent papers (construct validity, production agents)
+2. ~~Find and fetch high-priority papers (METR, Scale, OpenAI studies)~~ Already in references
+3. Develop Part 2 (Literature Review) content incorporating recent findings
 
 ### Medium-term
 1. ~~Continue Appendix A drafting~~ ✅ COMPLETED (now Cross-Disciplinary Background)
-2. Synthesize findings by subtopic
-3. Refine framework based on literature
+2. Synthesize findings by subtopic (incorporating 14 new papers)
+3. Refine framework based on recent evaluation methodology papers
 4. Begin drafting main report sections (Parts 1, 3, 4)
 
 ---
