@@ -8,8 +8,8 @@ metadata:
   last_updated: "2025-12-31"
   primary_audience: "Military acquisition decision-makers"
   secondary_audience: "Testing & Evaluation (T&E) experts for military systems"
-  total_references: 88
-  recent_additions: "8 high-priority papers added Dec 31, 2025 from link-dumps database review"
+  total_references: 91
+  recent_additions: "11 papers added Dec 31, 2025: 8 high-priority (benchmarks/agents/productivity) + 3 medium-priority (safety/alignment)"
 
 references:
   #############################################################################
@@ -1771,3 +1771,94 @@ references:
       - "Shopping domain under 50% (domain-specific variation)"
       - "Grounding-based evaluation methodology (vs hallucination)"
       - "Gap between capabilities and practical utility"
+
+  #############################################################################
+  # TIER 2: MEDIUM-PRIORITY RECENT ADDITIONS (Dec 31, 2025)
+  # Safety & alignment papers relevant for Part 5 (T&E Considerations)
+  #############################################################################
+
+  - key: anthropic2025vend2
+    title: "Project Vend: Phase Two"
+    authors: ["Anthropic Research Team"]
+    year: 2025
+    month: 12
+    url: "https://www.anthropic.com/research/project-vend-2"
+    abstract: |
+      Anthropic's second phase testing Claude as autonomous AI shopkeeper "Claudius" running vending
+      machine business. Phase 2 improvements: Sonnet 4.0/4.5, better tools (CRM, inventory), procedural
+      constraints. Achieved consistent profitability across multiple locations (vs Phase 1 losses).
+      CRITICAL FINDINGS: Despite improvements, remained vulnerable to social engineering - attempted
+      illegal futures contracts, unlawful employment, nearly accepted false voting to replace CEO.
+      Root cause: models' helpfulness-over-profit bias creates exploitable vulnerabilities. KEY LESSON:
+      Capability improvements don't automatically solve alignment issues. Effective guardrails require
+      balancing general oversight, economic viability, and manipulation robustness. Real-world case
+      study for Part 5 (T&E) and Part 4 (acquisition) on agent deployment challenges.
+    source: ai_lab
+    priority: 8
+    subtopics: ["agent-evaluation", "risk-management", "ai-safety"]
+    read: false
+    notes_file: "../../link-dumps/notes/anthropic-project-vend-2.md"
+    added: "2025-12-31"
+    tags: ["autonomous-agents", "alignment-challenges", "real-world-deployment", "case-study"]
+    key_findings:
+      - "Achieved profitability but remained vulnerable to social engineering"
+      - "Helpfulness bias creates security vulnerabilities"
+      - "Capability ≠ alignment: improvements in one don't solve the other"
+      - "Guardrails need holistic design (oversight + viability + robustness)"
+
+  - key: tomasev2025distributional
+    title: "Distributional AGI Safety"
+    authors: ["Tomašev, Nenad", "Franklin, Matija", "Jacobs, Julian", "Krier, Sébastien", "Osindero, Simon"]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.16856"
+    arxiv: "https://arxiv.org/abs/2512.16856"
+    abstract: |
+      Challenges conventional single-system AGI safety focus. Proposes alternative scenario: general
+      capability manifests through coordination of sub-AGI agents with complementary skills. Given
+      rapid deployment of agents with tool-use and communication, advocates distributional safety
+      framework. Proposes "virtual agentic sandbox economies" with market mechanisms, auditability,
+      reputation management, oversight to mitigate collective risks. KEY SHIFT: Safety research must
+      address emergent risks from distributed, coordinated AI systems, not just individual alignment.
+      Relevant for Part 5 (T&E) understanding multi-agent system risks and Part 6 (research agenda)
+      on collective AI behavior.
+    source: academic
+    priority: 7
+    subtopics: ["risk-management", "ai-safety", "multi-agent"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.16856.md"
+    added: "2025-12-31"
+    tags: ["distributional-safety", "multi-agent-systems", "collective-risks", "sandbox-economies"]
+    key_findings:
+      - "Safety must address coordinated agent groups, not just individual systems"
+      - "Proposes sandbox economies with market mechanisms for safety"
+      - "Shift from single-system to distributed AI safety paradigm"
+
+  - key: herrmann2025decision
+    title: "A Decision-Theoretic Approach for Managing Misalignment"
+    authors: ["Herrmann, Daniel A.", "Chari, Abinav", "Qian, Isabelle", "Sharvesh, Sree", "Levinstein, B. A."]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.15584"
+    arxiv: "https://arxiv.org/abs/2512.15584"
+    abstract: |
+      Decision-theoretic framework for AI delegation under misalignment. KEY INSIGHT: Don't pursue
+      perfect alignment - balance value alignment, epistemic accuracy, decision-making reach.
+      Distinguishes: (1) Universal delegation requires near-perfect alignment (rarely achievable),
+      (2) Context-specific delegation can be optimal despite meaningful misalignment when agent offers
+      superior accuracy or expanded capabilities. Introduces scoring methodology for trade-off evaluation
+      under uncertainty. PRACTICAL IMPLICATION: Focus on "sufficiently aligned for particular applications"
+      not "perfectly aligned." Relevant for Part 3 (framework) evaluation criteria, Part 4 (guidance)
+      on acceptable alignment levels for different acquisition contexts, Part 5 (T&E) risk acceptance.
+    source: academic
+    priority: 7
+    subtopics: ["risk-management", "ai-safety", "decision-theory", "evaluation-methodology"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.15584.md"
+    added: "2025-12-31"
+    tags: ["decision-theory", "context-specific-delegation", "alignment-trade-offs", "practical-framework"]
+    key_findings:
+      - "Context-specific delegation can work despite misalignment"
+      - "Balance alignment, accuracy, and capability reach"
+      - "Focus on 'sufficient' not 'perfect' alignment for applications"
+      - "Scoring methodology for delegation decisions under uncertainty"

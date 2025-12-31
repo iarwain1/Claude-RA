@@ -90,14 +90,18 @@ Located in `User-Input/`:
 
 ### References Status
 
-See `references.yaml` for full list (**88 entries** with detailed metadata - updated Dec 31, 2025).
+See `references.yaml` for full list (**91 entries** with detailed metadata - updated Dec 31, 2025).
 
 **By Priority (updated Dec 31):**
-- Priority 10 (Essential): 12 references (+2 from recent additions)
+- Priority 10 (Essential): 12 references (+2)
 - Priority 9 (Very important): 17 references (+3)
-- Priority 8 (Important): 27 references (+3)
-- Priority 7 (Useful): 20 references
+- Priority 8 (Important): 28 references (+4, includes Project Vend 2)
+- Priority 7 (Useful): 22 references (+2, distributional safety & decision theory)
 - Priority 6 (Background): 12 references
+
+**Recent additions (Dec 31):** 11 total papers
+- 8 high-priority (benchmarks, agents, productivity)
+- 3 medium-priority (safety & alignment for Part 5)
 
 **By Category (Batch 3 additions):**
 - Military/Defense AI: 6 new sources (FAS, Scale/DoD, NDAA, USAF, UNIDIR, CNAS)
@@ -214,7 +218,7 @@ genAI-productivity-gains/
 │   ├── STATUS.md                                    # This file
 │   └── RECOMMENDED-ADDITIONS-2025-12-31.md          # Dec 31 source discovery analysis
 ├── References/
-│   ├── references.yaml                              # All references with metadata (88 entries)
+│   ├── references.yaml                              # All references with metadata (91 entries)
 │   ├── reading-queue.yaml                           # Prioritized reading list (updated Dec 31)
 │   └── subtopics.yaml                               # Topic organization (11 subtopics)
 ├── User-Input/                             # User's starting materials
