@@ -2,7 +2,8 @@
 # Papers prioritized for reading, in order of importance
 
 metadata:
-  last_updated: "2025-12-10"
+  last_updated: "2025-12-31"
+  recent_additions: "8 high-priority papers from Dec 2025 link-dumps review"
 
 # Priority rationale:
 # 10 = Essential - key empirical anchor or methodological paper
@@ -12,6 +13,66 @@ metadata:
 # 6 or below = Background reading
 
 queue:
+  #############################################################################
+  # HIGHEST PRIORITY: Recent critical additions (Dec 2025)
+  #############################################################################
+
+  - key: bean2025construct
+    priority: 10
+    reason: "CRITICAL: Systematic review of 445 benchmarks identifying construct validity failures. Essential for understanding benchmark-utility gap."
+    added: "2025-12-31"
+    status: pending
+    notes: "arXiv:2511.04703 - Note file available in link-dumps. 29 expert reviewers, 8 actionable recommendations."
+
+  - key: pan2025agents
+    priority: 10
+    reason: "CRITICAL: First large-scale production agent study. 68% need human at ≤10 steps, 74% use human eval. Massive research-practice gap."
+    added: "2025-12-31"
+    status: pending
+    notes: "arXiv:2512.04123 - Note file available. 306 practitioners, 26 domains. Essential for Part 4 guidance."
+
+  - key: brand2025benchmarking
+    priority: 9
+    reason: "Explains 11-15% variance from scaffolds alone. Critical for understanding benchmark reproducibility problems."
+    added: "2025-12-31"
+    status: pending
+    notes: "Epoch AI analysis - Note file available in link-dumps. Practical evaluation challenges."
+
+  - key: anthropic2025workdec
+    priority: 9
+    reason: "Updated Anthropic internal study with 200K transcripts. 60% usage, skill atrophy concerns. More detailed than Aug version."
+    added: "2025-12-31"
+    status: pending
+    notes: "Dec 2025 update - Note file available. Replaces/supplements anthropic2025internal."
+
+  - key: kim2025scaling
+    priority: 9
+    reason: "Framework for agent system scaling. Important for Part 6 research agenda and multi-agent DoD applications."
+    added: "2025-12-31"
+    status: pending
+    notes: "arXiv:2512.08296 - Note file available. 19 authors from MIT, Google, Meta."
+
+  - key: ho2025rosetta
+    priority: 8
+    reason: "Statistical framework for cross-benchmark comparison and long-term tracking. Addresses saturation problem."
+    added: "2025-12-31"
+    status: pending
+    notes: "arXiv:2512.00193 - Note file available. Rohin Shah involvement (safety perspective)."
+
+  - key: lmarena2025expert
+    priority: 8
+    reason: "Expert vs novice rating divergence. Critical for evaluator selection and interpreting heterogeneity findings."
+    added: "2025-12-31"
+    status: pending
+    notes: "LMArena analysis - Note file available. Connects to Brynjolfsson/Noy skill-level effects."
+
+  - key: benchek2025ace
+    priority: 7
+    reason: "Consumer task evaluation (56% top score). Complements productivity focus, shows practical utility gaps."
+    added: "2025-12-31"
+    status: pending
+    notes: "arXiv:2512.04921 - Note file available. Grounding-based evaluation methodology."
+
   #############################################################################
   # HIGHEST PRIORITY: Key empirical studies on AI productivity
   #############################################################################

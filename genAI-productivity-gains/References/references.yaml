@@ -5,9 +5,11 @@ metadata:
   review_name: "genAI-productivity-gains"
   topic: "Evaluating AI Productivity for Defense Acquisition: From Benchmarks to Operational Effectiveness"
   created: "2025-12-10"
-  last_updated: "2025-12-10"
+  last_updated: "2025-12-31"
   primary_audience: "Military acquisition decision-makers"
   secondary_audience: "Testing & Evaluation (T&E) experts for military systems"
+  total_references: 88
+  recent_additions: "8 high-priority papers added Dec 31, 2025 from link-dumps database review"
 
 references:
   #############################################################################
@@ -1544,3 +1546,226 @@ references:
     notes_file: null
     added: "2025-12-10"
     tags: ["monitoring", "post-deployment", "policy"]
+
+  #############################################################################
+  # TIER 1: RECENT CRITICAL ADDITIONS (Dec 31, 2025)
+  # High-priority recent papers (Oct-Dec 2025) from link-dumps database review
+  #############################################################################
+
+  - key: bean2025construct
+    title: "Measuring what Matters: Construct Validity in Large Language Model Benchmarks"
+    authors: ["Bean, Andrew M.", "Kearns, Ryan Othniel", "Romanou, Angelika", "Hafner, Franziska Sofia", "Mayne, Harry", "Batzner, Jan", "Foroutan, "Negar", "Schmitz, Chris", "Korgul, Karolina", "Batra, Hunar", "Deb, Oishi", "Beharry, Emma", "Emde, Cornelius", "Foster, Thomas", "Gausen, Anna", "Grandury, María", "Han, Simeng", "Hofmann, Valentin", "Ibrahim, Lujain", "Kim, Hazel", "Kirk, Hannah Rose", "Lin, Fangru"]
+    year: 2025
+    month: 11
+    url: "https://arxiv.org/abs/2511.04703"
+    arxiv: "https://arxiv.org/abs/2511.04703"
+    abstract: |
+      Landmark systematic review of 445 LLM benchmarks by 29 expert reviewers from leading NLP and ML
+      conferences. Identifies pervasive construct validity issues - benchmarks often don't measure what
+      they claim to measure. Finds systematic patterns undermining validity: disconnect between claimed
+      phenomena (safety, robustness) and actual tasks, scoring metrics that don't capture constructs,
+      missing validation of whether benchmarks measure intended attributes. Provides 8 key recommendations
+      and detailed actionable guidance for developing valid benchmarks. Essential for understanding
+      benchmark-utility gap and evaluation methodology.
+    source: academic
+    priority: 10
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2511.04703.md"
+    added: "2025-12-31"
+    tags: ["key-reference", "systematic-review", "construct-validity", "benchmark-critique"]
+    key_findings:
+      - "Systematic patterns undermining validity across 445 benchmarks"
+      - "Disconnect between claimed phenomena and actual tasks measured"
+      - "8 actionable recommendations for valid benchmark design"
+      - "29 expert reviewers, comprehensive methodology"
+
+  - key: pan2025agents
+    title: "Measuring Agents in Production"
+    authors: ["Pan, Melissa Z.", "Arabzadeh, Negar", "Cogo, Riccardo", "Zhu, Yuxuan", "Xiong, Alexander", "Agrawal, Lakshya A.", "Mao, Huanzhi", "Shen, Emma", "Pallerla, Sid", "Patel, Liana", "Liu, Shu", "Shi, Tianneng", "Liu, Xiaoyuan", "Davis, Jared Quincy", "Lacavalla, Emmanuele", "Basile, Alessandro", "Yang, Shuyi", "Castro, Paul", "Kang, Daniel", "Gonzalez, Joseph E.", "Sen, Koushik", "Song, Dawn", "Stoica, Ion", "Zaharia, Matei", "Ellis, Marquita"]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.04123"
+    arxiv: "https://arxiv.org/abs/2512.04123"
+    abstract: |
+      First large-scale systematic study of AI agents in production environments. Surveyed 306
+      practitioners and conducted 20 in-depth case studies across 26 domains. KEY FINDINGS: Production
+      agents use simple, controllable approaches - 68% execute ≤10 steps before requiring human
+      intervention, 70% rely on prompting off-the-shelf models vs fine-tuning, 74% depend primarily
+      on human evaluation. Reveals massive gap between research prototypes (long-horizon autonomous
+      agents) and production reality (short chains with heavy human oversight). Agent evaluation
+      remains unsolved in practice. Essential for Part 4 (Practical Guidance) and understanding
+      deployment constraints.
+    source: academic
+    priority: 10
+    subtopics: ["agent-evaluation", "productivity-studies", "acquisition-guidance"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.04123.md"
+    added: "2025-12-31"
+    tags: ["key-reference", "empirical-anchor", "production-reality", "agent-deployment"]
+    key_findings:
+      - "68% of production agents execute ≤10 steps before human intervention"
+      - "70% use prompting vs fine-tuning (controllability > performance)"
+      - "74% rely on human evaluation (automated metrics insufficient)"
+      - "Massive gap between research prototypes and production reality"
+
+  - key: brand2025benchmarking
+    title: "Why Benchmarking is Hard"
+    authors: ["Brand, Florian", "Denain, Jean-Stanislas"]
+    year: 2025
+    month: 12
+    url: "https://epoch.ai/gradient-updates/why-benchmarking-is-hard"
+    abstract: |
+      Epoch AI analysis of practical benchmarking challenges. Documents how numerous variables affect
+      final scores across benchmark setup (prompts, sampling parameters, scaffolds, execution
+      environments, scoring methods) and API access (rate limits, truncation, timeouts, provider
+      differences). KEY FINDING: Scaffolds alone cause 11-15% variance on SWE-bench Verified. Selecting
+      different API providers yields noticeably divergent results for identical models. Variables
+      compound across evaluation stack causing final scores to diverge significantly from developer-reported
+      numbers. Creates resource barriers particularly burdening smaller organizations - academics and
+      hobbyists lack resources to navigate multiple API implementations, slowing independent assessment.
+      Critical for understanding why benchmark results don't replicate.
+    source: research_org
+    priority: 9
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: "../../link-dumps/notes/epoch-ai-why-benchmarking-is-hard.md"
+    added: "2025-12-31"
+    tags: ["benchmark-critique", "reproducibility", "methodology"]
+    key_findings:
+      - "Scaffolds cause 11-15% variance on SWE-bench Verified"
+      - "API provider selection yields divergent results for identical models"
+      - "Variables compound across evaluation stack"
+      - "Resource barriers impact independent evaluation capacity"
+
+  - key: ho2025rosetta
+    title: "A Rosetta Stone for AI Benchmarks"
+    authors: ["Ho, Anson", "Denain, Jean-Stanislas", "Atanasov, David", "Albanie, Samuel", "Shah, Rohin"]
+    year: 2025
+    month: 11
+    url: "https://arxiv.org/abs/2512.00193"
+    arxiv: "https://arxiv.org/abs/2512.00193"
+    abstract: |
+      Novel statistical framework addressing benchmark saturation problem. Most AI benchmarks saturate
+      within years or months, making it hard to study long-run capability trends. Framework "stitches
+      benchmarks together" putting model capabilities and benchmark difficulties on single numerical
+      scale - acts as "Rosetta Stone" allowing comparison of models across wide range of abilities
+      and time even if not evaluated on same benchmarks. Works without assuming how capabilities
+      evolve or scale with compute. Three applications: (1) measure speed of AI progress over time,
+      (2) forecast future capabilities, (3) compare models across benchmark families. Important for
+      Part 1 discussion of benchmark lifecycle and saturation.
+    source: academic
+    priority: 8
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.00193.md"
+    added: "2025-12-31"
+    tags: ["methodology", "benchmark-unification", "forecasting"]
+    key_findings:
+      - "Statistical framework unifying diverse benchmarks on single scale"
+      - "Enables cross-benchmark model comparison despite saturation"
+      - "Supports capability forecasting and long-term trend analysis"
+      - "Rohin Shah (DeepMind AI safety) involvement"
+
+  - key: kim2025scaling
+    title: "Towards a Science of Scaling Agent Systems"
+    authors: ["Kim, Yubin", "Gu, Ken", "Park, Chanwoo", "Park, Chunjong", "Schmidgall, Samuel", "Heydari, A. Ali", "Yan, Yao", "Zhang, Zhihan", "Zhuang, Yuchen", "Malhotra, Mark", "Liang, Paul Pu", "Park, Hae Won", "Yang, Yuzhe", "Xu, Xuhai", "Du, Yilun", "Patel, Shwetak", "Althoff, Tim", "McDuff, Daniel", "Liu, Xin"]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.08296"
+    arxiv: "https://arxiv.org/abs/2512.08296"
+    abstract: |
+      Proposes scientific framework for understanding how agent systems scale. 19 authors from MIT,
+      Google, Meta, UW, and other institutions. Addresses gap in understanding multi-agent system
+      scaling compared to single-model scaling laws. Relevant for Part 6 (Research Agenda) and future
+      acquisition considerations as DoD explores multi-agent collaborative systems. Connects agent
+      architecture choices to scaling behavior and emergent capabilities.
+    source: academic
+    priority: 9
+    subtopics: ["agent-evaluation", "scaling-laws"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.08296.md"
+    added: "2025-12-31"
+    tags: ["agent-systems", "multi-agent", "scaling", "methodology"]
+
+  - key: lmarena2025expert
+    title: "Arena Expert Model Comparison"
+    authors: ["LMArena Team"]
+    year: 2025
+    month: 12
+    url: "https://news.lmarena.ai/arena-expert-model-comparison/"
+    abstract: |
+      Analysis showing expert users rate AI models differently than general users. Critical for
+      understanding how user skill and expertise affects perceived AI utility. Expert vs novice
+      rating divergence has implications for who should evaluate systems and how to interpret
+      evaluation results. Directly relevant to heterogeneity findings in Brynjolfsson and Noy
+      studies showing AI benefits vary by skill level. Important for acquisition guidance on
+      selecting appropriate evaluators and interpreting benchmarks.
+    source: research_org
+    priority: 8
+    subtopics: ["benchmarks", "evaluation-methodology", "human-ai-teaming"]
+    read: false
+    notes_file: "../../link-dumps/notes/lmarena-expert-comparison.md"
+    added: "2025-12-31"
+    tags: ["user-heterogeneity", "expert-evaluation", "skill-effects"]
+    key_findings:
+      - "Expert users rate models differently than general users"
+      - "Rating divergence has implications for evaluation design"
+      - "Connects to heterogeneity findings (skill-level effects)"
+
+  - key: anthropic2025workdec
+    title: "How AI is Transforming Work at Anthropic (December 2025 Update)"
+    authors: ["Huang, Saffron", "Seethor, Bryan", "Durmus, Esin", "Handa, Kunal", "McCain, Miles", "Stern, Michael", "Ganguli, Deep"]
+    year: 2025
+    month: 12
+    url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
+    abstract: |
+      Updated internal study examining AI adoption at Anthropic (Feb-Aug 2025 data). 132 employee
+      survey, 53 qualitative interviews, analysis of 200,000 Claude Code transcripts. KEY FINDINGS:
+      Engineers use Claude in ~60% of work (up from 28%), report 50% productivity gains. Can fully
+      delegate ~20% of tasks. Claude Code autonomy doubled (10→20 consecutive actions). Complex task
+      usage increased (code design: 1%→10%, feature implementation: 14%→37%). CRITICAL CONCERNS:
+      Skill atrophy in core competencies, reduced collaboration/mentorship (Claude replaces colleague
+      questions), career uncertainty. 44% of Claude work is tasks employees wouldn't have enjoyed.
+      Important update to earlier Aug 2025 version (anthropic2025internal) with substantially more
+      data and detail.
+    source: ai_lab
+    priority: 9
+    subtopics: ["productivity-studies", "human-ai-teaming", "risk-management"]
+    read: false
+    notes_file: "../../link-dumps/notes/anthropic-ai-transforming-work.md"
+    added: "2025-12-31"
+    tags: ["internal-study", "skill-atrophy", "collaboration-concerns", "updated-data"]
+    key_findings:
+      - "60% of work uses Claude (doubled from 28% prior year)"
+      - "50% self-reported productivity gains"
+      - "20% of tasks fully delegatable, autonomy doubled"
+      - "Concerns: skill atrophy, reduced mentorship, career uncertainty"
+
+  - key: benchek2025ace
+    title: "The AI Consumer Index (ACE)"
+    authors: ["Benchek, Julien", "Shetty, Rohit", "Hunsberger, Benjamin", "Arun, Ajay", "Richards, Zach", "Foody, Brendan", "Nitski, Osvald", "Vidgen, Bertie"]
+    year: 2025
+    month: 12
+    url: "https://arxiv.org/abs/2512.04921"
+    arxiv: "https://arxiv.org/abs/2512.04921"
+    abstract: |
+      First benchmark assessing frontier AI models on everyday consumer tasks. 400 test cases (hidden
+      heldout set) + 80 open-sourced devset cases across four activities: shopping, food, gaming, DIY.
+      Novel grading methodology dynamically checks whether responses are grounded in retrieved web
+      sources. KEY FINDINGS: Top model (GPT-5 Thinking=High) scores only 56.1%. Domain variation
+      significant - shopping domain under 50%. Low scores reveal gaps between frontier capabilities
+      and practical consumer utility. Complements productivity-focused evaluations. Relevant for
+      understanding breadth of AI economic impact and dual-use applications.
+    source: ai_lab
+    priority: 7
+    subtopics: ["benchmarks", "evaluation-methodology"]
+    read: false
+    notes_file: "../../link-dumps/notes/arxiv-2512.04921.md"
+    added: "2025-12-31"
+    tags: ["consumer-applications", "grounding", "practical-utility"]
+    key_findings:
+      - "Top model scores only 56.1% on consumer tasks"
+      - "Shopping domain under 50% (domain-specific variation)"
+      - "Grounding-based evaluation methodology (vs hallucination)"
+      - "Gap between capabilities and practical utility"

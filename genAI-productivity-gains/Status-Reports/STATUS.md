@@ -90,12 +90,12 @@ Located in `User-Input/`:
 
 ### References Status
 
-See `references.yaml` for full list (**80 entries** with detailed metadata).
+See `references.yaml` for full list (**88 entries** with detailed metadata - updated Dec 31, 2025).
 
-**By Priority:**
-- Priority 10 (Essential): 10 references
-- Priority 9 (Very important): 14 references
-- Priority 8 (Important): 24 references
+**By Priority (updated Dec 31):**
+- Priority 10 (Essential): 12 references (+2 from recent additions)
+- Priority 9 (Very important): 17 references (+3)
+- Priority 8 (Important): 27 references (+3)
 - Priority 7 (Useful): 20 references
 - Priority 6 (Background): 12 references
 
@@ -187,9 +187,9 @@ Conducted systematic review of link-dumps database (664 entries) focusing on Oct
 
 ### Immediate (Current Session)
 1. ~~Process link dump files to extract relevant sources~~ ✅ COMPLETED
-2. Add high-priority recent papers (8) to references.yaml
-3. Update reading queue with recent sources
-4. Verify Anthropic paper versions (Aug vs Dec)
+2. ~~Add high-priority recent papers (8) to references.yaml~~ ✅ COMPLETED (now 88 total references)
+3. ~~Update reading queue with recent sources~~ ✅ COMPLETED (8 papers added to top of queue)
+4. ~~Verify Anthropic paper versions (Aug vs Dec)~~ ✅ COMPLETED - Dec version has substantially more data (200K transcripts)
 
 ### Short-term
 1. Read and summarize high-priority recent papers (construct validity, production agents)
@@ -209,11 +209,12 @@ Conducted systematic review of link-dumps database (664 entries) focusing on Oct
 ```
 genAI-productivity-gains/
 ├── Status-Reports/
-│   └── STATUS.md                           # This file
+│   ├── STATUS.md                                    # This file
+│   └── RECOMMENDED-ADDITIONS-2025-12-31.md          # Dec 31 source discovery analysis
 ├── References/
-│   ├── references.yaml                     # All references with metadata (79 entries)
-│   ├── reading-queue.yaml                  # Prioritized reading list
-│   └── subtopics.yaml                      # Topic organization (11 subtopics)
+│   ├── references.yaml                              # All references with metadata (88 entries)
+│   ├── reading-queue.yaml                           # Prioritized reading list (updated Dec 31)
+│   └── subtopics.yaml                               # Topic organization (11 subtopics)
 ├── User-Input/                             # User's starting materials
 │   ├── handoff_document_v2.md
 │   └── paper_outline_v3.md
